@@ -28,6 +28,8 @@ keystone.init({
 		extname: '.hbs',
 	}).engine,
 
+	'cloudinary config': 'cloudinary://738933918968631:oC_89nSsALkzCJ40N9n2cmWTkx8@dl6hxxyrn',
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
