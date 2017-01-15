@@ -20,3 +20,11 @@
 
 // Add your own site style includes here
 @import "site/layout";
+
+
+body {
+    background-color: #F7F7F7 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
