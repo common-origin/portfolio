@@ -1,23 +1,20 @@
 <div class="outer-container post-cont">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<article>
-					<p><a href="/blog">&larr; back to the blog</a></p>
-					<hr>
-					<header>
-						<h1>{{data.post.title}}</h1>
-						<h5>
-							{{{categoryList data.post.categories prefix="Posted in "}}}
-							{{#if author.name.first}}by {{author.name.first}}{{/if}}
-						</h5>
-					</header>
-					<div class="post">
-						<!--{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image crop='fit' }}}" class="img-responsive">{{/if}}-->
-						{{{data.post.content.extended}}}
-					</div>
-				</article>
-			</div>
+	<div class="row">
+		<div class="col-xs-12 proj-cont">
+			<article>
+				<p class="back-btn"><a href="/blog">&larr; back</a></p>
+				<header>
+					<!--<h1>{{data.post.title}}</h1>
+					<h5>
+						{{{categoryList data.post.categories prefix="Posted in "}}}
+						{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
+					</h5>
+				</header>
+				<div class="post">
+					{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image crop='fit' }}}" class="img-responsive head-img">{{/if}}
+					{{{data.post.content.extended}}}
+				</div>
+			</article>
 		</div>
 	</div>
 </div>
