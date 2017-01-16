@@ -47,11 +47,16 @@ body {
 .home-cont {
 	height:100vh;
 }
-.header-cont {
-	padding-top:200px;
+.header-cont, .contact-cont, .gallery-cont, .post-cont {
+	padding-top:150px;
 }
 /* Projects */
 .project-img {
 	width:100%;
 	height:auto;
+}
+
+/* Form */
+.form-control {
+	border-radius:0 !important;
 }
