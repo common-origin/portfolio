@@ -5830,10 +5830,12 @@ body {
 #header {
   margin-top: 0 !important;
   width: 100vw;
-  position: fixed; }
+  position: fixed;
+  z-index: 1000000; }
 
 .navbar-default {
-  border: none; }
+  border: none;
+  z-index: 1000; }
 
 .navbar {
   border-radius: 0 !important; }
@@ -5873,6 +5875,16 @@ body {
 /* Form */
 .form-control {
   border-radius: 0 !important; }
+
+/* Post */
+.head-img {
+  position: absolute;
+  top: 0;
+  width: 100vw; }
+
+.p-title {
+  text-transform: uppercase;
+  font-weight: 700; }
 
 #header {
   margin-top: 30px; }
