@@ -11,4 +11,33 @@ body {
 
 #header {
 	margin-top:0 !important;
+	width:100vw;
+	position:fixed;
+}
+
+.navbar-default {
+	border:none;
+}
+.home-jumbo {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+/* Footer */
+.footer {
+	background-color: #000;
+}
+#footer {
+	border:none !important;
+	margin-top:0;
+}
+
+/* Containers */
+.outer-container {
+	width: 100vw;
+}
+.home-cont {
+	height:100vh;
 }
