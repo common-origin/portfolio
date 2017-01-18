@@ -7,6 +7,8 @@
 		<title>sidechain-portfolio</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="styles/component.css" />
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
@@ -100,6 +102,12 @@
 			//- them specifically here, instead of bootstrap-3.3.5.min.js
 		--}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+
+		<script src="/js/utils/rAF.js"></script>
+		<script src="/js/utils/easing.js"></script>
+		<script src="/js/PrismSlider.js"></script>
+		<script src="/js/slideshow.js"></script>
+
 		{{{isAdminEditorJS user}}}
 	</body>
 </html>

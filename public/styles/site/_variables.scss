@@ -1,6 +1,6 @@
 // Override Bootstrap variables in this file, e.g.
 
-$font-size-base: 14px;
+$font-size-base: 12px;
 
 body {
     background-color: #fff !important;
@@ -37,14 +37,21 @@ body {
 	margin-bottom:0;
 }
 
+
+
+
 /* Footer */
 .footer {
-	background-color: #888;
+	background-color: #000;
 }
 #footer {
 	border:none !important;
-	margin-top:0;
+	margin-top:0 !important;
 }
+
+
+
+
 
 /* Containers */
 .outer-container {
@@ -56,23 +63,42 @@ body {
 .header-cont, .contact-cont, .gallery-cont {
 	padding-top:150px;
 }
+.slider-cont {
+	width:100%;
+	padding: 0;
+}
+
+
+
+
 /* Projects */
 .project-img {
 	width:100%;
 	height:auto;
 }
 
+
+
+
+
 /*back btn */
 .back-btn {
 	position:absolute;
 	top:70px;
-	left:100px;
+	left:15px;
 }
+
+
+
+
 
 /* Form */
 .form-control {
 	border-radius:0 !important;
 }
+
+
+
 
 /* Post */
 .post-cont {
@@ -83,6 +109,13 @@ body {
 .post {
 	.p-header{
 		margin-top:40px;
+		.p-desc{
+			font-style: italic;
+			padding-bottom:30px;////.
+		}
+	}
+	.post-words{
+		max-width:800px;
 	}
 }
 .head-img {
@@ -96,4 +129,7 @@ body {
 }
 .proj-cont {
 	padding: 0;
+}
+.project-thumbs {
+	padding:0 !important;
 }
