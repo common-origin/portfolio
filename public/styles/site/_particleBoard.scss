@@ -11,11 +11,21 @@
 #particle-canvas{
   position:absolute;
 }
-
-
 .sc-logo-cont {
+    opacity:.5;
+    padding-top: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+    &:hover{
+      fill:#000;
+      opacity:.9;
+      transition: ease all 1s;
+      -webkit-transition: ease all 1s;
+      -moz-transition: ease all 1s;
+    }
 }

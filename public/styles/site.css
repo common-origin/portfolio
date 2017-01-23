@@ -5883,10 +5883,12 @@ body {
   height: auto; }
 
 .proj-cont {
-  padding-top: 120px; }
+  /*padding-top: 120px;*/ }
 
 .project-thumbs {
   padding: 0 !important; }
+  .project-thumbs h2 {
+    font-size: 16px; }
 
 .project-thumb {
   padding-bottom: 30px; }
@@ -6135,10 +6137,21 @@ body {
   position: absolute; }
 
 .sc-logo-cont {
+  opacity: .5;
+  padding-top: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  transition: ease all 1s;
+  -webkit-transition: ease all 1s;
+  -moz-transition: ease all 1s; }
+  .sc-logo-cont:hover {
+    fill: #000;
+    opacity: .9;
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -moz-transition: ease all 1s; }
 
 #header {
   margin-top: 30px; }

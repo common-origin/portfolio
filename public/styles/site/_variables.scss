@@ -82,10 +82,13 @@ body {
 	height:auto;
 }
 .proj-cont {
-	padding-top: 120px;
+	/*padding-top: 120px;*/
 }
 .project-thumbs{
 	padding:0 !important;
+	h2{
+		font-size:16px;
+	}
 }
 .project-thumb {
 	padding-bottom:30px;

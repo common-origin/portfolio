@@ -7,7 +7,7 @@
 	width: 100%;
 	max-width: 100%;
 	height: 0;
-	padding-top:100vh;
+	padding-top:50%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,9 +52,6 @@
     margin: 0;
     color:#fff;
     font-size:16px;
-}
-.slider-cont{
-	display:none;
 }
 
 /* Logo */
@@ -139,7 +136,7 @@
 	}
 
 	.wrapper .prism-slider {
-		padding-top: 80%;
+		padding-top: 55%;
 	}
 
 	.navigation li {
