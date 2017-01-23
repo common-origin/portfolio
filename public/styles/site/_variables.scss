@@ -42,7 +42,9 @@ body {
 
 /* Footer */
 .footer {
-	background-color: #000;
+	background-color: transparent;
+	position: absolute;
+    bottom: 0;
 }
 #footer {
 	border:none !important;

@@ -53,6 +53,9 @@
     color:#fff;
     font-size:16px;
 }
+.slider-cont{
+	display:none;
+}
 
 /* Logo */
 .logo {
