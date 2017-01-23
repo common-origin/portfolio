@@ -33,7 +33,7 @@ var slideshow = (function(window, undefined) {
     element: null,
     sizes: {
       w: 1200,
-      h: 960
+      h: 500
     }
   };
 

@@ -7,7 +7,7 @@
 	width: 100%;
 	max-width: 100%;
 	height: 0;
-	padding-top:80%;
+	padding-top:100vh;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,14 +16,14 @@
 .prism-slider canvas {
 	width: 100%;
 	position: absolute;
-	top: 0;
+	top: 50px;
 	left: 0;
 }
 
 .navigation {
 	width: 100%;
 	position: absolute;
-	bottom: 5%;
+	top: 500px;
 	text-align: center;
 	list-style: none;
 	z-index: 1;
@@ -42,6 +42,16 @@
 
 .navigation .active {
 	background: #eceff1;
+}
+
+.slider-header {
+	position: absolute;
+	top:70px;
+	z-index: 10000000;
+	padding-left: 20px;
+    margin: 0;
+    color:#fff;
+    font-size:16px;
 }
 
 /* Logo */

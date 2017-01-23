@@ -30,6 +30,11 @@ keystone.init({
 
 	'cloudinary config': 'cloudinary://738933918968631:oC_89nSsALkzCJ40N9n2cmWTkx8@dl6hxxyrn',
 
+	'wysiwyg additional plugins': 'paste',
+    'wysiwyg additional options': {
+    'paste_data_images': true
+  }
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
