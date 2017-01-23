@@ -65,12 +65,9 @@ body {
 }
 
 // Slider
-
-
 .slider-cont {
 	padding: 0;
 	.wrapper{
-		width: 1170px;
 	}
 }
 
@@ -92,6 +89,34 @@ body {
 	padding-bottom:30px;
 }
 
+// Blog Page 
+
+/* Dropdown Filter */
+.cat-menu{
+	.trigger {
+	    position: absolute;
+    	top: -40px;
+    	right: 0;
+    	border-radius:0;
+	}	
+	.dropdown-menu{
+		position: absolute;
+	    top: -42px;
+	    right: 125px;
+	    left: auto;
+	    margin: 0;
+	    text-align: center;
+	    background-color:transparent;
+	    border:none;
+	    box-shadow:none;
+		.cat-menu-li{
+			display:inline-block;
+		}
+	}
+	.dropdown-menu li a {
+		padding:3px 10px;
+	}
+}
 
 
 
