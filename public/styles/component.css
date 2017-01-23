@@ -22,6 +22,7 @@
 
 .navigation {
 	width: 100%;
+	padding-left: 0;
 	position: absolute;
 	top: 500px;
 	text-align: center;
@@ -142,5 +143,11 @@
 	.navigation li {
 		width: 24px;
 		height: 24px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.wrapper .prism-slider {
+		padding-top: 57%;
 	}
 }
