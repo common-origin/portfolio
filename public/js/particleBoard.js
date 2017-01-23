@@ -14,7 +14,7 @@
 var numberParticlesStart = 1000;
 var particleSpeed = 0.3;
 var velocity = 0.9;
-var circleWidth = 50;
+var circleWidth = 200;
 
 /* ---- INIT ---- */
 var particles = [];
