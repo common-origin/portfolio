@@ -33,7 +33,7 @@ keystone.init({
 	'wysiwyg additional plugins': 'paste',
     'wysiwyg additional options': {
     'paste_data_images': true
-  }
+  },
 
 	'auto update': true,
 	'session': true,
