@@ -15,7 +15,7 @@ var numberParticlesStart = 1000;
 var particleSpeed = 0.3;
 var velocity = 0.9;
 var reactangleWidth = 120;
-var reactangleHeight = 80;
+var reactangleHeight = 75;
 
 /* ---- INIT ---- */
 var particles = [];
