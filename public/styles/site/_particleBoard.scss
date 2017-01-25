@@ -12,7 +12,7 @@
   position:absolute;
 }
 .sc-logo-cont {
-    opacity:.65;
+    opacity:1;
     padding-top: 10px;
     position: absolute;
     top: 50%;
@@ -23,7 +23,7 @@
     -moz-transition: ease all 1s;
     &:hover{
       fill:#000;
-      opacity:.9;
+      opacity:1;
       transition: ease all 1s;
       -webkit-transition: ease all 1s;
       -moz-transition: ease all 1s;
