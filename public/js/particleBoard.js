@@ -14,7 +14,8 @@
 var numberParticlesStart = 1000;
 var particleSpeed = 0.3;
 var velocity = 0.9;
-var circleWidth = 200;
+var reactangleWidth = 120;
+var reactangleHeight = 80;
 
 /* ---- INIT ---- */
 var particles = [];
@@ -105,7 +106,7 @@ function init() {
   var i = undefined;
   for (i = 0; i < numberParticlesStart; i++) {
     var angle = Math.random() * 360;
-    particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * circleWidth, windowHeight * 0.5 - Math.sin(angle) * circleWidth));
+    particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidth, windowHeight * 0.5 - Math.sin(angle) * reactangleHeight));
   }
 }
 init();
