@@ -5853,9 +5853,9 @@ body {
   border-radius: 0 !important; }
 
 .navbar-toggle {
+  margin-right: 10px;
   border: none;
-  z-index: 1000000000;
-  margin-right: 0; }
+  z-index: 1000000000; }
 
 .sc-nav-collapse {
   overflow-x: visible;
@@ -5892,6 +5892,14 @@ body {
 .navbar-default .navbar-nav > .active > a {
   background-color: transparent; }
 
+.navbar-brand h3 {
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: .1rem;
+  font-weight: bold; }
+
 .home-jumbo {
   position: absolute;
   top: 50%;
@@ -5906,6 +5914,9 @@ body {
   float: none;
   margin-left: auto;
   margin-right: auto; }
+
+.contect-header {
+  text-align: center; }
 
 /* Footer */
 .footer {
@@ -6250,7 +6261,7 @@ h1 {
 .card {
   float: left;
   padding: 0 1.7rem;
-  width: 50%; }
+  /*width: 50%;*/ }
   .card .menu-content {
     margin: 0;
     padding: 0;
