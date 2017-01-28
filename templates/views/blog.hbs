@@ -75,7 +75,7 @@
 
 		<div class="row">
 		{{# each data.posts.results}}
-			<div class="col-xs-12 col-sm-6 project-card card">
+			<div class="col-xs-12 col-sm-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
 				<div class="wrapper" style="background-image:url({{{cloudinaryUrl image crop='fit' }}});" href="{{postUrl slug}}">
 					<div class="data">
 						<div class="content">

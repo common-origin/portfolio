@@ -42,10 +42,10 @@ var slideshow = (function(window, undefined) {
    * @type {Array}
    */
   var slides = [
-    'images/mars-1.jpg',
-    'images/mars-2.jpg',
-    'images/mars-3.jpg',
-    'images/mars-4.jpg'
+    '/images/mars-1.jpg',
+    '/images/mars-2.jpg',
+    '/images/mars-3.jpg',
+    '/images/mars-4.jpg'
   ];
 
   /**
@@ -54,14 +54,14 @@ var slideshow = (function(window, undefined) {
    */
   var masks = [
     {
-      source: 'images/masks/sidechain-logo-1.svg',
+      source: '/images/masks/sidechain-logo-1.svg',
       effects: {
         flip: 'Y',
         rotate: 167 // degrees
       }
     },
     {
-      source: 'images/masks/sidechain-logo-2.svg',
+      source: '/images/masks/sidechain-logo-2.svg',
       effects: {
         flip: 'X',
         rotate: 90 // degrees
