@@ -6,12 +6,14 @@
 /**/var windowWidth = canvas.width = window.innerWidth;
 /**/var windowHeight = canvas.height = window.innerHeight;
 /**/canvas.id = 'particle-canvas';
-/**/document.body.insertBefore(canvas, document.body.firstChild);
+/*var canvasArea = document.getElementById("myList");*/
+/*document.body.insertBefore(canvas, document.body.firstChild);*/
+/**/document.getElementById('canvasContainer').appendChild(canvas);
 /**/ /* ---- CORE END ---- */
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 1000;
+var numberParticlesStart = 800;
 var particleSpeed = 0.3;
 var velocity = 0.9;
 var reactangleWidth = 120;

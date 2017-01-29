@@ -5936,6 +5936,8 @@ body {
 /* Containers */
 .outer-container {
   width: 100vw; }
+  .outer-container.blur {
+    filter: blur(10px); }
 
 .home-cont {
   height: 100%; }
@@ -6207,7 +6209,8 @@ body {
   margin: 0; }
 
 #particle-canvas {
-  position: absolute; }
+  position: absolute;
+  top: 0; }
 
 .sc-logo-cont {
   z-index: 100;

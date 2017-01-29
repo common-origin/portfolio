@@ -29,7 +29,7 @@
 				<div role="navigation" class="navbar navbar-default">
 					<div class="nav-container">
 						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".sc-nav-collapse" class="navbar-toggle">
+							<button type="button" data-toggle="collapse" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -38,14 +38,14 @@
 						<div class="collapse sc-nav-collapse">
 							<ul class="nav navbar-nav sc-nav-menu">
 								{{# each navLinks}}
-									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}">{{ label }}</a>
 									</li>
 								{{/each}}
 								{{#if user}}
-									<li><a href="/keystone/signout">Sign Out</a></li>
+									<li id="menuItem"><a href="/keystone/signout">Sign Out</a></li>
 								{{else}}
-									<li><a href="/keystone/signin">Sign In</a></li>
+									<li id="menuItem"><a href="/keystone/signin">Sign In</a></li>
 								{{/if}}
 							</ul>
 						</div>
@@ -108,6 +108,7 @@
 		<script src="/js/slideshow.js"></script>
 		<script src="/js/mouseScroll.js"></script>
 		<script src="/js/particleBoard.js"></script>
+		<script src="/js/customScripts.js"></script>
 
 		{{{isAdminEditorJS user}}}
 	</body>
