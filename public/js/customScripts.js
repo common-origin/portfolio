@@ -4,13 +4,13 @@ $( document ).ready(function() {
 
 	menuBtn.addEventListener('click', function() {
 	    $('.outer-container').toggleClass('blur');
-	}, false),
+	}, false);
 	menuBtn.addEventListener('click', function() {
 	    $('.sc-nav-menu').toggleClass('bg-init');
-	}, false),
+	}, false);
 	menuBtn.addEventListener('click', function() {
 	    $('.sc-nav-collapse').toggleClass('vsbl');
-	}, false),
+	}, false);
 
 	menuListItem.addEventListener('click', function() {
 		$('.outer-container').removeClass('blur');
@@ -41,3 +41,17 @@ $(function() {
     });
 });
 
+
+// Entry Button Animation Trigger
+
+$( document ).ready(function() {
+    var enterBtn = document.getElementById('enter-btn');
+
+	enterBtn.addEventListener('click', function() {
+	    $('.menu-bg').toggleClass('expand');
+	}, false);
+	enterBtn.addEventListener('click', function() {
+	    $('.sc-logo-cont').toggleClass('svg-anim');
+	}, false);
+
+});

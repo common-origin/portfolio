@@ -2,7 +2,7 @@
 	<!--<div class="container header-cont">
 		<h1>Projects</h1>
 	</div>-->
-	<div class="container slider-cont">
+	<div class="slider-cont">
 		<div class="content">
 			<div class="cache">
 				<!-- masks -->
@@ -27,7 +27,7 @@
 			<div class="col-sm-12 filter-cont">
 				<div class="dropdown cat-menu">
 					<button class="btn btn-default dropdown-toggle trigger" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    				<span>CATEGORIES</span>
+	    				<span>Work</span>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						<li class="cat-menu-li"><a href="/blog" class="">All Categories</a></li>
@@ -70,7 +70,7 @@
 
 		<div class="row">
 		{{# each data.posts.results}}
-			<div class="col-xs-12 col-sm-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
+			<div class="col-xs-12 col-md-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
 				<div class="wrapper" style="background-image:url({{{cloudinaryUrl image crop='fit' }}});" href="{{postUrl slug}}">
 					<div class="data">
 						<div class="content">
