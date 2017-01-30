@@ -13,7 +13,7 @@
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 100;
+var numberParticlesStart = 1000;
 var particleSpeed = 0.3;
 var velocity = 0.9;
 var reactangleWidth = 115;
@@ -127,3 +127,7 @@ window.addEventListener('click', function () {
 });
 
 loop();
+
+
+
+

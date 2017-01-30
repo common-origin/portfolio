@@ -24,6 +24,23 @@ $( document ).ready(function() {
 
 });
 
+// Close Menu Button 
+
+$( document ).ready(function() {
+    var closeBtn = document.getElementById('closeMenu');
+
+	closeBtn.addEventListener('click', function() {
+		$('.outer-container').removeClass('blur');
+	}, false);
+	closeBtn.addEventListener('click', function() {
+		$('.sc-nav-menu').removeClass('bg-init');
+	}, false);
+	closeBtn.addEventListener('click', function() {
+		$('.sc-nav-collapse').removeClass('vsbl');
+	}, false);
+
+});
+
 
 // Navbar Scroll 
 
@@ -50,8 +67,14 @@ $( document ).ready(function() {
 	enterBtn.addEventListener('click', function() {
 	    $('.menu-bg').toggleClass('expand');
 	}, false);
+	
 	enterBtn.addEventListener('click', function() {
 	    $('.sc-logo-cont').toggleClass('svg-anim');
 	}, false);
 
 });
+
+
+
+
+

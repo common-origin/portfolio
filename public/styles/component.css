@@ -32,15 +32,14 @@
 	text-align: center;
 	list-style: none;
 	z-index: 1;
+	margin-top: -30px;
 }
 
 .navigation li {
-	border: 1px solid #eceff1;
-	width: 10px !important;
-	height: 10px !important;
+	width: 20px !important;
+	height: 8px !important;
 	margin: 0 5px;
 	background: #52525a;
-	border-radius: 50%;
 	display: inline-block;
 	cursor: pointer;
 }
