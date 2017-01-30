@@ -30,13 +30,13 @@
 				<div role="navigation" class="navbar navbar-default">
 					<div class="nav-container">
 						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
+							<button type="button" data-toggle="menu-hide" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
 							<a href="/" class="navbar-brand"><h3>sidechain</h3></a>
 						</div>
-						<div class="collapse sc-nav-collapse">
+						<div class="menu-hide sc-nav-collapse">
 							<ul class="nav navbar-nav sc-nav-menu">
 								{{# each navLinks}}
 									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>

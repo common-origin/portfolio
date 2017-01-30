@@ -6,10 +6,23 @@
 .navbar-header{
 	width:100% !important;
 }
-.collapsing {
-  position: absolute;
-  width:100vw;
-  height: 100vh;
-  overflow: hidden;
-  transition:ease all .3s;
+.sc-nav-menu.bg-init{
+	background-color: rgba(255, 255, 255, 0.9);
+    transition:ease all .5s;
+    -webkit-transition:ease all .5s;
+    -moz-transition:ease all .5s;	
+}
+.menu-hide{
+	visibility:hidden;
+	opacity:0;
+	transition:ease all .5s;
+    -webkit-transition:ease all .5s;
+    -moz-transition:ease all .5s;
+}
+.menu-hide.vsbl{
+	visibility:visible;
+	opacity:1;
+    transition:ease all .5s;
+    -webkit-transition:ease all .5s;
+    -moz-transition:ease all .5s;	
 }
