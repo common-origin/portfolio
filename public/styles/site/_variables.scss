@@ -8,6 +8,9 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+a:active, a:hover, a:focus {
+	text-decoration:none !important;
+}
 
 #header {
 	margin-top:0 !important;
@@ -28,6 +31,9 @@ body {
 	background-color:rgba(255, 255, 255, 0);
 	border:none;
 	z-index:1000;
+	transition:ease all .4s;
+	-webkit-transition:ease all .4s;
+	-moz-transition:ease all .4s;
 }
 .navbar {
 	border-radius: 0 !important;
@@ -81,16 +87,14 @@ body {
     font-weight: bold;
 }
 
-
-.home-jumbo {
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	text-align: center;
-	background-color:transparent;
-	margin-bottom:0;
+/* Navbar Scrolling Function */
+.scrolled{
+	background-color:#fff;
+	transition:ease all .4s;
+	-webkit-transition:ease all .4s;
+	-moz-transition:ease all .4s;
 }
+
 
 
 /* Contact Page */

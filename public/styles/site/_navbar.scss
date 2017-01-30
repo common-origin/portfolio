@@ -1,10 +1,7 @@
-
-
-
 // Nav Bar
 
 .navbar-toggle {
-    display: block !important;
+  display: block !important;
 }
 .navbar-header{
 	width:100% !important;
@@ -14,10 +11,5 @@
   width:100vw;
   height: 100vh;
   overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease; 
+  transition:ease all .3s;
 }

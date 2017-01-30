@@ -13,7 +13,7 @@
   top:0;
 }
 .sc-logo-cont {
-    z-index: 100;
+    z-index: 10001;
     opacity:1;
     padding-top: 10px;
     position: absolute;
@@ -23,24 +23,32 @@
     transition: ease all 1s;
     -webkit-transition: ease all 1s;
     -moz-transition: ease all 1s;
-    &:hover{
-
-    }
 }
 
-.bg-color-block{
-  opacity:1;
-  background-color:#000;
-  width: 100vw;
-  height: 100vh;
-  transition:ease all 3s;
-  -webkit-transition:ease all 3s;
-  -moz-transition:ease all 3s;
+/* SVG Logo */
+/*
+.sc-logo-cont:hover .bg-color-block {
+    opacity:1;
+    transition:ease all 3s;
+    -webkit-transition:ease all 3s;
+    -moz-transition:ease all 3s;   
 }
+.logo-title {
+  opacity:0;
+  color:#fff;
+  letter-spacing: .2em;
+  text-align: center;
+  margin:0;
+  transition: 2s all;
+    -webkit-transition: 2s all;
+    transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+    -webkit-transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+#svg-wrapper:hover .logo-title {
+    opacity: 1;
+    letter-spacing: .8em;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;  
+}*/
 
-.sc-logo-cont:hover .bg-color-block{
-  opacity:1;
-  transition:ease all 3s;
-  -webkit-transition:ease all 3s;
-  -moz-transition:ease all 3s;
-}
+
