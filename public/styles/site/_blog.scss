@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
+
+.card{
+	.text, .title{
+		font-family:'Playfair Display', serif;
+	}
+	.author{
+		font-family:'Archivo Black', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: .3rem;
+		font-size: 8px;
+	}
+}
+
