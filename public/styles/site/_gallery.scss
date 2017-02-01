@@ -1,0 +1,40 @@
+// GALLERY SCSS FILE
+
+
+// MIXINS
+
+// Center Mixin
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// VARIABLES
+
+$font-stack:;
+$primary-color:;
+$secondary-color:;
+
+
+// Image Sizing
+
+.masonry{
+    column-count: 3;
+    column-gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gallery-image {
+    display: inline-block !important;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    img{
+    	display:inline-block !important;
+    	vertical-align:top !important;
+    }
+}

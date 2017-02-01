@@ -1,4 +1,6 @@
-/* PrismSlider */
+/* PRISM SLIDER */
+
+
 .cache {
 	display: none;
 }
@@ -59,7 +61,11 @@
     font-weight: bold;
 }
 
-/* Logo */
+
+
+
+/* LOGO */
+
 .logo {
 	position: absolute;
 	z-index: 20;
@@ -73,39 +79,4 @@
 }
 
 
-
-/* Media Queries */
-@media screen and (max-width: 1024px) {
-	.wrapper:after {
-		display: none;
-	}
-
-	.wrapper .copy, .wrapper .prism-slider {
-		width: 100%;
-		float: none;
-	}
-
-	.wrapper .copy:before {
-		display: none;
-	}
-
-	.wrapper .copy article {
-		position: relative;
-		padding: 50px;
-		display: block;
-	}
-
-	.wrapper .copy h2 {
-		font-size: 8vw;
-	}
-
-	.wrapper .copy p:first-of-type {
-		font-size: 4vw;
-	}
-
-	.navigation li {
-		width: 24px;
-		height: 24px;
-	}
-}
 
