@@ -7,12 +7,11 @@ var Types = keystone.Field.Types;
  */
 
 var Feed = new keystone.List('Feed', {
-	map: { name: 'title' },
-	autokey: { from: 'title', path: 'slug', unique: true },
+	autokey: { from: 'name', path: 'key', unique: true },
 });
 
 Feed.add({
-	title: { type: String, required: true },
+	name: { type: String, required: true },
 	publishedDate: { type: Date, default: Date.now },
 	images: { type: Types.CloudinaryImages },
 	url:{

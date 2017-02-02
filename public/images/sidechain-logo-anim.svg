@@ -1,41 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="484px" height="326.538px" viewBox="0 0 484 326.538" enable-background="new 0 0 484 326.538" xml:space="preserve">
-<title>Asset 13</title>
-<g id="Layer_2">
-	<g id="Layer_1-2">
-		<path d="M126.67,116.769h178.21L373,67.519c-4.892-1.292-9.942-1.882-15-1.75H126.67c-29.35,0-53.67,23.65-53.67,53v88.86
-			c0,23.87,16.12,43.92,37.79,50.66l67.88-49.52h-52c-0.78,0-1.67-0.36-1.67-1.13v-88.87C125,117.999,125.89,116.769,126.67,116.769
-			z">
-
-			<animateTransform id="part-1"
-				attributeName="transform"
-				attributeType="XML"
-				type="translate"
-				begin=".5"
-				dur="5s"
-				values="0,0;14,-8;14,-8"
-				repeatCount="0"/>
 
 
-		</path>
-
-		<path d="M373.71,67.699h-0.19l-0.74-0.2l-67.9,49.27H358c0.78,0,1,1.23,1,2v88.86c0,0.78-0.25,1.13-1,1.13H178.67l-67.88,49.54
-			l0.79,0.23c4.898,1.459,9.979,2.213,15.09,2.24H358c29.271,0,53-23.729,53-53c0-0.043,0-0.087,0-0.13v-88.87
-			C411.024,95.44,395.939,74.78,373.71,67.699z">
-
-			<animateTransform id="part-1"
-				attributeName="transform"
-				attributeType="XML"
-				type="translate"
-				begin=".5"
-				dur="5s"
-				values="0,0;-14,8;-14,8"
-				repeatCount="0"/>
 
 
-		</path>
-	</g>
-</g>
-</svg>
+
+
+		<svg version="1.1" id="black-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="400px" height="300px" viewBox="0 0 484 326.538" enable-background="new 0 0 484 326.538" xml:space="preserve">
+		<title>Asset 13</title>
+		<g id="Layer_2">
+			<g id="Layer_1-2">
+				<path d="M126.67,116.769h178.21L373,67.519c-4.892-1.292-9.942-1.882-15-1.75H126.67c-29.35,0-53.67,23.65-53.67,53v88.86
+					c0,23.87,16.12,43.92,37.79,50.66l67.88-49.52h-52c-0.78,0-1.67-0.36-1.67-1.13v-88.87C125,117.999,125.89,116.769,126.67,116.769
+					z">
+					<animateTransform id="part-1"
+						attributeName="transform"
+						attributeType="XML"
+						type="translate"
+						begin="5s"
+						dur="3s"
+						values="0,0;14,-8;14,-7.9"
+						repeatCount="0"
+						fill="freeze"
+						restart="never"/>
+				</path>
+
+				<path d="M373.71,67.699h-0.19l-0.74-0.2l-67.9,49.27H358c0.78,0,1,1.23,1,2v88.86c0,0.78-0.25,1.13-1,1.13H178.67l-67.88,49.54
+					l0.79,0.23c4.898,1.459,9.979,2.213,15.09,2.24H358c29.271,0,53-23.729,53-53c0-0.043,0-0.087,0-0.13v-88.87
+					C411.024,95.44,395.939,74.78,373.71,67.699z">
+
+					<animateTransform id="part-2"
+						attributeName="transform"
+						attributeType="XML"
+						type="translate"
+						begin="5s"
+						dur="3s"
+						values="0,0;-14,8;-14,7.9"
+						repeatCount="0"
+						fill="freeze"
+						restart="never"/>
+				</path>
+			</g>
+		</g>
+		</svg>

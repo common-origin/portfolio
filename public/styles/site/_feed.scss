@@ -55,7 +55,7 @@ $black: #000;
 
 // Image Sizing
 
-.masonry{
+/*.masonry{
     column-count: 3;
     column-gap: 15px;
     padding-left: 15px;
@@ -73,3 +73,71 @@ $black: #000;
     	vertical-align:top !important;
     }
 }
+*/
+
+
+// Masonry Image Loading
+
+
+.feed-col{
+  margin-left:-8px;
+  margin-right:-8px;
+  margin-top: -8px;
+}
+
+
+.grid {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid li {
+  display: block;
+  float: left;
+  padding: 8px;
+  width: 33.3333%;
+  opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+  width:100%;
+  overflow: hidden;
+}
+
+
+
+
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+
+

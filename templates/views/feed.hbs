@@ -15,14 +15,16 @@
 						<img src="{{cloudinaryUrl heroImage width='680' height='680'}}" class="">
 					</div>
 					{{/if}}-->
-					<div class="masonry">
-					{{#each feeds}}
-							<div class="gallery-image fade-in-on-load">
-							{{#each images}}	
-								<img src="{{cloudinaryUrl crop='fit'}}" class="">
-							{{/each}}	
-							</div>
-					{{/each}}
+					<div class="col-xs-12 feed-col">
+					
+							<ul class="grid effect-2" id="grid">
+							{{#each feeds}}
+								{{#each images}}	
+									<li><a href="#"><img src="{{cloudinaryUrl crop='fit'}}"></a></li>
+								{{/each}}	
+							{{/each}}
+							</ul>
+					
 					</div>
 			</div>
 			

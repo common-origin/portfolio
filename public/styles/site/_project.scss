@@ -82,9 +82,14 @@ $black: #000;
 		margin-bottom:2rem;
 		width:100%;
 	}
-	.half{
+	.half, .full{
 		padding:0;
 	}
 }
 
+.cp_embed_wrapper {
+	.embed-nav.group{
+		display:none !important;
+	}
+}
 
