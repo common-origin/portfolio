@@ -1,0 +1,75 @@
+// GALLERY SCSS FILE
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
+
+// MIXINS
+
+// Center Mixin
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// VARIABLES
+
+$font-head:'Playfair Display', serif;
+$font-subhead:'Archivo Black', sans-serif;
+$font-body:'Playfair Display', serif;
+$primary-color:;
+$secondary-color:;
+$white: #fff;
+$black: #000;
+
+
+// IMAGE FADE IN
+
+.fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
+@keyframes fadeInOnLoad {
+0%,50% {opacity: 0;padding-top:20px;}
+100% {opacity: 1;padding-top:0px;}
+}
+
+
+
+// Gallery Fonts
+
+.gallery-cont h1 {
+    font-family:$font-head;
+}
+
+
+
+// Image Sizing
+
+.masonry{
+    column-count: 3;
+    column-gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gallery-image {
+    display: inline-block !important;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    img{
+      width:100%;
+    	display:inline-block !important;
+    	vertical-align:top !important;
+    }
+}

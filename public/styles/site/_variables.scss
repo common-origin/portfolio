@@ -231,51 +231,6 @@ a:active, a:hover, a:focus {
 
 
 
-
-/* Post */
-.post-cont {
-	.proj-cont {
-	    padding-top: 120px;
-	}
-	.row{
-		margin:0;
-	}
-}
-.post {
-	.p-header{
-		margin-top:40px;
-		.p-desc{
-			font-style: italic;
-			padding-bottom:30px;
-		}
-	}
-	.post-words{
-		padding: 0 0 40px 0;
-		.post-categories{
-			font-size:12px;
-			font-style: italic;
-		}
-		.p-sub-head{
-			font-weight: 700;
-			margin-top:0;
-		}
-	}
-	.img-container{
-		img{
-			margin-bottom:1rem;
-			width:100%;
-		}
-	}
-}
-.head-img {
-	top:0;
-	margin:0 !important;
-}
-.p-title {
-	text-transform:uppercase;
-	font-weight: 700;
-}
-
 /* Loading Page Fuck Around */
 
 .inner-container{

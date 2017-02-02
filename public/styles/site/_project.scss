@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
+
+// MIXINS
+
+// Center Mixin
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// VARIABLES
+
+$font-head:'Playfair Display', serif;
+$font-subhead:'Archivo Black', sans-serif;
+$font-body:'Playfair Display', serif;
+$primary-color:;
+$secondary-color:;
+$white: #fff;
+$black: #000;
+
+
+
+/* Post */
+.post-cont {
+	.proj-cont {
+	    padding-top: 120px;
+	}
+	.row{
+		margin:0;
+	}
+}
+.post {
+	.p-header{
+		margin-top:40px;
+		.p-desc{
+			font-style: italic;
+			padding-bottom:30px;
+		}
+	}
+	.post-words{
+		font-family:$font-body;
+		padding: 0 0 40px 0;
+		.post-categories{
+			font-family:$font-body;
+			font-size:12px;
+			font-style: italic;
+		}
+		.p-sub-head{
+			font-family:$font-subhead;
+			font-weight: 500;
+			margin-top:0;
+		}
+	}
+}
+
+.p-title {
+	text-transform:uppercase;
+	font-weight: 700;
+}
+
+
+
+// Image Container
+
+.img-container{
+	margin-bottom:10rem;
+	img{
+		margin-bottom:2rem;
+		width:100%;
+	}
+	.half{
+		padding:0;
+	}
+}
+
+

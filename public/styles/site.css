@@ -5,7 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 html {
   font-family: sans-serif;
@@ -6008,40 +6009,6 @@ a:active, a:hover, a:focus {
 .form-control {
   border-radius: 0 !important; }
 
-/* Post */
-.post-cont .proj-cont {
-  padding-top: 120px; }
-
-.post-cont .row {
-  margin: 0; }
-
-.post .p-header {
-  margin-top: 40px; }
-  .post .p-header .p-desc {
-    font-style: italic;
-    padding-bottom: 30px; }
-
-.post .post-words {
-  padding: 0 0 40px 0; }
-  .post .post-words .post-categories {
-    font-size: 12px;
-    font-style: italic; }
-  .post .post-words .p-sub-head {
-    font-weight: 700;
-    margin-top: 0; }
-
-.post .img-container img {
-  margin-bottom: 1rem;
-  width: 100%; }
-
-.head-img {
-  top: 0;
-  margin: 0 !important; }
-
-.p-title {
-  text-transform: uppercase;
-  font-weight: 700; }
-
 /* Loading Page Fuck Around */
 .inner-container {
   position: absolute;
@@ -6304,10 +6271,10 @@ a:active, a:hover, a:focus {
   bottom: 35%; }
 
 .menu-close {
-  width: 140px;
-  height: 45px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
+  width: 120px;
+  height: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -6326,9 +6293,37 @@ a:active, a:hover, a:focus {
   color: #fff;
   transform: translateY(-7px); }
 
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+.fade-in-on-load {
+  animation-duration: 2.3s;
+  animation-name: fadeInOnLoad;
+  animation-timing-function: ease; }
+
+@keyframes fadeInOnLoad {
+  0%, 50% {
+    opacity: 0;
+    padding-top: 20px; }
+  100% {
+    opacity: 1;
+    padding-top: 0px; } }
+
+.gallery-cont h1 {
+  font-family: "Playfair Display", serif; }
+
+.masonry {
+  column-count: 3;
+  column-gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.gallery-image {
+  display: inline-block !important;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; }
+  .gallery-image img {
+    width: 100%;
+    display: inline-block !important;
+    vertical-align: top !important; }
 
 .card {
   float: left; }
@@ -6351,7 +6346,7 @@ h1 {
       top: 0;
       font-size: 10px;
       font-weight: 700;
-      font-family: 'Open Sans';
+      font-family: "Archivo Black", sans-serif;
       transform: translate(-50%, 0); }
   .card .wrapper {
     background-color: #fff;
@@ -6371,10 +6366,15 @@ h1 {
       position: relative;
       z-index: 1; }
   .card .author {
-    font-size: 12px; }
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 8px; }
   .card .title {
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: "Playfair Display", serif; }
   .card .text {
+    font-family: "Playfair Display", serif;
     height: 70px;
     margin: 0; }
   .card input[type='checkbox'] {
@@ -6448,29 +6448,42 @@ h1 {
     .project-card .menu-content span {
       top: -10px; }
 
-.masonry {
-  column-count: 3;
-  column-gap: 15px;
-  padding-left: 15px;
-  padding-right: 15px; }
+/* Post */
+.post-cont .proj-cont {
+  padding-top: 120px; }
 
-.gallery-image {
-  display: inline-block !important;
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px; }
-  .gallery-image img {
-    display: inline-block !important;
-    vertical-align: top !important; }
+.post-cont .row {
+  margin: 0; }
 
-.card .text, .card .title {
-  font-family: 'Playfair Display', serif; }
+.post .p-header {
+  margin-top: 40px; }
+  .post .p-header .p-desc {
+    font-style: italic;
+    padding-bottom: 30px; }
 
-.card .author {
-  font-family: 'Archivo Black', sans-serif;
+.post .post-words {
+  font-family: "Playfair Display", serif;
+  padding: 0 0 40px 0; }
+  .post .post-words .post-categories {
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    font-style: italic; }
+  .post .post-words .p-sub-head {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    margin-top: 0; }
+
+.p-title {
   text-transform: uppercase;
-  letter-spacing: .3rem;
-  font-size: 8px; }
+  font-weight: 700; }
+
+.img-container {
+  margin-bottom: 10rem; }
+  .img-container img {
+    margin-bottom: 2rem;
+    width: 100%; }
+  .img-container .half {
+    padding: 0; }
 
 #header {
   margin-top: 30px; }

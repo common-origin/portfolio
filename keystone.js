@@ -31,7 +31,7 @@ keystone.init({
 	'cloudinary config': 'cloudinary://738933918968631:oC_89nSsALkzCJ40N9n2cmWTkx8@dl6hxxyrn',
 	'embedly api key':  '6652f309e9c741c9810c4054ad82cafa',
 
-	'wysiwyg additional plugins': 'paste',
+	'wysiwyg additional plugins': 'paste, hr, media, code',
     'wysiwyg additional options': {
     'paste_data_images': true
   },
@@ -66,7 +66,7 @@ keystone.Email.defaults.templateEngine = require('handlebars');
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
-	galleries: 'galleries',
+	feeds: 'feeds',
 	enquiries: 'enquiries',
 	users: 'users',
 	videos: 'videos',
