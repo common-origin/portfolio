@@ -6034,6 +6034,7 @@ a:active, a:hover, a:focus {
   transform: translateX(-50%);
   top: 40%;
   width: 65%;
+  max-width: 700px;
   z-index: 1010; }
   .title-cont h3 {
     font-family: "Archivo Black", sans-serif;
@@ -6210,33 +6211,23 @@ a:active, a:hover, a:focus {
     margin-top: 5rem; } }
 
 .title-cont.allow .enter-subhead1 {
-  -webkit-animation: subhead-anim 1s 4s 1 forwards ease;
+  -webkit-animation: subhead-anim 1.5s 4s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 1s 4s 1 forwards ease;
+  -moz-animation: subhead-anim 1.5s 4s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 1s 4s 1 forwards ease;
+  -o-animation: subhead-anim 1.5s 4s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 1s 4s 1 forwards ease;
+  animation: subhead-anim 1.5s 4s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 .title-cont.allow .enter-subhead2 {
-  -webkit-animation: subhead-anim 1s 5s 1 forwards ease;
+  -webkit-animation: subhead-anim 1.5s 5s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 1s 5s 1 forwards ease;
+  -moz-animation: subhead-anim 1.5s 5s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 1s 5s 1 forwards ease;
+  -o-animation: subhead-anim 1.5s 5s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 1s 5s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-.title-cont.allow .enter-subhead3 {
-  -webkit-animation: subhead-anim 1s 6s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 1s 6s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 1s 6s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 1s 6s 1 forwards ease;
+  animation: subhead-anim 1.5s 5s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 @-webkit-keyframes logo-top {
@@ -6280,63 +6271,6 @@ a:active, a:hover, a:focus {
   /* Opera 12+ */
   animation: logo-top 3s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
-
-/* Center the loader */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s; }
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0px;
-    opacity: 1; } }
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0;
-    opacity: 1; } }
-
-#myDiv {
-  display: none;
-  text-align: center; }
 
 /* Lazy Image Loading */
 .fade-in-on-load {
