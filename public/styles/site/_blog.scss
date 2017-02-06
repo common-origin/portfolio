@@ -120,7 +120,7 @@ h1 {
   }
   .title {
     a {
-      color: lighten($black, 50%);
+      color:$black;
       &:hover{
         text-decoration:none !important;
         color:#000;
@@ -193,9 +193,6 @@ h1 {
 
 
 /* Projects */
-.proj-cont h1 {
-  font-family: "Playfair Display", serif;
-}
 
 .project-img {
   width:100%;
@@ -220,31 +217,45 @@ h1 {
 
 /* Dropdown Filter */
 .cat-menu{
-  .trigger {
-      position: absolute;
-      top: -40px;
-      border:none;
-      right:0;
-      &:hover {
-      }
-  } 
-  .dropdown-menu{
-    position: absolute;
-      top: -42px;
-      left: 50%;
-      transform:translateX(-50%);
-      margin: 0;
-      text-align: center;
-      background-color:transparent;
-      border:none;
-      box-shadow:none;
-    .cat-menu-li{
-      display:inline-block;
+    list-style:none;
+    display:inline-block;
+    ul{
+        padding-left:0;
     }
-  }
-  .dropdown-menu li a {
-    padding:3px 10px;
-  }
+    li{
+        padding-left:.8rem;
+        font-family:$font-body;
+        display:inline-block;
+    }
+    .cat-menu-li:first:child{
+        padding-left:0 !important;
+    }
+    li a {
+        color:#bbb;
+        transition: ease all .3s;
+        -webkit-transition: ease all .3s;
+        -o-transition: ease all .3s;
+        -moz-transition: ease all .3s;
+        &:hover{
+            color:#000;
+            transition: ease all .3s;
+            -webkit-transition: ease all .3s;
+            -o-transition: ease all .3s;
+            -moz-transition: ease all .3s;
+        }
+    }
+    span{
+        padding:0 10px 0 0;
+        color:$black;
+    }
 }
 
+.proj-cont {
+    .page-title{
+        font-family:$font-subhead;
+        font-weight: 500;
+        margin-top:0;
+        display: inline-block;
+    }
+}
 

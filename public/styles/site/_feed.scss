@@ -47,33 +47,14 @@ $black: #000;
 
 // Gallery Fonts
 
-.gallery-cont h1 {
-    font-family:$font-head;
+.page-title {
+    font-family:$font-subhead;
+    font-weight: 500;
+    margin-top:0;
+    display: inline-block;
 }
 
 
-
-// Image Sizing
-
-/*.masonry{
-    column-count: 3;
-    column-gap: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.gallery-image {
-    display: inline-block !important;
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    img{
-      width:100%;
-    	display:inline-block !important;
-    	vertical-align:top !important;
-    }
-}
-*/
 
 
 // Masonry Image Loading

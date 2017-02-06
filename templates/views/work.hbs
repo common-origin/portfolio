@@ -1,6 +1,16 @@
 <div class="outer-container proj-cont">
 	<div class="container">
-		<h1>Work</h1>
+		<h5 class="page-title">WORK</h5>
+		<div class="cat-menu">
+			<ul class="" aria-labelledby="dropdownMenu1">
+				<li class="cat-menu-li"><a href="/blog" class=""><span>|</span> All</a></li>
+				{{# each data.categories }}
+					<li class="cat-menu-li">
+						<a href="{{categoryUrl key}}" class="false" >{{name}}</a>
+					</li>	
+				{{/each}}
+			</ul>
+		</div>
 	</div>
 	<!--<div class="slider-cont fade-in-on-load">
 		<div class="content">
@@ -23,11 +33,11 @@
 		</div>
 	</div>-->
 	<div class="container">
-		<div class="row filter-section"> 
+		<!--<div class="row filter-section"> 
 			<div class="col-sm-12 filter-cont">
 				<div class="dropdown cat-menu">
 					<button class="btn btn-default dropdown-toggle trigger" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    				<span>Work</span>
+	    				<span>WORK</span>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						<li class="cat-menu-li"><a href="/work" class="">All Categories</a></li>
@@ -39,7 +49,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<!--<div class="row">
 			<div class="col-xs-12 project-thumbs">

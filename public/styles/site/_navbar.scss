@@ -92,11 +92,10 @@ $black: #000;
 }
 
 .work-btn{
-    display:none;
+    visibility:hidden;
+    opacity: 0;
 }
-.work-btn.switch{
-    display: block;
-}
+
 .enter-site-btn{
     display:block;
 }
