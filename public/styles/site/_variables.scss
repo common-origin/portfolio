@@ -191,7 +191,7 @@ a:active, a:hover, a:focus {
 	 height:100%;
 }
 .header-cont, .contact-cont, .gallery-cont, .proj-cont {
-	 padding-top:150px;
+	 padding-top:80px;
 }
 
 
@@ -262,9 +262,6 @@ a:active, a:hover, a:focus {
 }
 
 .home-cont #enter-btn {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     bottom: 5%;
     z-index: 1010;
 }
@@ -299,7 +296,7 @@ a:active, a:hover, a:focus {
     left: 50%;
     transform: translateX(-50%);
     top: 40%;
-    width: 80%;
+    width: 65%;
     z-index: 1010;
     h3 {
       font-family:$font-subhead;
@@ -309,11 +306,12 @@ a:active, a:hover, a:focus {
     	letter-spacing: 1rem;
     	text-align:center;
       opacity:0;
+      margin-bottom: 6rem;
     }
-    .enter-subhead {
+    .enter-subhead1, .enter-subhead2 {
         font-family:$font-body;
         margin: 5rem 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #000;
         text-align: center;
         opacity:0;
@@ -417,11 +415,23 @@ a:active, a:hover, a:focus {
     100% { opacity: 1;margin-top:5rem; }
 }
 
-.title-cont.allow .enter-subhead {
+.title-cont.allow .enter-subhead1 {
     -webkit-animation: subhead-anim 1s 4s 1 forwards ease; /* Safari 4+ */
     -moz-animation:    subhead-anim 1s 4s 1 forwards ease; /* Fx 5+ */
     -o-animation:      subhead-anim 1s 4s 1 forwards ease; /* Opera 12+ */
     animation:         subhead-anim 1s 4s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+.title-cont.allow .enter-subhead2 {
+    -webkit-animation: subhead-anim 1s 5s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 1s 5s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 1s 5s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 1s 5s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+.title-cont.allow .enter-subhead3 {
+    -webkit-animation: subhead-anim 1s 6s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 1s 6s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 1s 6s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 1s 6s 1 forwards ease; /* IE 10+, Fx 29+ */
 }
 
 
@@ -460,7 +470,59 @@ a:active, a:hover, a:focus {
 }
 
 
+// Page Loader
 
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
 
 
 /* Lazy Image Loading */

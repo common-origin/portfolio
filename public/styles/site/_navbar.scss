@@ -104,7 +104,7 @@ $black: #000;
     display:none;
 }
 
-.menu-close:hover {
+.menu-close:hover, .enter-site-btn:hover, .work-btn:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;

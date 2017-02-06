@@ -5956,7 +5956,7 @@ a:active, a:hover, a:focus {
   height: 100%; }
 
 .header-cont, .contact-cont, .gallery-cont, .proj-cont {
-  padding-top: 150px; }
+  padding-top: 80px; }
 
 /* Slider */
 .slider-cont {
@@ -6003,9 +6003,6 @@ a:active, a:hover, a:focus {
   -moz-transition: ease all .2s; }
 
 .home-cont #enter-btn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: 5%;
   z-index: 1010; }
 
@@ -6036,7 +6033,7 @@ a:active, a:hover, a:focus {
   left: 50%;
   transform: translateX(-50%);
   top: 40%;
-  width: 80%;
+  width: 65%;
   z-index: 1010; }
   .title-cont h3 {
     font-family: "Archivo Black", sans-serif;
@@ -6045,11 +6042,12 @@ a:active, a:hover, a:focus {
     font-weight: 500;
     letter-spacing: 1rem;
     text-align: center;
-    opacity: 0; }
-  .title-cont .enter-subhead {
+    opacity: 0;
+    margin-bottom: 6rem; }
+  .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
     font-family: "Playfair Display", serif;
     margin: 5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #000;
     text-align: center;
     opacity: 0;
@@ -6211,7 +6209,7 @@ a:active, a:hover, a:focus {
     opacity: 1;
     margin-top: 5rem; } }
 
-.title-cont.allow .enter-subhead {
+.title-cont.allow .enter-subhead1 {
   -webkit-animation: subhead-anim 1s 4s 1 forwards ease;
   /* Safari 4+ */
   -moz-animation: subhead-anim 1s 4s 1 forwards ease;
@@ -6219,6 +6217,26 @@ a:active, a:hover, a:focus {
   -o-animation: subhead-anim 1s 4s 1 forwards ease;
   /* Opera 12+ */
   animation: subhead-anim 1s 4s 1 forwards ease;
+  /* IE 10+, Fx 29+ */ }
+
+.title-cont.allow .enter-subhead2 {
+  -webkit-animation: subhead-anim 1s 5s 1 forwards ease;
+  /* Safari 4+ */
+  -moz-animation: subhead-anim 1s 5s 1 forwards ease;
+  /* Fx 5+ */
+  -o-animation: subhead-anim 1s 5s 1 forwards ease;
+  /* Opera 12+ */
+  animation: subhead-anim 1s 5s 1 forwards ease;
+  /* IE 10+, Fx 29+ */ }
+
+.title-cont.allow .enter-subhead3 {
+  -webkit-animation: subhead-anim 1s 6s 1 forwards ease;
+  /* Safari 4+ */
+  -moz-animation: subhead-anim 1s 6s 1 forwards ease;
+  /* Fx 5+ */
+  -o-animation: subhead-anim 1s 6s 1 forwards ease;
+  /* Opera 12+ */
+  animation: subhead-anim 1s 6s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 @-webkit-keyframes logo-top {
@@ -6263,6 +6281,63 @@ a:active, a:hover, a:focus {
   animation: logo-top 3s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s; }
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0; }
+  to {
+    bottom: 0px;
+    opacity: 1; } }
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+#myDiv {
+  display: none;
+  text-align: center; }
+
 /* Lazy Image Loading */
 .fade-in-on-load {
   animation-duration: 2.3s;
@@ -6290,6 +6365,9 @@ a:active, a:hover, a:focus {
 #particle-canvas {
   position: absolute;
   top: 0; }
+
+#particle-canvas.switch {
+  display: none; }
 
 /* SVG Logo */
 /*
@@ -6378,7 +6456,7 @@ a:active, a:hover, a:focus {
 .enter-site-btn.switch {
   display: none; }
 
-.menu-close:hover, .enter-site-btn:hover, .work-btn:hover {
+.menu-close:hover, .enter-site-btn:hover, .work-btn:hover, .enter-site-btn:hover, .work-btn:hover {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
@@ -6639,7 +6717,7 @@ a:active, a:hover, a:focus {
 
 /* Post */
 .post-cont .proj-cont {
-  padding-top: 120px; }
+  padding-top: 80px; }
 
 .post-cont .row {
   margin: 0; }
