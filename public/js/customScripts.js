@@ -65,7 +65,10 @@ $( document ).ready(function() {
     var enterBtn = document.getElementById('enter-btn');
 
 	enterBtn.addEventListener('click', function() {
-	    $('.menu-bg').toggleClass('expand');
+	    $('.menu-bg').toggleClass('expand'),
+	    $('.enter-site-btn').toggleClass('switch'),
+	    $('.work-btn').toggleClass('switch'),
+	    $('.title-cont').addClass('allow');
 	}, false);
 	
 	enterBtn.addEventListener('click', function() {

@@ -14,10 +14,11 @@
 
 /* ---- SETTINGS ---- */
 var numberParticlesStart = 1000;
-var particleSpeed = 0.3;
-var velocity = 0.9;
+var particleSpeed = 0.1;
+var velocity = 0.5;
 var reactangleWidth = 115;
 var reactangleHeight = 75;
+
 
 /* ---- INIT ---- */
 var particles = [];
@@ -38,7 +39,7 @@ function Particle(x, y) {
     max: getRandomFloat(10, 100) / 10
   };
 
-  this.color = 'rgba(255, 255, 255, 0.05)';
+  this.color = 'rgba(255, 255, 255, 0.07)';
 }
 Particle.prototype.render = function () {
   context.beginPath();

@@ -71,7 +71,7 @@
 		<div class="row">
 		{{# each data.posts.results}}
 			<div class="col-xs-12 col-md-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
-				<div class="wrapper fade-in-on-load" style="background-image:url({{{cloudinaryUrl image crop='fit' }}});" href="{{postUrl slug}}">
+				<div class="wrapper fade-in-on-load" style="background-image:url({{{cloudinaryUrl image crop='fit' }}});">
 					<div class="data">
 						<div class="content">
 							<span class="author">{{{categoryList categories prefix=""}}}</span>
