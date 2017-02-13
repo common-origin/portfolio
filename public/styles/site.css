@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5916,16 +5917,6 @@ a:active, a:hover, a:focus {
   -webkit-transition: ease all .4s;
   -moz-transition: ease all .4s; }
 
-/* Contact Page */
-.contact-form {
-  float: none;
-  padding-top: 10%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.contact-header {
-  text-align: center; }
-
 /* Footer */
 .footer {
   background-color: transparent;
@@ -5980,10 +5971,6 @@ svg.client-logo {
 .back-btn {
   height: 40px;
   margin-bottom: 0; }
-
-/* Form */
-.form-control {
-  border-radius: 0 !important; }
 
 /* Loading Page Fuck Around */
 .inner-container {
@@ -6464,6 +6451,14 @@ svg.client-logo {
   bottom: 0;
   right: 0; }
 
+.container.page-nav-cont {
+  position: fixed;
+  top: 15px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10000000000; }
+
 .fade-in-on-load {
   animation-duration: 2.3s;
   animation-name: fadeInOnLoad;
@@ -6748,6 +6743,33 @@ svg.client-logo {
 
 .cp_embed_wrapper .embed-nav.group {
   display: none !important; }
+
+.contact-form {
+  float: none;
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact-form label {
+    font-family: "Playfair Display", serif; }
+  .contact-form h3 {
+    text-align: center; }
+
+.contact-header {
+  text-align: center; }
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #eee;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0; }
+  .form-control:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
 
 #header {
   margin-top: 30px; }

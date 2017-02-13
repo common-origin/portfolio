@@ -1,5 +1,5 @@
 <div class="outer-container contact-cont">
-	<div class="container">
+	<div class="container page-nav-cont">
 		<h5 class="page-title">CONTACT</h5>
 	</div>
 	<div class="container">
@@ -20,12 +20,12 @@
 					</div>
 					<div class="form-group">
 						<label>Phone</label>
-						<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
+						<input type="text" name="phone" placeholder="" class="form-control" value="{{formData.phone}}">
 					</div>
 					<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
 						<label>What are you contacting us about?</label>
 						<select name="enquiryType" class="form-control">
-							<option value="">(select one)</option>
+							<option value=""></option>
 							{{#each enquiryTypes}}
 							<option value="{{value}}">{{label}}</option>
 							{{/each}}
@@ -33,7 +33,7 @@
 					</div>
 					<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
 						<label>Message</label>
-						<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+						<textarea name="message" placeholder="" rows="1" class="form-control">{{formData.message}}</textarea>
 					</div>
 					<div class="form-actions">
 						<button type="submit" class="btn btn-primary">Send</button>

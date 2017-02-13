@@ -121,3 +121,16 @@ $black: #000;
     right: 0;
 }
 
+
+
+
+// Page Navigation Titles - Fixed Top
+
+.container.page-nav-cont {
+    position: fixed;
+    top: 15px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10000000000;
+}
