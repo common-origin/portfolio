@@ -50,6 +50,8 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     //caches a jQuery object containing the header element
     var header = $(".navbar-default");
+    var pageHead = $(".page-nav-cont");
+    var pageTitle = $(".title-row");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -57,6 +59,13 @@ $( document ).ready(function() {
             header.addClass("scrolled");
         } else {
             header.removeClass("scrolled");
+        }
+        if (scroll > 60) {
+            pageHead.addClass("scrolled");
+            pageTitle.addClass("scrolled");
+        } else {
+            pageHead.removeClass("scrolled");
+            pageTitle.removeClass("scrolled");
         }
     });
 });

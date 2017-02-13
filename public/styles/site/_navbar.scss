@@ -34,13 +34,19 @@ $white: #fff;
 $black: #000;
 
 
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    display: block !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .navbar-nav{
     margin:0;
 }
 
-.navbar-toggle {
-    display: block !important;
-}
 .navbar-header{
 	width:100% !important;
 }
@@ -113,6 +119,19 @@ $black: #000;
     transform: translateY(-7px);
 }
 
+
+// BACK BUTTON 
+
+.back-btn {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: 1000000000;
+}
+
+
+
 // User SignIn/SignOut
 
 .sign-in, .sign-out {
@@ -126,11 +145,45 @@ $black: #000;
 
 // Page Navigation Titles - Fixed Top
 
-.container.page-nav-cont {
+/* .container.page-nav-cont.scrolled {
     position: fixed;
     top: 15px;
+    z-index: 1000000;
+    transition:ease all .4s;
+    -webkit-transition:ease all .4s;
+    -moz-transition:ease all .4s;
+    background-color: transparent;
+} */
+
+
+
+// Page Title for Header Animation
+
+.row.title-row {
+    padding: 0 15px;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 10000000000;
+    h5{
+        opacity:0;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 500;
+        padding-top: 7px;
+        transition:ease all .2s;
+        -webkit-transition:ease all .2s;
+        -moz-transition:ease all .2s;
+    }
 }
+.row.title-row.scrolled{
+        h5{
+        opacity:1;
+        transition:ease all .5s;
+        -webkit-transition:ease all .5s;
+        -moz-transition:ease all .5s;
+    }
+}
+.copy-row {
+    padding-top: 8em;
+}
+
+

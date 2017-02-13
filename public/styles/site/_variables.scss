@@ -14,6 +14,12 @@ $font-size-base: 12px;
   transform: translate(-50%, -50%);
 }
 
+@mixin middler {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 // clear-fix mixin
 @mixin cf {
   &::before,
@@ -200,25 +206,19 @@ a:active, a:hover, a:focus {
     align-items: center;
     padding-left: 0;
     margin: 0;
-    opacity: 0;
+    padding-top: 4rem;
+    li{
+      opacity:0;
+    }
 }
 
 
 svg.client-logo {
     width: 100px;
     height: 80px;
+    fill:#ddd;
 }
 
-
-
-
-
-
-/*back btn */
-.back-btn {
-    height:40px;
-    margin-bottom: 0;
-}
 
 
 
@@ -273,18 +273,16 @@ svg.client-logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+svg#black-logo{
 
 }
-/*.sc-logo-cont.svg-anim svg{
-	fill:#fff;
-	z-index: 2000;
-	-webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .2));
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .2));
-}*/
 
 .sc-logo-cont.svg-anim {
-	 top:50%;   
-	 transition: ease all 1s;
+	  top:50%;   
+	  transition: ease all 1s;
     -webkit-transition: ease all 1s;
     -moz-transition: ease all 1s;
     transition-delay: 1s; 
@@ -294,19 +292,17 @@ svg.client-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 40%;
+    top: 30%;
     width: 65%;
     max-width: 700px;
     z-index: 1010;
-    h3 {
-      font-family:$font-subhead;
-    	color:#fff;	
-    	font-size: 2em;
-    	font-weight:500;
-    	letter-spacing: 1rem;
-    	text-align:center;
+    .sc-logo-title {
+      @include middler 
+    	fill:#fff;	
       opacity:0;
-      margin-bottom: 6rem;
+      top: 2rem;
+      width:50%;
+      min-width: 260px;
     }
     .enter-subhead1, .enter-subhead2 {
         font-family:$font-body;
@@ -319,41 +315,31 @@ svg.client-logo {
 }
 
 
-/*.sc-logo-cont.svg-anim .title-cont {
-	h3{
-		opacity:1;
-		transition:ease all 1.5s;
-		-webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
-    	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
-	}
-}*/
-
-
-// Logo Animation
+// LOGO FILL COLOR ANIMATION
 
 @-webkit-keyframes sc-logo-anim {
     0%   { opacity: 0;fill:#fff; } 
     30%   { opacity: 1;fill:#fff;-webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .2)); }
     50%   { opacity: 1;fill:#fff;-webkit-filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, .2)); }
-    100% { opacity: 1;fill:#fff;-webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3)); }
+    100% { opacity: 1;fill:#fff;-webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));width: 80%; }
 }
 @-moz-keyframes sc-logo-anim {
     0%   { opacity: 0;fill:#fff; }
     30%   { opacity: 1;fill:#fff;-moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .2)); }
     50%   { opacity: 1;fill:#fff;-moz-filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, .2)); }
-    100% { opacity: 1;fill:#fff;-moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3)); }
+    100% { opacity: 1;fill:#fff;-moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));width: 80%; }
 }
 @-o-keyframes sc-logo-anim {
     0%   { opacity: 0;fill:#fff; }
     30%   { opacity: 1;fill:#fff;-o-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .2)); }
     50%   { opacity: 1;fill:#fff;-o-filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, .2)); }
-    100% { opacity: 1;fill:#fff;-o-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3)); }
+    100% { opacity: 1;fill:#fff;-o-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));width: 80%;}
 }
 @keyframes sc-logo-anim {
     0%   { opacity: 0;fill:#fff; }
     30%   { opacity: 1;fill:#fff;filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .2)); }
     50%   { opacity: 1;fill:#fff;filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, .2)); }
-    100% { opacity: 1;fill:#fff;filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3)); }
+    100% { opacity: 1;fill:#fff;filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));width: 80%; }
 }
 
 
@@ -366,7 +352,7 @@ svg.client-logo {
 
 
 
-// Title Animation
+// TITLE ANIMATION
 
 @-webkit-keyframes title-anim {
     0%   { opacity: 0; -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0)); }
@@ -385,7 +371,7 @@ svg.client-logo {
     100% { opacity: 1;filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .4)); }
 }
 
-.title-cont.allow h3 {
+.title-cont.allow .sc-logo-title {
     -webkit-animation: title-anim 2s 2.5s 1 forwards ease; /* Safari 4+ */
     -moz-animation:    title-anim 2s 2.5s 1 forwards ease; /* Fx 5+ */
     -o-animation:      title-anim 2s 2.5s 1 forwards ease; /* Opera 12+ */
@@ -395,7 +381,7 @@ svg.client-logo {
 
 
 
-// Subhead Animation
+// LOGO SUBHEAD ANIMATION // CLIENT LOGO ANIMATION
 
 @-webkit-keyframes subhead-anim {
     0%   { opacity: 0; }
@@ -426,16 +412,40 @@ svg.client-logo {
     -o-animation:      subhead-anim 2s 5s 1 forwards ease; /* Opera 12+ */
     animation:         subhead-anim 2s 5s 1 forwards ease; /* IE 10+, Fx 29+ */
 }
-.title-cont.allow .client-list {
+.title-cont.allow .client-list li:first-child {
     -webkit-animation: subhead-anim 2s 6s 1 forwards ease; /* Safari 4+ */
     -moz-animation:    subhead-anim 2s 6s 1 forwards ease; /* Fx 5+ */
     -o-animation:      subhead-anim 2s 6s 1 forwards ease; /* Opera 12+ */
     animation:         subhead-anim 2s 6s 1 forwards ease; /* IE 10+, Fx 29+ */
 }
+.title-cont.allow .client-list li:nth-child(2) {
+    -webkit-animation: subhead-anim 2s 6.3s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 2s 6.3s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 2s 6.3s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 2s 6.3s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+.title-cont.allow .client-list li:nth-child(3) {
+    -webkit-animation: subhead-anim 2s 6.6s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 2s 6.6s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 2s 6.6s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 2s 6.6s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+.title-cont.allow .client-list li:nth-child(4) {
+    -webkit-animation: subhead-anim 2s 6.9s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 2s 6.9s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 2s 6.9s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 2s 6.9s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+.title-cont.allow .client-list li:nth-child(5) {
+    -webkit-animation: subhead-anim 2s 7.2s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 2s 7.2s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 2s 7.2s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 2s 7.2s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
 
 
 
-// Work Button Animation
+// CAT BUTTON ANIMATION
 
 @-webkit-keyframes work-btn-anim {
     0%   { opacity: 0; visibility: visible; }
@@ -455,34 +465,36 @@ svg.client-logo {
 }
 
 .work-btn.switch {
-    -webkit-animation: work-btn-anim 2s 7s 1 forwards ease; /* Safari 4+ */
-    -moz-animation:    work-btn-anim 2s 7s 1 forwards ease; /* Fx 5+ */
-    -o-animation:      work-btn-anim 2s 7s 1 forwards ease; /* Opera 12+ */
-    animation:         work-btn-anim 2s 7s 1 forwards ease; /* IE 10+, Fx 29+ */
+    -webkit-animation: work-btn-anim 2s 7.5s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    work-btn-anim 2s 7.5s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      work-btn-anim 2s 7.5s 1 forwards ease; /* Opera 12+ */
+    animation:         work-btn-anim 2s 7.5s 1 forwards ease; /* IE 10+, Fx 29+ */
 }
 
 
-// White Logo Height Animation
+
+
+// WHITE LOGO HEIGHT ANIMATION
 
 @-webkit-keyframes logo-top {
     0%   { top: 50%; }
     75%   { top: 50%; }
-    100% { top: 30%; }
+    100% { top: 20%; }
 }
 @-moz-keyframes logo-top {
     0%   { top: 50%; }
     75%   { top: 50%; }
-    100% { top: 30%; }
+    100% { top: 20%; }
 }
 @-o-keyframes logo-top {
     0%   { top: 50%; }
     75%   { top: 50%; }
-    100% { top: 30%; }
+    100% { top: 20%; }
 }
 @keyframes logo-top {
     0%   { top: 50%; }
     75%   { top: 50%; }
-    100% { top: 30%; }
+    100% { top: 20%; }
 }
 
 
@@ -494,7 +506,10 @@ svg.client-logo {
 }
 
 
-/* Lazy Image Loading */
+
+
+
+// LAZY IMAGE LOADING
 
 .fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {

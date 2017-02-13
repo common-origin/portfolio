@@ -191,6 +191,16 @@ h1 {
 }
 
 
+@media only screen and (max-width: 700px) {
+  .project-card .data .content{
+    .menu-button{
+      display:none;
+    }
+  }
+}
+
+
+
 
 /* Projects */
 
