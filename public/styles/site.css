@@ -6270,34 +6270,42 @@ svg.client-logo {
 @-webkit-keyframes work-btn-anim {
   0% {
     opacity: 0;
-    visibility: visible; }
+    visibility: visible;
+    padding-top: 30px; }
   100% {
     opacity: 1;
-    visibility: visible; } }
+    visibility: visible;
+    padding-top: 0; } }
 
 @-moz-keyframes work-btn-anim {
   0% {
     opacity: 0;
-    visibility: visible; }
+    visibility: visible;
+    padding-top: 30px; }
   100% {
     opacity: 1;
-    visibility: visible; } }
+    visibility: visible;
+    padding-top: 0; } }
 
 @-o-keyframes work-btn-anim {
   0% {
     opacity: 0;
-    visibility: visible; }
+    visibility: visible;
+    padding-top: 30px; }
   100% {
     opacity: 1;
-    visibility: visible; } }
+    visibility: visible;
+    padding-top: 0; } }
 
 @keyframes work-btn-anim {
   0% {
     opacity: 0;
-    visibility: visible; }
+    visibility: visible;
+    padding-top: 30px; }
   100% {
     opacity: 1;
-    visibility: visible; } }
+    visibility: visible;
+    padding-top: 0; } }
 
 .work-btn.switch {
   -webkit-animation: work-btn-anim 2s 7.5s 1 forwards ease;
@@ -6521,7 +6529,7 @@ svg.client-logo {
   -moz-transition: ease all .5s; }
 
 .copy-row {
-  padding-top: 8em; }
+  padding-top: 6em; }
 
 .fade-in-on-load {
   animation-duration: 2.3s;
