@@ -205,6 +205,26 @@ a:active, a:hover, a:focus {
 
 
 
+// CLIENT LOGOS
+
+.client-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+
+svg.client-logo {
+    width: 100px;
+    height: 80px;
+}
+
+
+
 
 
 
@@ -312,12 +332,11 @@ a:active, a:hover, a:focus {
     }
     .enter-subhead1, .enter-subhead2 {
         font-family:$font-body;
-        margin: 5rem 0;
+        margin: 3rem 0 2rem 0;
         font-size: 1.4rem;
         color: #000;
         text-align: center;
         opacity:0;
-        margin-top: 8%;
     }
 }
 
@@ -429,6 +448,13 @@ a:active, a:hover, a:focus {
     -o-animation:      subhead-anim 2s 5s 1 forwards ease; /* Opera 12+ */
     animation:         subhead-anim 2s 5s 1 forwards ease; /* IE 10+, Fx 29+ */
 }
+.title-cont.allow .client-list {
+    -webkit-animation: subhead-anim 2s 6s 1 forwards ease; /* Safari 4+ */
+    -moz-animation:    subhead-anim 2s 6s 1 forwards ease; /* Fx 5+ */
+    -o-animation:      subhead-anim 2s 6s 1 forwards ease; /* Opera 12+ */
+    animation:         subhead-anim 2s 6s 1 forwards ease; /* IE 10+, Fx 29+ */
+}
+
 
 
 // Work Button Animation

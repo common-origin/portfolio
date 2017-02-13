@@ -33,13 +33,13 @@ function Particle(x, y) {
   this.y = y;
 
   this.vel = {
-    x: getRandomFloat(-20, 20) / 100,
-    y: getRandomFloat(-20, 20) / 100,
-    min: getRandomFloat(2, 10),
-    max: getRandomFloat(10, 100) / 10
+    x: getRandomFloat(-40, 40) / 100,
+    y: getRandomFloat(-40, 40) / 100,
+    min: getRandomFloat(2, 20),
+    max: getRandomFloat(5, 100) / 10
   };
 
-  this.color = 'rgba(255, 255, 255, 0.07)';
+  this.color = 'rgba(255, 255, 255, 0.05)';
 }
 Particle.prototype.render = function () {
   context.beginPath();

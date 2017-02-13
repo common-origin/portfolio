@@ -34,6 +34,9 @@ $white: #fff;
 $black: #000;
 
 
+.navbar-nav{
+    margin:0;
+}
 
 .navbar-toggle {
     display: block !important;
@@ -109,3 +112,12 @@ $black: #000;
     color: #fff;
     transform: translateY(-7px);
 }
+
+// User SignIn/SignOut
+
+.sign-in, .sign-out {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+}
+
