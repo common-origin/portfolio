@@ -24,9 +24,9 @@
 
 // VARIABLES
 
-$font-head:'Playfair Display', serif;
-$font-subhead:'Archivo Black', sans-serif;
-$font-body:'Playfair Display', serif;
+$font-head:aktiv-grotesk-thin, sans-serif;
+$font-subhead:industry, sans-serif;
+$font-body:freight-sans-pro, sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;
@@ -55,7 +55,7 @@ h1 {
       left: 50%;
       top: 0;
       font-size: 10px;
-      font-weight: 700;
+      font-weight: 800;
       font-family: $font-subhead;
       transform: translate(-50%, 0);
     }
@@ -84,14 +84,21 @@ h1 {
     }
   }
   .author {
-	font-family:$font-subhead;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-	font-size: 8px;
+    color:#ddd;
+  	font-family:$font-subhead;
+  	text-transform: uppercase;
+  	letter-spacing: .3rem;
+  	font-size: 8px;
+    font-weight: 800;
+    a{
+      color:#bbb;
+    }
   }
   .title {
     margin-top: 10px;
     font-family:$font-head;
+    font-style: normal;
+    font-weight: 300;
   }
   .text {
   	font-family:$font-body;
@@ -263,8 +270,9 @@ h1 {
 .proj-cont {
     .page-title{
         font-family:$font-subhead;
-        font-weight: 500;
+        font-weight: 800;
         margin-top:0;
+        letter-spacing: .3rem;
         display: inline-block;
     }
 }

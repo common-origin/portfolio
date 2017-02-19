@@ -26,9 +26,9 @@
 
 // VARIABLES
 
-$font-head:'Playfair Display', serif;
-$font-subhead:'Archivo Black', sans-serif;
-$font-body:'Playfair Display', serif;
+$font-head:aktiv-grotesk-thin, sans-serif;
+$font-subhead:industry, sans-serif;
+$font-body:freight-sans-pro, sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;
@@ -49,9 +49,10 @@ $black: #000;
 
 .page-title {
     font-family:$font-subhead;
-    font-weight: 500;
+    font-weight:800;
     margin-top:0;
     display: inline-block;
+    letter-spacing:.3rem;
 }
 
 

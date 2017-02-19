@@ -24,9 +24,9 @@
 
 // VARIABLES
 
-$font-head:'Playfair Display', serif;
-$font-subhead:'Archivo Black', sans-serif;
-$font-body:'Playfair Display', serif;
+$font-head:aktiv-grotesk-thin, sans-serif;
+$font-subhead:industry, sans-serif;
+$font-body:freight-sans-pro, sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;
@@ -34,7 +34,8 @@ $black: #000;
 
 
 
-/* Post */
+// PROJECT POST STYLES
+
 .post-cont {
 	.row{
 		margin:0;
@@ -50,7 +51,7 @@ $black: #000;
 	}
 	.post-words{
 		font-family:$font-body;
-		padding: 0 0 40px 0;
+		padding: 0 0 100px 0;
 		.post-categories{
 			font-family:$font-body;
 			font-size:12px;
@@ -58,8 +59,9 @@ $black: #000;
 		}
 		.p-sub-head{
 			font-family:$font-subhead;
-			font-weight: 500;
+			font-weight: 800;
 			margin-top:0;
+			letter-spacing:.3rem;
 		}
 	}
 }
