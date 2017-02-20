@@ -71,6 +71,12 @@ $( document ).ready(function() {
 });
 
 
+// Hide Footer On Homepage
 
+$( document ).ready(function() {
+    //caches a jQuery object containing the header element
+    var body = $("#canvasContainer");
+	    $("footer").hide();
+});
 
 

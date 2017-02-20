@@ -36,7 +36,7 @@ $font-size-base: 12px;
 
 $font-head:aktiv-grotesk-thin, sans-serif;
 $font-subhead:industry, sans-serif;
-$font-body:freight-sans-pro, sans-serif;
+$font-body:aktiv-grotesk, sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;
@@ -147,15 +147,30 @@ a:active, a:hover, a:focus {
 
 
 /* Footer */
+
 .footer {
-  	background-color: transparent;
-  	position: fixed;
+  	background-color: #37383c;
     bottom: 0;
 }
 #footer {
   	border:none !important;
   	margin-top:0 !important;
-  	padding-top:15px !important;
+    padding-bottom:100px;
+    padding-top:80px !important;
+    .sc-logo-title{
+      max-width:200px;
+      fill:#4b4c50;
+    }
+    .contact-list, .social-list{
+      font-size:12px;
+      font-family:$font-body;
+      color:#fff;
+      list-style:none;
+      padding-left:0;
+      li{
+        padding-bottom:8px;
+      }
+    }
 }
 
 

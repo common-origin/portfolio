@@ -5919,14 +5919,25 @@ a:active, a:hover, a:focus {
 
 /* Footer */
 .footer {
-  background-color: transparent;
-  position: fixed;
+  background-color: #37383c;
   bottom: 0; }
 
 #footer {
   border: none !important;
   margin-top: 0 !important;
-  padding-top: 15px !important; }
+  padding-bottom: 100px;
+  padding-top: 80px !important; }
+  #footer .sc-logo-title {
+    max-width: 200px;
+    fill: #4b4c50; }
+  #footer .contact-list, #footer .social-list {
+    font-size: 12px;
+    font-family: aktiv-grotesk, sans-serif;
+    color: #fff;
+    list-style: none;
+    padding-left: 0; }
+    #footer .contact-list li, #footer .social-list li {
+      padding-bottom: 8px; }
 
 /* Pagination */
 .pagination {
@@ -6042,7 +6053,7 @@ svg.client-logo {
     width: 50%;
     min-width: 260px; }
   .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     margin: 3rem 0 2rem 0;
     font-size: 1.4rem;
     color: #000;
@@ -6635,7 +6646,8 @@ svg.client-logo {
     margin-top: 10px;
     font-family: aktiv-grotesk-thin, sans-serif;
     font-style: normal;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 1.5em; }
   .card .text {
     font-family: freight-sans-pro, sans-serif;
     height: 70px;
