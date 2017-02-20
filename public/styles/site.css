@@ -6618,7 +6618,7 @@ svg.client-logo {
       transform: translate(-50%, 0); }
   .card .wrapper {
     background-color: #fff;
-    min-height: 400px;
+    min-height: 380px;
     position: relative;
     overflow: hidden; }
     .card .wrapper:hover .data {
