@@ -6809,8 +6809,10 @@ svg.client-logo {
   margin-bottom: 10rem; }
   .img-container img {
     margin-bottom: 2rem;
-    width: 100%; }
+    max-width: 100%; }
   .img-container .half, .img-container .full {
+    padding: 0; }
+  .img-container .third {
     padding: 0; }
 
 .cp_embed_wrapper .embed-nav.group {

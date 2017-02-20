@@ -79,9 +79,12 @@ $black: #000;
 	margin-bottom:10rem;
 	img{
 		margin-bottom:2rem;
-		width:100%;
+		max-width:100%;
 	}
 	.half, .full{
+		padding:0;
+	}
+	.third{
 		padding:0;
 	}
 }
