@@ -6649,7 +6649,7 @@ svg.client-logo {
     font-weight: 300;
     font-size: 1.5em; }
   .card .text {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     height: 70px;
     margin: 0; }
   .card input[type='checkbox'] {
@@ -6658,7 +6658,7 @@ svg.client-logo {
     transform: translateY(-60px); }
 
 .project-card {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   .project-card .wrapper {
     background-size: cover;
     background-repeat: no-repeat;
@@ -6752,7 +6752,7 @@ svg.client-logo {
     padding-left: 0; }
   .cat-menu li {
     padding-left: .8rem;
-    font-family: freight-sans-pro, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     display: inline-block; }
   .cat-menu .cat-menu-li:first:child {
     padding-left: 0 !important; }
@@ -6789,10 +6789,10 @@ svg.client-logo {
     padding-bottom: 30px; }
 
 .post .post-words {
-  font-family: freight-sans-pro, sans-serif;
+  font-family: aktiv-grotesk, sans-serif;
   padding: 0 0 100px 0; }
   .post .post-words .post-categories {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     font-size: 12px;
     font-style: italic; }
   .post .post-words .p-sub-head {
@@ -6824,7 +6824,7 @@ svg.client-logo {
   margin-left: auto;
   margin-right: auto; }
   .contact-form label {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     font-style: normal;
     font-weight: 300; }
   .contact-form h3 {
