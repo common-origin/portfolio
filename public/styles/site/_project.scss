@@ -78,11 +78,14 @@ $black: #000;
 .img-container{
 	margin-bottom:10rem;
 	img{
-		margin-bottom:4rem;
+		margin-bottom:2rem;
 		max-width:100%;
 	}
 	.half, .full{
 		padding:0;
+	}
+	.half{
+		width:50%;
 	}
 	.third{
 		padding:0;
