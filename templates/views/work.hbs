@@ -81,23 +81,19 @@
 		<div class="row">
 		{{# each data.posts.results}}
 			<div class="col-xs-12 col-md-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
-				<div class="wrapper fade-in-on-load" style="background-image:url({{{cloudinaryUrl image crop='fit' }}});">
-					<div class="data">
-						<div class="content">
-							<span class="author">{{{categoryList categories prefix=""}}}</span>
-							<h1 class="title"><a href="{{postUrl slug}}">{{{title}}}</a></h1>
-							<label for="show-menu-{{{title}}}" class="menu-button"><span></span></label>
-						</div>
-					<input type="checkbox" id="show-menu-{{{title}}}" />
-					<ul class="menu-content">
-						<li>
-							<a href="#" class="fa fa-bookmark-o"></a>
-						</li>
-						<li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
-						<li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
-					</ul>
+				{{#if image}}
+					<a href="{{postUrl slug}}">
+						<img src="{{{cloudinaryUrl image crop='fit' }}}" class="img project-img">
+					</a>
+				{{/if}}
+				<div class="data-container">
+					<div class="content">
+						<h2 class="title"><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+						<p class="author">{{{categoryList categories prefix=""}}}
+								{{#if author.name.first}}by {{author.name.first}}{{/if}}
+						</p>
 					</div>
-				</div>
+				</div>				
 			</div>
 		{{/each}}
 		</div>
