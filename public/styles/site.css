@@ -6486,7 +6486,8 @@ svg.client-logo {
   position: absolute;
   left: 0;
   top: 10px;
-  z-index: 1000000000; }
+  z-index: 1000000000;
+  width: 60px; }
   .back-btn a {
     color: #888;
     font-size: 1.5em; }
@@ -6497,7 +6498,7 @@ svg.client-logo {
   right: 0; }
 
 .navbar-default.scrolled {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: white; }
 
 .row.title-row {
   padding: 0 15px;
@@ -6505,12 +6506,17 @@ svg.client-logo {
   margin-left: auto;
   margin-right: auto; }
   .row.title-row h5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
+    text-transform: uppercase;
     text-align: center;
     font-family: industry, sans-serif;
     font-weight: 800;
     letter-spacing: .3rem;
     padding-top: 7px;
+    display: inline-block;
     transition: ease all .2s;
     -webkit-transition: ease all .2s;
     -moz-transition: ease all .2s; }

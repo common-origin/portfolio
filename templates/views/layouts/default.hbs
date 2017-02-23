@@ -39,7 +39,15 @@
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 								</button>
-								<h5>PAGE TITLE</h5>
+								{{#if data.post}}
+									<h5>{{data.post.title}}</h5>
+								{{/if}}
+								{{#if feeds}}
+									<h5>STREAM OF CONSCIOUSNESS</h5>
+								{{/if}}
+								{{#if enquiries.post}}
+									<h5>CONTACT</h5>
+								{{/if}}
 							</div>
 
 
