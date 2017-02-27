@@ -27,7 +27,7 @@ $( document ).ready(function() {
 // Close Menu Button 
 
 $( document ).ready(function() {
-    var closeBtn = document.getElementById('closeMenu');
+    var closeBtn = document.getElementById('cross');
 
 	closeBtn.addEventListener('click', function() {
 		$('.outer-container').removeClass('blur');
@@ -42,6 +42,11 @@ $( document ).ready(function() {
 });
 
 
+// Navbar Toggle Animation
+
+$('#menu-toggle').click(function(){
+	$(this).toggleClass('open');
+})
 
 
 

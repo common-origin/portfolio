@@ -98,3 +98,11 @@ $black: #000;
 	}
 }
 
+
+// Small Screen Sizing
+
+@media (max-width:768px){
+	.post .post-words div, .img-container{
+		padding:0;
+	}
+}

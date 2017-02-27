@@ -34,11 +34,21 @@
 					<div class="nav-container">
 						<div class="navbar-header">
 
-							<div class="row title-row">
-								<button type="button" data-toggle="menu-hide" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-								</button>
+							<div class="row title-row container">
+								<div id="menu-toggle">
+									<button type="button" data-toggle="menu-hide" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<div id="cross-container">
+										<div id="cross">
+										    <span></span>
+										    <span></span>
+										</div>										
+									</div>
+
+								</div>
 								{{#if data.post}}
 									<h5>{{data.post.title}}</h5>
 								{{/if}}
@@ -65,8 +75,8 @@
 								{{else}}
 									<li id="menuItem" class="sign-in"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
 								{{/if}}
-								<div class="btn-wrap">
-									<button class="menu-close" type="button" id="closeMenu">close</button>
+								<!--<div class="btn-wrap">
+									<button class="menu-close" type="button" id="closeMenu">close</button>-->
 								</div>
 							</ul>
 						</div>
