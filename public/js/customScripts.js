@@ -109,3 +109,9 @@ $(window).load(function() {
 	$("body").fadeIn("slow");
 });
 
+$(window).unload(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeIn("fast");
+	$("body").fadeOut("fast");
+});
+

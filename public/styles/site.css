@@ -6361,19 +6361,11 @@ svg.client-logo {
   animation: logo-top 2.5s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
-.fade-in-on-load {
-  animation-duration: 1s;
-  animation-name: fadeInOnLoad;
-  animation-timing-function: ease; }
-
+/*.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
-  0%, 50% {
-    opacity: 0;
-    padding-top: 20px; }
-  100% {
-    opacity: 1;
-    padding-top: 0px; } }
-
+0%,50% {opacity: 0;padding-top:20px;}
+100% {opacity: 1;padding-top:0px;}
+}*/
 .no-js #loader {
   display: none; }
 
