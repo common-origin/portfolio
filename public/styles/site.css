@@ -6362,7 +6362,7 @@ svg.client-logo {
   /* IE 10+, Fx 29+ */ }
 
 .fade-in-on-load {
-  animation-duration: 2.3s;
+  animation-duration: 1s;
   animation-name: fadeInOnLoad;
   animation-timing-function: ease; }
 
@@ -6373,6 +6373,24 @@ svg.client-logo {
   100% {
     opacity: 1;
     padding-top: 0px; } }
+
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(/images/Preloader_3.gif) center no-repeat #fff; }
 
 .particle-container {
   position: absolute;

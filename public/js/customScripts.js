@@ -98,3 +98,18 @@ $('.page-nav-cont').hover(function() {
     $('.cat-menu').toggleClass("hover");
     $('.separator').toggleClass("hover");
 });
+
+
+// Page Loading Function
+
+
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
+});
+
+
+//function load() {
+//	console.log("load event detected!");
+//	}
+//window.onload = load;
