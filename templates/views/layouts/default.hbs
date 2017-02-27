@@ -59,12 +59,12 @@
 								</div>
 								{{#if data.post}}
 									<h5>{{data.post.title}}</h5>
-								{{/if}}
-								{{#if feeds}}
+								{{else if feeds}}
 									<h5>STREAM OF CONSCIOUSNESS</h5>
-								{{/if}}
-								{{#if enquiries.post}}
+								{{else if enquiries.post}}
 									<h5>CONTACT</h5>
+								{{else}}
+									<h5>WORK</h5>
 								{{/if}}
 								<a href="/contact"><button class="contact" type="button" id="contact-us" >contact us</button></a>
 							</div>
@@ -160,18 +160,17 @@
 					</div>
 					<div class="col-xs-12 col-md-3">
 						<ul class="contact-list">
-							<li>Contact Us</li>
-							<li>Press Inquiries</li>
-							<li>Legal</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i> <h5>Contact Us</h5></li>
+							<li><i class="fa fa-newspaper-o" aria-hidden="true"></i> <h5>Press Inquiries</h5></li>
+							<li><i class="fa fa-gavel" aria-hidden="true"></i> <h5>Legal</h5></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-md-3">
 						<ul class="social-list">
-							<li>Facebook</li>
-							<li>LinkedIn</li>
-							<li>Youtube</li>
-							<li>Instagram</li>
-							<li>Snapchat</li>
+							<li><i class="fa fa-dribbble" aria-hidden="true"></i> <h5>Dribble</h5></li>
+							<li><i class="fa fa-github" aria-hidden="true"></i> <h5>Github</h5></li>
+							<li><i class="fa fa-facebook" aria-hidden="true"></i> <h5>Facebook</h5></li>
+							<li><i class="fa fa-linkedin" aria-hidden="true"></i> <h5>LinkedIn</h5></li>
 						</ul>											
 					</div>
 				</div>

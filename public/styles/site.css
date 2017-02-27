@@ -5939,7 +5939,8 @@ a:active, a:hover, a:focus {
 /* Footer */
 .footer {
   background-color: #37383c;
-  bottom: 0; }
+  bottom: 0;
+  margin-top: 80px; }
 
 #footer {
   border: none !important;
@@ -5957,6 +5958,14 @@ a:active, a:hover, a:focus {
     padding-left: 0; }
     #footer .contact-list li, #footer .social-list li {
       padding-bottom: 8px; }
+
+#footer ul h5 {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px; }
+
+#footer ul li i {
+  width: 20px; }
 
 /* Pagination */
 .pagination {
@@ -6186,13 +6195,13 @@ svg.client-logo {
     fill: #ddd; } }
 
 .title-cont.allow .sc-logo-title {
-  -webkit-animation: title-anim 2s 2.5s 1 forwards ease;
+  -webkit-animation: title-anim 2s 1.5s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: title-anim 2s 2.5s 1 forwards ease;
+  -moz-animation: title-anim 2s 1.5s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: title-anim 2s 2.5s 1 forwards ease;
+  -o-animation: title-anim 2s 1.5s 1 forwards ease;
   /* Opera 12+ */
-  animation: title-anim 2s 2.5s 1 forwards ease;
+  animation: title-anim 2s 1.5s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 @-webkit-keyframes subhead-anim {
@@ -6220,6 +6229,16 @@ svg.client-logo {
     opacity: 1; } }
 
 .title-cont.allow .enter-subhead1 {
+  -webkit-animation: subhead-anim 2s 3s 1 forwards ease;
+  /* Safari 4+ */
+  -moz-animation: subhead-anim 2s 3s 1 forwards ease;
+  /* Fx 5+ */
+  -o-animation: subhead-anim 2s 3s 1 forwards ease;
+  /* Opera 12+ */
+  animation: subhead-anim 2s 3s 1 forwards ease;
+  /* IE 10+, Fx 29+ */ }
+
+.title-cont.allow .enter-subhead2 {
   -webkit-animation: subhead-anim 2s 4s 1 forwards ease;
   /* Safari 4+ */
   -moz-animation: subhead-anim 2s 4s 1 forwards ease;
@@ -6229,7 +6248,7 @@ svg.client-logo {
   animation: subhead-anim 2s 4s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
-.title-cont.allow .enter-subhead2 {
+.title-cont.allow .client-list li:first-child {
   -webkit-animation: subhead-anim 2s 5s 1 forwards ease;
   /* Safari 4+ */
   -moz-animation: subhead-anim 2s 5s 1 forwards ease;
@@ -6239,54 +6258,44 @@ svg.client-logo {
   animation: subhead-anim 2s 5s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
-.title-cont.allow .client-list li:first-child {
-  -webkit-animation: subhead-anim 2s 6s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 6s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 6s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 6s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
 .title-cont.allow .client-list li:nth-child(2) {
-  -webkit-animation: subhead-anim 2s 6.3s 1 forwards ease;
+  -webkit-animation: subhead-anim 2s 5.3s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 6.3s 1 forwards ease;
+  -moz-animation: subhead-anim 2s 5.3s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 2s 6.3s 1 forwards ease;
+  -o-animation: subhead-anim 2s 5.3s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 2s 6.3s 1 forwards ease;
+  animation: subhead-anim 2s 5.3s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 .title-cont.allow .client-list li:nth-child(3) {
-  -webkit-animation: subhead-anim 2s 6.6s 1 forwards ease;
+  -webkit-animation: subhead-anim 2s 5.6s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 6.6s 1 forwards ease;
+  -moz-animation: subhead-anim 2s 5.6s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 2s 6.6s 1 forwards ease;
+  -o-animation: subhead-anim 2s 5.6s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 2s 6.6s 1 forwards ease;
+  animation: subhead-anim 2s 5.6s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 .title-cont.allow .client-list li:nth-child(4) {
-  -webkit-animation: subhead-anim 2s 6.9s 1 forwards ease;
+  -webkit-animation: subhead-anim 2s 5.9s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 6.9s 1 forwards ease;
+  -moz-animation: subhead-anim 2s 5.9s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 2s 6.9s 1 forwards ease;
+  -o-animation: subhead-anim 2s 5.9s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 2s 6.9s 1 forwards ease;
+  animation: subhead-anim 2s 5.9s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 .title-cont.allow .client-list li:nth-child(5) {
-  -webkit-animation: subhead-anim 2s 7.2s 1 forwards ease;
+  -webkit-animation: subhead-anim 2s 6.2s 1 forwards ease;
   /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 7.2s 1 forwards ease;
+  -moz-animation: subhead-anim 2s 6.2s 1 forwards ease;
   /* Fx 5+ */
-  -o-animation: subhead-anim 2s 7.2s 1 forwards ease;
+  -o-animation: subhead-anim 2s 6.2s 1 forwards ease;
   /* Opera 12+ */
-  animation: subhead-anim 2s 7.2s 1 forwards ease;
+  animation: subhead-anim 2s 6.2s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
 @-webkit-keyframes work-btn-anim {
@@ -6595,7 +6604,8 @@ svg.client-logo {
   vertical-align: middle;
   font-size: 12px;
   color: #566973;
-  margin-top: 12px; }
+  margin-top: 12px;
+  font-weight: 700; }
 
 .back-btn {
   display: block;

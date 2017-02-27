@@ -5,8 +5,8 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<path id="shape1" class="st0" d="M503.4,191.2h176.7l67.8-48.9c-5-1.1-10-1.7-15-1.7H503.4c-28.9,0-53.4,23.3-53.4,52.8v88.4
-	c0,23.9,16.1,43.4,37.2,50l67.3-48.9h-51.7c-0.6,0-1.7-0.6-1.7-1.1v-88.9C501.7,192.3,502.8,191.2,503.4,191.2z">
+<path id="shape1" class="st0" d="M503.4,191.2h176.4l68.1-48.9c-5-1.1-10-1.7-15-1.7H503.4c-28.9,0-53.4,23.3-53.4,52.8v88.4
+	c0,23.9,16,43.4,37.1,50l67.4-48.9h-51.7c-0.6,0-1.7-0.6-1.7-1.1v-88.9C501.7,192.3,502.8,191.2,503.4,191.2z">
 <animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="XML" begin="Layer_1.mouseenter" calcMode="linear" dur="1s" fill="freeze" id="part-1" restart="always" type="translate" values="0,0;14,-8">
 		</animateTransform>
 	
