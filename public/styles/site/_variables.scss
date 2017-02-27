@@ -43,6 +43,23 @@ $white: #fff;
 $black: #000;
 
 
+// Bootstrap Container Override
+
+@media (min-width: 768px){
+    .container {
+        width: 100%;
+    } 
+}
+@media (min-width: 992px){
+    .container {
+        width: 972px;
+    } 
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    } 
+}
 
 
 
@@ -102,7 +119,7 @@ a:active, a:hover, a:focus {
     -moz-transition:ease all 1s;
 }
 .sc-nav-menu{
-	  position: absolute;
+	position: absolute;
     left:0;
     top: 0;
     width: 100vw;

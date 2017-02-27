@@ -227,6 +227,22 @@ $black: #000;
 }
 
 
+// CONTACT US BUTTON
+.nav-container .title-row .contact {
+    border:none;
+    padding:0.5em 0 0.5em 1em;
+    font-family:$font-body;
+    float: right;
+    border-radius: 50px;
+    background-color: transparent;
+    line-height:1;
+    vertical-align: middle;
+    font-size: 12px;
+    color:#566973;
+    margin-top:12px;
+}
+
+
 
 // BACK BUTTON 
 .back-btn {

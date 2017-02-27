@@ -5827,6 +5827,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@media (min-width: 768px) {
+  .container {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 972px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
 body {
   background-color: #fff !important;
   font-family: aktiv-grotesk, sans-serif;
@@ -6571,6 +6583,19 @@ svg.client-logo {
   width: 80%;
   transition: .25s ease-in-out;
   transition-delay: .25s; }
+
+.nav-container .title-row .contact {
+  border: none;
+  padding: 0.5em 0 0.5em 1em;
+  font-family: aktiv-grotesk, sans-serif;
+  float: right;
+  border-radius: 50px;
+  background-color: transparent;
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #566973;
+  margin-top: 12px; }
 
 .back-btn {
   display: block;
