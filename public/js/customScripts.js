@@ -76,6 +76,7 @@ $( document ).ready(function() {
 });
 
 
+
 // Hide Footer On Homepage
 
 $( document ).ready(function() {
@@ -83,6 +84,7 @@ $( document ).ready(function() {
     var body = $("#canvasContainer");
 	    $("footer").hide();
 });
+
 
 
 // Cat Menu Hover from Project Card
