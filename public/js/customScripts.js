@@ -105,11 +105,7 @@ $('.page-nav-cont').hover(function() {
 
 $(window).load(function() {
 	// Animate loader off screen
-	$(".se-pre-con").fadeOut("slow");;
+	$(".se-pre-con").fadeOut("slow");
+	$("body").fadeIn("slow");
 });
 
-
-//function load() {
-//	console.log("load event detected!");
-//	}
-//window.onload = load;
