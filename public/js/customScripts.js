@@ -85,3 +85,14 @@ $( document ).ready(function() {
 });
 
 
+// Cat Menu Hover from Project Card
+
+$('.project-card').hover(function() {
+    $('.cat-menu').toggleClass("hover");
+    $('.separator').toggleClass("hover");
+
+});
+$('.page-nav-cont').hover(function() {
+    $('.cat-menu').toggleClass("hover");
+    $('.separator').toggleClass("hover");
+});
