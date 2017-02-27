@@ -4,6 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="http://www.your-domain.com/your-page.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Sidechain Studio" />
+		<meta property="og:description" content="Your description" />
+		<meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
+
+
 		<title>sidechain.studio - Design Studio</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
@@ -79,9 +86,35 @@
 								{{/if}}
 								<!--<div class="btn-wrap">
 									<button class="menu-close" type="button" id="closeMenu">close</button>-->
-								</div>
 							</ul>
 						</div>
+						<div class="sidebar-wrap">
+							<div class="sidebar-menu follow">
+								<ul class="social-list">
+									<a href="https://www.facebook.com/Sidechain-148149845686483/">
+										<li class="icon">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</li>
+									</a>	
+									<a href="https://twitter.com/Ollie_Cern">
+										<li class="icon">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</li>
+									</a>
+									<a href="https://dribbble.com/OllieM">
+										<li class="icon">
+											<i class="fa fa-dribbble" aria-hidden="true"></i>
+										</li>
+									</a>
+									<a href="https://github.com/sidechain-studio">	
+										<li class="icon">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</li>
+									</a>	
+								</ul>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -175,6 +208,11 @@
 				maxDuration : 0.7,
 				viewportFactor : 0.2
 			} );
+		</script>
+		<script type="text/javascript">
+			$(function() {
+			    $("#header, footer").hide();
+			});
 		</script>
 
 		

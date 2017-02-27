@@ -52,7 +52,7 @@ $black: #000;
 }
 @media (min-width: 992px){
     .container {
-        width: 972px;
+        width: 100%;
     } 
 }
 @media (min-width: 1200px){
@@ -191,7 +191,7 @@ a:active, a:hover, a:focus {
     .contact-list, .social-list{
       font-size:12px;
       font-family:$font-body;
-      color:#fff;
+      color:#4a4b4f;
       list-style:none;
       padding-left:0;
       li{

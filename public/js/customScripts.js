@@ -57,6 +57,8 @@ $( document ).ready(function() {
     var header = $(".navbar-default");
     var pageHead = $(".page-nav-cont");
     var pageTitle = $(".title-row");
+    var sidebar = $(".sidebar-menu");
+
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -68,22 +70,17 @@ $( document ).ready(function() {
         if (scroll > 60) {
             pageHead.addClass("scrolled");
             pageTitle.addClass("scrolled");
+            sidebar.addClass("scrolled");
         } else {
             pageHead.removeClass("scrolled");
             pageTitle.removeClass("scrolled");
+            sidebar.removeClass("scrolled");
         }
     });
 });
 
 
 
-// Hide Footer On Homepage
-
-$( document ).ready(function() {
-    //caches a jQuery object containing the header element
-    var body = $("#canvasContainer");
-	    $("footer").hide();
-});
 
 
 
