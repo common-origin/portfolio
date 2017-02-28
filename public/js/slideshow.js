@@ -57,14 +57,14 @@ var slideshow = (function(window, undefined) {
       source: '/images/masks/sidechain-logo-1.svg',
       effects: {
         flip: 'Y',
-        rotate: 167 // degrees
+        rotate: -30 // degrees
       }
     },
     {
       source: '/images/masks/sidechain-logo-2.svg',
       effects: {
         flip: 'X',
-        rotate: 90 // degrees
+        rotate: -170 // degrees
       }
     }
   ];
