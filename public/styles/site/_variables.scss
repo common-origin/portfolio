@@ -70,6 +70,7 @@ body {
     font-family: $font-body;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    line-height: 1.42857;
 }
 a:active, a:hover, a:focus {
     text-decoration:none !important;
@@ -149,7 +150,7 @@ a:active, a:hover, a:focus {
     font-weight: bold;
 }
 
-// Page Title Global
+// PAGE TITLE GLOBAL
 
 .page-title {
     font-family:$font-subhead;
@@ -163,7 +164,8 @@ a:active, a:hover, a:focus {
 
 
 
-/* Navbar Scrolling Function */
+
+// NAVBAR SCROLL FUNCTION
 .scrolled{
   	transition:ease all .4s;
   	-webkit-transition:ease all .4s;
@@ -173,7 +175,7 @@ a:active, a:hover, a:focus {
 
 
 
-/* Footer */
+// FOOTER
 
 .footer {
   	background-color: #37383c;
