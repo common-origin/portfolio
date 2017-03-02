@@ -263,7 +263,7 @@ $black: #000;
     z-index: 1000000000;
     width: 60px;
     a {
-        color:#888;
+        color:#566973;
         font-size:1.5em; 
     }
 }
@@ -280,6 +280,15 @@ $black: #000;
     margin-left: auto!important;
     margin-right: auto!important;
 }
+.sidebar-menu .sidemenu-title {
+    font-size:.6em;
+    font-family:$font-subhead; 
+    padding-left:10px;
+    text-align:center;
+    font-weight:900;
+    text-transform:uppercase;
+    color:#ccc;
+}
 
 .sidebar-menu.follow{
     opacity:0;
@@ -288,13 +297,16 @@ $black: #000;
     transform: translateY(-50%);
     @include transition-main
     .social-list{
-        padding:0 0 0 10px;
+        padding:0 0 0 .5em;
         list-style: none;
         text-align: center;
         .icon{
             color:#cccccc;
             font-size: 1.3em;
             padding-bottom:.5em;
+            i{
+                width:30px;
+            }
         }
     }
     &.scrolled{
