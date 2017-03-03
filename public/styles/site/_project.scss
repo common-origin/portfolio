@@ -184,7 +184,7 @@ $black: #000;
 .img-container{
 	margin-bottom:2rem;
 	img{
-		margin-bottom:2rem;
+		margin-bottom:30px;
 		max-width:100%;
 	}
 	.split{
@@ -197,7 +197,16 @@ $black: #000;
 		display:none !important;
 	}
 }
-
+@media (min-width:992px){
+	.img-container{
+		#nb-app-3{
+			padding-right:15px;
+		}
+		#nb-app-4{
+			padding-left:15px;
+		}
+	}
+}
 
 // SMALL SCREEN SIZING
 

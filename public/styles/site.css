@@ -6998,13 +6998,19 @@ svg.client-logo {
 .img-container {
   margin-bottom: 2rem; }
   .img-container img {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
     max-width: 100%; }
   .img-container .split {
     padding: 0; }
 
 .cp_embed_wrapper .embed-nav.group {
   display: none !important; }
+
+@media (min-width: 992px) {
+  .img-container #nb-app-3 {
+    padding-right: 15px; }
+  .img-container #nb-app-4 {
+    padding-left: 15px; } }
 
 @media (max-width: 768px) {
   .post .post-words div, .img-container {
