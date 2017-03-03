@@ -58,6 +58,7 @@ $( document ).ready(function() {
     var pageHead = $(".page-nav-cont");
     var pageTitle = $(".title-row");
     var sidebar = $(".sidebar-menu");
+    var pagination = $(".pagination");
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -71,14 +72,15 @@ $( document ).ready(function() {
             pageHead.addClass("scrolled");
             pageTitle.addClass("scrolled");
             sidebar.addClass("scrolled");
+            pagination.addClass("scrolled");
         } else {
             pageHead.removeClass("scrolled");
             pageTitle.removeClass("scrolled");
             sidebar.removeClass("scrolled");
+            pagination.removeClass("scrolled");
         }
     });
 });
-
 
 
 
