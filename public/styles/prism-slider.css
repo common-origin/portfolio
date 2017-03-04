@@ -80,3 +80,11 @@
 
 
 
+/* MEDIA QUERIES FOR PRISM SLIDER */
+
+@media (max-width: 768px){
+	.slider-cont{
+		display:none;
+	}
+}
+

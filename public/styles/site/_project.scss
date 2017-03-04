@@ -179,6 +179,7 @@ $black: #000;
 
 
 
+
 // IMAGE CONTAINER
 
 .img-container{
@@ -213,5 +214,8 @@ $black: #000;
 @media (max-width:768px){
 	.post .post-words div, .img-container{
 		padding:0;
+	}
+	.post-cont .page-cont .pagination{
+		display:none;
 	}
 }
