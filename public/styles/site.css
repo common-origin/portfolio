@@ -6689,7 +6689,7 @@ svg.client-logo {
     text-align: center;
     font-family: industry, sans-serif;
     font-weight: 800;
-    letter-spacing: .3rem;
+    letter-spacing: .05rem;
     padding-top: 5px;
     display: inline-block;
     transition: ease all .2s;
@@ -6874,7 +6874,8 @@ svg.client-logo {
 
 @media (max-width: 768px) {
   .proj-cont .separator {
-    opacity: 0; }
+    opacity: 0;
+    display: none; }
   .proj-cont .cat-menu {
     display: none;
     opacity: 0; } }
