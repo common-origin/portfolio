@@ -5864,9 +5864,6 @@ a:active, a:hover, a:focus {
 .nav-header {
   padding: 0 !important; }
 
-.navbar-brand {
-  display: none; }
-
 .navbar-default {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -5921,6 +5918,9 @@ a:active, a:hover, a:focus {
   font-size: 16px;
   letter-spacing: .1rem;
   font-weight: bold; }
+
+.navbar-brand {
+  width: 100%; }
 
 .page-title {
   font-family: industry, sans-serif;
@@ -6851,6 +6851,22 @@ svg.client-logo {
       -webkit-transition: ease all .3s;
       -o-transition: ease all .3s;
       -moz-transition: ease all .3s; }
+
+.mobile .cat-menu {
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s;
+  opacity: 1;
+  list-style: none;
+  margin-left: 0; }
+  .mobile .cat-menu ul {
+    padding-left: 2em; }
+    .mobile .cat-menu ul li {
+      font-family: aktiv-grotesk, sans-serif;
+      font-size: 12px;
+      display: block;
+      padding-top: .5em; }
 
 .proj-cont .page-title {
   font-family: industry, sans-serif;

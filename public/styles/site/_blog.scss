@@ -145,6 +145,23 @@ h1 {
     }
 }
 
+.mobile .cat-menu{
+    @include transition-main
+    opacity:1;
+    list-style:none;
+    margin-left:0;
+    ul{
+      padding-left:2em;
+      li{
+        font-family:$font-body;
+        font-size: 12px;
+        display:block;
+        padding-top:.5em;
+      }
+    }
+}
+
+
 .proj-cont {
     .page-title{
         font-family:$font-subhead;

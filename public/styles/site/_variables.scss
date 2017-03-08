@@ -91,9 +91,6 @@ a:active, a:hover, a:focus {
 .nav-header {
     padding:0 !important;
 }
-.navbar-brand{
-    display:none;
-}
 .navbar-default {
   	background-color:rgba(255, 255, 255, 0);
   	border:none;
@@ -148,6 +145,9 @@ a:active, a:hover, a:focus {
   	font-size: 16px;
     letter-spacing: .1rem;
     font-weight: bold;
+}
+.navbar-brand{
+    width:100%;
 }
 
 // PAGE TITLE GLOBAL

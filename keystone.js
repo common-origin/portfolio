@@ -65,7 +65,8 @@ keystone.Email.defaults.templateEngine = require('handlebars');
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	posts: ['posts', 'post-categories'],
+
+	portfolio: ['portfolios', 'project-categories'],
 	feeds: 'feeds',
 	enquiries: 'enquiries',
 	users: 'users',

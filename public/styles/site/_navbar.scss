@@ -51,7 +51,6 @@ $black: #000;
     float:none;
     padding: 9px 0;
 }
-
 .navbar-nav{
     margin:0;
 }
@@ -79,14 +78,11 @@ $black: #000;
     -webkit-transition:ease all .5s;
     -moz-transition:ease all .5s;	
 }
-
-
 .btn-wrap {
     @include centererX;
     bottom:10%;
     z-index: 1010;
 }
-
 .menu-close {
     width: 120px;
     height: 40px;
@@ -104,23 +100,19 @@ $black: #000;
     cursor: pointer;
     outline: none;
 }
-
 .enter-site-btn, .work-btn{
     @extend .menu-close;
 }
-
 .work-btn{
     visibility:hidden;
     opacity: 0;
 }
-
 .enter-site-btn{
     display:block;
 }
 .enter-site-btn.switch{
     display:none;
 }
-
 .menu-close:hover, .enter-site-btn:hover, .work-btn:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);

@@ -20,6 +20,8 @@ Feed.add({
             return '<img src="'+url+'" style="max-width: 300px">'
         }
     },
+    videoUrl: { type: Types.Url },
+	videoData: { type: Types.Embedly, from: 'videoUrl' },
     content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },

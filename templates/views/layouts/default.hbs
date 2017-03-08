@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="/styles/prism-slider.css" />
 		<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
 		<script src="/js/modernizr.custom.js"></script>
 		<script src="https://use.typekit.net/jdz3tzw.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -43,7 +44,8 @@
 						<div class="navbar-header">
 
 							<div class="row title-row container">
-								<div id="menu-toggle">
+							<!-- NAVIGATION FOR >768PX -->
+								<div id="menu-toggle" class="hidden-xs">
 									<button type="button" data-toggle="menu-hide" data-target=".sc-nav-collapse" class="navbar-toggle" id="menuButton">
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
@@ -55,8 +57,23 @@
 										    <span></span>
 										</div>										
 									</div>
-
 								</div>
+
+								<!-- MOBILE NAVIGATION-->
+								<div id="menu-toggle" class="visible-xs-block mobile">
+								  <button type="button" class="navbar-toggle" id="menuButton" data-toggle="offcanvas" data-target="#sc-mobile-menu" data-canvas="body">
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								    <span class="icon-bar"></span>
+								  </button>
+								  <div id="cross-container">
+										<div id="cross">
+										    <span></span>
+										    <span></span>
+										</div>										
+									</div>
+								</div>
+
 								{{#if data.post}}
 									<h5>{{data.post.title}}</h5>
 								{{else if feeds}}
@@ -68,11 +85,10 @@
 								{{/if}}
 								<a href="/contact"><button class="contact" type="button" id="contact-us" >contact us</button></a>
 							</div>
-
-
-							<a href="/" class="navbar-brand"><h3>sidechain</h3></a>
 						</div>
-						<div class="menu-hide sc-nav-collapse">
+
+						<!-- MENU FOR >768PX -->
+						<div class="menu-hide sc-nav-collapse hidden-xs">
 							<ul class="nav navbar-nav sc-nav-menu">
 								{{# each navLinks}}
 									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
@@ -88,6 +104,36 @@
 									<button class="menu-close" type="button" id="closeMenu">close</button>-->
 							</ul>
 						</div>
+
+						<!-- MENU FOR MOBILE -->
+						<nav id="sc-mobile-menu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+						  <a href="#" class="navbar-brand navmenu-brand"><h3>sidechain</h3></a>
+						  <ul class="nav navmenu-nav mobile">
+								{{# each navLinks}}
+									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+										<a href="{{ href }}">{{ label }}</a>
+									</li>
+								{{/each}}
+									<div class="cat-menu">
+										<ul class="" aria-labelledby="categoryMenu">
+											<li class="cat-menu-li"><a href="/blog" class=""> All</a></li>
+											{{# each data.categories }}
+												<li class="cat-menu-li">
+													<a href="{{categoryUrl key}}" class="false" >{{name}}</a>
+												</li>	
+											{{/each}}
+										</ul>
+									</div>
+
+								{{#if user}}
+									<li id="menuItem" class="sign-out"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+								{{else}}
+									<li id="menuItem" class="sign-in"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+								{{/if}}
+								<!--<div class="btn-wrap">
+									<button class="menu-close" type="button" id="closeMenu">close</button>-->
+						  </ul>
+						</nav>
 						<div class="sidebar-wrap">
 							<div class="sidebar-menu follow">
 								<h5 class="sidemenu-title">share</h5>
@@ -188,6 +234,9 @@
 			//- them specifically here, instead of bootstrap-3.3.5.min.js
 		--}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+
 
 		<script src="/js/utils/rAF.js"></script>
 		<script src="/js/utils/easing.js"></script>
