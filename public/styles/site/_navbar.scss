@@ -121,6 +121,20 @@ $black: #000;
 }
 
 
+// NAV MOBILE
+
+#sc-mobile-menu{
+    .navmenu-nav.mobile{
+      #menuItem h5{
+        margin:0;
+      }
+      .cat-menu h5{
+        margin-top:0;
+        padding-top:10px;
+      }
+    }
+}
+
 
 // NAVBAR HAMBURGER ANIMATION
 @mixin menu-transition{
@@ -249,7 +263,7 @@ $black: #000;
 // BACK BUTTON 
 .back-btn {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 10px;
     z-index: 1000000000;
@@ -359,9 +373,6 @@ $black: #000;
         -webkit-transition:ease all .5s;
         -moz-transition:ease all .5s;
     }
-}
-.copy-row {
-    padding-top: 6em;
 }
 
 

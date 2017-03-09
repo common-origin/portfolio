@@ -74,11 +74,11 @@
 									</div>
 								</div>
 
-								{{#if data.post}}
-									<h5>{{data.post.title}}</h5>
+								{{#if data.project}}
+									<h5>{{data.project.title}}</h5>
 								{{else if feeds}}
 									<h5>STREAM OF CONSCIOUSNESS</h5>
-								{{else if enquiries.post}}
+								{{else if enquiries}}
 									<h5>CONTACT</h5>
 								{{else}}
 									<h5>PORTFOLIO</h5>
@@ -111,11 +111,13 @@
 						  <ul class="nav navmenu-nav mobile">
 								{{# each navLinks}}
 									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}">{{ label }}</a>
+										<a href="{{ href }}"><h5>{{ label }}</h5></a>
 									</li>
 								{{/each}}
+									<hr>
 									<div class="cat-menu">
 										<ul class="" aria-labelledby="categoryMenu">
+											<h5>Project Categories</h5>
 											<li class="cat-menu-li"><a href="/portfolio" class=""> All</a></li>
 											{{# each data.categories }}
 												<li class="cat-menu-li">

@@ -1,6 +1,6 @@
 <div class="outer-container proj-cont">
 	<div class="container page-nav-cont">
-		<h5 class="page-title">PROJECTS <span class="separator"></span></h5>
+		<h5 class="page-title">PORTFOLIO <span class="separator"></span></h5>
 		<div class="cat-menu">
 			<ul class="" aria-labelledby="dropdownMenu1">
 				<li class="cat-menu-li"><a href="/portfolio" class=""> All</a></li>
@@ -17,8 +17,7 @@
 			<div class="cache">
 				
 				<img src="/images/masks/sidechain-logo-1.svg">
-				<img src="/images/masks/sidechain-logo-2.svg">
-				
+				<img src="/images/masks/sidechain-logo-2.svg">		
 				<img src="/images/mars-1.jpg">
 				<img src="/images/mars-2.jpg">
 				<img src="/images/mars-3.jpg">
@@ -33,51 +32,6 @@
 		</div>
 	</div>
 	<div class="container">
-		<!--<div class="row filter-section"> 
-			<div class="col-sm-12 filter-cont">
-				<div class="dropdown cat-menu">
-					<button class="btn btn-default dropdown-toggle trigger" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    				<span>WORK</span>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						<li class="cat-menu-li"><a href="/work" class="">All Categories</a></li>
-						{{# each data.categories }}
-							<li class="cat-menu-li">
-								<a href="{{categoryUrl key}}" class="false" >{{name}}</a>
-							</li>	
-						{{/each}}
-					</ul>
-				</div>
-			</div>
-		</div>-->
-
-		<!--<div class="row">
-			<div class="col-xs-12 project-thumbs">
-			  <h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4>
-				<div class="blog">
-					{{# each data.posts.results}}
-					<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="col-xs-12 col-md-6 project-thumb post">
-						{{#if image}}
-							<a href="{{postUrl slug}}">
-								<img src="{{{cloudinaryUrl image crop='fit' }}}" class="img project-img">
-							</a>
-						{{/if}}
-						<div class="data-container">
-							<div class="content">
-								<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
-								<p class="lead text-muted">{{{categoryList categories prefix=""}}}
-										{{#if author.name.first}}by {{author.name.first}}{{/if}}
-								</p>
-							</div>
-						</div>
-						<p>{{{content.brief}}}</p>
-						{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}
-					</div>
-					{{/each}}
-				</div>
-			</div>
-		</div>-->
-
 		<div class="row">
 		{{# each data.projects.results}}
 			<div class="col-xs-12 col-md-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">

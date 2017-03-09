@@ -64,6 +64,17 @@ $black: #000;
 		.post-categories{
 			font-family:$font-body;
 		}
+		.post-categories .categories h5{
+			color: #ddd;
+		    font-family: industry, sans-serif;
+		    text-transform: uppercase;
+		    letter-spacing: .05rem;
+		    font-size: 10px;
+		    font-weight: 800;
+		}
+		.post-categories .categories h5 a{
+			color: #ddd;
+		}
 		.p-sub-head{
 			font-family:$font-subhead;
 			font-weight: 800;
@@ -97,6 +108,15 @@ $black: #000;
 		}
 		.post-categories h5{
 			margin:0;
+			color: #ddd;
+	    font-family: industry, sans-serif;
+	    text-transform: uppercase;
+	    letter-spacing: .05rem;
+	    font-size: 10px;
+	    font-weight: 800;
+		}
+		.post-categories h5 a{
+			color: #ddd;
 		}
 		.body{
 			padding-bottom:2em;
@@ -111,14 +131,30 @@ $black: #000;
 	font-weight: 700;
 }
 
+/* ========== MEDIA QUERIES FOR PROJECT POSTS ============= */
+
 @media (min-width:992px){
-	.project-footer .post-categories{
+	.post .project-footer .post-categories{
 		display:none;
 	}
 }
 @media (max-width:992px){
-	.post-words .post-categories{
+	.post .post-words .post-categories{
 		display:none;
+	}
+}
+@media (max-width:768px){
+	.post .project-footer{
+		.title, .body{
+			padding-left:0;
+			padding-right:0;
+		}
+		.post-categories{
+			.categories, .proj-footer-share{
+				padding-left:0;
+				padding-right:0;
+			}
+		}
 	}
 }
 
@@ -183,7 +219,7 @@ $black: #000;
 .img-container{
 	margin-bottom:2rem;
 	img{
-		margin-bottom:30px;
+		margin-bottom:1rem;
 		max-width:100%;
 	}
 	.split{
@@ -199,10 +235,10 @@ $black: #000;
 @media (min-width:992px){
 	.img-container{
 		#nb-app-3{
-			padding-right:15px;
+			padding-right:.5rem;
 		}
 		#nb-app-4{
-			padding-left:15px;
+			padding-left:.5rem;
 		}
 	}
 }

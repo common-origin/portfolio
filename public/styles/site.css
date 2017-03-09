@@ -6004,13 +6004,16 @@ a:active, a:hover, a:focus {
   align-items: center;
   padding-left: 0;
   margin: 0;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-right: 0; }
   .client-list li {
     opacity: 0; }
 
 svg.client-logo {
-  width: 100px;
+  width: 100%;
   height: 80px;
+  min-width: 50px;
+  max-width: 100px;
   fill: #ddd; }
 
 .inner-container {
@@ -6071,7 +6074,6 @@ svg.client-logo {
   left: 50%;
   transform: translateX(-50%);
   top: 30%;
-  width: 65%;
   max-width: 700px;
   z-index: 1010; }
   .title-cont .sc-logo-title {
@@ -6090,6 +6092,12 @@ svg.client-logo {
     color: #000;
     text-align: center;
     opacity: 0; }
+  .title-cont .copy-row {
+    padding-top: 4em; }
+
+@media (max-width: 768px) {
+  .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
+    font-size: 1.2rem; } }
 
 @-webkit-keyframes sc-logo-anim {
   0% {
@@ -6523,6 +6531,13 @@ svg.client-logo {
   color: #fff;
   transform: translateY(-7px); }
 
+#sc-mobile-menu .navmenu-nav.mobile #menuItem h5 {
+  margin: 0; }
+
+#sc-mobile-menu .navmenu-nav.mobile .cat-menu h5 {
+  margin-top: 0;
+  padding-top: 10px; }
+
 #menu-toggle span {
   display: block;
   background: #566973; }
@@ -6612,7 +6627,7 @@ svg.client-logo {
 
 .back-btn {
   display: block;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 10px;
   z-index: 1000000000;
@@ -6703,9 +6718,6 @@ svg.client-logo {
   transition: ease all .5s;
   -webkit-transition: ease all .5s;
   -moz-transition: ease all .5s; }
-
-.copy-row {
-  padding-top: 6em; }
 
 .fade-in-on-load {
   animation-duration: 2.3s;
@@ -6855,7 +6867,7 @@ svg.client-logo {
   list-style: none;
   margin-left: 0; }
   .mobile .cat-menu ul {
-    padding-left: 2em; }
+    padding-left: 15px; }
     .mobile .cat-menu ul li {
       font-family: aktiv-grotesk, sans-serif;
       font-size: 12px;
@@ -6888,7 +6900,10 @@ svg.client-logo {
     display: none; }
   .proj-cont .cat-menu {
     display: none;
-    opacity: 0; } }
+    opacity: 0; }
+  .mobile .cat-menu {
+    display: block;
+    opacity: 1; } }
 
 .cat-menu.hover {
   opacity: 1;
@@ -6920,6 +6935,15 @@ svg.client-logo {
   padding: 0 0 2em 0; }
   .post .post-words .post-categories {
     font-family: aktiv-grotesk, sans-serif; }
+  .post .post-words .post-categories .categories h5 {
+    color: #ddd;
+    font-family: industry, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: 10px;
+    font-weight: 800; }
+  .post .post-words .post-categories .categories h5 a {
+    color: #ddd; }
   .post .post-words .p-sub-head {
     font-family: industry, sans-serif;
     font-weight: 800;
@@ -6947,7 +6971,15 @@ svg.client-logo {
     .post .project-footer .proj-footer-share .social-list li {
       width: 30px; }
   .post .project-footer .post-categories h5 {
-    margin: 0; }
+    margin: 0;
+    color: #ddd;
+    font-family: industry, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: 10px;
+    font-weight: 800; }
+  .post .project-footer .post-categories h5 a {
+    color: #ddd; }
   .post .project-footer .body {
     padding-bottom: 2em; }
 
@@ -6958,13 +6990,22 @@ svg.client-logo {
   text-transform: uppercase;
   font-weight: 700; }
 
+/* ========== MEDIA QUERIES FOR PROJECT POSTS ============= */
 @media (min-width: 992px) {
-  .project-footer .post-categories {
+  .post .project-footer .post-categories {
     display: none; } }
 
 @media (max-width: 992px) {
-  .post-words .post-categories {
+  .post .post-words .post-categories {
     display: none; } }
+
+@media (max-width: 768px) {
+  .post .project-footer .title, .post .project-footer .body {
+    padding-left: 0;
+    padding-right: 0; }
+  .post .project-footer .post-categories .categories, .post .project-footer .post-categories .proj-footer-share {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .post header .post-categories .categories {
   padding-bottom: 2em; }
@@ -7012,7 +7053,7 @@ svg.client-logo {
 .img-container {
   margin-bottom: 2rem; }
   .img-container img {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     max-width: 100%; }
   .img-container .split {
     padding: 0; }
@@ -7022,9 +7063,9 @@ svg.client-logo {
 
 @media (min-width: 992px) {
   .img-container #nb-app-3 {
-    padding-right: 15px; }
+    padding-right: .5rem; }
   .img-container #nb-app-4 {
-    padding-left: 15px; } }
+    padding-left: .5rem; } }
 
 @media (max-width: 768px) {
   .post .post-words div, .img-container {

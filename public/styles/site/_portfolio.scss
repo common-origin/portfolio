@@ -41,10 +41,8 @@ $white: #fff;
 $black: #000;
 
 
-h1 {
-}
+// BASE STYLES
 
-// Base styles
 .card {
   float: left;
   padding-bottom:30px;
@@ -140,7 +138,7 @@ h1 {
     list-style:none;
     margin-left:0;
     ul{
-      padding-left:2em;
+      padding-left:15px;
       li{
         font-family:$font-body;
         font-size: 12px;
@@ -179,6 +177,10 @@ h1 {
     .proj-cont .cat-menu{
       display:none;
       opacity:0;
+    }
+    .mobile .cat-menu{
+      display:block;
+      opacity:1;
     }
 }
 

@@ -258,7 +258,6 @@ a:active, a:hover, a:focus {
 }
 
 
-
 // CLIENT LOGOS
 
 .client-list {
@@ -269,20 +268,18 @@ a:active, a:hover, a:focus {
     padding-left: 0;
     margin: 0;
     padding-top: 4rem;
+    padding-right:0;
     li{
       opacity:0;
     }
 }
-
-
 svg.client-logo {
-    width: 100px;
+    width: 100%;
     height: 80px;
+    min-width:50px;
+    max-width: 100px;
     fill:#ddd;
 }
-
-
-
 
 
 // LOADING PAGE
@@ -352,7 +349,6 @@ svg.client-logo {
     left: 50%;
     transform: translateX(-50%);
     top: 30%;
-    width: 65%;
     max-width: 700px;
     z-index: 1010;
     .sc-logo-title {
@@ -371,6 +367,19 @@ svg.client-logo {
         text-align: center;
         opacity:0;
     }
+    .copy-row {
+      padding-top: 4em;
+  }
+}
+
+
+
+@media (max-width:768px){
+  .title-cont {
+    .enter-subhead1, .enter-subhead2 {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 
