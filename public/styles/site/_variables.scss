@@ -62,7 +62,7 @@ $black: #000;
 }
 
 
-
+/* ============================== */
 
 
 body {
@@ -143,8 +143,9 @@ a:active, a:hover, a:focus {
   	text-transform: uppercase;
   	line-height:1;
   	font-size: 16px;
-    letter-spacing: .1rem;
-    font-weight: bold;
+    letter-spacing: .3rem;
+    font-family:$font-subhead;
+    font-weight:800;
 }
 .navbar-brand{
     width:100%;
@@ -163,16 +164,12 @@ a:active, a:hover, a:focus {
 }
 
 
-
-
 // NAVBAR SCROLL FUNCTION
 .scrolled{
   	transition:ease all .4s;
   	-webkit-transition:ease all .4s;
   	-moz-transition:ease all .4s;
 }
-
-
 
 
 // FOOTER

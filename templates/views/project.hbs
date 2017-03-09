@@ -14,14 +14,14 @@
 					<!--{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image crop='fit' }}}" class="img-responsive head-img">{{/if}}-->
 					<header class="container post-words">
 						<div class="col-xs-12 col-sm-4 title">
-							<h5 class="p-sub-head">{{data.post.title}}</h5>
+							<h5 class="p-sub-head">{{data.project.title}}</h5>
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-6 brief">
-							{{{data.post.content.brief}}}
+							{{{data.project.content.brief}}}
 						</div>
 						<div class="col-xs-12 col-sm-2 post-categories">
 							<div class="categories">
-								<h5>{{{categoryList data.post.categories}}}</h5>
+								<h5>{{{categoryList data.project.categories}}}</h5>
 							</div>
 							<h5>Share this project</h5>
 							<ul class="social-list">								
@@ -48,17 +48,17 @@
 							</ul>
 						</div>
 					</header>
-					{{{data.post.content.extended}}}
+					{{{data.project.content.extended}}}
 					<div class="container project-footer">
 						<div class="col-xs-12 col-sm-4 title">
 							<h5 class="p-sub-head">credits</h5>
 						</div>	
 						<div class="col-xs-12 col-sm-8 body">
-							{{{data.post.content.brief}}}
+							{{{data.project.content.brief}}}
 						</div>
 						<div class="col-xs-12 col-sm-offset-4 col-sm-8 post-categories">
 							<div class="categories col-xs-5">
-								<h5>{{{categoryList data.post.categories}}}</h5>
+								<h5>{{{categoryList data.project.categories}}}</h5>
 							</div>
 							<div class="col-xs-5 proj-footer-share">
 								<h5>Share this project</h5>

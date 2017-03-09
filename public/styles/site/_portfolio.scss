@@ -62,25 +62,14 @@ h1 {
       }
     }
     .title {
-      margin: 1em 0 .3em 0;
-      font-family:$font-body;
+      margin: .5em 0 .3em 0;
+      font-family:$font-head;
       font-style: normal;
       font-weight: 300;
       font-size:1.4em; 
       a{
         color:#000;
       }
-    }
-    .text {
-    	font-family:$font-body;
-      height: 70px;
-      margin: 0;
-    }
-    input[type='checkbox'] {
-      display: none;
-    }
-    input[type='checkbox']:checked + .menu-content {
-      transform: translateY(-60px);
     }
   }
 }

@@ -5839,6 +5839,7 @@ button.close {
   .container {
     width: 1170px; } }
 
+/* ============================== */
 body {
   background-color: #fff !important;
   font-family: aktiv-grotesk, sans-serif;
@@ -5916,8 +5917,9 @@ a:active, a:hover, a:focus {
   text-transform: uppercase;
   line-height: 1;
   font-size: 16px;
-  letter-spacing: .1rem;
-  font-weight: bold; }
+  letter-spacing: .3rem;
+  font-family: industry, sans-serif;
+  font-weight: 800; }
 
 .navbar-brand {
   width: 100%; }
@@ -6785,21 +6787,13 @@ svg.client-logo {
       .card .content .author a {
         color: #bbb; }
     .card .content .title {
-      margin: 1em 0 .3em 0;
-      font-family: aktiv-grotesk, sans-serif;
+      margin: .5em 0 .3em 0;
+      font-family: aktiv-grotesk-thin, sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 1.4em; }
       .card .content .title a {
         color: #000; }
-    .card .content .text {
-      font-family: aktiv-grotesk, sans-serif;
-      height: 70px;
-      margin: 0; }
-    .card .content input[type='checkbox'] {
-      display: none; }
-    .card .content input[type='checkbox']:checked + .menu-content {
-      transform: translateY(-60px); }
 
 @media (max-width: 768px) {
   .card .content .title, .card .content .author {
@@ -6930,7 +6924,7 @@ svg.client-logo {
     font-family: industry, sans-serif;
     font-weight: 800;
     margin-top: 0;
-    letter-spacing: .3rem;
+    letter-spacing: .05rem;
     text-transform: uppercase; }
 
 .post .project-footer {
@@ -6939,7 +6933,7 @@ svg.client-logo {
     font-family: industry, sans-serif;
     font-weight: 800;
     margin-top: 0;
-    letter-spacing: .3rem;
+    letter-spacing: .05rem;
     text-transform: uppercase; }
   .post .project-footer .post-categories, .post .project-footer .proj-footer-share {
     padding-left: 0; }

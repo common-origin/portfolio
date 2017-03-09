@@ -73,7 +73,7 @@ exports = module.exports = function (req, res) {
         }
 
         q.exec(function (err, results) {
-            locals.data.posts = results;
+            locals.data.projects = results;
             next(err);
         });
     });
