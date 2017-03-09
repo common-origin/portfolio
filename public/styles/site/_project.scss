@@ -64,16 +64,20 @@ $black: #000;
 		.post-categories{
 			font-family:$font-body;
 		}
+		.categories{
+			border-bottom: 1px solid #f5f5f5;
+			margin-bottom:1em;
+		}
 		.post-categories .categories h5{
-			color: #ddd;
-		    font-family: industry, sans-serif;
-		    text-transform: uppercase;
-		    letter-spacing: .05rem;
-		    font-size: 10px;
-		    font-weight: 800;
+			color: #ccc;
+	    font-family: $font-subhead;
+	    text-transform: uppercase;
+	    letter-spacing: .05rem;
+	    font-size: 10px;
+	    font-weight: 800;
 		}
 		.post-categories .categories h5 a{
-			color: #ddd;
+			color: #ccc;
 		}
 		.p-sub-head{
 			font-family:$font-subhead;
@@ -81,6 +85,10 @@ $black: #000;
 			margin-top:0;
 			letter-spacing:.05rem;
 			text-transform:uppercase;
+		}
+		.brief p a{
+			color:#30cfbf;
+			font-weight:800;
 		}
 	}
 	.project-footer {
@@ -105,10 +113,13 @@ $black: #000;
 			li{
 				width:30px;
 			}
+			.icon a{
+				color:#ccc;
+			}
 		}
 		.post-categories h5{
 			margin:0;
-			color: #ddd;
+			color: #ccc;
 	    font-family: industry, sans-serif;
 	    text-transform: uppercase;
 	    letter-spacing: .05rem;
@@ -116,7 +127,7 @@ $black: #000;
 	    font-weight: 800;
 		}
 		.post-categories h5 a{
-			color: #ddd;
+			color: #ccc;
 		}
 		.body{
 			padding-bottom:2em;
@@ -163,10 +174,15 @@ $black: #000;
 
 .post header .post-categories{
 	.categories{
-		padding-bottom:2em;
+		padding-bottom:1em;
 	}
 	h5{
+		font-family:$font-subhead;
+		font-weight: 800;
+		text-transform:uppercase;
 		margin:0;
+		color:#ccc;
+		font-size:10px;
 	}
 	.social-list{
 		padding-top:1em;
@@ -178,9 +194,17 @@ $black: #000;
 		li{
 			width:30px;
 		}
+		.icon a{
+			color:#ccc;
+		}
 	}
 }
 
+
+.social-list .icon a:hover{
+	@include transition-main
+	color:#30cfbf;
+}
 
 // PAGINATION
 
