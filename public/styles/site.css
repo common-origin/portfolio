@@ -6920,8 +6920,9 @@ svg.client-logo {
     letter-spacing: .05rem;
     text-transform: uppercase; }
   .post .post-words .brief p a {
-    color: #30cfbf;
-    font-weight: 800; }
+    color: #486784;
+    font-weight: 800;
+    text-decoration: underline; }
 
 .post .project-footer {
   padding: 0; }
@@ -7003,13 +7004,6 @@ svg.client-logo {
     width: 30px; }
   .post header .post-categories .social-list .icon a {
     color: #ccc; }
-
-.social-list .icon a:hover {
-  transition: ease all .3s;
-  -webkit-transition: ease all .3s;
-  -o-transition: ease all .3s;
-  -moz-transition: ease all .3s;
-  color: #30cfbf; }
 
 .post-cont .page-cont {
   position: fixed;

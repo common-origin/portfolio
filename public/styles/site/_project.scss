@@ -87,8 +87,9 @@ $black: #000;
 			text-transform:uppercase;
 		}
 		.brief p a{
-			color:#30cfbf;
+			color:#486784;
 			font-weight:800;
+			text-decoration:underline; 
 		}
 	}
 	.project-footer {
@@ -200,11 +201,6 @@ $black: #000;
 	}
 }
 
-
-.social-list .icon a:hover{
-	@include transition-main
-	color:#30cfbf;
-}
 
 // PAGINATION
 
