@@ -21,7 +21,7 @@ Portfolio.add({
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
-		markdown: { type: Types.Markdown, height: 400 }
+		text: {type: Types.Textarea, height:200 }
 	},
 	categories: { type: Types.Relationship, ref: 'ProjectCategory', many: true },
 });

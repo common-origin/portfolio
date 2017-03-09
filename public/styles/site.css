@@ -6917,12 +6917,14 @@ svg.client-logo {
     font-family: industry, sans-serif;
     font-weight: 800;
     margin-top: 0;
+    font-size: 2em;
     letter-spacing: .05rem;
     text-transform: uppercase; }
   .post .post-words .brief p a {
     color: #486784;
     font-weight: 800;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 1.2em; }
 
 .post .project-footer {
   padding: 0; }
