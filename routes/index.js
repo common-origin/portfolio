@@ -39,6 +39,7 @@ exports = module.exports = function (app) {
 	app.get('/portfolio/project/:project', routes.views.project);
 	app.get('/feed', routes.views.feed);
 	app.all('/contact', routes.views.contact);
+	app.get('/video', routes.views.video);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

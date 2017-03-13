@@ -1,0 +1,71 @@
+// Override Bootstrap variables in this file, e.g.
+$font-size-base: 12px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
+
+// MIXINS
+
+// Center Mixin
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin middler {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// VARIABLES
+
+$font-head:aktiv-grotesk-thin, sans-serif;
+$font-subhead:industry, sans-serif;
+$font-body:aktiv-grotesk, sans-serif;
+$primary-color:;
+$secondary-color:;
+$white: #fff;
+$black: #000;
+
+
+
+// IFRAME VIDEO
+
+.video-container {
+  display: flex;
+  background-color:#151515;
+}
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.intrinsic-container {
+  padding-bottom: 56.25%;
+}
+.video {
+  max-width: 960px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 960px) {
+  .video {
+    padding:0;
+  }
+}

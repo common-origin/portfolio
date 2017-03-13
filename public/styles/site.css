@@ -12,6 +12,7 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5957,7 +5958,7 @@ a:active, a:hover, a:focus {
 .home-cont {
   height: 100%; }
 
-.header-cont, .contact-cont, .gallery-cont, .proj-cont {
+.header-cont, .contact-cont, .gallery-cont, .proj-cont, .video-cont {
   padding-top: 80px; }
 
 .slider-cont {
@@ -7134,6 +7135,28 @@ svg.client-logo {
   #footer {
     padding-left: 3em;
     padding-right: 3em; } }
+
+.video-container {
+  display: flex;
+  background-color: #151515; }
+
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden; }
+
+.intrinsic-container {
+  padding-bottom: 56.25%; }
+
+.video {
+  max-width: 960px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media only screen and (max-width: 960px) {
+  .video {
+    padding: 0; } }
 
 #header {
   margin-top: 30px; }

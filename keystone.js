@@ -71,6 +71,13 @@ keystone.set('nav', {
 	enquiries: 'enquiries',
 	users: 'users',
 	videos: 'videos',
+	'video': [
+		{
+			label: 'Video',
+			key: 'video',
+			path: '/video'
+		}
+	]
 });
 
 // Start Keystone to connect to your database and initialise the web server
