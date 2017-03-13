@@ -5866,7 +5866,8 @@ a:active, a:hover, a:focus {
   padding-right: 0; }
 
 .nav-header {
-  padding: 0 !important; }
+  padding: 0 !important;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); }
 
 .navbar-default {
   background-color: rgba(255, 255, 255, 0);
@@ -6669,11 +6670,12 @@ svg.client-logo {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
+    color: #ccc;
     text-transform: uppercase;
     text-align: center;
     font-family: industry, sans-serif;
     font-weight: 800;
-    letter-spacing: .05rem;
+    letter-spacing: .15rem;
     padding-top: 5px;
     display: inline-block;
     transition: ease all .2s;
