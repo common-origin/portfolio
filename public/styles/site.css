@@ -6820,40 +6820,80 @@ svg.client-logo {
     opacity: 1;
     padding-top: 0px; } }
 
-.feed-col {
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-top: -8px; }
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .masonry {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1; }
+    .masonry .item {
+      background-color: #fff;
+      display: inline-block;
+      margin: 0 0 1rem;
+      width: 100%; }
+      .masonry .item img {
+        max-width: 100%; } }
 
-.grid {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    -ms-column-gap: 1rem;
+    column-gap: 1rem; }
+    .masonry .item {
+      background-color: #fff;
+      display: inline-block;
+      margin: 0 0 1rem;
+      width: 100%; }
+      .masonry .item img {
+        max-width: 100%; } }
 
-.grid li {
-  display: block;
-  float: left;
-  padding: 8px;
-  width: 33.3333%;
-  opacity: 0; }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .masonry {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    -ms-column-gap: 1rem;
+    column-gap: 1rem; }
+    .masonry .item {
+      background-color: #fff;
+      display: inline-block;
+      margin: 0 0 1rem;
+      width: 100%; }
+      .masonry .item img {
+        max-width: 100%; } }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
-  opacity: 1; }
-
-.grid li a,
-.grid li img {
-  outline: none;
-  border: none;
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden; }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .masonry {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -ms-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    -ms-column-gap: 1rem;
+    column-gap: 1rem; }
+    .masonry .item {
+      background-color: #fff;
+      display: inline-block;
+      margin: 0 0 1rem;
+      width: 100%; }
+      .masonry .item img {
+        max-width: 100%; } }
 
 /* Effect 2: Move Up */
-.grid.effect-2 li.animate {
+.masonry .item.animate {
   -webkit-transform: translateY(200px);
   transform: translateY(200px);
   -webkit-animation: moveUp 0.65s ease forwards;
