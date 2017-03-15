@@ -204,7 +204,7 @@ module.exports = function () {
 
 	// create the category url for a project-category page
 	_helpers.categoryUrl = function (categorySlug, options) {
-		return ('/project/' + categorySlug);
+		return ('/portfolio/' + categorySlug);
 	};
 
 	// ### Pagination Helpers

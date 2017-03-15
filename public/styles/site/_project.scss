@@ -63,6 +63,7 @@ $black: #000;
 		padding: 0 0 2em 0;
 		.post-categories{
 			font-family:$font-body;
+			padding-top: .2em;
 		}
 		.categories{
 			border-bottom: 1px solid #f5f5f5;
@@ -83,6 +84,7 @@ $black: #000;
 			font-family:$font-subhead;
 			font-weight: 800;
 			margin-top:0;
+			line-height: .8;
 			font-size: 2em;
 			letter-spacing:.05rem;
 			text-transform:uppercase;
