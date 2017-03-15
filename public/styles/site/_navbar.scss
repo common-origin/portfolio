@@ -70,6 +70,7 @@ $black: #000;
   .navmenu-nav.mobile{
     #menuItem{
       @include transition-main
+      font-family:$font-body;
       &:hover{
         @include transition-main
         background-color:rgba(255,255,255,.5);
@@ -80,7 +81,7 @@ $black: #000;
       }
     }
     #menuItem h5{
-      @include transition-full
+      @include transition-main
       margin:0;
       color:$black;
     }
@@ -217,7 +218,29 @@ $black: #000;
 }
 .navbar-brand{
   float:none;
+  line-height:1;
+  margin:0;
+  padding:15px; 
+  width:100%;
 }
+.navmenu-brand{
+  margin:0 !important;
+  padding:15px !important;
+  background-color: #fff;
+  &:hover{
+    background-color:#fff !important;
+  };
+}
+.navbar-brand h3{
+  margin:0;
+  text-transform: uppercase;
+  line-height:1.2;
+  font-size: 16px;
+  letter-spacing: .3rem;
+  font-family:$font-subhead;
+  font-weight:800;
+}
+
 
 
 // NAVBAR HAMBURGER ANIMATION

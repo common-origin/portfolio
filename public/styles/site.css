@@ -5917,18 +5917,6 @@ a:active, a:hover, a:focus {
 .navbar-default .navbar-nav > .active > a {
   background-color: transparent; }
 
-.navbar-brand h3 {
-  margin: 0;
-  text-transform: uppercase;
-  line-height: 1;
-  font-size: 16px;
-  letter-spacing: .3rem;
-  font-family: industry, sans-serif;
-  font-weight: 800; }
-
-.navbar-brand {
-  width: 100%; }
-
 .page-title {
   font-family: industry, sans-serif;
   font-weight: 800;
@@ -6443,7 +6431,8 @@ svg.client-logo {
   transition: ease all .3s;
   -webkit-transition: ease all .3s;
   -o-transition: ease all .3s;
-  -moz-transition: ease all .3s; }
+  -moz-transition: ease all .3s;
+  font-family: aktiv-grotesk, sans-serif; }
   #sc-mobile-menu .navmenu-nav.mobile #menuItem:hover {
     transition: ease all .3s;
     -webkit-transition: ease all .3s;
@@ -6458,10 +6447,10 @@ svg.client-logo {
     padding-left: 10px; }
 
 #sc-mobile-menu .navmenu-nav.mobile #menuItem h5 {
-  transition: ease all 1s;
-  -webkit-transition: ease all 1s;
-  -o-transition: ease all 1s;
-  -moz-transition: ease all 1s;
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s;
   margin: 0;
   color: #000; }
 
@@ -6591,7 +6580,27 @@ svg.client-logo {
     visibility: visible; }
 
 .navbar-brand {
-  float: none; }
+  float: none;
+  line-height: 1;
+  margin: 0;
+  padding: 15px;
+  width: 100%; }
+
+.navmenu-brand {
+  margin: 0 !important;
+  padding: 15px !important;
+  background-color: #fff; }
+  .navmenu-brand:hover {
+    background-color: #fff !important; }
+
+.navbar-brand h3 {
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 16px;
+  letter-spacing: .3rem;
+  font-family: industry, sans-serif;
+  font-weight: 800; }
 
 #menu-toggle span {
   display: block;
