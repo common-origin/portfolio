@@ -64,45 +64,45 @@ $black: #000;
 // FOOTER STYLES
 
 .footer {
-  	background-color: #37383c;
-    bottom: 0;
-    margin-top: 80px;
+	background-color: #37383c;
+  bottom: 0;
+  margin-top: 80px;
 }
 #footer {
-  	border:none !important;
-  	margin-top:0 !important;
-    padding-bottom:100px;
-    padding-top:80px !important;
-    .sc-logo-title{
-      max-width:200px;
-      fill:#4b4c50;
-      padding-bottom: 3em;
+	border:none !important;
+	margin-top:0 !important;
+  padding-bottom:100px;
+  padding-top:80px !important;
+  .sc-logo-title{
+    max-width:200px;
+    fill:#4b4c50;
+    padding-bottom: 3em;
+  }
+  .contact-list, .social-list{
+    font-size:12px;
+    font-family:$font-body;
+    color:#fff;
+    list-style:none;
+    padding-left:0;
+    li{
+      padding-bottom:8px;
     }
-    .contact-list, .social-list{
-      font-size:12px;
-      font-family:$font-body;
-      color:#fff;
-      list-style:none;
-      padding-left:0;
-      li{
-        padding-bottom:8px;
-      }
-    }
+  }
 }
 #footer ul {
-    h5{
-        display:inline-block;
-        margin:0;
-        font-size: 12px;
-    }
-    li i {
-        width: 20px;
-    }
+  h5{
+    display:inline-block;
+    margin:0;
+    font-size: 12px;
+  }
+  li i {
+    width: 20px;
+  }
 }
 
 @media (max-width:768px){
-#footer {
+  #footer {
     padding-left:3em;
     padding-right:3em;
-  }
+    }
 }
