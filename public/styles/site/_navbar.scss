@@ -68,15 +68,36 @@ $black: #000;
 
 #sc-mobile-menu{
   .navmenu-nav.mobile{
+    #menuItem{
+      &:hover{
+        background-color: #eee;
+      }
+    }
     #menuItem h5{
       margin:0;
       color:$black;
     }
-    .cat-menu h5{
-      margin-top:0;
+    .cat-menu{
       padding-top:10px;
+      width:100%;
+    }
+    .cat-menu h5{
+      margin:0 30px 10px 0;
+      padding-top:20px;
+      border-top:1px solid #eee;
+    }
+    .cat-menu ul .cat-menu-li a{
+      &:hover{
+        color:#2EE59D;
+      }      
     }
   }
+}
+
+.navmenu-default{
+  background-color:transparent;
+  background-image:url('/images/debut_light.png');
+  background-repeat:repeat;
 }
 
 /*
@@ -252,6 +273,7 @@ $black: #000;
 
 
 // CONTACT US BUTTON
+
 .nav-container .title-row .contact {
   @include transition-main
   border:none;
@@ -273,6 +295,7 @@ $black: #000;
 }
 
 // BACK BUTTON 
+
 .back-btn {
   display: block;
   padding-top: 3px;
@@ -310,7 +333,6 @@ $black: #000;
   text-transform:uppercase;
   color:#ccc;
 }
-
 .sidebar-menu.follow{
   opacity:0;
   position: fixed;
@@ -330,7 +352,6 @@ $black: #000;
     opacity:1;
   }
 }
-
 .social-list .icon{
   @include transition-main
   color:#cccccc;
@@ -349,8 +370,6 @@ $black: #000;
 }
 
 
-
-
 // SIGN IN/OUT
 
 .sign-in, .sign-out {
@@ -358,9 +377,6 @@ $black: #000;
   bottom: 0;
   right: 0;
 }
-
-
-
 
 
 // PAGE TITLE FOR HEADER

@@ -43,9 +43,7 @@ $(document).on('click', function(e) {
   } else if(d==='navbar-brand') {
   	return;
   } else {
-  	$('#sc-mobile-menu').removeClass('in');
-  	$('#sc-mobile-menu').removeClass('canvas-slid');
-  	$('nav').css('left', '-300px');
+
   }
 });
 

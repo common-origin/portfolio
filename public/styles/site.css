@@ -6439,13 +6439,29 @@ svg.client-logo {
 .navbar-header {
   width: 100% !important; }
 
+#sc-mobile-menu .navmenu-nav.mobile #menuItem:hover {
+  background-color: #eee; }
+
 #sc-mobile-menu .navmenu-nav.mobile #menuItem h5 {
   margin: 0;
   color: #000; }
 
+#sc-mobile-menu .navmenu-nav.mobile .cat-menu {
+  padding-top: 10px;
+  width: 100%; }
+
 #sc-mobile-menu .navmenu-nav.mobile .cat-menu h5 {
-  margin-top: 0;
-  padding-top: 10px; }
+  margin: 0 30px 10px 0;
+  padding-top: 20px;
+  border-top: 1px solid #eee; }
+
+#sc-mobile-menu .navmenu-nav.mobile .cat-menu ul .cat-menu-li a:hover {
+  color: #2EE59D; }
+
+.navmenu-default {
+  background-color: transparent;
+  background-image: url("/images/debut_light.png");
+  background-repeat: repeat; }
 
 /*
 // DESKTOP NAV
@@ -6954,7 +6970,17 @@ svg.client-logo {
     font-size: 10px;
     font-weight: 800; }
   .post .post-words .post-categories .categories h5 a {
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+    -o-transition: ease all .6s;
+    -moz-transition: ease all .6s;
     color: #ccc; }
+    .post .post-words .post-categories .categories h5 a:hover {
+      transition: ease all .6s;
+      -webkit-transition: ease all .6s;
+      -o-transition: ease all .6s;
+      -moz-transition: ease all .6s;
+      color: #2EE59D; }
   .post .post-words .p-sub-head {
     font-family: industry, sans-serif;
     font-weight: 800;
@@ -6977,8 +7003,6 @@ svg.client-logo {
     margin-top: 0;
     letter-spacing: .05rem;
     text-transform: uppercase; }
-  .post .project-footer .post-categories, .post .project-footer .proj-footer-share {
-    padding-left: 0; }
   .post .project-footer .proj-footer-share .social-list {
     padding-top: 1em;
     list-style: none;
@@ -7001,7 +7025,8 @@ svg.client-logo {
   .post .project-footer .post-categories h5 a {
     color: #ccc; }
   .post .project-footer .body {
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    color: #ccc; }
 
 .post .categories h5 {
   font-weight: 900; }

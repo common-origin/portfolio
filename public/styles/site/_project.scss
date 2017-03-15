@@ -30,6 +30,13 @@
     -moz-transition: ease all .3s;
 }
 
+@mixin transition-sec{
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+    -o-transition: ease all .6s;
+    -moz-transition: ease all .6s;
+}
+
 
 // VARIABLES
 
@@ -78,7 +85,12 @@ $black: #000;
 	    font-weight: 800;
 		}
 		.post-categories .categories h5 a{
+			@include transition-sec
 			color: #ccc;
+			&:hover{
+				@include transition-sec
+    		color:#2EE59D;
+	    }
 		}
 		.p-sub-head{
 			font-family:$font-subhead;
@@ -104,9 +116,6 @@ $black: #000;
 			margin-top:0;
 			letter-spacing:.05rem;
 			text-transform:uppercase;		
-		}
-		.post-categories, .proj-footer-share{
-			padding-left:0;
 		}
 		.proj-footer-share .social-list{
 			padding-top:1em;
@@ -136,6 +145,7 @@ $black: #000;
 		}
 		.body{
 			padding-bottom:2em;
+			color:#ccc;
 		}
 	}
 	.categories h5{
