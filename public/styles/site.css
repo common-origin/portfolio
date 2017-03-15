@@ -7316,19 +7316,6 @@ svg.client-logo {
 .contact-header {
   text-align: center; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 100%; } }
-
-@media (min-width: 992px) {
-  .container {
-    width: 100%; } }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-
-/* ============================== */
 .footer {
   background-color: #37383c;
   bottom: 0;
@@ -7344,11 +7331,23 @@ svg.client-logo {
     fill: #4b4c50;
     padding-bottom: 3em; }
   #footer .contact-list, #footer .social-list {
-    font-size: 12px;
+    font-size: 10px;
     font-family: aktiv-grotesk, sans-serif;
-    color: #fff;
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    color: #4b4c50; }
+    #footer .contact-list a, #footer .social-list a {
+      transition: ease all .3s;
+      -webkit-transition: ease all .3s;
+      -o-transition: ease all .3s;
+      -moz-transition: ease all .3s;
+      color: #4b4c50; }
+      #footer .contact-list a:hover, #footer .social-list a:hover {
+        transition: ease all .3s;
+        -webkit-transition: ease all .3s;
+        -o-transition: ease all .3s;
+        -moz-transition: ease all .3s;
+        color: #fff; }
     #footer .contact-list li, #footer .social-list li {
       padding-bottom: 8px; }
 
@@ -7359,11 +7358,6 @@ svg.client-logo {
 
 #footer ul li i {
   width: 20px; }
-
-@media (max-width: 768px) {
-  #footer {
-    padding-left: 3em;
-    padding-right: 3em; } }
 
 .video-container {
   display: flex;

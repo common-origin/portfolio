@@ -16,6 +16,21 @@
   transform: translateX(-50%);
 }
 
+// Transition Mixin
+@mixin transition-main{
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+}
+
+@mixin transition-sec{
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+    -o-transition: ease all .6s;
+    -moz-transition: ease all .6s;
+}
+
 // clear-fix mixin
 @mixin cf {
   &::before,
@@ -39,28 +54,6 @@ $white: #fff;
 $black: #000;
 
 
-// Bootstrap Container Override
-
-@media (min-width: 768px){
-    .container {
-        width: 100%;
-    } 
-}
-@media (min-width: 992px){
-    .container {
-        width: 100%;
-    } 
-}
-@media (min-width: 1200px){
-    .container {
-        width: 1170px;
-    } 
-}
-
-
-/* ============================== */
-
-
 // FOOTER STYLES
 
 .footer {
@@ -79,11 +72,19 @@ $black: #000;
     padding-bottom: 3em;
   }
   .contact-list, .social-list{
-    font-size:12px;
+    font-size:10px;
     font-family:$font-body;
-    color:#fff;
     list-style:none;
     padding-left:0;
+    color:#4b4c50;
+    a{
+      @include transition-main;
+      color:#4b4c50;
+      &:hover{
+        @include transition-main;
+        color:#fff;
+      }
+    }
     li{
       padding-bottom:8px;
     }
@@ -100,9 +101,3 @@ $black: #000;
   }
 }
 
-@media (max-width:768px){
-  #footer {
-    padding-left:3em;
-    padding-right:3em;
-    }
-}
