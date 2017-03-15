@@ -11,6 +11,21 @@
   transform: translateX(-50%);
 }
 
+// Transition Mixin
+@mixin transition-main{
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+}
+
+@mixin transition-sec{
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+    -o-transition: ease all .6s;
+    -moz-transition: ease all .6s;
+}
+
 // clear-fix mixin
 @mixin cf {
   &::before,
@@ -34,7 +49,12 @@ $white: #fff;
 $black: #000;
 
 
-
+.contact-cont {
+  .page-nav-cont .page-title{
+    text-align:center;
+    display:block;
+  }
+}
 
 
 .contact-form{
@@ -42,31 +62,36 @@ $black: #000;
   padding-top: 10%;
   margin-left: auto;
   margin-right: auto;
-    label{
-      font-family:$font-body; 
-      font-style: normal;
-      font-weight:300;
-    }
-    h3{
-      text-align:center;
-    }
-}
-.contact-header{
-   text-align: center;
-}
-
-.form-control{
-  border:none;
-  border-bottom:1px solid #eee;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  -o-box-shadow:none;
-  box-shadow:none;
-  border-radius:0;
-  &:focus{
+  label{
+    font-family:$font-body; 
+    font-style: normal;
+    font-weight:300;
+  }
+  h3{
+    text-align:center;
+  }
+  .form-actions{
+    padding-top:2em; 
+  }
+  .form-group .form-control{
+    @include transition-sec
+    border:none;
+    border-bottom:1px solid #eee;
     -webkit-box-shadow:none;
     -moz-box-shadow:none;
     -o-box-shadow:none;
     box-shadow:none;
+    border-radius:0;
+    &:focus{
+      @include transition-sec
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      -o-box-shadow:none;
+      box-shadow:none;
+      border-color:#2EE59D;
+    }
   }
+}
+.contact-header{
+   text-align: center;
 }
