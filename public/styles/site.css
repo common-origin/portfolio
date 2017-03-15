@@ -5954,7 +5954,22 @@ a:active, a:hover, a:focus {
   padding-top: 80px; }
 
 .slider-cont {
-  padding: 0; }
+  padding-bottom: 30px; }
+
+.carousel-control {
+  text-shadow: none;
+  opacity: 1 !important;
+  width: 10% !important; }
+  .carousel-control i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em; }
+  .carousel-control span {
+    opacity: 1 !important;
+    background-color: transparent !important; }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none; }
 
 .client-list {
   list-style: none;
