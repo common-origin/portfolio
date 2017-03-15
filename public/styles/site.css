@@ -6439,10 +6439,29 @@ svg.client-logo {
 .navbar-header {
   width: 100% !important; }
 
-#sc-mobile-menu .navmenu-nav.mobile #menuItem:hover {
-  background-color: #eee; }
+#sc-mobile-menu .navmenu-nav.mobile #menuItem {
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s; }
+  #sc-mobile-menu .navmenu-nav.mobile #menuItem:hover {
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+    background-color: rgba(255, 255, 255, 0.5); }
+  #sc-mobile-menu .navmenu-nav.mobile #menuItem:hover h5 {
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+    padding-left: 10px; }
 
 #sc-mobile-menu .navmenu-nav.mobile #menuItem h5 {
+  transition: ease all 1s;
+  -webkit-transition: ease all 1s;
+  -o-transition: ease all 1s;
+  -moz-transition: ease all 1s;
   margin: 0;
   color: #000; }
 
@@ -6462,6 +6481,9 @@ svg.client-logo {
   background-color: transparent;
   background-image: url("/images/debut_light.png");
   background-repeat: repeat; }
+
+.navmenu-default .navmenu-nav > .active > a {
+  background-color: rgba(255, 255, 255, 0.5) !important; }
 
 /*
 // DESKTOP NAV

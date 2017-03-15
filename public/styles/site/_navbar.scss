@@ -69,11 +69,18 @@ $black: #000;
 #sc-mobile-menu{
   .navmenu-nav.mobile{
     #menuItem{
+      @include transition-main
       &:hover{
-        background-color: #eee;
+        @include transition-main
+        background-color:rgba(255,255,255,.5);
+      }
+      &:hover h5{
+        @include transition-main
+        padding-left:10px; 
       }
     }
     #menuItem h5{
+      @include transition-full
       margin:0;
       color:$black;
     }
@@ -98,6 +105,9 @@ $black: #000;
   background-color:transparent;
   background-image:url('/images/debut_light.png');
   background-repeat:repeat;
+}
+.navmenu-default .navmenu-nav>.active>a{
+  background-color:rgba(255,255,255,.5) !important;
 }
 
 /*
