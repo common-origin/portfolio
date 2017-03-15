@@ -181,7 +181,7 @@ $black: #000;
   cursor: pointer;
   outline: none;
 }
-.enter-site-btn, .work-btn{
+.enter-site-btn, .work-btn, .next-btn{
   @extend .menu-close;
 }
 .work-btn{
@@ -244,6 +244,7 @@ $black: #000;
 
 
 // NAVBAR HAMBURGER ANIMATION
+
 @mixin menu-transition{
   transition:.25s ease-in-out;
 }
@@ -311,16 +312,13 @@ $black: #000;
   @include transition-main
   border:none;
   padding:0.5em 0 0.5em 1em;
-  font-family:$font-body;
   float: right;
-  border-radius: 50px;
   background-color: transparent;
   line-height:1;
   vertical-align: middle;
-  font-size: 12px;
+  font-size:20px;
   color:#000;
-  margin-top:12px;
-  font-weight:700;
+  margin-top:5px;
   &:hover{
     @include transition-main
     color:#2EE59D;

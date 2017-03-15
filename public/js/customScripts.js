@@ -77,11 +77,11 @@ $( document ).ready(function() {
       sidebar.removeClass("scrolled");
       pagination.removeClass("scrolled");
     }
+    if ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 500 ){
+      sidebar.removeClass("scrolled");
+    }
   });
 });
-
-
-
 
 
 // Cat Menu Hover from Project Card
@@ -98,7 +98,6 @@ $('.page-nav-cont').hover(function() {
 
 
 // Page Loading Function
-
 
 $(window).load(function() {
 	// Animate loader off screen

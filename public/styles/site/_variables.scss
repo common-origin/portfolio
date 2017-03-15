@@ -199,6 +199,7 @@ a:active, a:hover, a:focus {
 
 
 // SLIDER 
+
 .slider-cont{
   padding-bottom:30px;
 }
@@ -239,6 +240,12 @@ a:active, a:hover, a:focus {
     font-family:$font-subhead; 
     letter-spacing: .05rem;
     font-weight:800;  
+  }
+}
+
+@media (max-width: 480px){
+  .slider-cont{
+    display:none;
   }
 }
 
