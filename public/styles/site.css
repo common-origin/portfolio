@@ -5871,7 +5871,7 @@ a:active, a:hover, a:focus {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); }
 
 .navbar-default {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   border: none;
   z-index: 1000;
   transition: ease all .4s;
@@ -6365,9 +6365,9 @@ svg.client-logo {
   background-color: transparent;
   line-height: 1;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 14px;
   color: #000;
-  margin-top: 5px; }
+  margin-top: 10px; }
   .nav-container .title-row .contact:hover {
     transition: ease all .3s;
     -webkit-transition: ease all .3s;
