@@ -215,8 +215,15 @@
 			} );
 		</script>
 		<script type="text/javascript">
-			$(function() {
-			    $("footer").hide();
+			//$(function() {
+			//    $("footer").hide();
+			//});
+			$(function(){
+			  if (window.location.pathname == "sidechain.studio/index.html"||window.location.pathname == ""||window.location.pathname == "") {
+			        $('#footer').hide();
+			  } else {
+			        $('#footer').show();
+			  }
 			});
 		</script>
 
