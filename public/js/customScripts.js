@@ -54,7 +54,7 @@ $( document ).ready(function() {
   //caches a jQuery object containing the header element
   var header = $(".navbar-default");
   var pageHead = $(".page-nav-cont");
-  var pageTitle = $(".title-row");
+  //var pageTitle = $(".title-row");
   var sidebar = $(".sidebar-menu");
   var pagination = $(".pagination");
 
@@ -68,12 +68,12 @@ $( document ).ready(function() {
     }
     if (scroll > 60) {
       pageHead.addClass("scrolled");
-      pageTitle.addClass("scrolled");
+      //pageTitle.addClass("scrolled");
       sidebar.addClass("scrolled");
       pagination.addClass("scrolled");
     } else {
       pageHead.removeClass("scrolled");
-      pageTitle.removeClass("scrolled");
+      //pageTitle.removeClass("scrolled");
       sidebar.removeClass("scrolled");
       pagination.removeClass("scrolled");
     }
@@ -92,6 +92,10 @@ $('.project-card').hover(function() {
 
 });
 $('.page-nav-cont').hover(function() {
+  $('.cat-menu').toggleClass("hover");
+  $('.separator').toggleClass("hover");
+});
+$('.carousel').hover(function() {
   $('.cat-menu').toggleClass("hover");
   $('.separator').toggleClass("hover");
 });

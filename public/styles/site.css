@@ -6257,56 +6257,36 @@ svg.client-logo {
   animation: subhead-anim 2s 4s 1 forwards ease;
   /* IE 10+, Fx 29+ */ }
 
-.title-cont.allow .client-list li:first-child {
-  -webkit-animation: subhead-anim 2s 5s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 5s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 5s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 5s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
+/*.title-cont.allow .client-list li:first-child {
+    -webkit-animation: subhead-anim 2s 5s 1 forwards ease; 
+    -moz-animation:    subhead-anim 2s 5s 1 forwards ease; 
+    -o-animation:      subhead-anim 2s 5s 1 forwards ease; 
+    animation:         subhead-anim 2s 5s 1 forwards ease; 
+}
 .title-cont.allow .client-list li:nth-child(2) {
-  -webkit-animation: subhead-anim 2s 5.3s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 5.3s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 5.3s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 5.3s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
+    -webkit-animation: subhead-anim 2s 5.3s 1 forwards ease; 
+    -moz-animation:    subhead-anim 2s 5.3s 1 forwards ease; 
+    -o-animation:      subhead-anim 2s 5.3s 1 forwards ease; 
+    animation:         subhead-anim 2s 5.3s 1 forwards ease; 
+}
 .title-cont.allow .client-list li:nth-child(3) {
-  -webkit-animation: subhead-anim 2s 5.6s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 5.6s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 5.6s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 5.6s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
+    -webkit-animation: subhead-anim 2s 5.6s 1 forwards ease; 
+    -moz-animation:    subhead-anim 2s 5.6s 1 forwards ease; 
+    -o-animation:      subhead-anim 2s 5.6s 1 forwards ease; 
+    animation:         subhead-anim 2s 5.6s 1 forwards ease; 
+}
 .title-cont.allow .client-list li:nth-child(4) {
-  -webkit-animation: subhead-anim 2s 5.9s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 5.9s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 5.9s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 5.9s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
+    -webkit-animation: subhead-anim 2s 5.9s 1 forwards ease; 
+    -moz-animation:    subhead-anim 2s 5.9s 1 forwards ease; 
+    -o-animation:      subhead-anim 2s 5.9s 1 forwards ease; 
+    animation:         subhead-anim 2s 5.9s 1 forwards ease; 
+}
 .title-cont.allow .client-list li:nth-child(5) {
-  -webkit-animation: subhead-anim 2s 6.2s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 6.2s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 6.2s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 6.2s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
+    -webkit-animation: subhead-anim 2s 6.2s 1 forwards ease; 
+    -moz-animation:    subhead-anim 2s 6.2s 1 forwards ease; 
+    -o-animation:      subhead-anim 2s 6.2s 1 forwards ease; 
+    animation:         subhead-anim 2s 6.2s 1 forwards ease; 
+}*/
 @-webkit-keyframes work-btn-anim {
   0% {
     opacity: 0;
@@ -6792,14 +6772,15 @@ svg.client-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
-    color: #ccc;
+    font-size: 12px;
+    opacity: 1;
+    color: #000;
     text-transform: uppercase;
     text-align: center;
     font-family: industry, sans-serif;
     font-weight: 800;
     letter-spacing: .15rem;
-    padding-top: 5px;
+    padding-top: 8px;
     display: inline-block;
     transition: ease all .2s;
     -webkit-transition: ease all .2s;

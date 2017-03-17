@@ -425,14 +425,15 @@ $black: #000;
   margin-right: auto;
   h5{
     @include centererX;
-    opacity:0;
-    color:#ccc;
+    font-size:12px;
+    opacity:1;
+    color:#000;
     text-transform:uppercase;
     text-align:center;
     font-family: industry, sans-serif;
     font-weight: 800;
     letter-spacing:.15rem;
-    padding-top: 5px;
+    padding-top:8px;
     display: inline-block;
     transition:ease all .2s;
     -webkit-transition:ease all .2s;
