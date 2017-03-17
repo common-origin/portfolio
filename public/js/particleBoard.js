@@ -13,11 +13,11 @@
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 1000;
+var numberParticlesStart = 60;
 var particleSpeed = 0.3;
-var velocity = 0.5;
-var reactangleWidth = 115;
-var reactangleHeight = 75;
+var velocity = 0.6;
+var reactangleWidth = 90;
+var reactangleHeight = 50;
 
 
 /* ---- INIT ---- */
@@ -39,7 +39,7 @@ function Particle(x, y) {
     max: getRandomFloat(5, 100) / 10
   };
 
-  this.color = 'rgba(255, 255, 255, 0.05)';
+  this.color = 'rgba(46, 229, 157, 0.05)';
 }
 Particle.prototype.render = function () {
   context.beginPath();
@@ -109,7 +109,7 @@ function init() {
   var i = undefined;
   for (i = 0; i < numberParticlesStart; i++) {
     var angle = Math.random() * 360;
-    particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidth, windowHeight * 0.5 - Math.sin(angle) * reactangleHeight));
+    particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidth, windowHeight * 0.5 + Math.sin(angle) * reactangleHeight));
   }
 }
 init();

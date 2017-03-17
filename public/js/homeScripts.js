@@ -15,3 +15,9 @@
 //	    $('.sc-logo-cont').toggleClass('svg-anim');
 //	}, false);
 //});
+
+//  Button Page Load Delay
+
+$(window).load(function() {
+    $(".enter-site-btn").delay(2000).css('opacity', '1');
+});

@@ -1,20 +1,10 @@
-.particle-container {
-    position: absolute;
-    z-index:-1;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #000000;
-    margin: 0;
-}
 #particle-canvas{
     position:absolute;
     top:0;
+    margin-top:-165px;
+    background:#fff;
 }
-#particle-canvas.switch{
-    display:none;
-}
+
 
 
 /* SVG Logo */

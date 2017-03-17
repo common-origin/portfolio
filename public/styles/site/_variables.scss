@@ -281,22 +281,26 @@ svg.client-logo {
     z-index: 1010;
 }
 
-.sc-logo-cont {
-  z-index: 1000;
-  opacity:1;
+.sc-logo-cont{
   display: flex;
   justify-content: center;
+  padding-bottom:30px;
+  #sc-logo{
+    fill:#fff;
+    width: 250px;
+    height: 100%;
+    padding-top: 2em;
+    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, .2));
+  }
 }
 .title-cont {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);  
-  max-width: 700px;
-  z-index: 1010;
-  display: flex;
-  justify-content: center;
-  align-items:center; 
+  max-width: 500px;
+  margin-top: -100px;
+  z-index: 1010; 
   .sc-logo-title {
     @include middler 
   	fill:#fff;	
@@ -309,32 +313,34 @@ svg.client-logo {
       font-family:$font-body;
       margin: 3rem 0 2rem 0;
       font-size: 1.4rem;
-      color: #000;
+      color: #fff;
       text-align: center;
       opacity:0;
   }
   .copy-row {
-    padding-top: 1em;
+    display:flex;
+    justify-content:center;
+    text-align:center;
     .about{
+      color: #2ee59d;
+      width: 300px;
+      font-size: 14px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    h3{
+      font-family:$font-subhead;
+      font-weight:800;
       color:#fff;
+      margin-top:0; 
+      letter-spacing:.3em;
     }
   }
 }
 
-
-
-@media (max-width:768px){
-  .title-cont {
-    .enter-subhead1, .enter-subhead2 {
-      font-size: 1.2rem;
-    }
-  }
+.home-cont .enter-site-btn{
+  opacity:0;
 }
-
-
-
-
-
 
 
 
