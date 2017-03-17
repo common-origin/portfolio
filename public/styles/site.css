@@ -6014,37 +6014,6 @@ svg.client-logo {
   max-width: 100px;
   fill: #ddd; }
 
-.inner-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 500; }
-
-.menu-bg {
-  position: absolute;
-  display: block;
-  width: 100vw;
-  background-color: #fff;
-  transition: ease all .4s;
-  -webkit-transition: ease all .4s;
-  -moz-transition: ease all .4s; }
-  .menu-bg.left {
-    left: 0;
-    top: 0;
-    height: 0; }
-  .menu-bg.right {
-    left: 0;
-    bottom: 0;
-    height: 0; }
-
-.menu-bg.left.expand, .menu-bg.right.expand {
-  height: 50vh;
-  transition: ease all .2s;
-  -webkit-transition: ease all .2s;
-  -moz-transition: ease all .2s; }
-
 .home-cont #enter-btn {
   bottom: 5%;
   z-index: 1010; }
@@ -6052,28 +6021,19 @@ svg.client-logo {
 .sc-logo-cont {
   z-index: 1000;
   opacity: 1;
-  padding-top: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center; }
-
-.sc-logo-cont.svg-anim {
-  top: 50%;
-  transition: ease all 1s;
-  -webkit-transition: ease all 1s;
-  -moz-transition: ease all 1s;
-  transition-delay: 1s; }
 
 .title-cont {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   max-width: 700px;
-  z-index: 1010; }
+  z-index: 1010;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .title-cont .sc-logo-title {
     position: absolute;
     left: 50%;
@@ -6091,285 +6051,13 @@ svg.client-logo {
     text-align: center;
     opacity: 0; }
   .title-cont .copy-row {
-    padding-top: 8em; }
+    padding-top: 1em; }
+    .title-cont .copy-row .about {
+      color: #fff; }
 
 @media (max-width: 768px) {
   .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
     font-size: 1.2rem; } }
-
-@-webkit-keyframes sc-logo-anim {
-  0% {
-    opacity: 0;
-    fill: #fff; }
-  25% {
-    opacity: 1;
-    fill: #fff;
-    -webkit-filter: drop-shadow(0px 5px 150px rgba(0, 0, 0, 0.2)); }
-  100% {
-    opacity: 1;
-    fill: #fff;
-    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-    width: 80%; } }
-
-@-moz-keyframes sc-logo-anim {
-  0% {
-    opacity: 0;
-    fill: #fff; }
-  25% {
-    opacity: 1;
-    fill: #fff;
-    -moz-filter: drop-shadow(0px 5px 150px rgba(0, 0, 0, 0.2)); }
-  100% {
-    opacity: 1;
-    fill: #fff;
-    -moz-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-    width: 80%; } }
-
-@-o-keyframes sc-logo-anim {
-  0% {
-    opacity: 0;
-    fill: #fff; }
-  25% {
-    opacity: 1;
-    fill: #fff;
-    -o-filter: drop-shadow(0px 5px 150px rgba(0, 0, 0, 0.2)); }
-  100% {
-    opacity: 1;
-    fill: #fff;
-    -o-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-    width: 80%; } }
-
-@keyframes sc-logo-anim {
-  0% {
-    opacity: 0;
-    fill: #fff; }
-  25% {
-    opacity: 1;
-    fill: #fff;
-    filter: drop-shadow(0px 5px 150px rgba(0, 0, 0, 0.2)); }
-  100% {
-    opacity: 1;
-    fill: #fff;
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-    width: 80%; } }
-
-.sc-logo-cont.svg-anim svg {
-  -webkit-animation: sc-logo-anim 2s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: sc-logo-anim 2s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: sc-logo-anim 2s 1 forwards ease;
-  /* Opera 12+ */
-  animation: sc-logo-anim 2s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-@-webkit-keyframes title-anim {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0;
-    fill: #ddd; }
-  100% {
-    opacity: 1;
-    fill: #ddd; } }
-
-@-moz-keyframes title-anim {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0;
-    fill: #ddd; }
-  100% {
-    opacity: 1;
-    fill: #ddd; } }
-
-@-o-keyframes title-anim {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0;
-    fill: #ddd; }
-  100% {
-    opacity: 1;
-    fill: #ddd; } }
-
-@keyframes title-anim {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0;
-    fill: #ddd; }
-  100% {
-    opacity: 1;
-    fill: #ddd; } }
-
-.title-cont.allow .sc-logo-title {
-  -webkit-animation: title-anim 2s 1.5s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: title-anim 2s 1.5s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: title-anim 2s 1.5s 1 forwards ease;
-  /* Opera 12+ */
-  animation: title-anim 2s 1.5s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-@-webkit-keyframes subhead-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes subhead-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes subhead-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes subhead-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.title-cont.allow .enter-subhead1 {
-  -webkit-animation: subhead-anim 2s 3s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 3s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 3s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 3s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-.title-cont.allow .enter-subhead2 {
-  -webkit-animation: subhead-anim 2s 4s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: subhead-anim 2s 4s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: subhead-anim 2s 4s 1 forwards ease;
-  /* Opera 12+ */
-  animation: subhead-anim 2s 4s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-/*.title-cont.allow .client-list li:first-child {
-    -webkit-animation: subhead-anim 2s 5s 1 forwards ease; 
-    -moz-animation:    subhead-anim 2s 5s 1 forwards ease; 
-    -o-animation:      subhead-anim 2s 5s 1 forwards ease; 
-    animation:         subhead-anim 2s 5s 1 forwards ease; 
-}
-.title-cont.allow .client-list li:nth-child(2) {
-    -webkit-animation: subhead-anim 2s 5.3s 1 forwards ease; 
-    -moz-animation:    subhead-anim 2s 5.3s 1 forwards ease; 
-    -o-animation:      subhead-anim 2s 5.3s 1 forwards ease; 
-    animation:         subhead-anim 2s 5.3s 1 forwards ease; 
-}
-.title-cont.allow .client-list li:nth-child(3) {
-    -webkit-animation: subhead-anim 2s 5.6s 1 forwards ease; 
-    -moz-animation:    subhead-anim 2s 5.6s 1 forwards ease; 
-    -o-animation:      subhead-anim 2s 5.6s 1 forwards ease; 
-    animation:         subhead-anim 2s 5.6s 1 forwards ease; 
-}
-.title-cont.allow .client-list li:nth-child(4) {
-    -webkit-animation: subhead-anim 2s 5.9s 1 forwards ease; 
-    -moz-animation:    subhead-anim 2s 5.9s 1 forwards ease; 
-    -o-animation:      subhead-anim 2s 5.9s 1 forwards ease; 
-    animation:         subhead-anim 2s 5.9s 1 forwards ease; 
-}
-.title-cont.allow .client-list li:nth-child(5) {
-    -webkit-animation: subhead-anim 2s 6.2s 1 forwards ease; 
-    -moz-animation:    subhead-anim 2s 6.2s 1 forwards ease; 
-    -o-animation:      subhead-anim 2s 6.2s 1 forwards ease; 
-    animation:         subhead-anim 2s 6.2s 1 forwards ease; 
-}*/
-@-webkit-keyframes work-btn-anim {
-  0% {
-    opacity: 0;
-    visibility: visible; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-@-moz-keyframes work-btn-anim {
-  0% {
-    opacity: 0;
-    visibility: visible; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-@-o-keyframes work-btn-anim {
-  0% {
-    opacity: 0;
-    visibility: visible; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-@keyframes work-btn-anim {
-  0% {
-    opacity: 0;
-    visibility: visible; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-.work-btn.switch {
-  -webkit-animation: work-btn-anim 2s 7.5s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: work-btn-anim 2s 7.5s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: work-btn-anim 2s 7.5s 1 forwards ease;
-  /* Opera 12+ */
-  animation: work-btn-anim 2s 7.5s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
-
-@-webkit-keyframes logo-top {
-  0% {
-    top: 50%; }
-  75% {
-    top: 50%; }
-  100% {
-    top: 20%; } }
-
-@-moz-keyframes logo-top {
-  0% {
-    top: 50%; }
-  75% {
-    top: 50%; }
-  100% {
-    top: 20%; } }
-
-@-o-keyframes logo-top {
-  0% {
-    top: 50%; }
-  75% {
-    top: 50%; }
-  100% {
-    top: 20%; } }
-
-@keyframes logo-top {
-  0% {
-    top: 50%; }
-  75% {
-    top: 50%; }
-  100% {
-    top: 20%; } }
-
-.sc-logo-cont.svg-anim {
-  -webkit-animation: logo-top 2.5s 1 forwards ease;
-  /* Safari 4+ */
-  -moz-animation: logo-top 2.5s 1 forwards ease;
-  /* Fx 5+ */
-  -o-animation: logo-top 2.5s 1 forwards ease;
-  /* Opera 12+ */
-  animation: logo-top 2.5s 1 forwards ease;
-  /* IE 10+, Fx 29+ */ }
 
 /*.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {

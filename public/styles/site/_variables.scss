@@ -276,91 +276,48 @@ svg.client-logo {
 
 // LOADING PAGE
 
-.inner-container{
-  	position: absolute;
-  	height: 100%;
-  	width: 100%;
-  	left: 0;
-  	top: 0;
-  	z-index: 500;
-}
-.menu-bg{
-  	position: absolute;
-  	display: block;
-  	width: 100vw;
-  	background-color: #fff;
-  	transition:ease all .4s;
-  	-webkit-transition:ease all .4s;
-  	-moz-transition:ease all .4s;
-  	&.left {
-  		left: 0;
-  		top: 0;
-  	    height: 0;
-  	}
-  	&.right {
-  		left: 0;
-  		bottom: 0;
-  		height: 0;
-  	}
-}
-
-.menu-bg.left.expand, .menu-bg.right.expand {
-  	height: 50vh;
-  	transition:ease all .2s;
-  	-webkit-transition:ease all .2s;
-  	-moz-transition:ease all .2s;	
-}
-
 .home-cont #enter-btn {
     bottom: 5%;
     z-index: 1010;
 }
 
 .sc-logo-cont {
-    z-index: 1000;
-    opacity:1;
-    padding-top: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
+  z-index: 1000;
+  opacity:1;
+  display: flex;
+  justify-content: center;
 }
-
-.sc-logo-cont.svg-anim {
-	  top:50%;   
-	  transition: ease all 1s;
-    -webkit-transition: ease all 1s;
-    -moz-transition: ease all 1s;
-    transition-delay: 1s; 
-}
-
 .title-cont {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30%;
-    max-width: 700px;
-    z-index: 1010;
-    .sc-logo-title {
-      @include middler 
-    	fill:#fff;	
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  
+  max-width: 700px;
+  z-index: 1010;
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  .sc-logo-title {
+    @include middler 
+  	fill:#fff;	
+    opacity:0;
+    top: 2rem;
+    width:50%;
+    min-width: 260px;
+  }
+  .enter-subhead1, .enter-subhead2 {
+      font-family:$font-body;
+      margin: 3rem 0 2rem 0;
+      font-size: 1.4rem;
+      color: #000;
+      text-align: center;
       opacity:0;
-      top: 2rem;
-      width:50%;
-      min-width: 260px;
+  }
+  .copy-row {
+    padding-top: 1em;
+    .about{
+      color:#fff;
     }
-    .enter-subhead1, .enter-subhead2 {
-        font-family:$font-body;
-        margin: 3rem 0 2rem 0;
-        font-size: 1.4rem;
-        color: #000;
-        text-align: center;
-        opacity:0;
-    }
-    .copy-row {
-      padding-top: 8em;
   }
 }
 
