@@ -13,11 +13,11 @@
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 60;
+var numberParticlesStart = 100;
 var particleSpeed = 0.3;
 var velocity = 0.6;
 var reactangleWidth = 90;
-var reactangleHeight = 50;
+var reactangleHeight = 90;
 
 
 /* ---- INIT ---- */
