@@ -189,11 +189,9 @@ a:active, a:hover, a:focus {
 		-moz-transition:ease all .5s;
 	}
 }
-.home-cont {
-	  height:100%;
-}
+
 .header-cont, .contact-cont, .gallery-cont, .proj-cont, .video-cont {
-	  padding-top:80px;
+	padding-top:80px;
 }
 
 
@@ -276,10 +274,16 @@ svg.client-logo {
 
 // LOADING PAGE
 
-.home-cont #enter-btn {
+.home-cont {
+  height:100%;
+  background: #000;
+  #enter-btn {
     bottom: 5%;
     z-index: 1010;
+  }
 }
+
+
 
 .sc-logo-cont{
   display: flex;
@@ -289,7 +293,6 @@ svg.client-logo {
     fill:#fff;
     width: 250px;
     height: 100%;
-    padding-top: 2em;
     filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, .2));
   }
 }
@@ -299,8 +302,6 @@ svg.client-logo {
   top: 50%;
   transform: translate(-50%, -50%);  
   max-width: 500px;
-  margin-top: -100px;
-  z-index: 1010; 
   .sc-logo-title {
     @include middler 
   	fill:#fff;	
@@ -321,12 +322,13 @@ svg.client-logo {
     display:flex;
     justify-content:center;
     text-align:center;
+    padding-bottom:2em;
     .about{
-      color: #2ee59d;
+      color: #fff;
       width: 300px;
       font-size: 14px;
       padding: 10px;
-      background: rgba(255, 255, 255, 0.5);
+      margin:0;
     }
     h3{
       font-family:$font-subhead;
@@ -336,11 +338,13 @@ svg.client-logo {
       letter-spacing:.3em;
     }
   }
+  .button-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
-.home-cont .enter-site-btn{
-  opacity:0;
-}
 
 
 
