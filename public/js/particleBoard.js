@@ -8,7 +8,7 @@
 /**/canvas.id = 'particle-canvas';
 /*var canvasArea = document.getElementById("myList");*/
 /*document.body.insertBefore(canvas, document.body.firstChild);*/
-/**/document.getElementById('canvasContainer').appendChild(canvas);
+/*document.getElementById('canvasContainer').appendChild(canvas);*/
 /**/ /* ---- CORE END ---- */
 /* ---- CREATING ZONE ---- */
 

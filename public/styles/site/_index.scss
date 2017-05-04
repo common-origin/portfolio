@@ -45,6 +45,43 @@ $black: #000;
 
 // INDEX PAGE
 
+.container-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 10000;
+}
+.index-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140vh;
+  z-index: 1;
+}
+.index-content {
+  .element-wrapper a {
+    color:#fff;
+    display: block;
+    position: fixed;
+    top: calc(100vh - 140px);
+    left: 50%;
+    font-size:2em;
+    line-height: 0;
+    width: 42px;
+    height: 42px;
+    margin:0;
+    border-radius: 50%;
+    z-index: 100;
+    transform: rotate(270deg);
+  }
+}
+
+// SCROLL FUNCTION
+
+
 // NAV DESKTOP
 
 .index-nav {
@@ -95,6 +132,10 @@ $black: #000;
       bottom:80px;
       text-align:left;
     }
+    &:nth-child(6) {
+      bottom:80px;
+      text-align:center;
+    }
     a {
       color:$white;
       display: inline-block!important;
@@ -115,10 +156,6 @@ $black: #000;
 .home-cont {
   height: 100vh;
   background: #000;
-  #enter-btn {
-    bottom: 5%;
-    z-index: 1010;
-  }
 }
 
 
@@ -135,11 +172,6 @@ $black: #000;
   }
 }
 .title-cont {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);  
-  max-width: 500px;
   .sc-logo-title {
     @include middler 
     fill:#fff;  
@@ -156,27 +188,21 @@ $black: #000;
       text-align: center;
       opacity:0;
   }
-  .copy-row {
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    padding-bottom:2em;
-    .about{
-      color:$white;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      font-size: 32px!important;
-      line-height: 40px!important;
-      width: 780px;
-      max-width: 780px;
-      font-weight: 600;
-      margin: 0;
-      padding: 0;
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-      opacity: 1;
-      text-align: center;
-    }
+  .copy-row .about{
+    color:$white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 32px!important;
+    line-height: 40px!important;
+    width: 780px;
+    max-width: 780px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 1em 0;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    text-align: center;
   }
 }
