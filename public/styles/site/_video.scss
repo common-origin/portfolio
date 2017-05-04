@@ -1,9 +1,6 @@
 // Override Bootstrap variables in this file, e.g.
 $font-size-base: 12px;
 
-
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
-
 // MIXINS
 
 // Center Mixin
@@ -34,9 +31,9 @@ $font-size-base: 12px;
 
 // VARIABLES
 
-$font-head:aktiv-grotesk-thin, sans-serif;
-$font-subhead:industry, sans-serif;
-$font-body:aktiv-grotesk, sans-serif;
+$font-head:"futura-pt",sans-serif;
+$font-subhead:"futura-pt",sans-serif;
+$font-body:"futura-pt",sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;

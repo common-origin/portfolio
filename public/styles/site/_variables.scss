@@ -1,9 +1,6 @@
 // Override Bootstrap variables in this file, e.g.
 $font-size-base: 12px;
 
-
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
-
 // MIXINS
 
 // Center Mixin
@@ -34,14 +31,13 @@ $font-size-base: 12px;
 
 // VARIABLES
 
-$font-head:aktiv-grotesk-thin, sans-serif;
-$font-subhead:industry, sans-serif;
-$font-body:aktiv-grotesk, sans-serif;
+$font-head:"futura-pt",sans-serif;
+$font-subhead:"futura-pt",sans-serif;
+$font-body:"futura-pt",sans-serif;
 $primary-color:;
 $secondary-color:;
 $white: #fff;
 $black: #000;
-
 
 // Bootstrap Container Override
 
@@ -82,7 +78,7 @@ a:active, a:hover, a:focus {
 	margin-top:0 !important;
 	width:100vw;
 	position:fixed;
-	z-index: 1000000;
+	z-index: 1000;
 }
 .nav-container{
   margin-right: auto;
@@ -272,78 +268,6 @@ svg.client-logo {
 }
 
 
-// LOADING PAGE
-
-.home-cont {
-  height:100%;
-  background: #000;
-  #enter-btn {
-    bottom: 5%;
-    z-index: 1010;
-  }
-}
-
-
-
-.sc-logo-cont{
-  display: flex;
-  justify-content: center;
-  padding-bottom:30px;
-  #sc-logo{
-    fill:#fff;
-    width: 250px;
-    height: 100%;
-    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, .2));
-  }
-}
-.title-cont {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);  
-  max-width: 500px;
-  .sc-logo-title {
-    @include middler 
-  	fill:#fff;	
-    opacity:0;
-    top: 2rem;
-    width:50%;
-    min-width: 260px;
-  }
-  .enter-subhead1, .enter-subhead2 {
-      font-family:$font-body;
-      margin: 3rem 0 2rem 0;
-      font-size: 1.4rem;
-      color: #fff;
-      text-align: center;
-      opacity:0;
-  }
-  .copy-row {
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    padding-bottom:2em;
-    .about{
-      color: #fff;
-      width: 300px;
-      font-size: 14px;
-      padding: 10px;
-      margin:0;
-    }
-    h3{
-      font-family:$font-subhead;
-      font-weight:800;
-      color:#fff;
-      margin-top:0; 
-      letter-spacing:.3em;
-    }
-  }
-  .button-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-}
 
 
 

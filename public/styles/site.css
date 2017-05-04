@@ -9,10 +9,6 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5829,6 +5825,121 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.index-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 3em;
+  min-height: 0;
+  float: none;
+  -webkit-transform: none;
+  transform: none;
+  background-color: transparent; }
+  .index-nav li {
+    color: #fff;
+    display: block !important;
+    position: fixed;
+    background: green;
+    width: 100%;
+    max-width: 1425px;
+    margin: 0;
+    padding: 0 60px;
+    height: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1000; }
+    .index-nav li:nth-child(1) {
+      top: 56px;
+      text-align: left !important; }
+    .index-nav li:nth-child(2) {
+      top: 56px;
+      text-align: center; }
+    .index-nav li:nth-child(3) {
+      top: 56px;
+      text-align: right; }
+    .index-nav li:nth-child(4) {
+      bottom: 80px;
+      text-align: right; }
+    .index-nav li:nth-child(5) {
+      bottom: 80px;
+      text-align: left; }
+    .index-nav li a {
+      color: #fff;
+      display: inline-block !important;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600; }
+
+.home-cont {
+  height: 100%;
+  background: #000; }
+  .home-cont #enter-btn {
+    bottom: 5%;
+    z-index: 1010; }
+
+.sc-logo-cont {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+  .sc-logo-cont #sc-logo {
+    fill: #fff;
+    width: 250px;
+    height: 100%;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); }
+
+.title-cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px; }
+  .title-cont .sc-logo-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: #fff;
+    opacity: 0;
+    top: 2rem;
+    width: 50%;
+    min-width: 260px; }
+  .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
+    font-family: "futura-pt", sans-serif;
+    margin: 3rem 0 2rem 0;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    opacity: 0; }
+  .title-cont .copy-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2em; }
+    .title-cont .copy-row .about {
+      color: #fff;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      font-size: 32px !important;
+      line-height: 40px !important;
+      width: 780px;
+      max-width: 780px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      text-align: center; }
+
 @media (min-width: 768px) {
   .container {
     width: 100%; } }
@@ -5844,7 +5955,7 @@ button.close {
 /* ============================== */
 body {
   background-color: #fff !important;
-  font-family: aktiv-grotesk, sans-serif;
+  font-family: "futura-pt", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 1.4;
@@ -5858,7 +5969,7 @@ a:active, a:hover, a:focus {
   margin-top: 0 !important;
   width: 100vw;
   position: fixed;
-  z-index: 1000000; }
+  z-index: 1000; }
 
 .nav-container {
   margin-right: auto;
@@ -5918,7 +6029,7 @@ a:active, a:hover, a:focus {
   background-color: transparent; }
 
 .page-title {
-  font-family: industry, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 800;
   margin-top: 0;
   padding-bottom: 3px;
@@ -5984,7 +6095,7 @@ a:active, a:hover, a:focus {
     line-height: 1;
     font-size: 14px;
     color: #fff;
-    font-family: industry, sans-serif;
+    font-family: "futura-pt", sans-serif;
     letter-spacing: .05rem;
     font-weight: 800; }
 
@@ -6011,67 +6122,6 @@ svg.client-logo {
   max-width: 100px;
   fill: #ddd; }
 
-.home-cont {
-  height: 100%;
-  background: #000; }
-  .home-cont #enter-btn {
-    bottom: 5%;
-    z-index: 1010; }
-
-.sc-logo-cont {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px; }
-  .sc-logo-cont #sc-logo {
-    fill: #fff;
-    width: 250px;
-    height: 100%;
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); }
-
-.title-cont {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px; }
-  .title-cont .sc-logo-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    fill: #fff;
-    opacity: 0;
-    top: 2rem;
-    width: 50%;
-    min-width: 260px; }
-  .title-cont .enter-subhead1, .title-cont .enter-subhead2 {
-    font-family: aktiv-grotesk, sans-serif;
-    margin: 3rem 0 2rem 0;
-    font-size: 1.4rem;
-    color: #fff;
-    text-align: center;
-    opacity: 0; }
-  .title-cont .copy-row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2em; }
-    .title-cont .copy-row .about {
-      color: #fff;
-      width: 300px;
-      font-size: 14px;
-      padding: 10px;
-      margin: 0; }
-    .title-cont .copy-row h3 {
-      font-family: industry, sans-serif;
-      font-weight: 800;
-      color: #fff;
-      margin-top: 0;
-      letter-spacing: .3em; }
-  .title-cont .button-container {
-    display: flex;
-    justify-content: center;
-    text-align: center; }
-
 /*.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
 0%,50% {opacity: 0;padding-top:20px;}
@@ -6096,8 +6146,6 @@ svg.client-logo {
   background: url(/images/Preloader_3.gif) center no-repeat #fff; }
 
 #particle-canvas {
-  margin-top: -100px;
-  padding-bottom: 100px;
   background: #000; }
 
 /* SVG Logo */
@@ -6140,7 +6188,7 @@ svg.client-logo {
   -webkit-transition: ease all .3s;
   -o-transition: ease all .3s;
   -moz-transition: ease all .3s;
-  font-family: aktiv-grotesk, sans-serif; }
+  font-family: "futura-pt", sans-serif; }
   #sc-mobile-menu .navmenu-nav.mobile #menuItem:hover {
     transition: ease all .3s;
     -webkit-transition: ease all .3s;
@@ -6310,7 +6358,7 @@ svg.client-logo {
   line-height: 1.2;
   font-size: 16px;
   letter-spacing: .3rem;
-  font-family: industry, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 800; }
 
 #menu-toggle span {
@@ -6396,7 +6444,7 @@ svg.client-logo {
 
 .sidebar-menu .sidemenu-title {
   font-size: .6em;
-  font-family: industry, sans-serif;
+  font-family: "futura-pt", sans-serif;
   padding-left: 10px;
   text-align: center;
   font-weight: 900;
@@ -6593,7 +6641,7 @@ svg.client-logo {
     text-align: center; }
     .card .content .author {
       color: #ddd;
-      font-family: industry, sans-serif;
+      font-family: "futura-pt", sans-serif;
       text-transform: uppercase;
       letter-spacing: .05rem;
       font-size: 10px;
@@ -6602,7 +6650,7 @@ svg.client-logo {
         color: #bbb; }
     .card .content .title {
       margin: .5em 0 .3em 0;
-      font-family: aktiv-grotesk-thin, sans-serif;
+      font-family: "futura-pt", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 1.4em; }
@@ -6642,7 +6690,7 @@ svg.client-logo {
     padding-left: 0; }
   .cat-menu li {
     padding-left: .8rem;
-    font-family: aktiv-grotesk, sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-size: 11px;
     display: inline-block; }
   .cat-menu .cat-menu-li:first:child {
@@ -6671,13 +6719,13 @@ svg.client-logo {
   .mobile .cat-menu ul {
     padding-left: 15px; }
     .mobile .cat-menu ul li {
-      font-family: aktiv-grotesk, sans-serif;
+      font-family: "futura-pt", sans-serif;
       font-size: 12px;
       display: block;
       padding-top: .5em; }
 
 .proj-cont .page-title {
-  font-family: industry, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 800;
   margin-top: 0;
   letter-spacing: .05rem;
@@ -6734,17 +6782,17 @@ svg.client-logo {
     padding-bottom: 30px; }
 
 .post .post-words {
-  font-family: aktiv-grotesk, sans-serif;
+  font-family: "futura-pt", sans-serif;
   padding: 0 0 2em 0; }
   .post .post-words .post-categories {
-    font-family: aktiv-grotesk, sans-serif;
+    font-family: "futura-pt", sans-serif;
     padding-top: .2em; }
   .post .post-words .categories {
     border-bottom: 1px solid #f5f5f5;
     margin-bottom: 1em; }
   .post .post-words .post-categories .categories h5 {
     color: #ccc;
-    font-family: industry, sans-serif;
+    font-family: "futura-pt", sans-serif;
     text-transform: uppercase;
     letter-spacing: .05rem;
     font-size: 10px;
@@ -6762,7 +6810,7 @@ svg.client-logo {
       -moz-transition: ease all .6s;
       color: #2EE59D; }
   .post .post-words .p-sub-head {
-    font-family: industry, sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-weight: 800;
     margin-top: 0;
     line-height: .8;
@@ -6778,7 +6826,7 @@ svg.client-logo {
 .post .project-footer {
   padding: 0; }
   .post .project-footer .title .p-sub-head {
-    font-family: industry, sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-weight: 800;
     margin-top: 0;
     letter-spacing: .05rem;
@@ -6804,7 +6852,7 @@ svg.client-logo {
   .post .project-footer .post-categories h5 {
     margin: 0;
     color: #ccc;
-    font-family: industry, sans-serif;
+    font-family: "futura-pt", sans-serif;
     text-transform: uppercase;
     letter-spacing: .05rem;
     font-size: 10px;
@@ -6853,7 +6901,7 @@ svg.client-logo {
   padding-bottom: 1em; }
 
 .post header .post-categories h5 {
-  font-family: industry, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0;
@@ -6956,7 +7004,7 @@ svg.client-logo {
   margin-left: auto;
   margin-right: auto; }
   .contact-form label {
-    font-family: aktiv-grotesk, sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-style: normal;
     font-weight: 300; }
   .contact-form h3 {
@@ -7004,7 +7052,7 @@ svg.client-logo {
     padding-bottom: 3em; }
   #footer .contact-list, #footer .social-list {
     font-size: 10px;
-    font-family: aktiv-grotesk, sans-serif;
+    font-family: "futura-pt", sans-serif;
     list-style: none;
     padding-left: 0;
     color: #4b4c50; }
