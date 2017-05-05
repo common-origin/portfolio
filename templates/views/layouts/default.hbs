@@ -20,7 +20,6 @@
 		<link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="/styles/prism-slider.css" />
 		<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
 		<script src="/js/modernizr.custom.js"></script>
 
 
@@ -41,58 +40,75 @@
 		<div class="se-pre-con"></div>
 		<div id="header">
 			<div class="nav-header">
-				<div role="navigation" class="navbar navbar-default">
 					<div class="nav-container">
-						<div class="navbar-header">
+
+						<!--<div class="navbar-header">
 							<div class="row title-row container">
 								<div id="menu-toggle" class="mobile">
-								  <button type="button" class="navbar-toggle" id="menuButton" data-toggle="offcanvas" data-target="#sc-mobile-menu" data-canvas="body">
+								  <button type="button" class="navbar-toggle" id="menuButton" data-target="#sc-mobile-menu" data-canvas="body">
 								    <span class="icon-bar"></span>
 								    <span class="icon-bar"></span>
 								    <span class="icon-bar"></span>
 								  </button>
 								</div>
-								{{#if data.project}}
-									<h5>SIDECHAIN | {{data.project.title}}</h5>
-								{{else if feeds}}
-									<h5>SIDECHAIN | FEED</h5>
-								{{else if enquiries}}
-									<h5>CONTACT</h5>
-								{{else}}
-									<h5>SIDECHAIN</h5>
-								{{/if}}
-								<a href="/contact"><button class="contact" type="button" id="contact-us" ><i class="fa fa-envelope-o" aria-hidden="true"></i></button></a>
 							</div>
 						</div>
-						<nav id="sc-mobile-menu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+
+						<nav id="sc-mobile-menu" class="navmenu navmenu-default nav-justified" role="navigation">
 						  <a href="/" class="navbar-brand navmenu-brand"><h3>sidechain</h3></a>
-						  <ul class="nav navmenu-nav mobile">
+						  <ul class="nav navmenu-nav">
 								{{# each navLinks}}
 									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}"><h5>{{ label }}</h5></a>
 									</li>
 								{{/each}}
-									<div class="cat-menu">
-										<ul class="" aria-labelledby="categoryMenu">
-											<h5>Project Categories</h5>
-											<li class="cat-menu-li"><a href="/portfolio" class=""> All</a></li>
-											{{# each data.categories }}
-												<li class="cat-menu-li">
-													<a href="{{categoryUrl key}}" class="false" >{{name}}</a>
-												</li>	
-											{{/each}}
-										</ul>
-									</div>
 
 								{{#if user}}
 									<li id="menuItem" class="sign-out"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
 								{{else}}
 									<li id="menuItem" class="sign-in"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
 								{{/if}}
-								<!--<div class="btn-wrap">
-									<button class="menu-close" type="button" id="closeMenu">close</button>-->
+								<div class="btn-wrap">
+									<button class="menu-close" type="button" id="closeMenu">close</button>
 						  </ul>
+						</nav>-->
+
+
+						<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" id="menuButton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sc-mobile-menu" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand navmenu-brand" href="/"><h3>sidechain</h3></a>
+						    </div>
+
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="sc-mobile-menu">
+						      <ul class="nav navbar-nav">
+						        {{# each navLinks}}
+											<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+												<a href="{{ href }}"><h5>{{ label }}</h5></a>
+											</li>
+										{{/each}}
+
+										{{#if user}}
+											<li id="menuItem" class="sign-out"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Sign Out</h5></a></li>
+										{{else}}
+											<li id="menuItem" class="sign-in"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Login</h5></a></li>
+										{{/if}}
+										<div class="btn-wrap">
+										<!--<button class="menu-close" type="button" id="closeMenu">close</button>-->
+						      </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
 						</nav>
+
+
 						<div id="coverLayer"></div>
 						<div class="sidebar-wrap">
 							<div class="sidebar-menu follow">
@@ -122,7 +138,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 		<div id="body">
