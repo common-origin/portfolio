@@ -14,6 +14,21 @@
   transform: translateX(-50%);
 }
 
+// Transition Mixin
+@mixin transition-main{
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+}
+
+@mixin transition-full{
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+}
+
 // clear-fix mixin
 @mixin cf {
   &::before,
@@ -161,10 +176,9 @@ a:active, a:hover, a:focus {
     margin:0;
     line-height:1;
     font-size:14px;
-    color:#fff; 
+    color:#777; 
     font-family:$font-subhead; 
-    letter-spacing: .05rem;
-    font-weight:800;  
+    letter-spacing:.05rem; 
   }
 }
 
@@ -214,15 +228,29 @@ svg.client-logo {
 
 
 // GLOBAL PAGELOADER
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
 .se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url(/images/Preloader_3.gif) center no-repeat #fff;
+  position: fixed;
+  opacity:0;
+  visibility:hidden; 
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(/images/Preloader_3.gif) center no-repeat #fff;
+  @include transition-main;
+}
+.se-pre-con.loading-screen {
+  position: fixed;
+  visibility:visible; 
+  opacity:1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(/images/Preloader_3.gif) center no-repeat #fff;
+  @include transition-main;
 }
 

@@ -1,3 +1,7 @@
+
+
+
+
 $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
   var menuListItem = document.getElementById('menuItem');
@@ -5,10 +9,6 @@ $( document ).ready(function() {
 	menuBtn.addEventListener('click', function() {
 	   $('.outer-container').toggleClass('blur');
      $('#mobile-menu').toggleClass('open');
-	}, false);
-
-	menuListItem.addEventListener('click', function() {
-		$('.outer-container').removeClass('blur');
 	}, false);
 });
 
@@ -26,19 +26,6 @@ $(window).on('click', function() {
 	$('.sidebar-wrap').removeClass('hidden');
 })
 
-$(document).on('click', function(e) {
-	var c = $(e.target).attr('id');
-	var d = $(e.target).attr('class');
-  if(c==='menuItem') {
-    return;
-  } else if(d==='cat-menu-li') {
-  	return;
-  } else if(d==='navbar-brand') {
-  	return;
-  } else {
-
-  }
-});
 
 
 // Navbar Scroll 
@@ -91,21 +78,6 @@ $('.page-nav-cont').hover(function() {
 $('.carousel').hover(function() {
   $('.cat-menu').toggleClass("hover");
   $('.separator').toggleClass("hover");
-});
-
-
-// Page Loading Function
-
-$(window).load(function() {
-	// Animate loader off screen
-	$(".se-pre-con").fadeOut("slow");
-	$("body").fadeIn("slow");
-});
-
-$(window).unload(function() {
-	// Animate loader off screen
-	$(".se-pre-con").fadeIn("fast");
-	$("body").fadeOut("fast");
 });
 
 
