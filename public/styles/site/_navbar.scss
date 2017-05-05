@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext');
-
 // MIXINS
 
 // Center Mixin
@@ -51,6 +49,84 @@ $black: #000;
 
 // NAVBAR STYLES
 
+#header {
+  margin-top:0 !important;
+  width:100vw;
+  position:fixed;
+  z-index: 1000;
+}
+.nav-container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-header {
+  padding:0 !important;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.05);
+}
+.navbar-default {
+  background-color:rgba(255, 255, 255, 1);
+  border:none;
+  z-index:1000;
+  transition:ease all .4s;
+  -webkit-transition:ease all .4s;
+  -moz-transition:ease all .4s;
+}
+.navbar {
+  border-radius: 0 !important;
+}
+.navbar-toggle{
+  border:none;
+  z-index: 1000000000;
+}
+.sc-nav-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-overflow-scrolling: touch;
+  transition:ease all 1s;
+  -webkit-transition:ease all 1s;
+  -moz-transition:ease all 1s;
+}
+.sc-nav-menu{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100vw;
+  height:100vh;
+  display: block;
+  padding-top:200px;
+  transition:ease all 1s;
+  -webkit-transition:ease all 1s;
+  -moz-transition:ease all 1s;
+}
+.nav-container #coverLayer{
+  @include transition-full
+  position:absolute;
+  left:0;
+  top:0;
+  opacity:0;
+  visibility:hidden;
+  background:white;
+  height:100vh;
+  width:100%;
+  &.open{
+    @include transition-full
+    opacity:.8;
+    visibility: visible;
+  }
+}
+.navbar-brand {
+  float:none;
+  h3{
+    color:#000;
+    margin:0;
+    line-height:1;
+    font-size: 1em;
+    font-family:$font-subhead;
+  } 
+}
 .navbar-default .navbar-nav li a {
   color:#000;
 }
@@ -59,7 +135,7 @@ $black: #000;
 }
 .navbar-default .navbar-nav > .active > a {
   color:#777;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 
@@ -90,14 +166,46 @@ $black: #000;
 
 @media (min-width: 768px) {
   .navbar-nav {
-      float:right;
+    float:right;
+  }
+  #mobile-menu {
+    display:none;
   }
 }
 
 
 // NAV MOBILE
 
-
+@media (max-width: 767px) {
+  #desktop {
+    display:none;
+  }
+  #mobile-menu.navbar-collapse{
+    display:none;
+    visibility:hidden;
+    opacity:0;
+    @include transition-main;
+  }
+  #mobile-menu.navbar-collapse.open {
+    display:block;
+    visibility:visible;
+    opacity:1;
+    height:100vh;
+    @include transition-main;
+    .navbar-nav {
+      position: absolute;
+      float:none;
+      width:100%;
+      top: 42%;
+      transform: translateY(-50%);
+      height:auto;
+      text-align:center;
+    }
+    .navbar-nav li h5{
+      font-size:2em;
+    }
+  }
+}
 
 .navmenu-default .navmenu-nav>.active>a{
   background-color:rgba(255,255,255,.5) !important;
@@ -107,73 +215,6 @@ $black: #000;
 }
 */
 
-
-// BUTTONS
-
-.btn-wrap {
-  @include centererX;
-  bottom:10%;
-  z-index: 1010;
-}
-.menu-close {
-  width: 120px;
-  height: 40px;
-  font-family: industry, sans-serif;
-  font-size: 8px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.enter-site-btn, .work-btn, .next-btn{
-  @extend .menu-close;
-}
-.work-btn{
-  visibility:hidden;
-  opacity: 0;
-}
-.enter-site-btn{
-  display:block;
-}
-.enter-site-btn.switch{
-  display:none;
-}
-.menu-close:hover, .enter-site-btn:hover, .work-btn:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.nav-container #coverLayer{
-  @include transition-full
-  position:absolute;
-  left:0;
-  top:0;
-  opacity:0;
-  visibility:hidden;
-  background:white;
-  height:100vh;
-  width:100%;
-  &.open{
-    @include transition-full
-    opacity:.8;
-    visibility: visible;
-  }
-}
-.navbar-brand h3{
-  color:#000;
-  margin:0;
-  line-height:1.2;
-  font-size: 1.5em;
-  font-family:$font-subhead;
-}
 
 
 

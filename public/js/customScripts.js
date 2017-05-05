@@ -3,14 +3,12 @@ $( document ).ready(function() {
   var menuListItem = document.getElementById('menuItem');
 
 	menuBtn.addEventListener('click', function() {
-	    $('.outer-container').toggleClass('blur');
+	   $('.outer-container').toggleClass('blur');
+     $('#mobile-menu').toggleClass('open');
 	}, false);
 
 	menuListItem.addEventListener('click', function() {
 		$('.outer-container').removeClass('blur');
-	}, false);
-	menuListItem.addEventListener('click', function() {
-		$('.sc-nav-menu').removeClass('bg-init');
 	}, false);
 });
 
@@ -18,11 +16,6 @@ $( document ).ready(function() {
 
 // Navbar Toggle Animation
 
-$('#menu-toggle').click(function(){
-	$(this).toggleClass('open');
-	$('#coverLayer').toggleClass('open');
-	$('.sidebar-wrap').toggleClass('hidden');
-})
 
 // Close Menu Button 
 

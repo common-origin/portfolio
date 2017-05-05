@@ -79,9 +79,7 @@ $black: #000;
 			color: #ccc;
 	    font-family: $font-subhead;
 	    text-transform: uppercase;
-	    letter-spacing: .05rem;
 	    font-size: 10px;
-	    font-weight: 800;
 		}
 		.post-categories .categories h5 a{
 			@include transition-sec
@@ -93,17 +91,13 @@ $black: #000;
 		}
 		.p-sub-head{
 			font-family:$font-subhead;
-			font-weight: 800;
 			margin-top:0;
 			line-height: .8;
 			font-size: 2em;
 			letter-spacing:.05rem;
-			text-transform:uppercase;
 		}
 		.brief p a{
 			color:#486784;
-			font-weight:800;
-			text-decoration:underline; 
 			font-size: 1.2em;
 		}
 	}
@@ -111,7 +105,6 @@ $black: #000;
 		padding:0;
 		.title .p-sub-head{
 			font-family:$font-subhead;
-			font-weight: 800;
 			margin-top:0;
 			letter-spacing:.05rem;
 			text-transform:uppercase;		
@@ -146,7 +139,6 @@ $black: #000;
 	    text-transform: uppercase;
 	    letter-spacing:.05rem;
 	    font-size: 10px;
-	    font-weight: 800;
 		}
 		.post-categories h5 a{
 			@include transition-sec
@@ -160,9 +152,6 @@ $black: #000;
 			padding-bottom:2em;
 			color:#ccc;
 		}
-	}
-	.categories h5{
-		font-weight: 900;
 	}
 }
 .p-title {
@@ -203,7 +192,6 @@ $black: #000;
 	}
 	h5{
 		font-family:$font-subhead;
-		font-weight: 800;
 		text-transform:uppercase;
 		margin:0;
 		color:#ccc;

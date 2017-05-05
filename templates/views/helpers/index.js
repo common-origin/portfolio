@@ -193,18 +193,18 @@ module.exports = function () {
 
 	// Direct url link to a specific project
 	_helpers.projectUrl = function (projectSlug, options) {
-		return ('/portfolio/project/' + projectSlug);
+		return ('/work/project/' + projectSlug);
 	};
 
 	// might be a ghost helper
 	// used for pagination urls on portfolio
 	_helpers.pageUrl = function (pageNumber, options) {
-		return '/portfolio?page=' + pageNumber;
+		return '/work?page=' + pageNumber;
 	};
 
 	// create the category url for a project-category page
 	_helpers.categoryUrl = function (categorySlug, options) {
-		return ('/portfolio/' + categorySlug);
+		return ('/work/' + categorySlug);
 	};
 
 	// ### Pagination Helpers

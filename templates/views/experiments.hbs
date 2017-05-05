@@ -1,13 +1,13 @@
-<div class="outer-container gallery-cont">
+<div class="outer-container video-cont">
 	<div class="container page-nav-cont">
-		<h5 class="page-title">Journal</h5>
+		<h5 class="page-title">Experiments</h5>
 	</div>
 	<div class="container">
-		{{#if feeds}}
+		{{#if experiemts}}
 			<div class="row gallery-images">
 					<div class="col-xs-12 feed-col">
 							<div class="masonry" id="masonry">
-							{{#each feeds}}
+							{{#each experiemts}}
 								{{#each images}}	
 									<div class="item"><a href="#"><img src="{{cloudinaryUrl crop='fit'}}"></a></div>
 								{{/each}}	
@@ -17,7 +17,7 @@
 					</div>
 			</div>	
 		{{else}}
-			<h3 class="text-muted">There are no image galleries yet.</h3>
+			<h3 class="text-muted">Experiments will be uploaded soon!</h3>
 		{{/if}}
 	</div>
 </div>

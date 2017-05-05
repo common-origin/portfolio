@@ -70,7 +70,7 @@ keystone.set('nav', {
 	feeds: 'feeds',
 	enquiries: 'enquiries',
 	users: 'users',
-	videos: 'videos',
+	experiments: 'experiments',
 	'video': [
 		{
 			label: 'Video',
