@@ -7,17 +7,15 @@ $( document ).ready(function() {
 });
 
 
-
 $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
   var menuListItem = document.getElementById('menuItem');
 
 	menuBtn.addEventListener('click', function() {
-	   $('.outer-container').toggleClass('blur');
-     $('#mobile-menu').toggleClass('open');
+   $('.outer-container').toggleClass('blur');
+   $('#mobile-menu').toggleClass('open');
 	}, false);
 });
-
 
 
 // Navbar Toggle Animation

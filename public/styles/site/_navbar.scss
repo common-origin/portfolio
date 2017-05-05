@@ -165,6 +165,9 @@ $black: #000;
 // NAVBAR DESKTOP 
 
 @media (min-width: 768px) {
+  #desktop-menu {
+    display:block !important;
+  }
   .navbar-nav {
     float:right;
   }

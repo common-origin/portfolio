@@ -5988,7 +5988,20 @@ button.close {
 
 #landingPage nav .contact-form {
   background-color: #fff;
-  z-index: 100; }
+  z-index: 10001;
+  padding: 120px 60px 60px; }
+  #landingPage nav .contact-form .close-contact {
+    position: absolute;
+    right: 60px;
+    top: 60px; }
+  #landingPage nav .contact-form .contact-row p {
+    font-size: 16px;
+    padding-bottom: 2em; }
+  #landingPage nav .contact-form .contact-row h1 {
+    margin: 0;
+    font-size: 30px; }
+  #landingPage nav .contact-form .contact-row .enter-site-btn {
+    float: right; }
 
 .home-cont {
   height: 100vh;
@@ -6121,7 +6134,10 @@ a:active, a:hover, a:focus {
 
 .outer-container {
   width: 100vw;
-  padding-bottom: 5em;
+  background: #fff;
+  padding-bottom: 100px;
+  margin-bottom: 280px;
+  z-index: 10;
   transition: ease all 1s;
   -o-transition: ease all 1s;
   -webkit-transition: ease all 1s;
@@ -6132,6 +6148,9 @@ a:active, a:hover, a:focus {
     -o-transition: ease all .5s;
     -webkit-transition: ease all .5s;
     -moz-transition: ease all .5s; }
+
+.outer-container.home-cont {
+  background: #000; }
 
 .header-cont, .contact-cont, .gallery-cont, .proj-cont, .video-cont {
   padding-top: 100px; }
@@ -6365,6 +6384,8 @@ svg.client-logo {
   margin: 8px 0; }
 
 @media (min-width: 768px) {
+  #desktop-menu {
+    display: block !important; }
   .navbar-nav {
     float: right; }
   #mobile-menu {
@@ -6657,7 +6678,7 @@ svg.client-logo {
   float: left;
   padding-bottom: 30px; }
   .card .content {
-    text-align: center; }
+    text-align: left; }
     .card .content .author {
       color: #ddd;
       font-family: "futura-pt", sans-serif;
@@ -6670,8 +6691,8 @@ svg.client-logo {
       margin: .5em 0 .3em 0;
       font-family: "futura-pt", sans-serif;
       font-style: normal;
-      font-weight: 300;
-      font-size: 1.4em; }
+      font-weight: 500;
+      font-size: 1.8em; }
       .card .content .title a {
         color: #000; }
 
@@ -7010,7 +7031,8 @@ svg.client-logo {
   .contact-form label {
     font-family: "futura-pt", sans-serif;
     font-style: normal;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 16px; }
   .contact-form h3 {
     text-align: center; }
   .contact-form .form-actions {
@@ -7040,6 +7062,13 @@ svg.client-logo {
 
 .contact-header {
   text-align: center; }
+
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  will-change: opacity; }
 
 .footer {
   background-color: #37383c;

@@ -42,38 +42,6 @@
 			<div class="nav-header">
 					<div class="nav-container">
 
-						<!--<div class="navbar-header">
-							<div class="row title-row container">
-								<div id="menu-toggle" class="mobile">
-								  <button type="button" class="navbar-toggle" id="menuButton" data-target="#sc-mobile-menu" data-canvas="body">
-								    <span class="icon-bar"></span>
-								    <span class="icon-bar"></span>
-								    <span class="icon-bar"></span>
-								  </button>
-								</div>
-							</div>
-						</div>
-
-						<nav id="sc-mobile-menu" class="navmenu navmenu-default nav-justified" role="navigation">
-						  <a href="/" class="navbar-brand navmenu-brand"><h3>sidechain</h3></a>
-						  <ul class="nav navmenu-nav">
-								{{# each navLinks}}
-									<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}"><h5>{{ label }}</h5></a>
-									</li>
-								{{/each}}
-
-								{{#if user}}
-									<li id="menuItem" class="sign-out"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-								{{else}}
-									<li id="menuItem" class="sign-in"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-								{{/if}}
-								<div class="btn-wrap">
-									<button class="menu-close" type="button" id="closeMenu">close</button>
-						  </ul>
-						</nav>-->
-
-
 						<nav class="navbar navbar-default">
 						  <div class="container-fluid">
 						    <!-- Brand and toggle get grouped for better mobile display -->
@@ -188,30 +156,31 @@
 			<!-- The content block should contain the body of your template's content-->
 			{{{body}}}
 		</div>
-
-		<footer class="outer-container footer">
-			<div id="footer" class="container">
-				<div class="row">
-					<div class="col-xs-6">
-						<h1>sidechain</h1>
-					</div>
-					<div class="col-xs-3">
-						<ul class="contact-list">
-							<a href="/contact"><li><i class="fa fa-envelope" aria-hidden="true"></i> <h5>Contact Us</h5></li></a>
-							<li><i class="fa fa-gavel" aria-hidden="true"></i> <h5>Legal</h5></li>
-						</ul>
-					</div>
-					<div class="col-xs-3">
-						<ul class="social-list">
-							<li><i class="fa fa-dribbble" aria-hidden="true"></i> <h5>Dribble</h5></li>
-							<li><i class="fa fa-github" aria-hidden="true"></i> <h5>Github</h5></li>
-							<li><i class="fa fa-facebook" aria-hidden="true"></i> <h5>Facebook</h5></li>
-							<li><i class="fa fa-linkedin" aria-hidden="true"></i> <h5>LinkedIn</h5></li>
-						</ul>											
+		<div class="footer-wrapper">
+			<footer class="footer">
+				<div id="footer" class="container">
+					<div class="row">
+						<div class="col-xs-6">
+							<h1>sidechain</h1>
+						</div>
+						<div class="col-xs-3">
+							<ul class="contact-list">
+								<a href="/contact"><li><i class="fa fa-envelope" aria-hidden="true"></i> <h5>Contact Us</h5></li></a>
+								<li><i class="fa fa-gavel" aria-hidden="true"></i> <h5>Legal</h5></li>
+							</ul>
+						</div>
+						<div class="col-xs-3">
+							<ul class="social-list">
+								<li><i class="fa fa-dribbble" aria-hidden="true"></i> <h5>Dribble</h5></li>
+								<li><i class="fa fa-github" aria-hidden="true"></i> <h5>Github</h5></li>
+								<li><i class="fa fa-facebook" aria-hidden="true"></i> <h5>Facebook</h5></li>
+								<li><i class="fa fa-linkedin" aria-hidden="true"></i> <h5>LinkedIn</h5></li>
+							</ul>											
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 		{{!--
 			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
