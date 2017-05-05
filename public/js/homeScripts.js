@@ -27,9 +27,9 @@ $(window).load(function() {
 	var targetHeight = textTarget.outerHeight();
 
 	$(document).scroll(function(e){
-	    var scrollPercent = (1 - ( targetHeight - window.scrollY ) / targetHeight);
+	    var scrollPercent = ( 1 - ( targetHeight - window.scrollY ) / targetHeight);
 	    if(scrollPercent >= 0){
-	        textTarget.css('opacity', scrollPercent);
+	      textTarget.css('opacity', scrollPercent);
 	    }
 	});
 });
@@ -46,7 +46,23 @@ $(window).load(function() {
 	$(document).scroll(function(e){
 	    var scrollPercent = ( targetHeight - window.scrollY ) / targetHeight;
 	    if(scrollPercent >= 0){
-	        a.css('opacity', scrollPercent);
+	      a.css('opacity', scrollPercent);
+	    }
+	});
+});
+
+// Background Opacity on Scroll
+
+$(window).load(function() {
+
+	var bg = $('.bg-color-overlay');
+	var target = $('.about')
+	var targetHeight = target.outerHeight();
+
+	$(document).scroll(function(e){
+	    var scrollPercent = ( 1 - ( targetHeight - window.scrollY ) / targetHeight);
+	    if(scrollPercent >= 0){
+	      bg.css('opacity', scrollPercent);
 	    }
 	});
 });
