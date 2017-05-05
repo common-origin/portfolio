@@ -115,7 +115,9 @@ a:active, a:hover, a:focus {
 
 
 // CONTAINERS
-
+.container-fluid {
+  max-width:1170px;
+}
 .outer-container {
 	width: 100vw;
   background: #fff;

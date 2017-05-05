@@ -6132,6 +6132,9 @@ a:active, a:hover, a:focus {
 .pagination {
   margin: 20px 0 60px 0; }
 
+.container-fluid {
+  max-width: 1170px; }
+
 .outer-container {
   width: 100vw;
   background: #fff;
