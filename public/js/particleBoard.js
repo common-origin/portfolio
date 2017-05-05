@@ -8,12 +8,12 @@
 /**/canvas.id = 'particle-canvas';
 /*var canvasArea = document.getElementById("myList");*/
 /*document.body.insertBefore(canvas, document.body.firstChild);*/
-/*document.getElementById('canvasContainer').appendChild(canvas);*/
+/**/document.getElementById('canvasContainer').appendChild(canvas);
 /**/ /* ---- CORE END ---- */
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 800;
+var numberParticlesStart = 20;
 var particleSpeed = 0.3;
 var velocity = 0.6;
 var reactangleWidth = 90;

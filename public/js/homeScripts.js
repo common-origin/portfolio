@@ -18,21 +18,35 @@
 
 //  Button Page Load Delay
 
-$(window).load(function() {
-	var target = $('div.background');
-	var targetHeight = target.height();
-	var containerHeight = $('#container').outerHeight();
 
-	var maxScroll = containerHeight - targetHeight;
-	var scrollRange = maxScroll/(target.length-1);
+// About Text Opacity on Scroll
+
+$(window).load(function() {
+
+	var textTarget = $('.about');
+	var targetHeight = textTarget.outerHeight();
 
 	$(document).scroll(function(e){
-	    var scrollY = $(window).scrollTop();
-	    var scrollPercent = (scrollRange - scrollY%scrollRange)/scrollRange;
-	    var divIndex = Math.floor(scrollY/scrollRange);
+	    var scrollPercent = (1 - ( targetHeight - window.scrollY ) / targetHeight);
+	    if(scrollPercent >= 0){
+	        textTarget.css('opacity', scrollPercent);
+	    }
+	});
+});
 
-	    target.has(':lt(' + divIndex + ')').css('opacity', 0);
-	    target.eq(divIndex).css('opacity', scrollPercent);
-	    target.has(':gt(' + divIndex + ')').css('opacity', 1);
+
+// Arrow Opacity on Scroll
+
+$(window).load(function() {
+
+	var a = $('.index-arrow');
+	var target = $('.about')
+	var targetHeight = target.outerHeight();
+
+	$(document).scroll(function(e){
+	    var scrollPercent = ( targetHeight - window.scrollY ) / targetHeight;
+	    if(scrollPercent >= 0){
+	        a.css('opacity', scrollPercent);
+	    }
 	});
 });
