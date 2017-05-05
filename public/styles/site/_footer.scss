@@ -57,17 +57,17 @@ $black: #000;
 .footer {
 	background-color: #37383c;
   bottom: 0;
+  color: #4b4c50;
+  h1 {
+    margin:0;
+    font-size: 3em;
+  }
 }
 #footer {
 	border:none !important;
 	margin-top:0 !important;
   padding-bottom:100px;
   padding-top:80px !important;
-  .sc-logo-title{
-    max-width:200px;
-    fill:#4b4c50;
-    padding-bottom: 3em;
-  }
   .contact-list, .social-list{
     font-size:10px;
     font-family:$font-body;
@@ -88,6 +88,7 @@ $black: #000;
   }
 }
 #footer ul {
+  margin-top:20px;
   h5{
     display:inline-block;
     margin:0;

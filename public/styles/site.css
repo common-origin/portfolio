@@ -5968,6 +5968,27 @@ button.close {
       font-size: 19px;
       line-height: 26px;
       font-weight: 600; }
+    .index-nav li .navbar-toggle {
+      color: #fff;
+      display: inline-block !important;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600; }
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: none !important; } }
+
+#landingPage nav .navbar-collapse.collapse.in {
+  display: block !important; }
+
+#landingPage nav .contact-form {
+  background-color: #fff;
+  z-index: 100; }
 
 .home-cont {
   height: 100vh;
@@ -7022,17 +7043,17 @@ svg.client-logo {
 
 .footer {
   background-color: #37383c;
-  bottom: 0; }
+  bottom: 0;
+  color: #4b4c50; }
+  .footer h1 {
+    margin: 0;
+    font-size: 3em; }
 
 #footer {
   border: none !important;
   margin-top: 0 !important;
   padding-bottom: 100px;
   padding-top: 80px !important; }
-  #footer .sc-logo-title {
-    max-width: 200px;
-    fill: #4b4c50;
-    padding-bottom: 3em; }
   #footer .contact-list, #footer .social-list {
     font-size: 10px;
     font-family: "futura-pt", sans-serif;
@@ -7054,13 +7075,14 @@ svg.client-logo {
     #footer .contact-list li, #footer .social-list li {
       padding-bottom: 8px; }
 
-#footer ul h5 {
-  display: inline-block;
-  margin: 0;
-  font-size: 12px; }
-
-#footer ul li i {
-  width: 20px; }
+#footer ul {
+  margin-top: 20px; }
+  #footer ul h5 {
+    display: inline-block;
+    margin: 0;
+    font-size: 12px; }
+  #footer ul li i {
+    width: 20px; }
 
 .video-container {
   display: flex;

@@ -1,4 +1,10 @@
+// Add class to <body> for each page
 
+$( document ).ready(function() {
+  var newClass = window.location.href;
+  newClass = newClass.substring(newClass.lastIndexOf('http://localhost:3000')+22);
+  $('body').addClass(newClass);
+});
 
 
 

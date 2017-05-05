@@ -211,11 +211,37 @@ $black: #000;
       line-height: 26px;
       font-weight: 600;
     }
+    .navbar-toggle {
+      color:$white;
+      display: inline-block!important;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      margin: 0!important;
+      padding: 0!important;
+      font-size: 19px;
+      line-height: 26px;
+      font-weight: 600;
+    }
   }
 }
 
+// CONTACT POPUP
 
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+}
 
+#landingPage nav {
+  .navbar-collapse.collapse.in {
+    display:block !important;
+  }
+  .contact-form {
+    background-color:#fff;
+    z-index:100;
+  }
+}
 
 .home-cont {
   height: 100vh;

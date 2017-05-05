@@ -4,14 +4,62 @@
 		<div class="outer-container home-cont">
 			<div class="row">
 				<nav>
+
 					<ul class="index-nav">
 						<li class="menuItem"><a href="/journal">journal</a></li>
 						<li class="menuItem"><a href="/work">work</a></li>
-						<li class="menuItem"><a href="/contact">contact</a></li>
+						<li class="menuItem"><button type="button" id="menuButton" class="navbar-toggle collapsed" data-target="#contactForm" data-toggle="collapse" aria-expanded="false">contact</button></li>
 						<li class="menuItem"><a href="/experiments">experiments</a></li>
 						<li class="menuItem"><a href="/about">about</a></li>
 					</ul>
+
+					<div class="collapse navbar-collapse" id="contactForm">
+						<div class="col-sm-12 contact-form">
+							{{#if enquirySubmitted}}
+							<h3>Thanks for getting in touch.</h3>
+							<a href="/portfolio"><button class="enter-site-btn" type="submit" id="" data-title="Button">back to business</button></a>
+							{{else}}
+							<div class="row">
+								<div class="col-xs-6 col-xs-offset-6">
+								<form method="post">
+									<input type="hidden" name="action" value="contact">
+									<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+										<label>Name</label>
+										<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+									</div>
+									<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+										<label>Email</label>
+										<input type="email" name="email" class="form-control" value="{{formData.email}}">
+									</div>
+									<div class="form-group">
+										<label>Phone</label>
+										<input type="text" name="phone" placeholder="" class="form-control" value="{{formData.phone}}">
+									</div>
+									<!--<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+										<label>What are you contacting us about?</label>
+										<select name="enquiryType" class="form-control">
+											<option value=""></option>
+											{{#each enquiryTypes}}
+											<option value="{{value}}">{{label}}</option>
+											{{/each}}
+										</select>
+									</div>-->
+									<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+										<label>Message</label>
+										<textarea name="message" placeholder="" rows="3" class="form-control">{{formData.message}}</textarea>
+									</div>
+									<div class="form-actions">
+										<!--<button type="submit" class="btn btn-primary">Send</button>-->
+										<button class="enter-site-btn" type="submit" id="" data-title="Button">send</button>
+									</div>
+								</form>
+								</div>
+							</div>
+							{{/if}}
+						</div>
+			    </div><!-- /.navbar-collapse -->
 				</nav>
+
 			</div>
 			<div class="fullscreen-header" id="page-header-wrap">
 				<div class="fullscreen-header" id="page-header-bg">
