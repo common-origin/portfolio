@@ -239,6 +239,7 @@ $black: #000;
   }
   .contact-form {
     background-color:#fff;
+    position: fixed;
     z-index:10001;
     padding: 120px 60px 60px;
     .close-contact {
@@ -311,5 +312,12 @@ $black: #000;
     transform: translate(-50%,-50%);
     opacity: 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-cont .copy-row .about {
+    max-width: 500px;
+    font-size:26px !important;
   }
 }

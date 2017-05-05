@@ -5988,6 +5988,7 @@ button.close {
 
 #landingPage nav .contact-form {
   background-color: #fff;
+  position: fixed;
   z-index: 10001;
   padding: 120px 60px 60px; }
   #landingPage nav .contact-form .close-contact {
@@ -6051,6 +6052,11 @@ button.close {
   transform: translate(-50%, -50%);
   opacity: 0;
   text-align: center; }
+
+@media (max-width: 767px) {
+  .title-cont .copy-row .about {
+    max-width: 500px;
+    font-size: 26px !important; } }
 
 .btn-wrap {
   position: absolute;
@@ -6195,7 +6201,7 @@ a:active, a:hover, a:focus {
     font-family: "futura-pt", sans-serif;
     letter-spacing: .05rem; }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .slider-cont {
     display: none; } }
 
@@ -6390,7 +6396,8 @@ svg.client-logo {
   #desktop-menu {
     display: block !important; }
   .navbar-nav {
-    float: right; }
+    float: right;
+    margin-right: -30px; }
   #mobile-menu {
     display: none; } }
 
@@ -7023,7 +7030,6 @@ svg.client-logo {
     display: none; } }
 
 .contact-cont .page-nav-cont .page-title {
-  text-align: center;
   display: block; }
 
 .contact-form {
