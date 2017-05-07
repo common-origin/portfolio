@@ -53,7 +53,7 @@ $black: #000;
   height: 100vh;
   z-index: 10000;
 }
-.main-content {
+#landingPage .main-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -296,7 +296,7 @@ $black: #000;
       text-align: center;
       opacity:0;
   }
-  .copy-row .about{
+  .copy-row .aboutUs{
     color:$white;
     position: fixed;
     top: 50%;
@@ -316,7 +316,7 @@ $black: #000;
 }
 
 @media (max-width: 767px) {
-  .title-cont .copy-row .about {
+  .title-cont .copy-row .aboutUs {
     max-width: 500px;
     font-size:26px !important;
   }

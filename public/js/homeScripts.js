@@ -23,7 +23,7 @@
 
 $(window).load(function() {
 
-	var textTarget = $('.about');
+	var textTarget = $('.aboutUs');
 	var targetHeight = textTarget.outerHeight();
 
 	$(document).scroll(function(e){
@@ -40,7 +40,7 @@ $(window).load(function() {
 $(window).load(function() {
 
 	var a = $('.index-arrow');
-	var target = $('.about')
+	var target = $('.aboutUs')
 	var targetHeight = target.outerHeight();
 
 	$(document).scroll(function(e){
@@ -56,7 +56,7 @@ $(window).load(function() {
 $(window).load(function() {
 
 	var bg = $('.bg-color-overlay');
-	var target = $('.about')
+	var target = $('.aboutUs')
 	var targetHeight = target.outerHeight();
 
 	$(document).scroll(function(e){

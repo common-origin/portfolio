@@ -1,0 +1,122 @@
+// MIXINS
+
+// Center Mixin
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin middler {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Transition Mixin
+@mixin transition-main{
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s;
+}
+
+@mixin transition-full{
+    transition: ease all 1s;
+    -webkit-transition: ease all 1s;
+    -o-transition: ease all 1s;
+    -moz-transition: ease all 1s;
+}
+
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+// VARIABLES
+
+$font-head:"futura-pt",sans-serif;
+$font-subhead:"futura-pt",sans-serif;
+$font-body:"futura-pt",sans-serif;
+$primary-color:;
+$secondary-color:;
+$white: #fff;
+$black: #000;
+
+
+
+// ABOUT STYLES
+.about-cont {
+  .copy-row {
+    padding-top: 6%;
+    padding-bottom: 4%;
+    .top-quote{
+      color:$black;
+      font-size: 32px!important;
+      line-height: 40px!important;
+      max-width: 780px;
+      font-weight: 600;
+      margin: 0 auto;
+      padding: 0 0 1em 0;
+      text-align: center;
+    }
+  }
+}
+.about-cont {
+  .section {
+    padding:4% 0 0 0;
+    .copy-wrap .title {
+      margin:0;
+      font-weight: 600;
+      padding-bottom: 0.8em;
+    }
+  }
+  .image-wrap img {
+    width:100%;
+  }
+}
+
+
+.about-cont .section {
+  &.services-list {
+    padding-bottom:7%;
+  }
+  .full-width-section {
+    margin-left: calc((100% - 100vw)/ 2);
+    margin-right: calc((100% - 100vw)/ 2);
+    width: auto;
+    .full-width-content {
+      width: 100vw;
+      height: auto;
+      background-position: center;
+      background-size:cover;
+      -o-background-size:cover;
+      -moz-background-size:cover;
+      -webkit-background-size:cover; 
+    }
+    .full-width-image {
+      max-height: 740px;
+    }
+  }
+}
+
+#question-form {
+  .full-width-section {
+    background:#eee;
+  }
+  .contact-form {
+    max-width:800px;
+    padding:4% 0;
+  }
+}
+
+
+

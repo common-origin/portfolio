@@ -91,3 +91,16 @@ $black: #000;
   color: #fff;
   transform: translateY(-7px);
 }
+
+// CLOSE CONTACT BUTTON 
+
+.closeBtn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: -6em;
+  .glyphicon {
+    font-size: 1.4em;
+  }
+}

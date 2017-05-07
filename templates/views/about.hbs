@@ -1,0 +1,170 @@
+<div class="outer-container about-cont">
+	<div class="container page-nav-cont">
+		<h5 class="page-title">About</h5>
+	</div>
+	<div class="container main-content">
+		<div class="row">
+
+			<div class="col-xs-12 ">
+				<div class="copy-row">
+					<h3 class="top-quote">
+						Sidechain is a design, content, and brand strategy studio based in Oceania. We work with forward-thinking startups, artists, and international brands to create impactful design solutions.
+					</h3>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section">
+				<div class="col-sm-6">
+					<div class="image-wrap">
+						<img src="/images/melbourne.jpg">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="image-wrap">
+						<img src="/images/auckland.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section">
+				<div class="col-sm-6 copy-wrap">
+					<h1 class="title">Services</h1>
+				</div>
+				<div class="col-sm-6 copy-wrap">
+					<p>We provide concept-driven creative solutions that are led by an intelligent understanding of the task at hand and achieved through research and strategic insights. Solutions that are both aesthetically pleasing and most importantly effective. Our diverse services allow for a consistent brand perception, making us a singular resource for all your design, content, and strategy needs.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section services-list">
+				<div class="col-sm-3 copy-wrap">
+					<h5 class="title">Identity & Branding</h5>
+					<p>
+						Strategy
+						<br/>
+						Art Direction
+						<br/>
+						Identity Design
+						<br/>
+						Logotypes
+					</p>
+				</div>
+				<div class="col-sm-3 copy-wrap">
+					<h5 class="title">Content Creation</h5>
+					<p>
+						Strategy
+						<br/>
+						Art Direction
+						<br/>
+						Identity Design
+						<br/>
+						Logotypes
+					</p>
+				</div>
+				<div class="col-sm-3 copy-wrap">
+					<h5 class="title">Digital & Web</h5>
+					<p>
+						Strategy
+						<br/>
+						Art Direction
+						<br/>
+						Identity Design
+						<br/>
+						Logotypes
+					</p>
+				</div>
+				<div class="col-sm-3 copy-wrap">
+					<h5 class="title">Motion Graphics</h5>
+					<p>
+						Strategy
+						<br/>
+						Art Direction
+						<br/>
+						Identity Design
+						<br/>
+						Logotypes
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section">
+				<div class="full-width-section">
+					<div class="full-width-content">
+						<img class="full-width-image" src="/images/placeholder.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section">
+				<div class="col-sm-6 copy-wrap">
+					<h1 class="title">Process</h1>
+				</div>
+				<div class="col-sm-6 copy-wrap">
+					<p>We believe that structure empowers creativity. The 12 notes of the musical scale. The 26 letters in the alphabet. The 256 colors in the RGB digital color spectrum. All structural systems used to unlock the vast creativity of music, literature, and visual communication. The foundation to our methodology is the belief that creativity used in conjunction with sound strategic thinking can solve any problem. Built to adapt to each project’s unique circumstances, our process begins with conversation, insight, and research. Driven by our client’s aspirations and business objectives, our tailored approach allows us to focus on creating impactful and effective design solutions.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 section">
+				<div class="col-sm-6">
+					<div class="image-wrap">
+						<img src="/images/melbourne.jpg">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="image-wrap">
+						<img src="/images/auckland.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div id="question-form" class="col-xs-12 section">
+				<div class="full-width-section">
+					<div class="full-width-content">
+						<div class="col-xs-12 contact-form">
+							<h1>Have a Question?</h1>
+							{{#if enquirySubmitted}}
+							<h3>Thanks for getting in touch.</h3>
+							<a href="/portfolio"><button class="enter-site-btn" type="submit" id="" data-title="Button">back to business</button></a>
+							{{else}}
+							<form method="post">
+								<input type="hidden" name="action" value="contact">
+								<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+									<label>Name</label>
+									<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+								</div>
+								<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+									<label>Email</label>
+									<input type="email" name="email" class="form-control" value="{{formData.email}}">
+								</div>
+								<div class="form-group">
+									<label>Phone</label>
+									<input type="text" name="phone" placeholder="" class="form-control" value="{{formData.phone}}">
+								</div>
+								<!--<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+									<label>What are you contacting us about?</label>
+									<select name="enquiryType" class="form-control">
+										<option value=""></option>
+										{{#each enquiryTypes}}
+										<option value="{{value}}">{{label}}</option>
+										{{/each}}
+									</select>
+								</div>-->
+								<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+									<label>Message</label>
+									<textarea name="message" placeholder="" rows="3" class="form-control">{{formData.message}}</textarea>
+								</div>
+								<div class="form-actions">
+									<!--<button type="submit" class="btn btn-primary">Send</button>-->
+									<button class="enter-site-btn" type="submit" id="" data-title="Button">send</button>
+								</div>
+							</form>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

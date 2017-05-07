@@ -6,25 +6,61 @@ $( document ).ready(function() {
   $('body').addClass(newClass);
 });
 
+// Mobile Toggle Button add classes
 
 $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
-  var contactBtn = document.getElementById('contactButton');
   var menuListItem = document.getElementById('menuItem');
+
+  menuBtn.addEventListener('click', function() {
+    $('.outer-container').toggleClass('blur');
+    $('#mobile-menu').toggleClass('open');
+  }, false);
+
+});
+
+
+// Add Open Class to  Home Contact
+
+$( document ).ready(function() {
+  var contactBtn = document.getElementById('contactButton');
+  var cntactHome = document.getElementById('contactHome');
+
+  contactBtn.addEventListener('click', function() {
+    $('.outer-container').addClass('blur');
+    $('#contactFormSite').toggleClass('open');
+  }, false);
+  /*cntactHome.addEventListener('click', function() {
+    $('#contactForm').toggleClass('open');
+  }, false);*/
+});
+
+
+// Remove Open Class from Contact
+
+$( document ).ready(function() {
   var closeBtn = document.getElementById('closeButton');
 
-	menuBtn.addEventListener('click', function() {
-   $('.outer-container').toggleClass('blur');
-   $('#mobile-menu').toggleClass('open');
-	}, false);
-  contactBtn.addEventListener('click', function() {
-   $('#contactFormSite').toggleClass('open');
-  }, false);
   closeBtn.addEventListener('click', function() {
-   $('#contactFormSite').removeClass('in open');
-   $('#contactForm').removeClass('in open');
+    $('.outer-container').removeClass('blur');
+    $('#contactFormSite').removeClass('in open');
   }, false);
+  /*closeBtnHome.addEventListener('click', function() {
+    $('.outer-container').removeClass('blur');
+    $('#contactForm').removeClass('in open');
+  }, false);*/
 });
+
+// Remove Open Class from Landing Contact
+
+/*$( document ).ready(function() {
+  var closeBtnHome = document.getElementById('closeButtonHome');
+  
+  closeBtnHome.addEventListener('click', function() {
+    $('.outer-container').removeClass('blur');
+    $('#contactForm').removeClass('in open');
+  }, false);
+});*/
 
 
 // Navbar Toggle Animation

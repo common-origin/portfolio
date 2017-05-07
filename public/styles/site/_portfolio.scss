@@ -194,10 +194,6 @@ $black: #000;
 }
 
 @media (max-width:768px){
-  .proj-cont .separator{
-    opacity:0;
-    display:none;
-  }
   .proj-cont .cat-menu{
     display:none;
     opacity:0;
@@ -206,21 +202,6 @@ $black: #000;
     display:block;
     opacity:1;
   }
-}
-
-
-// HOVER DISPLAY Cat Menu
-
-.cat-menu.hover{
-  opacity:1;
-  margin-left:0px;
-  @include transition-main
-}
-.separator.hover{
-  opacity:1;
-  width: 3px;
-  margin-left:5px;
-  @include transition-main
 }
 
 
