@@ -140,8 +140,12 @@ a:active, a:hover, a:focus {
   background:#000;
 }
 
-.header-cont, .contact-cont, .gallery-cont, .proj-cont, .video-cont {
+.header-cont, .contact-cont, .gallery-cont, .video-cont {
 	padding-top:100px;
+}
+
+.proj-cont {
+  padding-top:0;
 }
 
 

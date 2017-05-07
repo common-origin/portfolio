@@ -6161,8 +6161,11 @@ a:active, a:hover, a:focus {
 .outer-container.home-cont {
   background: #000; }
 
-.header-cont, .contact-cont, .gallery-cont, .proj-cont, .video-cont {
+.header-cont, .contact-cont, .gallery-cont, .video-cont {
   padding-top: 100px; }
+
+.proj-cont {
+  padding-top: 0; }
 
 .slider-cont {
   padding-bottom: 30px; }
@@ -6683,6 +6686,31 @@ svg.client-logo {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+
+.article-wrap {
+  padding-bottom: 60px; }
+
+.dh-article {
+  background-image: url("/images/disappear-here-header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  max-height: 700px;
+  min-height: 40px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .dh-article .article-content {
+    padding: 60px 0 0; }
+    .dh-article .article-content .feat-title {
+      color: #000;
+      font-size: 30px;
+      width: 70vw;
+      margin: 0 auto;
+      max-width: 640px;
+      text-align: center; }
 
 .card {
   float: left;
