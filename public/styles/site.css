@@ -6409,6 +6409,7 @@ svg.client-logo {
     -moz-transition: ease all .3s; }
   #mobile-menu.navbar-collapse.open {
     background-color: #fff;
+    margin-top: -50px;
     display: block;
     visibility: visible;
     opacity: 1;
@@ -6438,7 +6439,8 @@ svg.client-logo {
 }
 */
 .navbar-toggle {
-  border: none; }
+  border: none;
+  margin-right: 10px; }
 
 #menuButton span {
   display: block;
@@ -6472,6 +6474,45 @@ svg.client-logo {
     transition: .25s ease-in-out;
     transition-delay: .25s; }
 
+.contact.navbar-toggle {
+  color: #000;
+  display: block;
+  display: inline-block !important;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  margin: 0 !important;
+  padding: 15px 15px;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600; }
+
+.work nav .navbar-collapse.collapse.in, .about nav .navbar-collapse.collapse.in {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0; }
+
+.work nav .contact-form, .about nav .contact-form {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  padding: 120px 60px 60px; }
+  .work nav .contact-form .close-contact, .about nav .contact-form .close-contact {
+    position: absolute;
+    right: 60px;
+    top: 60px; }
+  .work nav .contact-form .contact-row p, .about nav .contact-form .contact-row p {
+    font-size: 16px;
+    padding-bottom: 2em; }
+  .work nav .contact-form .contact-row h1, .about nav .contact-form .contact-row h1 {
+    margin: 0;
+    font-size: 30px; }
+  .work nav .contact-form .contact-row .enter-site-btn, .about nav .contact-form .contact-row .enter-site-btn {
+    float: right; }
+
 .back-btn {
   display: block;
   padding-top: 3px;
@@ -6494,11 +6535,11 @@ svg.client-logo {
   margin-right: auto !important; }
 
 .sidebar-menu .sidemenu-title {
-  font-size: .6em;
+  font-size: .7em;
   font-family: "futura-pt", sans-serif;
   padding-left: 10px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   color: #ccc; }
 
@@ -6537,7 +6578,7 @@ svg.client-logo {
     -webkit-transition: ease all .3s;
     -o-transition: ease all .3s;
     -moz-transition: ease all .3s;
-    color: #2EE59D; }
+    color: #000; }
 
 @media (max-width: 1270px) {
   .sidebar-menu.follow {

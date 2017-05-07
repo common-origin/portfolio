@@ -19,11 +19,11 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Home', key: 'home', href: '/' },
+		/*{ label: 'Home', key: 'home', href: '/' },*/
 		{ label: 'Work', key: 'work', href: '/work' },
-		{ label: 'Journal', key: 'journal', href: '/journal' },
-		{ label: 'Experiments', key: 'experiments', href: '/experiments' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+		/*{ label: 'Journal', key: 'journal', href: '/journal' },*/
+		/*{ label: 'Experiments', key: 'experiments', href: '/experiments' },*/
+		/*{ label: 'Contact', key: 'contact', href: '/contact' },*/
 	];
 	res.locals.user = req.user;
 	next();

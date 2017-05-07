@@ -9,12 +9,21 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
+  var contactBtn = document.getElementById('contactButton');
   var menuListItem = document.getElementById('menuItem');
+  var closeBtn = document.getElementById('closeButton');
 
 	menuBtn.addEventListener('click', function() {
    $('.outer-container').toggleClass('blur');
    $('#mobile-menu').toggleClass('open');
 	}, false);
+  contactBtn.addEventListener('click', function() {
+   $('#contactFormSite').toggleClass('open');
+  }, false);
+  closeBtn.addEventListener('click', function() {
+   $('#contactFormSite').removeClass('in open');
+   $('#contactForm').removeClass('in open');
+  }, false);
 });
 
 
@@ -24,10 +33,7 @@ $( document ).ready(function() {
 // Close Menu Button 
 
 $(window).on('click', function() {
-	$('.outer-container').removeClass('blur');
 	$('#menu-toggle').removeClass('open');
-	$('#coverLayer').removeClass('open');
-	$('.sidebar-wrap').removeClass('hidden');
 })
 
 
@@ -45,7 +51,7 @@ $( document ).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll > 500) {
+    if (scroll > 300) {
       header.addClass("scrolled");
     } else {
       header.removeClass("scrolled");
