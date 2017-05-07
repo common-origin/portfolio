@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Playfair+Display:400,400i,700,700i&subset=cyrillic,latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6303,11 +6302,10 @@ svg.client-logo {
   padding-right: 0; }
 
 .nav-header {
-  padding: 0 !important;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); }
+  padding: 0 !important; }
 
 .navbar-default {
-  background-color: white;
+  background-color: transparent;
   border: none;
   z-index: 1000;
   transition: ease all .4s;
@@ -6316,10 +6314,6 @@ svg.client-logo {
 
 .navbar {
   border-radius: 0 !important; }
-
-.navbar-toggle {
-  border: none;
-  z-index: 1000000000; }
 
 .sc-nav-collapse {
   overflow-x: visible;
@@ -6370,7 +6364,8 @@ svg.client-logo {
     margin: 0;
     font-size: 30px;
     line-height: 1;
-    font-family: "futura-pt", sans-serif; }
+    font-family: "futura-pt", sans-serif;
+    font-weight: 600; }
 
 .navbar-default .navbar-nav li a {
   color: #000; }
@@ -6390,11 +6385,6 @@ svg.client-logo {
 .sign-in h5, .sign-out h5 {
   padding-left: 5px; }
 
-.navbar-default .navbar-toggle {
-  border-color: #ddd;
-  top: 0;
-  margin: 8px 0; }
-
 @media (min-width: 768px) {
   #desktop-menu {
     display: block !important; }
@@ -6408,6 +6398,8 @@ svg.client-logo {
   #desktop {
     display: none; }
   #mobile-menu.navbar-collapse {
+    border: none;
+    box-shadow: none !important;
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -6416,6 +6408,7 @@ svg.client-logo {
     -o-transition: ease all .3s;
     -moz-transition: ease all .3s; }
   #mobile-menu.navbar-collapse.open {
+    background-color: #fff;
     display: block;
     visibility: visible;
     opacity: 1;
@@ -6433,7 +6426,9 @@ svg.client-logo {
       height: auto;
       text-align: center; }
     #mobile-menu.navbar-collapse.open .navbar-nav li h5 {
-      font-size: 2em; } }
+      font-size: 2em; }
+  .navbar-brand h3 {
+    font-size: 22px; } }
 
 .navmenu-default .navmenu-nav > .active > a {
   background-color: rgba(255, 255, 255, 0.5) !important; }
@@ -6442,30 +6437,28 @@ svg.client-logo {
   margin: 50px 0 10px 0;
 }
 */
-#menu-toggle span {
+.navbar-toggle {
+  border: none; }
+
+#menuButton span {
   display: block;
   background: #000; }
 
-#menu-toggle {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
+#menuButton .icon-bar {
+  height: 2px;
   position: relative; }
-  #menu-toggle #menuButton .icon-bar {
-    height: 2px;
-    position: relative; }
-    #menu-toggle #menuButton .icon-bar:nth-child(1) {
-      width: 14px;
-      transition: .25s ease-in-out;
-      transition-delay: 0s; }
-    #menu-toggle #menuButton .icon-bar:nth-child(2) {
-      width: 22px;
-      transition: .25s ease-in-out;
-      transition-delay: .125s; }
-    #menu-toggle #menuButton .icon-bar:nth-child(3) {
-      width: 18px;
-      transition: .25s ease-in-out;
-      transition-delay: .25s; }
+  #menuButton .icon-bar:nth-child(1) {
+    width: 14px;
+    transition: .25s ease-in-out;
+    transition-delay: 0s; }
+  #menuButton .icon-bar:nth-child(2) {
+    width: 22px;
+    transition: .25s ease-in-out;
+    transition-delay: .125s; }
+  #menuButton .icon-bar:nth-child(3) {
+    width: 18px;
+    transition: .25s ease-in-out;
+    transition-delay: .25s; }
 
 #menu-toggle.open #menuButton .icon-bar {
   width: 0%; }
@@ -6551,7 +6544,11 @@ svg.client-logo {
     display: none; } }
 
 .navbar-default.scrolled {
-  background-color: white; }
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); }
 
 .row.title-row {
   padding: 0 15px;
@@ -6759,8 +6756,7 @@ svg.client-logo {
   -webkit-transition: ease all .3s;
   -o-transition: ease all .3s;
   -moz-transition: ease all .3s;
-  opacity: 0;
-  margin-left: -10px;
+  float: right;
   list-style: none;
   display: inline-block; }
   .cat-menu ul {
@@ -6768,7 +6764,7 @@ svg.client-logo {
   .cat-menu li {
     padding-left: .8rem;
     font-family: "futura-pt", sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     display: inline-block; }
   .cat-menu .cat-menu-li:first:child {
     padding-left: 0 !important; }

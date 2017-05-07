@@ -133,8 +133,7 @@ $black: #000;
 
 .cat-menu{
   @include transition-main
-  opacity:0;
-  margin-left: -10px;
+  float:right;
   list-style:none;
   display:inline-block;
   ul{
@@ -143,7 +142,7 @@ $black: #000;
   li{
     padding-left:.8rem;
     font-family:$font-body;
-    font-size: 11px;
+    font-size: 12px;
     display:inline-block;
   }
   .cat-menu-li:first:child{

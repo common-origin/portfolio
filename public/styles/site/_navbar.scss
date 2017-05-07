@@ -63,10 +63,9 @@ $black: #000;
 }
 .nav-header {
   padding:0 !important;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.05);
 }
 .navbar-default {
-  background-color:rgba(255, 255, 255, 1);
+  background-color:transparent;
   border:none;
   z-index:1000;
   transition:ease all .4s;
@@ -75,10 +74,6 @@ $black: #000;
 }
 .navbar {
   border-radius: 0 !important;
-}
-.navbar-toggle{
-  border:none;
-  z-index: 1000000000;
 }
 .sc-nav-collapse {
   overflow-x: visible;
@@ -125,6 +120,7 @@ $black: #000;
     font-size: 30px;
     line-height:1;
     font-family:$font-subhead;
+    font-weight: 600;
   } 
 }
 .navbar-default .navbar-nav li a {
@@ -153,14 +149,6 @@ $black: #000;
 }
 
 
-// NAVBAR TOGGLE
-
-.navbar-default .navbar-toggle {
-  border-color: #ddd;
-  top:0;
-  margin:8px 0;
-}
-
 
 // NAVBAR DESKTOP 
 
@@ -185,12 +173,15 @@ $black: #000;
     display:none;
   }
   #mobile-menu.navbar-collapse{
+    border:none;
+    box-shadow:none !important;
     display:none;
     visibility:hidden;
     opacity:0;
     @include transition-main;
   }
   #mobile-menu.navbar-collapse.open {
+    background-color:#fff;
     display:block;
     visibility:visible;
     opacity:1;
@@ -209,6 +200,9 @@ $black: #000;
       font-size:2em;
     }
   }
+  .navbar-brand h3 {
+    font-size:22px;
+  }
 }
 
 .navmenu-default .navmenu-nav>.active>a{
@@ -220,7 +214,11 @@ $black: #000;
 */
 
 
+// NAVBAR TOGGLE
 
+.navbar-toggle{
+  border:none;
+}
 
 // NAVBAR HAMBURGER ANIMATION
 
@@ -228,40 +226,33 @@ $black: #000;
   transition:.25s ease-in-out;
 }
 
-#menu-toggle span {
+#menuButton span {
   display:block;
   background:#000;
 }
 
-#menu-toggle {
-  cursor:pointer;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  &:hover {
-  }
-  #menuButton {
-    .icon-bar {
-      height:2px;
-      position:relative;
-      &:nth-child(1){
-        width:14px;
-        @include menu-transition
-        transition-delay:0s;
-      }
-      &:nth-child(2){
-        width:22px;
-        @include menu-transition
-        transition-delay:.125s;
-      }
-      &:nth-child(3){
-        width:18px;
-        @include menu-transition
-        transition-delay:.25s;
-      }
+#menuButton {
+  .icon-bar {
+    height:2px;
+    position:relative;
+    &:nth-child(1){
+      width:14px;
+      @include menu-transition
+      transition-delay:0s;
+    }
+    &:nth-child(2){
+      width:22px;
+      @include menu-transition
+      transition-delay:.125s;
+    }
+    &:nth-child(3){
+      width:18px;
+      @include menu-transition
+      transition-delay:.25s;
     }
   }
 }
+
 
 #menu-toggle.open {
   #menuButton {
@@ -363,6 +354,10 @@ $black: #000;
 
 .navbar-default.scrolled{
   background-color:rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+       -o-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 .row.title-row {
   padding: 0 15px;
