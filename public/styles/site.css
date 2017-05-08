@@ -5989,6 +5989,9 @@ button.close {
 #landingPage nav .navbar-collapse.collapse.in {
   display: block !important; }
 
+#landingPage nav .navbar-toggle {
+  height: auto; }
+
 #landingPage nav .contact-form {
   background-color: #fff;
   position: fixed;
@@ -6235,6 +6238,9 @@ a:active, a:hover, a:focus {
   .slider-cont {
     display: none; } }
 
+/*
+// CLIENT LOGOS
+
 .client-list {
   list-style: none;
   display: flex;
@@ -6243,17 +6249,19 @@ a:active, a:hover, a:focus {
   padding-left: 0;
   margin: 0;
   padding-top: 4rem;
-  padding-right: 0; }
-  .client-list li {
-    opacity: 0; }
-
+  padding-right:0;
+  li{
+    opacity:0;
+  }
+}
 svg.client-logo {
   width: 100%;
   height: 80px;
-  min-width: 50px;
+  min-width:50px;
   max-width: 100px;
-  fill: #ddd; }
-
+  fill:#ddd;
+}
+*/
 /*.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
 0%,50% {opacity: 0;padding-top:20px;}
@@ -6267,26 +6275,64 @@ svg.client-logo {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url(/images/Preloader_3.gif) center no-repeat #fff;
-  transition: ease all .3s;
-  -webkit-transition: ease all .3s;
-  -o-transition: ease all .3s;
-  -moz-transition: ease all .3s; }
+  background: #fff;
+  transition: ease all 1s;
+  -webkit-transition: ease all 1s;
+  -o-transition: ease all 1s;
+  -moz-transition: ease all 1s; }
+  #se-pre-con.loading-screen {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000000;
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s; }
 
-#se-pre-con.loading-screen {
-  position: fixed;
-  visibility: visible;
-  opacity: 1;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1000000000;
-  background: url(/images/Preloader_3.gif) center no-repeat #fff;
-  transition: ease all .3s;
-  -webkit-transition: ease all .3s;
-  -o-transition: ease all .3s;
-  -moz-transition: ease all .3s; }
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.loader-svg {
+  margin: 0 auto;
+  position: relative;
+  display: block; }
+
+.loader-svg-3 path {
+  stroke: #000;
+  fill: #000;
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 1200;
+  -moz-animation: DASH3 3s ease-in-out alternate infinite;
+  -webkit-animation: DASH3 3s ease-in-out alternate infinite;
+  animation: DASH3 3s ease-in-out  alternate infinite; }
+
+@-webkit-keyframes DASH3 {
+  0% {
+    stroke-dashoffset: 1200; }
+  50% {
+    stroke-dashoffset: 600; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-moz-keyframes DASH3 {
+  0% {
+    stroke-dashoffset: 1200; }
+  50% {
+    stroke-dashoffset: 600; }
+  100% {
+    stroke-dashoffset: 0; } }
 
 #particle-canvas {
   background: #000; }
@@ -6381,11 +6427,15 @@ svg.client-logo {
     visibility: visible; }
 
 .navbar-brand {
-  font-size: 30px; }
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .navbar-brand h3 {
     color: #000;
     margin: 0;
-    font-size: 30px;
+    padding-left: 5px;
+    font-size: 22px;
     line-height: 1;
     font-family: "futura-pt", sans-serif;
     font-weight: 600; }
@@ -6459,7 +6509,8 @@ svg.client-logo {
 
 .navbar-toggle {
   border: none;
-  margin-right: 10px; }
+  margin: 0 10px 0 0;
+  height: 65px; }
 
 #menuButton span {
   display: block;
@@ -7145,10 +7196,11 @@ svg.client-logo {
 .footer {
   background-color: #37383c;
   bottom: 0;
-  color: #9a9a9a; }
+  color: #ccc; }
   .footer h1 {
     margin: 0;
-    font-size: 3em; }
+    font-size: 3em;
+    padding-bottom: 20px; }
 
 #footer {
   border: none !important;

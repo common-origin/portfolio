@@ -62,11 +62,12 @@ $black: #000;
 }
 .footer {
 	background-color: #37383c;
-  bottom: 0;
-  color:#9a9a9a;
+  bottom:0;
+  color:#ccc;
   h1 {
     margin:0;
-    font-size: 3em;
+    font-size:3em;
+    padding-bottom: 20px;
   }
 }
 #footer {
