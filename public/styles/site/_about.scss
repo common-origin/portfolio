@@ -112,7 +112,20 @@ $black: #000;
     background-image:url('/images/work-2.jpg'); 
   }
 }
-
+@media (max-width:1170px){
+  .about-cont .image-wrap {
+    .about-image {
+      min-height:500px;
+    }
+  }
+}
+@media (max-width:960px){
+  .about-cont .image-wrap {
+    .about-image {
+      min-height:400px;
+    }
+  }
+}
 @media (max-width:768px){
   .about-cont .section .image-col {
     &:first-child {
@@ -196,7 +209,11 @@ $black: #000;
     }
   }
 }
-
+@media (max-width:768px){
+  #question-form .contact-form {
+    max-width:600px;
+  }
+}
 
 
 

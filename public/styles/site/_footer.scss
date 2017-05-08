@@ -63,7 +63,7 @@ $black: #000;
 .footer {
 	background-color: #37383c;
   bottom: 0;
-  color: #4b4c50;
+  color:#9a9a9a;
   h1 {
     margin:0;
     font-size: 3em;
@@ -72,14 +72,13 @@ $black: #000;
 #footer {
 	border:none !important;
 	margin-top:0 !important;
-  padding-bottom:100px;
+  padding-bottom: 80px;
   padding-top:80px !important;
   .contact-list, .social-list{
-    font-size:10px;
+    font-size:12px;
     font-family:$font-body;
     list-style:none;
     padding-left:0;
-    color:#4b4c50;
     a{
       @include transition-main;
       color:#4b4c50;
@@ -88,20 +87,38 @@ $black: #000;
         color:#fff;
       }
     }
-    li{
-      padding-bottom:8px;
+  }
+  .foot-col {
+    padding-top:1.5em;
+  }
+  h5 {
+    display:inline-block;
+    letter-spacing:2px;
+    font-size: 14px;
+    margin:0;
+  }
+  ul {
+    margin-top:20px;
+  }
+  ul li {
+    padding-bottom: 10px;
+    h5 {
+      letter-spacing: 0;
+    }
+    i {
+      width: 20px;
     }
   }
-}
-#footer ul {
-  margin-top:20px;
-  h5{
-    display:inline-block;
-    margin:0;
-    font-size: 12px;
+  .social-list li {
+    display: inline-block;
+    width: 100px;
   }
-  li i {
-    width: 20px;
+}
+
+@media (max-width: 767px){
+  #footer {
+    padding-left: 3em; padding-right: 3em;
+    padding-bottom: 40px;
   }
 }
 
