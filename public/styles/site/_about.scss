@@ -89,6 +89,9 @@ $black: #000;
 .about-cont .section {
   &.services-list {
     padding-bottom:7%;
+    .copy-wrap {
+      padding-bottom:1em;
+    }
     .sub-title {
       font-size:1em;
       margin:0;
@@ -130,6 +133,9 @@ $black: #000;
     }
     .form-control {
       background-color:transparent;
+      &:focus {
+        border-color: #2EE59D;
+      }
     }
     label {
       color:#37383c;
@@ -143,6 +149,7 @@ $black: #000;
     }
   }
 }
+
 
 
 

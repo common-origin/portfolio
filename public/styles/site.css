@@ -6539,7 +6539,7 @@ svg.client-logo {
     display: none; } }
 
 .sidebar-wrap {
-  max-width: 1250px;
+  max-width: 1280px;
   margin-left: auto !important;
   margin-right: auto !important; }
 
@@ -7223,6 +7223,8 @@ svg.client-logo {
 
 .about-cont .section.services-list {
   padding-bottom: 7%; }
+  .about-cont .section.services-list .copy-wrap {
+    padding-bottom: 1em; }
   .about-cont .section.services-list .sub-title {
     font-size: 1em;
     margin: 0;
@@ -7256,6 +7258,8 @@ svg.client-logo {
     border-bottom: 1px solid #37383c; }
   #question-form .contact-form .form-control {
     background-color: transparent; }
+    #question-form .contact-form .form-control:focus {
+      border-color: #2EE59D; }
   #question-form .contact-form label {
     color: #37383c; }
   #question-form .contact-form h1, #question-form .contact-form h4 {
