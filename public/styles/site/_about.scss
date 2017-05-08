@@ -74,6 +74,7 @@ $black: #000;
   .section {
     padding:4% 0 0 0;
     .copy-wrap .title {
+      font-size:1.6em;
       margin:0;
       font-weight: 600;
       padding-bottom: 0.8em;
@@ -88,6 +89,11 @@ $black: #000;
 .about-cont .section {
   &.services-list {
     padding-bottom:7%;
+    .sub-title {
+      font-size:1em;
+      margin:0;
+      padding-bottom: 0.8em;
+    }
   }
   .full-width-section {
     margin-left: calc((100% - 100vw)/ 2);
@@ -101,9 +107,10 @@ $black: #000;
       -o-background-size:cover;
       -moz-background-size:cover;
       -webkit-background-size:cover; 
-    }
-    .full-width-image {
-      max-height: 740px;
+      &.full-1 {
+        background-image:url('/images/placeholder.jpg'); 
+        height:900px;
+      }
     }
   }
 }
@@ -114,7 +121,26 @@ $black: #000;
   }
   .contact-form {
     max-width:800px;
-    padding:4% 0;
+    padding:4% 4% 6% 4%;
+    .enter-site-btn {
+      float:right;
+    }
+    .form-group .form-control {
+      border-bottom: 1px solid #37383c;
+    }
+    .form-control {
+      background-color:transparent;
+    }
+    label {
+      color:#37383c;
+    }
+    h1, h4 {
+      text-align:center; 
+      margin-top:0;
+    }
+    h4 {
+      padding-bottom:2em;
+    }
   }
 }
 

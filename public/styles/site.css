@@ -7213,6 +7213,7 @@ svg.client-logo {
 .about-cont .section {
   padding: 4% 0 0 0; }
   .about-cont .section .copy-wrap .title {
+    font-size: 1.6em;
     margin: 0;
     font-weight: 600;
     padding-bottom: 0.8em; }
@@ -7222,6 +7223,10 @@ svg.client-logo {
 
 .about-cont .section.services-list {
   padding-bottom: 7%; }
+  .about-cont .section.services-list .sub-title {
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 0.8em; }
 
 .about-cont .section .full-width-section {
   margin-left: calc((100% - 100vw)/ 2);
@@ -7235,15 +7240,29 @@ svg.client-logo {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover; }
-  .about-cont .section .full-width-section .full-width-image {
-    max-height: 740px; }
+    .about-cont .section .full-width-section .full-width-content.full-1 {
+      background-image: url("/images/placeholder.jpg");
+      height: 900px; }
 
 #question-form .full-width-section {
   background: #eee; }
 
 #question-form .contact-form {
   max-width: 800px;
-  padding: 4% 0; }
+  padding: 4% 4% 6% 4%; }
+  #question-form .contact-form .enter-site-btn {
+    float: right; }
+  #question-form .contact-form .form-group .form-control {
+    border-bottom: 1px solid #37383c; }
+  #question-form .contact-form .form-control {
+    background-color: transparent; }
+  #question-form .contact-form label {
+    color: #37383c; }
+  #question-form .contact-form h1, #question-form .contact-form h4 {
+    text-align: center;
+    margin-top: 0; }
+  #question-form .contact-form h4 {
+    padding-bottom: 2em; }
 
 #header {
   margin-top: 30px; }
