@@ -7211,7 +7211,8 @@ svg.client-logo {
   border: none !important;
   margin-top: 0 !important;
   padding-bottom: 80px;
-  padding-top: 80px !important; }
+  padding-top: 80px !important;
+  line-height: 1; }
   #footer .contact-list, #footer .social-list {
     font-size: 12px;
     font-family: "futura-pt", sans-serif;
@@ -7240,7 +7241,7 @@ svg.client-logo {
   #footer ul {
     margin-top: 20px; }
   #footer ul li {
-    padding-bottom: 10px; }
+    padding-bottom: 15px; }
     #footer ul li h5 {
       letter-spacing: 0;
       font-weight: 400; }

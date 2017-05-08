@@ -75,6 +75,7 @@ $black: #000;
 	margin-top:0 !important;
   padding-bottom: 80px;
   padding-top:80px !important;
+  line-height: 1;
   .contact-list, .social-list{
     font-size:12px;
     font-family:$font-body;
@@ -103,7 +104,7 @@ $black: #000;
     margin-top:20px;
   }
   ul li {
-    padding-bottom:10px;
+    padding-bottom:15px;
     h5 {
       letter-spacing:0;
       font-weight:400;
