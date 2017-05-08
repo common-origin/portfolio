@@ -6482,7 +6482,7 @@ svg.client-logo {
     -moz-transition: ease all .3s; }
   #mobile-menu.navbar-collapse.open {
     background-color: #fff;
-    margin-top: -50px;
+    margin-top: -65px;
     display: block;
     visibility: visible;
     opacity: 1;
@@ -6502,7 +6502,12 @@ svg.client-logo {
     #mobile-menu.navbar-collapse.open .navbar-nav li h5 {
       font-size: 2em; }
   .navbar-brand h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  #mobile-menu #mobileContact {
+    width: 100vw;
+    padding: 9px 10px; }
+    #mobile-menu #mobileContact h5 {
+      font-size: 30px; } }
 
 .navmenu-default .navmenu-nav > .active > a {
   background-color: rgba(255, 255, 255, 0.5) !important; }

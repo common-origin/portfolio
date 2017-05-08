@@ -103,14 +103,17 @@
 												<a href="{{ href }}"><h5>{{ label }}</h5></a>
 											</li>
 										{{/each}}
+										<li class="menuItem">
+											<button type="button" id="mobileContact" class="contact navbar-toggle collapsed" data-target="#contactFormSite" data-toggle="collapse" aria-expanded="false"><h5>Contact</h5></button>
+										</li>
 
-										{{#if user}}
+										<!--{{#if user}}
 											<li id="menuItem" class="sign-out menuItem"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
 										{{else}}
 											<li id="menuItem" class="sign-in menuItem"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
 										{{/if}}
 										<div class="btn-wrap">
-										<!--<button class="menu-close" type="button" id="closeMenu">close</button>--></div>
+										<button class="menu-close" type="button" id="closeMenu">close</button></div>-->
 						      </ul>
 						    </div><!-- /.navbar-collapse -->
 						  </div><!-- /.container-fluid -->
@@ -121,31 +124,31 @@
 									<h3>Thanks for getting in touch.</h3>
 									{{else}}
 									<div class="row contact-row">
-										<div class="col-xs-6">
+										<div class="col-xs-12 col-sm-6">
 											<h1>Say Hello</h1>
 										</div>
-										<div class="col-xs-6">
-										<button id="closeButton" class="closeBtn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-										<p>Collaboration begins with a conversation. Whether you’re interested in discussing a new project or simply wish to find out more about our services and what we can do for you, we are here to help. Send us a message below or call us at 0410 932 327. </p>
-										<form method="post">
-											<input type="hidden" name="action" value="contact">
-											<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-												<label>Name</label>
-												<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
-											</div>
-											<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-												<label>Email</label>
-												<input type="email" name="email" class="form-control" value="{{formData.email}}">
-											</div>
-											<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-												<label>Message</label>
-												<textarea name="message" placeholder="" rows="3" class="form-control">{{formData.message}}</textarea>
-											</div>
-											<div class="form-actions">
-												<!--<button type="submit" class="btn btn-primary">Send</button>-->
-												<button class="enter-site-btn" type="submit" id="" data-title="Button">send</button>
-											</div>
-										</form>
+										<div class="col-xs-12 col-sm-6">
+											<button id="closeButton" class="closeBtn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+											<p>Collaboration begins with a conversation. Whether you’re interested in discussing a new project or simply wish to find out more about our services and what we can do for you, we are here to help. Send us a message below or call us at 0410 932 327. </p>
+											<form method="post">
+												<input type="hidden" name="action" value="contact">
+												<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+													<label>Name</label>
+													<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+												</div>
+												<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+													<label>Email</label>
+													<input type="email" name="email" class="form-control" value="{{formData.email}}">
+												</div>
+												<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+													<label>Message</label>
+													<textarea name="message" placeholder="" rows="3" class="form-control">{{formData.message}}</textarea>
+												</div>
+												<div class="form-actions">
+													<!--<button type="submit" class="btn btn-primary">Send</button>-->
+													<button class="enter-site-btn" type="submit" id="" data-title="Button">send</button>
+												</div>
+											</form>
 										</div>
 									</div>
 									{{/if}}

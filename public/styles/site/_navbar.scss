@@ -207,6 +207,13 @@ $black: #000;
   .navbar-brand h3 {
     font-size:22px;
   }
+  #mobile-menu #mobileContact {
+    width:100vw;
+    padding: 9px 10px;
+    h5 {
+      font-size:30px;
+    }
+  }
 }
 
 .navmenu-default .navmenu-nav>.active>a{
@@ -291,6 +298,7 @@ $black: #000;
   line-height: 26px;
   font-weight: 600;
 }
+
 
 .work nav, .about nav {
   .navbar-collapse.collapse.in {
