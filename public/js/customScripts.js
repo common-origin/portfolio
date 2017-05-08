@@ -13,7 +13,8 @@ $( document ).ready(function() {
   var menuListItem = document.getElementById('menuItem');
 
   menuBtn.addEventListener('click', function() {
-    $('.outer-container').toggleClass('blur');
+    $('.outer-container').toggleClass('blur'),
+    $('#coverLayer').toggleClass('open'),
     $('#mobile-menu').toggleClass('open');
   }, false);
 
@@ -27,9 +28,11 @@ $( document ).ready(function() {
   var cntactHome = document.getElementById('contactHome');
 
   contactBtn.addEventListener('click', function() {
-    $('.outer-container').addClass('blur');
+    $('.outer-container').addClass('blur'),
+    $('#coverLayer').addClass('open'),
     $('#contactFormSite').toggleClass('open');
   }, false);
+
   /*cntactHome.addEventListener('click', function() {
     $('#contactForm').toggleClass('open');
   }, false);*/
@@ -42,7 +45,8 @@ $( document ).ready(function() {
   var closeBtn = document.getElementById('closeButton');
 
   closeBtn.addEventListener('click', function() {
-    $('.outer-container').removeClass('blur');
+    $('.outer-container').removeClass('blur'),
+    $('#coverLayer').removeClass('open'),
     $('#contactFormSite').removeClass('in open');
   }, false);
   /*closeBtnHome.addEventListener('click', function() {
@@ -51,19 +55,7 @@ $( document ).ready(function() {
   }, false);*/
 });
 
-// Remove Open Class from Landing Contact
-
-/*$( document ).ready(function() {
-  var closeBtnHome = document.getElementById('closeButtonHome');
-  
-  closeBtnHome.addEventListener('click', function() {
-    $('.outer-container').removeClass('blur');
-    $('#contactForm').removeClass('in open');
-  }, false);
-});*/
-
-
-// Navbar Toggle Animation
+// Add Open Class to Background when clicking on Contact 
 
 
 // Close Menu Button 

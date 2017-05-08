@@ -43,6 +43,7 @@ $black: #000;
 // HEADER FEATURE
 .article-wrap {
   padding-bottom:60px;
+  background: #fff;
 }
 .dh-article {
   background-image:url('/images/disappear-here-header.jpg');
@@ -91,7 +92,7 @@ $black: #000;
       font-family:$font-head;
       font-style: normal;
       font-weight: 500;
-      font-size: 1.8em; 
+      font-size: 1.5em; 
       a{
         color:#000;
       }

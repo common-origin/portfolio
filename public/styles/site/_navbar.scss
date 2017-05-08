@@ -97,17 +97,16 @@ $black: #000;
   -moz-transition:ease all 1s;
 }
 .nav-container #coverLayer{
-  @include transition-full
+  @include transition-full;
   position:absolute;
   left:0;
   top:0;
   opacity:0;
   visibility:hidden;
-  background:white;
+  background:$black;
   height:100vh;
   width:100%;
   &.open{
-    @include transition-full
     opacity:.8;
     visibility: visible;
   }
@@ -209,10 +208,6 @@ $black: #000;
 .navmenu-default .navmenu-nav>.active>a{
   background-color:rgba(255,255,255,.5) !important;
 }
-/*.navmenu-nav {
-  margin: 50px 0 10px 0;
-}
-*/
 
 
 // NAVBAR TOGGLE

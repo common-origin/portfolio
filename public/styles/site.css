@@ -6175,6 +6175,11 @@ a:active, a:hover, a:focus {
 .work-cont {
   padding-top: 0; }
 
+@media (max-width: 767px) {
+  .outer-container {
+    padding-left: 3em;
+    padding-right: 3em; } }
+
 .slider-cont {
   padding-bottom: 30px; }
 
@@ -6355,14 +6360,10 @@ svg.client-logo {
   top: 0;
   opacity: 0;
   visibility: hidden;
-  background: white;
+  background: #000;
   height: 100vh;
   width: 100%; }
   .nav-container #coverLayer.open {
-    transition: ease all 1s;
-    -webkit-transition: ease all 1s;
-    -o-transition: ease all 1s;
-    -moz-transition: ease all 1s;
     opacity: .8;
     visibility: visible; }
 
@@ -6443,10 +6444,6 @@ svg.client-logo {
 .navmenu-default .navmenu-nav > .active > a {
   background-color: rgba(255, 255, 255, 0.5) !important; }
 
-/*.navmenu-nav {
-  margin: 50px 0 10px 0;
-}
-*/
 .navbar-toggle {
   border: none;
   margin-right: 10px; }
@@ -6735,7 +6732,8 @@ svg.client-logo {
     opacity: 1; } }
 
 .article-wrap {
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  background: #fff; }
 
 .dh-article {
   background-image: url("/images/disappear-here-header.jpg");
@@ -6777,7 +6775,7 @@ svg.client-logo {
       font-family: "futura-pt", sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 1.8em; }
+      font-size: 1.5em; }
       .card .content .title a {
         color: #000; }
 
@@ -7251,7 +7249,7 @@ svg.client-logo {
 
 #question-form .contact-form {
   max-width: 800px;
-  padding: 4% 4% 6% 4%; }
+  padding: 4em 2em 7em 2em; }
   #question-form .contact-form .enter-site-btn {
     float: right; }
   #question-form .contact-form .form-group .form-control {

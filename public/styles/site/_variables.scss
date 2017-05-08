@@ -148,6 +148,11 @@ a:active, a:hover, a:focus {
   padding-top:0;
 }
 
+@media (max-width: 767px){
+  .outer-container {
+    padding-left: 3em; padding-right: 3em;
+  }
+}
 
 
 // SLIDER 
