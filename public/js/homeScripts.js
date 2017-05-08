@@ -34,6 +34,21 @@ $(window).load(function() {
 	});
 });
 
+// DH Nav Text Opacity on Scroll
+
+$(window).load(function() {
+
+	var navTarget = $('#dh-target');
+	var target = $('.aboutUs')
+	var targetHeight = target.outerHeight();
+
+	$(document).scroll(function(e){
+	    var scrollPercent = ( 1 - ( targetHeight - window.scrollY ) / targetHeight);
+	    if(scrollPercent >= 0){
+	      navTarget.css('opacity', scrollPercent);
+	    }
+	});
+});
 
 // Arrow Opacity on Scroll
 
