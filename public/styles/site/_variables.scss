@@ -247,7 +247,7 @@ svg.client-logo {
 
 // GLOBAL PAGELOADER
 
-.se-pre-con {
+#se-pre-con {
   position: fixed;
   opacity:0;
   visibility:hidden; 
@@ -255,11 +255,10 @@ svg.client-logo {
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 9999;
   background: url(/images/Preloader_3.gif) center no-repeat #fff;
   @include transition-main;
 }
-.se-pre-con.loading-screen {
+#se-pre-con.loading-screen {
   position: fixed;
   visibility:visible; 
   opacity:1;
@@ -267,7 +266,7 @@ svg.client-logo {
   top: 0px;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 1000000000;
   background: url(/images/Preloader_3.gif) center no-repeat #fff;
   @include transition-main;
 }

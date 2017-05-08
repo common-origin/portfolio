@@ -86,12 +86,10 @@ $( document ).ready(function() {
     }
     if (scroll > 60) {
       pageHead.addClass("scrolled");
-      //pageTitle.addClass("scrolled");
       sidebar.addClass("scrolled");
       pagination.addClass("scrolled");
     } else {
       pageHead.removeClass("scrolled");
-      //pageTitle.removeClass("scrolled");
       sidebar.removeClass("scrolled");
       pagination.removeClass("scrolled");
     }
@@ -102,20 +100,11 @@ $( document ).ready(function() {
 });
 
 
-// Cat Menu Hover from Project Card
+// Page Loader 
 
-$('.project-card').hover(function() {
-  $('.cat-menu').toggleClass("hover");
-  $('.separator').toggleClass("hover");
-
-});
-$('.page-nav-cont').hover(function() {
-  $('.cat-menu').toggleClass("hover");
-  $('.separator').toggleClass("hover");
-});
-$('.carousel').hover(function() {
-  $('.cat-menu').toggleClass("hover");
-  $('.separator').toggleClass("hover");
-});
-
+$( document ).ready(function() {
+  $('.nav-item').click( function() {
+      $("#se-pre-con").addClass("loading-screen");
+  });
+}); 
 

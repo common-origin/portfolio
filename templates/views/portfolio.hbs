@@ -2,7 +2,7 @@
 	<div class="dh-article">
 		<div class="article-content">
 			<div class="content-inner">
-				<a href="https://disappear-here-experiment.herokuapp.com">
+				<a href="https://disappear-here-experiment.herokuapp.com" target="_blank">
 					<h1 class="feat-title">Disappear Here Feature</h1>
 				</a>
 			</div>	
@@ -93,13 +93,13 @@
 		{{# each data.projects.results}}
 			<div class="col-xs-12 col-sm-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
 				{{#if image}}
-					<a href="{{projectUrl slug}}">
+					<a href="{{projectUrl slug}}" class="nav-item">
 						<img src="{{{cloudinaryUrl image crop='fit' }}}" class="img project-img">
 					</a>
 				{{/if}}
 				<div class="data-container">
 					<div class="content">
-						<h2 class="title"><a href="{{projectUrl slug}}">{{{title}}}</a></h2>
+						<h2 class="title"><a href="{{projectUrl slug}}" class="nav-item">{{{title}}}</a></h2>
 						<p class="author">{{{categoryList categories prefix=""}}}
 								<!--{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
 						</p>

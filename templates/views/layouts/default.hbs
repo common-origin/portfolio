@@ -37,7 +37,7 @@
 
 	</head>
 	<body>
-		<div class="se-pre-con"></div>
+		<div id="se-pre-con"></div>
 		<div id="header">
 			<div class="nav-header">
 					<div class="nav-container">
@@ -52,15 +52,15 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 						      </button>
-						      <a class="navbar-brand navmenu-brand" href="/"><h3>sidechain</h3></a>
+						      <a class="navbar-brand navmenu-brand nav-item" href="/"><h3>sidechain</h3></a>
 						    </div>
 
 						    <!-- Collect the nav links, forms, and other content for toggling -->
 						    <div class="collapse navbar-collapse" id="desktop-menu">
 						      <ul class="nav navbar-nav">
 						        {{# each navLinks}}
-											<li id="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-												<a href="{{ href }}" class="menuItem"><h5>{{ label }}</h5></a>
+											<li class="nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}">
+												<a href="{{ href }}"><h5>{{ label }}</h5></a>
 											</li>
 										{{/each}}
 										<li class="menuItem">
