@@ -6087,7 +6087,7 @@ button.close {
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
   background-color: #fff;
   border: none;
@@ -6111,7 +6111,8 @@ button.close {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  transform: translateY(-7px); }
+  transform: translateY(-7px);
+  font-weight: 700; }
 
 .closeBtn {
   border: none;
@@ -6121,6 +6122,36 @@ button.close {
   top: -6em; }
   .closeBtn .glyphicon {
     font-size: 1.4em; }
+
+#topBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */ }
+
+#topBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */ }
 
 @media (min-width: 768px) {
   .container {
@@ -6836,7 +6867,8 @@ svg.client-logo {
       font-family: "futura-pt", sans-serif;
       text-transform: uppercase;
       letter-spacing: .05rem;
-      font-size: 10px; }
+      font-size: 12px;
+      line-height: 1; }
       .card .content .author a {
         color: #bbb; }
     .card .content .title {

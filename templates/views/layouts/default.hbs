@@ -51,10 +51,8 @@
 		<div id="header">
 			<div class="nav-header">
 					<div class="nav-container">
-
 						<nav class="navbar navbar-default">
 						  <div class="container-fluid">
-						    <!-- Brand and toggle get grouped for better mobile display -->
 						    <div class="navbar-header">
 						      <button type="button" id="menuButton" class="navbar-toggle collapsed" data-target="#mobile-menu" aria-expanded="false">
 						        <span class="sr-only">Toggle navigation</span>
@@ -72,12 +70,10 @@
 							      <h3>sidechain</h3>
 						      </a>
 						    </div>
-
-						    <!-- Collect the nav links, forms, and other content for toggling -->
 						    <div class="collapse navbar-collapse" id="desktop-menu">
 						      <ul class="nav navbar-nav">
 						        {{# each navLinks}}
-											<li class="nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}">
+											<li class="nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}" >
 												<a href="{{ href }}"><h5>{{ label }}</h5></a>
 											</li>
 										{{/each}}
@@ -93,8 +89,7 @@
 										  <button class="menu-close" type="button" id="closeMenu">close</button>
 										</div>-->
 						      </ul>
-						    </div><!-- /.navbar-collapse -->
-
+						    </div>
 						    <!-- Mobile Menu -->
 						    <div class="navbar-collapse" id="mobile-menu">
 						      <ul class="nav navbar-nav">
@@ -188,6 +183,7 @@
 			</div>
 		</div>
 		<div id="body">
+		<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
 				validation errors, success messages, etc
