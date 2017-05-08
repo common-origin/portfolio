@@ -6153,7 +6153,7 @@ a:active, a:hover, a:focus {
   width: 100vw;
   background: #fff;
   padding-bottom: 100px;
-  margin-bottom: 280px;
+  margin-bottom: 340px;
   z-index: 10;
   transition: ease all 1s;
   -o-transition: ease all 1s;
@@ -7209,18 +7209,46 @@ svg.client-logo {
     text-align: center; }
 
 .about-cont .section {
-  padding: 4% 0 0 0; }
+  padding: 4em 0 0 0; }
   .about-cont .section .copy-wrap .title {
     font-size: 1.6em;
     margin: 0;
     font-weight: 600;
     padding-bottom: 0.8em; }
 
-.about-cont .image-wrap img {
-  width: 100%; }
+.about-cont .image-wrap {
+  width: 100%;
+  height: auto; }
+  .about-cont .image-wrap .about-image {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover; }
+
+.about-cont .image-wrap .about-image#city-1 {
+  background-image: url("/images/melbourne.jpg"); }
+
+.about-cont .image-wrap .about-image#city-2 {
+  background-image: url("/images/auckland.jpg"); }
+
+.about-cont .image-wrap .about-image#work-1 {
+  background-image: url("/images/work-1.jpg"); }
+
+.about-cont .image-wrap .about-image#work-2 {
+  background-image: url("/images/work-2.jpg"); }
+
+@media (max-width: 768px) {
+  .about-cont .section .image-col:first-child {
+    padding-right: 5px; }
+  .about-cont .section .image-col:last-child {
+    padding-left: 5px; }
+  .about-cont .image-wrap .about-image {
+    min-height: 300px; } }
 
 .about-cont .section.services-list {
-  padding-bottom: 7%; }
+  padding-bottom: 4em; }
   .about-cont .section.services-list .copy-wrap {
     padding-bottom: 1em; }
   .about-cont .section.services-list .sub-title {
@@ -7244,27 +7272,28 @@ svg.client-logo {
       background-image: url("/images/placeholder.jpg");
       height: 900px; }
 
-#question-form .full-width-section {
-  background: #eee; }
-
-#question-form .contact-form {
-  max-width: 800px;
-  padding: 4em 2em 7em 2em; }
-  #question-form .contact-form .enter-site-btn {
-    float: right; }
-  #question-form .contact-form .form-group .form-control {
-    border-bottom: 1px solid #37383c; }
-  #question-form .contact-form .form-control {
-    background-color: transparent; }
-    #question-form .contact-form .form-control:focus {
-      border-color: #2EE59D; }
-  #question-form .contact-form label {
-    color: #37383c; }
-  #question-form .contact-form h1, #question-form .contact-form h4 {
-    text-align: center;
-    margin-top: 0; }
-  #question-form .contact-form h4 {
-    padding-bottom: 2em; }
+#question-form {
+  margin-top: 4em; }
+  #question-form .full-width-section {
+    background: #eee; }
+  #question-form .contact-form {
+    max-width: 800px;
+    padding: 4em 2em 7em 2em; }
+    #question-form .contact-form .enter-site-btn {
+      float: right; }
+    #question-form .contact-form .form-group .form-control {
+      border-bottom: 1px solid #37383c; }
+    #question-form .contact-form .form-control {
+      background-color: transparent; }
+      #question-form .contact-form .form-control:focus {
+        border-color: #2EE59D; }
+    #question-form .contact-form label {
+      color: #37383c; }
+    #question-form .contact-form h1, #question-form .contact-form h4 {
+      text-align: center;
+      margin-top: 0; }
+    #question-form .contact-form h4 {
+      padding-bottom: 2em; }
 
 #header {
   margin-top: 30px; }

@@ -72,7 +72,7 @@ $black: #000;
 }
 .about-cont {
   .section {
-    padding:4% 0 0 0;
+    padding:4em 0 0 0;
     .copy-wrap .title {
       font-size:1.6em;
       margin:0;
@@ -80,15 +80,61 @@ $black: #000;
       padding-bottom: 0.8em;
     }
   }
-  .image-wrap img {
+}
+
+
+// About Page Small Images
+
+.about-cont .image-wrap {
+  width:100%;
+  height:auto;
+  .about-image {
     width:100%;
+    height:auto;
+    min-height:600px;
+    overflow:hidden;
+    background-position:center;
+    background-size:cover;
+  }
+}
+
+.about-cont .image-wrap .about-image {
+  &#city-1 {
+    background-image:url('/images/melbourne.jpg'); 
+  }
+  &#city-2 {
+    background-image:url('/images/auckland.jpg'); 
+  }
+  &#work-1 {
+    background-image:url('/images/work-1.jpg'); 
+  }
+  &#work-2 {
+    background-image:url('/images/work-2.jpg'); 
+  }
+}
+
+@media (max-width:768px){
+  .about-cont .section .image-col {
+    &:first-child {
+      padding-right:5px;
+    }
+    &:last-child {
+      padding-left:5px;
+    }
+  }
+  .about-cont .image-wrap {
+    .about-image {
+      min-height:300px;
+    }
   }
 }
 
 
+// SECTION STYLES
+
 .about-cont .section {
   &.services-list {
-    padding-bottom:7%;
+    padding-bottom:4em;
     .copy-wrap {
       padding-bottom:1em;
     }
@@ -119,6 +165,7 @@ $black: #000;
 }
 
 #question-form {
+  margin-top:4em;
   .full-width-section {
     background:#eee;
   }
