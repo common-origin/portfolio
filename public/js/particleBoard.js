@@ -121,11 +121,11 @@ window.onresize = function () {
   init();
 };
 
-window.addEventListener('click', function () {
+/*window.addEventListener('click', function () {
   particles = [];
   context.clearRect(0, 0, windowWidth, windowHeight);
   init();
-});
+});*/
 
 loop();
 
