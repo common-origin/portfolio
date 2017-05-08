@@ -109,16 +109,18 @@ $( document ).ready(function() {
 
 
 
+//-----------------//
+
 // Back top top button 
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("topBtn").style.bottom = "1em";
     } else {
-        document.getElementById("topBtn").style.display = "none";
+      document.getElementById("topBtn").style.bottom = "-4em";
     }
 }
 

@@ -6124,13 +6124,15 @@ button.close {
     font-size: 1.4em; }
 
 #topBtn {
-  display: none;
-  /* Hidden by default */
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s;
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: -4em;
   /* Place the button at the bottom of the page */
-  right: 30px;
+  right: 1em;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -6138,18 +6140,20 @@ button.close {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.5);
   /* Set a background color */
   color: white;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */ }
+  /* Some padding */ }
 
 #topBtn:hover {
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s;
   background-color: #555;
   /* Add a dark-grey background on hover */ }
 
