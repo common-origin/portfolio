@@ -6080,7 +6080,7 @@ button.close {
   bottom: 10%;
   z-index: 1010; }
 
-.menu-close, .enter-site-btn, .work-btn, .next-btn {
+.menu-close, .enter-site-btn, .work-btn, .next-btn, .back-site-btn {
   width: 120px;
   height: 40px;
   font-family: "futura-pt", sans-serif, sans-serif;
@@ -6107,7 +6107,7 @@ button.close {
 .enter-site-btn.switch {
   display: none; }
 
-.menu-close:hover, .enter-site-btn:hover, .work-btn:hover, .next-btn:hover, .enter-site-btn:hover, .work-btn:hover {
+.menu-close:hover, .enter-site-btn:hover, .work-btn:hover, .next-btn:hover, .back-site-btn:hover, .enter-site-btn:hover, .work-btn:hover {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
@@ -7216,7 +7216,7 @@ svg.client-logo {
 .contact-header {
   text-align: center; }
 
-.contact-form .enter-site-btn {
+.contact-form .back-site-btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
