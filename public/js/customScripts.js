@@ -105,6 +105,9 @@ $( document ).ready(function() {
 
 
 // Page Loader 
+$(window).on("load", function() {
+  $("#se-pre-con").removeClass("loading-screen");
+});
 
 $( document ).ready(function() {
   $('.nav-item').click( function() {
