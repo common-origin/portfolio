@@ -83,7 +83,7 @@ $black: #000;
     padding-left:0;
     a{
       @include transition-main;
-      color:#4b4c50;
+      color:#ccc;
       &:hover{
         @include transition-main;
         color:#fff;
