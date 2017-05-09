@@ -97,3 +97,15 @@ $black: #000;
   margin-top:100px;
 }
 
+
+@media (max-width: 767px){
+  .contact-form .contact-row {
+    h1 {
+      padding-bottom:100px;
+    }
+    .closeBtn {
+      top: -14em;
+    }
+  }
+}
+

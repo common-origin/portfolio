@@ -118,24 +118,15 @@ a:active, a:hover, a:focus {
 .container-fluid {
   max-width:1170px;
 }
+
 .outer-container {
 	width: 100vw;
   background: #fff;
   padding-bottom: 100px;
   margin-bottom: 327px;
   z-index:10;
-	transition:ease all 1s;
-  -o-transition:ease all 1s;
-	-webkit-transition:ease all 1s;
-	-moz-transition:ease all 1s;
-	&.blur{
-		filter: blur(20px);
-		transition:ease all .2s;
-    -o-transition:ease all .2s;
-		-webkit-transition:ease all .2s;
-		-moz-transition:ease all .2s;
-	}
 }
+
 .outer-container.home-cont{
   background:#000;
 }
@@ -161,6 +152,7 @@ a:active, a:hover, a:focus {
 .slider-cont{
   padding-bottom:30px;
 }
+
 .carousel-control {
   text-shadow:none;
   opacity:1 !important;
@@ -181,6 +173,7 @@ a:active, a:hover, a:focus {
     left:2rem;
   }
 }
+
 .carousel-caption{
   width:100%;
   height:100%;
@@ -206,34 +199,11 @@ a:active, a:hover, a:focus {
   }
 }
 
+
 /*
-// CLIENT LOGOS
-
-.client-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  margin: 0;
-  padding-top: 4rem;
-  padding-right:0;
-  li{
-    opacity:0;
-  }
-}
-svg.client-logo {
-  width: 100%;
-  height: 80px;
-  min-width:50px;
-  max-width: 100px;
-  fill:#ddd;
-}
-*/
-
 // LAZY IMAGE LOADING
 
-/*.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
+.fade-in-on-load {animation-duration: 1s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
 0%,50% {opacity: 0;padding-top:20px;}
 100% {opacity: 1;padding-top:0px;}
@@ -273,6 +243,7 @@ svg.client-logo {
   max-width: 1024px;
   margin: 0 auto;
 }
+
 .loader-svg {
   margin: 0 auto;
   position: relative;

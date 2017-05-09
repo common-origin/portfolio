@@ -107,6 +107,7 @@ $black: #000;
   height:100vh;
   width:100%;
   &.open{
+    @include transition-main;
     opacity:.8;
     visibility: visible;
   }
@@ -262,26 +263,6 @@ $black: #000;
   }
 }
 
-
-#menu-toggle.open {
-  #menuButton {
-    .icon-bar {
-      width:0%;
-      &:nth-child(1){
-        @include menu-transition
-        transition-delay:0s;
-      }
-      &:nth-child(2){
-        @include menu-transition
-        transition-delay:.125s;
-      }
-      &:nth-child(3){
-        @include menu-transition
-        transition-delay:.25s;
-      }
-    }
-  }
-}
 
 
 // CONTACT IN MAIN NAV 

@@ -84,6 +84,7 @@ $black: #000;
 		.post-categories .categories h5 a{
 			@include transition-sec
 			color: #ccc;
+			line-height: 24px;
 			&:hover{
 				@include transition-sec
     		color:#2EE59D;
@@ -95,6 +96,7 @@ $black: #000;
 			font-size:1.4em;
 		}
 		.brief p a{
+			line-height: 24px;
 			color:#486784;
 			font-size: 1.2em;
 		}

@@ -1,6 +1,3 @@
-// Override Bootstrap variables in this file, e.g.
-$font-size-base: 12px;
-
 // MIXINS
 
 // Center Mixin
@@ -39,10 +36,6 @@ $secondary-color:;
 $white: #fff;
 $black: #000;
 
-
-
-
-
 // INDEX PAGE
 
 .container-wrap {
@@ -53,6 +46,7 @@ $black: #000;
   height: 100vh;
   z-index: 10000;
 }
+
 #landingPage .main-content {
   position: absolute;
   top: 0;
@@ -61,6 +55,7 @@ $black: #000;
   height: 100vh;
   z-index: 1;
 }
+
 #welcome {
   margin-top: 54vh;
   .element-wrapper a {
@@ -90,6 +85,7 @@ $black: #000;
   height: 100vh;
   z-index: 1;
 }
+
 #page-header-bg {
   text-align:center;
   width: 100%;
@@ -102,6 +98,7 @@ $black: #000;
   z-index: 2;
   overflow:visible;
 }
+
 #page-header-bg:before {
   display: block;
   position: absolute;
@@ -120,6 +117,7 @@ $black: #000;
   padding: 0 60px;
   z-index: 100;
 }
+
 #page-header-bg .particle-container {
   position: absolute!important;
   top: 0;
@@ -131,7 +129,7 @@ $black: #000;
 
 
 
-// SCROLL FUNCTION
+// HOME SCROLL FUNCTION
 
 .bg-color-overlay {
   display:block;
@@ -250,6 +248,7 @@ $black: #000;
   .contact-form {
     background-color:#fff;
     position: fixed;
+    top: 0; left: 0;
     z-index:10001;
     padding: 120px 60px 60px;
     .close-contact {
@@ -271,7 +270,6 @@ $black: #000;
   }
 }
 
-
 //--------------//
 
 
@@ -279,8 +277,6 @@ $black: #000;
   height: 100vh;
   background: #000;
 }
-
-
 
 .sc-logo-cont{
   display: flex;
@@ -293,6 +289,7 @@ $black: #000;
     filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, .2));
   }
 }
+
 .title-cont {
   .sc-logo-title {
     @include middler 
