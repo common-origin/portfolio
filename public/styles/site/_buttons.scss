@@ -110,20 +110,41 @@ $black: #000;
 }
 
 
+// BACK BUTTON 
+
+.back-btn {
+  display: block;
+  padding-top: 3px;
+  position: fixed;
+  left: 0;
+  z-index: 1000000000;
+  width: 60px !important;
+  a {
+    color:#000;
+    font-size:1.5em; 
+  }
+}
+
+@media (max-width: 1270px){
+  .back-btn{
+    display:none;
+  }
+}
+
 // BACK TO TOP BUTTON
 
 #topBtn {
   @include transition-main;
-  position: fixed; /* Fixed/sticky position */
-  bottom: -4em; /* Place the button at the bottom of the page */
-  right: 1em; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgba(0,0,0,0.5); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  position: fixed;
+  bottom: -4em;
+  right: 1em;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
 }
 
 #topBtn:hover {

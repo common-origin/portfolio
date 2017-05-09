@@ -26,6 +26,11 @@ var importRoutes = keystone.importer(__dirname);
 keystone.pre('routes', middleware.initLocals);
 keystone.pre('render', middleware.flashMessages);
 
+// Handle 404 errors
+keystone.set('404', function(req, res, next) {
+    res.notfound();
+});
+
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
@@ -40,7 +45,10 @@ exports = module.exports = function (app) {
 	app.get('/work/project/:project', routes.views.project);
 	app.get('/journal', routes.views.feed);
 	app.get('/experiments', routes.views.experiments);
-	app.all('/contact', routes.views.contact);
+	app.all('/', routes.views.contact);
+	app.all('/about', routes.views.contact);
+	app.all('/work/:category?', routes.views.contact); 
+	app.all('/work/project/:project', routes.views.contact);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

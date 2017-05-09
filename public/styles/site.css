@@ -6123,31 +6123,36 @@ button.close {
   .closeBtn .glyphicon {
     font-size: 1.4em; }
 
+.back-btn {
+  display: block;
+  padding-top: 3px;
+  position: fixed;
+  left: 0;
+  z-index: 1000000000;
+  width: 60px !important; }
+  .back-btn a {
+    color: #000;
+    font-size: 1.5em; }
+
+@media (max-width: 1270px) {
+  .back-btn {
+    display: none; } }
+
 #topBtn {
   transition: ease all .3s;
   -webkit-transition: ease all .3s;
   -o-transition: ease all .3s;
   -moz-transition: ease all .3s;
   position: fixed;
-  /* Fixed/sticky position */
   bottom: -4em;
-  /* Place the button at the bottom of the page */
   right: 1em;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: rgba(0, 0, 0, 0.5);
-  /* Set a background color */
   color: white;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */ }
+  padding: 10px; }
 
 #topBtn:hover {
   transition: ease all .3s;
@@ -6596,48 +6601,32 @@ svg.client-logo {
   line-height: 26px;
   font-weight: 600; }
 
-.work nav .navbar-collapse.collapse.in, .about nav .navbar-collapse.collapse.in {
+.work nav .navbar-collapse.collapse.in, .abou nav .navbar-collapse.collapse.in {
   display: block !important;
   position: absolute;
   top: 0;
   left: 0;
   padding: 0; }
 
-.work nav .contact-form, .about nav .contact-form {
+.work nav .contact-form, .abou nav .contact-form {
   background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10001;
   padding: 120px 60px 60px; }
-  .work nav .contact-form .close-contact, .about nav .contact-form .close-contact {
+  .work nav .contact-form .close-contact, .abou nav .contact-form .close-contact {
     position: absolute;
     right: 60px;
     top: 60px; }
-  .work nav .contact-form .contact-row p, .about nav .contact-form .contact-row p {
+  .work nav .contact-form .contact-row p, .abou nav .contact-form .contact-row p {
     font-size: 16px;
     padding-bottom: 2em; }
-  .work nav .contact-form .contact-row h1, .about nav .contact-form .contact-row h1 {
+  .work nav .contact-form .contact-row h1, .abou nav .contact-form .contact-row h1 {
     margin: 0;
     font-size: 30px; }
-  .work nav .contact-form .contact-row .enter-site-btn, .about nav .contact-form .contact-row .enter-site-btn {
+  .work nav .contact-form .contact-row .enter-site-btn, .abou nav .contact-form .contact-row .enter-site-btn {
     float: right; }
-
-.back-btn {
-  display: block;
-  padding-top: 3px;
-  position: fixed;
-  left: 0;
-  top: 10px;
-  z-index: 1000000000;
-  width: 60px !important; }
-  .back-btn a {
-    color: #000;
-    font-size: 1.5em; }
-
-@media (max-width: 1270px) {
-  .back-btn {
-    display: none; } }
 
 .sidebar-wrap {
   max-width: 1280px;
@@ -7227,6 +7216,12 @@ svg.client-logo {
 .contact-header {
   text-align: center; }
 
+.contact-form .enter-site-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px; }
+
 .footer-wrapper {
   position: fixed;
   bottom: 0;
@@ -7240,7 +7235,7 @@ svg.client-logo {
   color: #ccc; }
   .footer h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
     padding-bottom: 20px; }
 
 #footer {
@@ -7267,7 +7262,7 @@ svg.client-logo {
         -moz-transition: ease all .3s;
         color: #fff; }
   #footer .foot-col {
-    padding-top: 1.5em; }
+    padding-top: 1em; }
   #footer h5 {
     display: inline-block;
     letter-spacing: 1px;

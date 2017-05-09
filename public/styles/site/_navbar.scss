@@ -300,7 +300,7 @@ $black: #000;
 }
 
 
-.work nav, .about nav {
+.work nav, .abou nav {
   .navbar-collapse.collapse.in {
     display:block !important;
     position: absolute;
@@ -330,28 +330,6 @@ $black: #000;
     .contact-row .enter-site-btn {
       float: right;
     }
-  }
-}
-
-// BACK BUTTON 
-
-.back-btn {
-  display: block;
-  padding-top: 3px;
-  position: fixed;
-  left: 0;
-  top: 10px;
-  z-index: 1000000000;
-  width: 60px !important;
-  a {
-      color:#000;
-      font-size:1.5em; 
-  }
-}
-
-@media (max-width: 1270px){
-  .back-btn{
-      display:none;
   }
 }
 

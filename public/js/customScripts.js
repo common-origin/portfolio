@@ -2,7 +2,7 @@
 
 $( document ).ready(function() {
   var newClass = window.location.href;
-  newClass = newClass.substring(newClass.lastIndexOf('http://localhost:3000')+22);
+  newClass = newClass.substring(newClass.lastIndexOf('http://localhost:3000')+22, 26);
   $('body').addClass(newClass);
 });
 
