@@ -132,7 +132,7 @@
 						    <div class="navbar-collapse" id="mobile-menu">
 						      <ul class="nav navbar-nav">
 						        {{# each navLinks}}
-											<li id="menuItem" class="menuItem" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+											<li id="menuItem" class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 												<a href="{{ href }}"><h5>{{ label }}</h5></a>
 											</li>
 										{{/each}}
