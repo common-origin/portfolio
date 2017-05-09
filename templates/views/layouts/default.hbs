@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+	{{#if data.projects}}
+    {{#if data.projects.meta.title}}
+        <title>{{data.projects.meta.title}}</title>
+        <meta property="og:title" content="{{data.projects.meta.title}}">
+        <meta name="twitter:title" content="{{data.projects.meta.title}}">
+    {{else}}
+        <title>{{data.projects.title}}</title>
+        <meta property="og:title" content="{{data.projects.title}}">
+        <meta name="twitter:title" content="{{data.projects.title}}">
+    {{/if}}
+    {{#if data.projects.meta.description}}
+        <meta name="description" content="{{data.projects.meta.description}}">
+        <meta property="og:description" content="{{data.projects.meta.description}}">
+        <meta name="twitter:description" content="{{data.projects.meta.description}}">
+    {{else}}
+        <meta name="description" content="{{data.projects.content.brief}}">
+        <meta property="og:description" content="{{data.projects.content.brief}}">
+        <meta name="twitter:description" content="{{data.projects.content.brief}}">
+    {{/if}}
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{data.projects.image.url}}">
+    <meta name="twitter:image:src" content="{{data.projects.image.url}}">
+    <meta property="og:url" content="{{data.projects.fullPostUrl}}">
+    <meta name="twitter:url" content="{{data.projects.fullPostUrl}}">
+    <meta property="article:published_time" content="{{data.projects.publishedDate}}">
+    {{# each data.projects.categories}}
+        <meta property="article:tag" content="{{name}}">
+    {{/each}}
+    <meta name="keywords" content="Sidechain, Melbourne, design, web-design, touchdesigner, {{# each data.projects.categories}}{{name}}, {{/each}}">    
+	{{else}}
+    <title>sidechain | studio</title>
+    <meta name="description" content="general description">            
+    <meta property="og:image" content="{{baseUrl}}/images/logo.png">
+    <meta name="twitter:image:src" content="{{baseUrl}}/images/logo.png">
+    <meta name="keywords" content="Sidechain, Melbourne, design, web-design, touchdesigner">
+	{{/if}}    
+
+		<!--<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta property="og:url" content="http://sidechain.studio/your-page.html" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Sidechain" />
+		<meta property="og:title" content="sidechain | studio" />
 		<meta property="og:description" content="A small studio with big ideas" />
 		<meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
+		<title>sidechain | studio</title>-->
 		
 		<script src="https://use.typekit.net/jdz3tzw.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
-		<title>sidechain | studio</title>
+		
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/styles/normalize.css" />

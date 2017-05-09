@@ -23,6 +23,10 @@ Portfolio.add({
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 		text: {type: Types.Textarea, height:200 }
 	},
+	meta: {
+    title: { type: String},
+    description: { type: String}
+    },
 	categories: { type: Types.Relationship, ref: 'ProjectCategory', many: true },
 });
 
