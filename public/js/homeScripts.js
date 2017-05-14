@@ -16,6 +16,13 @@
 //	}, false);
 //});
 
+// SEND PAGE BACK TO TOP ON REFRESH
+$(window).load(function() {
+	window.onbeforeunload = function() {window.scrollTo(0,0);}
+});
+
+
+
 //  Button Page Load Delay
 
 /// DESKTOP ////
