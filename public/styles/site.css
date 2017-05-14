@@ -7045,7 +7045,7 @@ a:active, a:hover, a:focus {
     padding-left: 0; } }
 
 .post header .post-categories .categories {
-  padding-bottom: 1em; }
+  padding-bottom: 0.5em; }
 
 .post header .post-categories h5 {
   font-family: "futura-pt", sans-serif;
