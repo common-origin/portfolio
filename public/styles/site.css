@@ -5843,6 +5843,9 @@ button.close {
   height: 100vh;
   z-index: 1; }
 
+#landingPage .outer-container.home-cont {
+  margin-bottom: 0; }
+
 #welcome {
   margin-top: 54vh; }
   #welcome .element-wrapper a {
@@ -6078,8 +6081,8 @@ button.close {
   #landingPage .sc-title {
     color: #fff;
     text-align: center;
-    margin: 0;
-    font-size: 2.2em;
+    margin: 10px 0 0;
+    font-size: 1.8em;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
@@ -6114,6 +6117,7 @@ button.close {
       min-height: 100vh; }
     #landingPage #welcome-mob .element-wrapper a {
       color: #fff;
+      text-align: center;
       width: 30px;
       height: 30px;
       position: fixed;
@@ -6153,6 +6157,13 @@ button.close {
     max-width: 500px;
     font-size: 26px;
     line-height: 30px; } }
+
+@media (max-width: 450px) {
+  #landingPage .aboutUs-mob {
+    font-size: 18px !important;
+    line-height: 26px !important; }
+  #landingPage #welcome-mob .mobile-main-nav {
+    bottom: 2em; } }
 
 .btn-wrap {
   position: absolute;
@@ -6607,13 +6618,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       text-align: center; }
     #mobile-menu.navbar-collapse.open .navbar-nav li h5, #landing-mobile-menu.navbar-collapse.open .navbar-nav li h5 {
       font-size: 2em; }
+  #landingPage #landing-mobile-menu .navbar-brand {
+    height: 75px; }
   #landing-mobile-menu.navbar-collapse.open {
     margin: -45px 0 0;
     width: 100vw;
     position: fixed;
     left: 0; }
   .navbar-brand h3 {
-    font-size: 22px; }
+    font-size: 16px; }
   #mobile-menu #mobileContact, #landing-mobile-menu #mobileContact {
     width: 100vw;
     padding: 9px 10px; }
