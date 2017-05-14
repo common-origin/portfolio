@@ -108,7 +108,7 @@ $black: #000;
   width:100%;
   &.open{
     @include transition-main;
-    opacity:.8;
+    opacity:.9;
     visibility: visible;
   }
 }

@@ -51,7 +51,7 @@ $( document ).ready(function() {
 
   if ($(window).width() >= 768) { 
     closeBtn.addEventListener('click', function() {
-      $('#coverLayer').removeClass('open')
+      $('#coverLayer').removeClass('open');
       $('#contactFormSite').removeClass('in open');
     }, false);
   } else {
@@ -59,12 +59,20 @@ $( document ).ready(function() {
       $('#contactFormSite').removeClass('in open');
     });
   }
-  /*closeBtnHome.addEventListener('click', function() {
-    $('.outer-container').removeClass('blur');
-    $('#contactForm').removeClass('in open');
-  }, false);*/
 });
 
+// Remove Open Class from Contact #Mobile
+
+/*$( document ).ready(function() {
+  var closeButtonH = document.getElementById('closeButtonHome');
+
+  closeButtonH.addEventListener('click', function() {
+    if ( $('#coverLayer').hasClass('in') ) {
+      $('#coverLayer').removeClass('open')
+      $('#contactForm').removeClass('in open');
+    }
+  });
+});*/
 
 // Close Menu Button 
 
