@@ -41,7 +41,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   var closeBtn = document.getElementById('closeButton');
 
-  if ($(window).width() >= 767) { 
+  if ($(window).width() >= 768) { 
     closeBtn.addEventListener('click', function() {
       $('#coverLayer').removeClass('open')
       $('#contactFormSite').removeClass('in open');

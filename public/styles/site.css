@@ -5821,6 +5821,12 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+#landingPage .desktop {
+  display: block; }
+
+#landingPage .mobile {
+  display: none; }
+
 .container-wrap {
   position: absolute;
   top: 0;
@@ -5846,7 +5852,7 @@ button.close {
     position: fixed;
     top: calc(100vh - 140px);
     left: 50%;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 0;
     margin: 0;
     border-radius: 50%;
@@ -6044,36 +6050,103 @@ button.close {
   text-align: center;
   opacity: 0; }
 
-.title-cont .copy-row .aboutUs {
+.title-cont .copy-row .aboutUs, .title-cont .copy-row .aboutUs-mob {
   color: #fff;
   position: fixed;
   top: 50%;
   left: 50%;
   font-size: 32px;
-  line-height: 40px !important;
+  line-height: 40px;
   width: 780px;
   max-width: 780px;
   font-weight: 600;
   margin: 0;
-  padding: 0 0 1em 0;
+  padding: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
   text-align: center; }
 
-.title-cont .copy-row .aboutUs.feature {
+.title-cont .copy-row .aboutUs.feature, .title-cont .copy-row .feature.aboutUs-mob {
   font-size: 20px;
   top: 70%;
   font-weight: 400; }
 
 @media (max-width: 767px) {
-  .title-cont .copy-row .aboutUs {
-    padding: 0 1em 1em 1em;
+  #landingPage .desktop {
+    display: none; }
+  #landingPage .mobile {
+    display: block; }
+  #landingPage .sc-title {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 2.2em;
+    padding-top: 0.2em; }
+  #landingPage .index-nav {
+    display: none; }
+  #landingPage nav .navbar-toggle {
+    height: 75px; }
+  #landingPage .navbar-header {
+    height: 45px; }
+    #landingPage .navbar-header .navbar-toggle {
+      z-index: 1000; }
+    #landingPage .navbar-header #menuButton .icon-bar {
+      background-color: #fff; }
+  #landingPage .landing-toggle {
+    position: fixed;
+    top: 0;
+    right: 30px;
+    margin: 0; }
+  #landingPage #welcome-mob {
+    margin: 0 auto;
+    min-height: 166vh;
+    padding-top: 66vh; }
+    #landingPage #welcome-mob .row-bg {
+      height: auto; }
+    #landingPage #welcome-mob .title-cont {
+      min-height: 100vh; }
+    #landingPage #welcome-mob .element-wrapper a {
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      top: calc(100vh - 300px);
+      left: 50%;
+      font-size: 2em;
+      line-height: 0;
+      margin: 0;
+      border-radius: 50%;
+      z-index: 100;
+      transform: rotate(270deg) translateX(-50%); }
+    #landingPage #welcome-mob .mobile-main-nav {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%); }
+      #landingPage #welcome-mob .mobile-main-nav .nav-item {
+        display: inline-block;
+        min-width: 80px;
+        margin: 0 20px;
+        text-align: center; }
+      #landingPage #welcome-mob .mobile-main-nav .nav-item a {
+        padding: 8px 0px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600; }
+  #landingPage .title-cont .copy-row .aboutUs-mob {
+    position: absolute;
+    opacity: 1;
+    padding: 0 1em;
     max-width: 500px;
-    font-size: 26px; }
-  .title-row .copy-row .aboutUs.feature {
-    font-size: 14px;
-    font-weight: 400; } }
+    font-size: 26px;
+    line-height: 30px; }
+    #landingPage .title-cont .copy-row .aboutUs-mob.feature {
+      font-size: 14px;
+      font-weight: 400; } }
 
 .btn-wrap {
   position: absolute;

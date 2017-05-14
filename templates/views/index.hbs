@@ -4,14 +4,42 @@
 		<div class="outer-container home-cont">
 			<div class="row">
 				<nav>
-
+					<div class="navbar-header">
+						<button type="button" id="menuButton" class="navbar-toggle collapsed landing-toggle" data-target="#mobile-menu" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+					</div>
 					<ul class="index-nav">
 						<li class="nav-item"><a href="/about">about</a></li>
 						<li class="nav-item"><a href="/work">work</a></li>
 						<li><button type="button" id="contactHome" class="navbar-toggle collapsed" data-target="#contactForm" data-toggle="collapse" aria-expanded="false">contact</button></li>
 						<li class="nav-item" id="dh-target"><a href="/work/project/disappear-here">disappear here</a></li>
-						<!--<li class="menuItem"><a href="/about">about</a></li>-->
 					</ul>
+
+					<!-- Mobile Menu -->
+			    <div class="collapse navbar-collapse" id="mobile-menu">
+			      <ul class="nav navbar-nav">
+			        {{# each navLinks}}
+								<li id="menuItem" class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+									<a href="{{ href }}"><h5>{{ label }}</h5></a>
+								</li>
+							{{/each}}
+							<li class="menuItem">
+								<button type="button" id="mobileContact" class="contact navbar-toggle collapsed" data-target="#contactFormSite" data-toggle="collapse" aria-expanded="false"><h5>Contact</h5></button>
+							</li>
+
+							<!--{{#if user}}
+								<li id="menuItem" class="sign-out menuItem"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
+							{{else}}
+								<li id="menuItem" class="sign-in menuItem"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
+							{{/if}}
+							<div class="btn-wrap">
+							<button class="menu-close" type="button" id="closeMenu">close</button></div>-->
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
 
 					<div class="collapse navbar-collapse" id="contactForm">	
 						<div class="col-sm-12 contact-form">
@@ -61,7 +89,8 @@
 			</div>
 			<div class="container-inner-wrap">
 				<div class="container main-content">
-					<div class="row" id="heightRow">
+
+					<div class="row desktop" id="heightRow">
 						<div id="welcome">
 							<div class="row-bg">
 								
@@ -78,6 +107,29 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="row mobile" id="heightRowMob">
+						<div id="welcome-mob">
+							<div class="row-bg">
+								
+							</div>
+							<div class="title-cont col-xs-12">
+								<div class="element-wrapper">
+									<p><a href="#" class="index-arrow">&larr;</a></p>
+								</div>
+								<div class="copy-row">
+									<h1 class="sc-title" id="sc-title-mob">sidechain</h1>
+									<p class="aboutUs-mob">Sidechain is a design, content, and brand strategy studio based in Oceania. We work with forward-thinking startups, artists, and international brands to create impactful design solutions. 
+									</p>
+									<ul class="mobile-main-nav">
+										<li class="nav-item"><a href="/work">work</a></li>
+										<li class="nav-item"><a href="/about">about</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
