@@ -50,6 +50,7 @@ $primary-color:;
 $secondary-color:;
 $white: #fff;
 $black: #000;
+$green: #2EE59C;
 
 // Bootstrap Container Override
 
@@ -81,11 +82,24 @@ body {
   font-size: 15px;
   line-height: 24px;
 }
+
 a:active, a:hover, a:focus {
   text-decoration:none !important;
   outline:none !important;
 }
 
+h1, h2, h3, h4, h5, a, p, label, textarea {
+  &::selection { 
+    color:$white;
+    background:$green;
+  }
+}
+h1, h2, h3, h4, h5, a, p, label, textarea {
+  &::-moz-selection { 
+    color:$white;
+    background:$green;
+  }
+}
 
 // PAGE TITLE GLOBAL
 
@@ -146,7 +160,7 @@ a:active, a:hover, a:focus {
 @media (max-width: 767px){
   .outer-container {
     padding-left: 3em; padding-right: 3em;
-    margin-bottom: 620px;
+    margin-bottom: 548px;
   }
 }
 

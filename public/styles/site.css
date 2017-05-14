@@ -6188,6 +6188,14 @@ a:active, a:hover, a:focus {
   text-decoration: none !important;
   outline: none !important; }
 
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, a::selection, p::selection, label::selection, textarea::selection {
+  color: #fff;
+  background: #2EE59C; }
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, a::-moz-selection, p::-moz-selection, label::-moz-selection, textarea::-moz-selection {
+  color: #fff;
+  background: #2EE59C; }
+
 .page-title {
   font-family: "futura-pt", sans-serif;
   margin-top: 0;
@@ -6229,7 +6237,7 @@ a:active, a:hover, a:focus {
   .outer-container {
     padding-left: 3em;
     padding-right: 3em;
-    margin-bottom: 620px; } }
+    margin-bottom: 548px; } }
 
 .slider-cont {
   padding-bottom: 30px; }
@@ -7349,7 +7357,7 @@ a:active, a:hover, a:focus {
     -moz-background-size: cover;
     -webkit-background-size: cover; }
     .about-cont .section .full-width-section .full-width-content.full-1 {
-      background-image: url("/images/placeholder.jpg");
+      background-image: url("/images/office.jpg");
       height: 900px; }
 
 #question-form {
