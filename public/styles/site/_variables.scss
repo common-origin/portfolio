@@ -164,6 +164,13 @@ h1, h2, h3, h4, h5, a, p, label, textarea {
   }
 }
 
+@media (max-width: 450px){
+  .outer-container {
+    padding-left: 0; padding-right:0;
+    margin-bottom: 548px;
+  }
+}
+
 
 // SLIDER 
 

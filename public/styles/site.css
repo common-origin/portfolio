@@ -6329,6 +6329,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     padding-right: 3em;
     margin-bottom: 548px; } }
 
+@media (max-width: 450px) {
+  .outer-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 548px; } }
+
 .slider-cont {
   padding-bottom: 30px; }
 
@@ -6550,7 +6556,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     color: #000;
     margin: 0;
     padding-left: 5px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1;
     font-family: "futura-pt", sans-serif;
     font-weight: 600; }
@@ -7390,8 +7396,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding-bottom: 4%; }
   .about-cont .copy-row .top-quote {
     color: #000;
-    font-size: 32px !important;
-    line-height: 40px !important;
+    font-size: 32px;
+    line-height: 40px;
     max-width: 780px;
     font-weight: 600;
     margin: 0 auto;
@@ -7429,18 +7435,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .about-cont .image-wrap .about-image#work-2 {
   background-image: url("/images/work-2.jpg"); }
-
-@media (max-width: 1170px) {
-  .about-cont .image-wrap .about-image {
-    min-height: 500px; } }
-
-@media (max-width: 960px) {
-  .about-cont .image-wrap .about-image {
-    min-height: 400px; } }
-
-@media (max-width: 768px) {
-  .about-cont .image-wrap .about-image {
-    min-height: 300px; } }
 
 .about-cont .section.services-list {
   padding-bottom: 4em; }
@@ -7493,9 +7487,29 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       margin-left: auto;
       margin-right: auto; }
 
+@media (max-width: 1170px) {
+  .about-cont .image-wrap .about-image {
+    min-height: 500px; } }
+
+@media (max-width: 960px) {
+  .about-cont .image-wrap .about-image {
+    min-height: 400px; } }
+
 @media (max-width: 768px) {
   #question-form .contact-form {
-    max-width: 600px; } }
+    max-width: 600px; }
+  .about-cont .image-wrap .about-image {
+    min-height: 300px; }
+  .about-cont .section .full-width-section .full-width-content.full-1 {
+    height: 500px; }
+  .about-cont .copy-row .top-quote {
+    font-size: 26px;
+    line-height: 32px; } }
+
+@media (max-width: 450px) {
+  .about-cont .copy-row .top-quote {
+    font-size: 22px;
+    line-height: 30px; } }
 
 #header {
   margin-top: 30px; }
