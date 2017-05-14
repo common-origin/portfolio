@@ -134,8 +134,11 @@ $( document ).ready(function() {
   var menuBtn = document.getElementById('landingMobile');
 
   if ($(window).width() < 768) { 
-    menuBtn.addEventListener('click', function() {
-      $('#landingMobile').toggleClass('active')
-    }, false);
+  	if(menuBtn) {
+	    menuBtn.addEventListener('click', function() {
+	      $('#landingMobile').toggleClass('active')
+	    }, false);
+	  }
   } 
 });
+

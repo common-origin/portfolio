@@ -13,17 +13,29 @@ $( document ).ready(function() {
   var menuBtnL = document.getElementById('landingMobile');
   var menuListItem = document.getElementById('menuItem');
 
-  menuBtn.addEventListener('click', function() {
-    $('#coverLayer').toggleClass('open')
-    $('#mobile-menu').toggleClass('open');
-  }, false);
+
 
   if ($(window).width() < 768) { 
-    menuBtnL.addEventListener('click', function() {
-      $('#coverLayer').toggleClass('open')
-      $('#landing-mobile-menu').toggleClass('open');
+    if(menuBtnL) {
+      menuBtnL.addEventListener('click', function() {
+        $('#coverLayer').toggleClass('open')
+        $('#landing-mobile-menu').toggleClass('open');
+      }, false);
+    }
+    if(menuBtn) {
+      menuBtn.addEventListener('click', function() {
+        $('#mobile-menu').toggleClass('open');
+        $('#coverLayer').toggleClass('open')
     }, false);
-  };
+  } else {
+    if(menuBtn) {
+      menuBtn.addEventListener('click', function() {
+        $('#coverLayer').toggleClass('open')
+        $('#mobile-menu').toggleClass('open');
+      }, false);
+    }
+  }
+}
 });
 
 
@@ -33,11 +45,12 @@ $( document ).ready(function() {
   var contactBtn = document.getElementById('contactButton');
   var cntactHome = document.getElementById('contactHome');
 
-  contactBtn.addEventListener('click', function() {
-    $('#coverLayer').addClass('open')
-    $('#contactFormSite').toggleClass('open');
-  }, false);
-
+  if(contactBtn) {
+    contactBtn.addEventListener('click', function() {
+      $('#coverLayer').addClass('open')
+      $('#contactFormSite').toggleClass('open');
+    }, false);
+  }
   /*cntactHome.addEventListener('click', function() {
     $('#contactForm').toggleClass('open');
   }, false);*/
@@ -61,6 +74,15 @@ $( document ).ready(function() {
   }
 });
 
+$( document ).ready(function() {
+  var myEl = document.getElementById('closeButtonHome');
+
+  if(myEl) {
+    myEl.addEventListener('click', function() {
+        $('#contactForm').removeClass('in open');
+    });
+  }
+});
 // Remove Open Class from Contact #Mobile
 
 /*$( document ).ready(function() {
@@ -80,8 +102,10 @@ $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
 
   menuBtn.addEventListener('click', function() {
-    if ( $('#coverLayer').hasClass('open') ) {
-      $('.outer-container').removeClass('open')
+    if(menuBtn) {
+      if ( $('#coverLayer').hasClass('open') ) {
+        $('.outer-container').removeClass('open')
+      }
     }
   });
 });
