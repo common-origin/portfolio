@@ -6888,21 +6888,9 @@ a:active, a:hover, a:focus {
       -o-transition: ease all .3s;
       -moz-transition: ease all .3s; }
 
-.mobile .cat-menu {
-  transition: ease all .3s;
-  -webkit-transition: ease all .3s;
-  -o-transition: ease all .3s;
-  -moz-transition: ease all .3s;
-  opacity: 1;
-  list-style: none;
-  margin-left: 0; }
-  .mobile .cat-menu ul {
-    padding-left: 15px; }
-    .mobile .cat-menu ul li {
-      font-family: "futura-pt", sans-serif;
-      font-size: 12px;
-      display: block;
-      padding-top: .5em; }
+@media (max-width: 768px) {
+  .cat-menu {
+    display: none; } }
 
 .proj-cont .page-title {
   font-family: "futura-pt", sans-serif;

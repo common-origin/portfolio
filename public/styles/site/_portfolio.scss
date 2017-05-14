@@ -116,9 +116,11 @@ $black: #000;
   width:100%;
   height:auto;
 }
+
 .project-thumbs{
   padding:0 !important;
 }
+
 .project-thumb {
   padding-bottom:0px;
   h2{
@@ -160,21 +162,12 @@ $black: #000;
   }
 }
 
-.mobile .cat-menu{
-  @include transition-main
-  opacity:1;
-  list-style:none;
-  margin-left:0;
-  ul{
-    padding-left:15px;
-    li{
-      font-family:$font-body;
-      font-size: 12px;
-      display:block;
-      padding-top:.5em;
-    }
+@media (max-width:768px){
+  .cat-menu {
+    display:none;
   }
 }
+
 
 
 .proj-cont {
