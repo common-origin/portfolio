@@ -74,12 +74,12 @@ $black: #000;
     position: fixed;
     top: calc(100vh - 140px);
     left: 50%;
-    font-size:2em;
+    font-size:1.5em;
     line-height: 0;
     margin: 0;
     border-radius: 50%;
     z-index: 100;
-    transform: rotate(270deg) translateX(-50%);
+    transform:translateX(-50%);
   }
   .row-bg {
     height:100vh;
@@ -155,7 +155,7 @@ $black: #000;
 
 // NAV DESKTOP
 
-.index-nav {
+#landingPage .index-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -235,6 +235,9 @@ $black: #000;
 .index-nav {
   #dh-target {
     opacity:0;
+  }
+  #dh-target a {
+    border-bottom: 2px solid #fff;
   }
 }
 
@@ -355,7 +358,9 @@ $black: #000;
       text-align: center;
       margin:0;
       font-size:2.2em;
-      padding-top:0.2em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .index-nav {
       display:none;
@@ -401,14 +406,14 @@ $black: #000;
       width: 30px;
       height: 30px;
       position: fixed;
-      top: calc(100vh - 300px);
+      top: calc(63vh + 100px);
       left: 50%;
-      font-size:2em;
+      font-size:1em;
       line-height: 0;
       margin: 0;
       border-radius: 50%;
       z-index: 100;
-      transform: rotate(270deg) translateX(-50%);
+      transform:translateX(-50%);
     }
     .mobile-main-nav {
       margin: 0;
@@ -418,6 +423,8 @@ $black: #000;
       bottom: 60px;
       left:50%;
       transform:translateX(-50%);
+      display: flex;
+      justify-content: center;
       .nav-item {
         display: inline-block;
         min-width: 80px;
@@ -435,6 +442,7 @@ $black: #000;
   #landingPage .title-cont .copy-row .aboutUs-mob {
     position:absolute;
     opacity:1;
+    width: 100%;
     padding: 0 1em;
     max-width: 500px;
     font-size:26px;

@@ -5852,12 +5852,12 @@ button.close {
     position: fixed;
     top: calc(100vh - 140px);
     left: 50%;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 0;
     margin: 0;
     border-radius: 50%;
     z-index: 100;
-    transform: rotate(270deg) translateX(-50%); }
+    transform: translateX(-50%); }
   #welcome .row-bg {
     height: 100vh; }
 
@@ -5918,7 +5918,7 @@ button.close {
   opacity: 0;
   z-index: 10; }
 
-.index-nav {
+#landingPage .index-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -5932,7 +5932,7 @@ button.close {
   -webkit-transform: none;
   transform: none;
   background-color: transparent; }
-  .index-nav li {
+  #landingPage .index-nav li {
     color: #fff;
     display: block !important;
     position: fixed;
@@ -5946,25 +5946,25 @@ button.close {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 1000; }
-    .index-nav li:nth-child(1) {
+    #landingPage .index-nav li:nth-child(1) {
       top: 56px;
       text-align: left !important; }
-    .index-nav li:nth-child(2) {
+    #landingPage .index-nav li:nth-child(2) {
       top: 56px;
       text-align: center; }
-    .index-nav li:nth-child(3) {
+    #landingPage .index-nav li:nth-child(3) {
       top: 56px;
       text-align: right; }
-    .index-nav li:nth-child(4) {
+    #landingPage .index-nav li:nth-child(4) {
       bottom: 80px;
       text-align: center; }
-    .index-nav li:nth-child(5) {
+    #landingPage .index-nav li:nth-child(5) {
       bottom: 80px;
       text-align: left; }
-    .index-nav li:nth-child(6) {
+    #landingPage .index-nav li:nth-child(6) {
       bottom: 80px;
       text-align: center; }
-    .index-nav li a {
+    #landingPage .index-nav li a {
       color: #fff;
       display: inline-block !important;
       -webkit-transform: translateY(0);
@@ -5974,7 +5974,7 @@ button.close {
       font-size: 19px;
       line-height: 26px;
       font-weight: 600; }
-    .index-nav li .navbar-toggle {
+    #landingPage .index-nav li .navbar-toggle {
       color: #fff;
       display: inline-block !important;
       -webkit-transform: translateY(0);
@@ -5987,6 +5987,9 @@ button.close {
 
 .index-nav #dh-target {
   opacity: 0; }
+
+.index-nav #dh-target a {
+  border-bottom: 2px solid #fff; }
 
 @media (min-width: 768px) {
   .navbar-collapse.collapse {
@@ -6077,7 +6080,9 @@ button.close {
     text-align: center;
     margin: 0;
     font-size: 2.2em;
-    padding-top: 0.2em; }
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
   #landingPage .index-nav {
     display: none; }
   #landingPage nav .navbar-toggle {
@@ -6112,14 +6117,14 @@ button.close {
       width: 30px;
       height: 30px;
       position: fixed;
-      top: calc(100vh - 300px);
+      top: calc(63vh + 100px);
       left: 50%;
-      font-size: 2em;
+      font-size: 1em;
       line-height: 0;
       margin: 0;
       border-radius: 50%;
       z-index: 100;
-      transform: rotate(270deg) translateX(-50%); }
+      transform: translateX(-50%); }
     #landingPage #welcome-mob .mobile-main-nav {
       margin: 0;
       padding: 0;
@@ -6127,7 +6132,9 @@ button.close {
       position: absolute;
       bottom: 60px;
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center; }
       #landingPage #welcome-mob .mobile-main-nav .nav-item {
         display: inline-block;
         min-width: 80px;
@@ -6141,6 +6148,7 @@ button.close {
   #landingPage .title-cont .copy-row .aboutUs-mob {
     position: absolute;
     opacity: 1;
+    width: 100%;
     padding: 0 1em;
     max-width: 500px;
     font-size: 26px;
