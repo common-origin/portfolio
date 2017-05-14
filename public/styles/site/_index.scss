@@ -373,7 +373,7 @@ $black: #000;
       .navbar-toggle {
         z-index:1000;
       }
-      #menuButton .icon-bar {
+      .icon-bar {
         background-color:#fff;
       }
     }
@@ -383,6 +383,13 @@ $black: #000;
       right:30px;
       margin:0;
     }
+  }
+  #landingPage .sc-title.open {
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #landingPage #welcome-mob {
     margin: 0 auto;

@@ -170,6 +170,9 @@ $black: #000;
   #mobile-menu {
     display:none;
   }
+  #landing-mobile-menu {
+    display:none;
+  }
 }
 
 
@@ -179,7 +182,7 @@ $black: #000;
   #desktop {
     display:none;
   }
-  #mobile-menu.navbar-collapse{
+  #mobile-menu.navbar-collapse, #landing-mobile-menu.navbar-collapse{
     border:none;
     box-shadow:none !important;
     display:none;
@@ -187,7 +190,7 @@ $black: #000;
     opacity:0;
     @include transition-main;
   }
-  #mobile-menu.navbar-collapse.open {
+  #mobile-menu.navbar-collapse.open, #landing-mobile-menu.navbar-collapse.open {
     background-color:#fff;
     margin-top: -65px;
     display:block;
@@ -208,10 +211,16 @@ $black: #000;
       font-size:2em;
     }
   }
+  #landing-mobile-menu.navbar-collapse.open {
+    margin: -45px 0 0;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+  }
   .navbar-brand h3 {
     font-size:22px;
   }
-  #mobile-menu #mobileContact {
+  #mobile-menu #mobileContact, #landing-mobile-menu #mobileContact  {
     width:100vw;
     padding: 9px 10px;
     h5 {
@@ -239,12 +248,12 @@ $black: #000;
   transition:.25s ease-in-out;
 }
 
-#menuButton span {
+#menuButton span, #landingMobile span {
   display:block;
   background:#000;
 }
 
-#menuButton {
+#menuButton, #landingMobile {
   .icon-bar {
     height:2px;
     position:relative;
@@ -265,6 +274,15 @@ $black: #000;
     }
   }
 }
+
+@media (max-width: 767px) {
+  #landingPage #landingMobile {
+    &.active .icon-bar, &.active span {
+      background-color:#000;
+    }
+  }
+}
+
 
 
 
@@ -378,6 +396,10 @@ $black: #000;
      -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
        -o-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+#landingPage .navbar-default.scrolled {
+  background-color:transparent;
+  box-shadow:none;
 }
 .row.title-row {
   padding: 0 15px;

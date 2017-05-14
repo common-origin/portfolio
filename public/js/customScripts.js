@@ -10,16 +10,24 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
   var menuBtn = document.getElementById('menuButton');
+  var menuBtnL = document.getElementById('landingMobile');
   var menuListItem = document.getElementById('menuItem');
 
   menuBtn.addEventListener('click', function() {
     $('#coverLayer').toggleClass('open')
     $('#mobile-menu').toggleClass('open');
   }, false);
+
+  if ($(window).width() < 768) { 
+    menuBtnL.addEventListener('click', function() {
+      $('#coverLayer').toggleClass('open')
+      $('#landing-mobile-menu').toggleClass('open');
+    }, false);
+  };
 });
 
 
-// Add Open Class to  Home Contact
+// Add Open Class to Home Contact
 
 $( document ).ready(function() {
   var contactBtn = document.getElementById('contactButton');
@@ -105,6 +113,7 @@ $( document ).ready(function() {
 
 
 // Page Loader 
+
 $(window).on("load", function() {
   $("#se-pre-con").removeClass("loading-screen");
 });

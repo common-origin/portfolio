@@ -52,7 +52,7 @@ $(window).load(function() {
 
 
 // Arrow Opacity on Scroll
-	$(document).scroll(function(e){
+	/*$(document).scroll(function(e){
 		var a = $('.index-arrow');
 		var target = $('.aboutUs')
 		var targetHeight = target.outerHeight();
@@ -137,4 +137,16 @@ $(window).scroll(function() {
 	    return opacity;
 	  }
 	});
+});
+
+
+
+$( document ).ready(function() {
+  var menuBtn = document.getElementById('landingMobile');
+
+  if ($(window).width() < 768) { 
+    menuBtn.addEventListener('click', function() {
+      $('#landingMobile').toggleClass('active')
+    }, false);
+  } 
 });

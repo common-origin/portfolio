@@ -6091,13 +6091,19 @@ button.close {
     height: 45px; }
     #landingPage .navbar-header .navbar-toggle {
       z-index: 1000; }
-    #landingPage .navbar-header #menuButton .icon-bar {
+    #landingPage .navbar-header .icon-bar {
       background-color: #fff; }
   #landingPage .landing-toggle {
     position: fixed;
     top: 0;
     right: 30px;
     margin: 0; }
+  #landingPage .sc-title.open {
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
   #landingPage #welcome-mob {
     margin: 0 auto;
     min-height: 166vh;
@@ -6563,12 +6569,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     float: right;
     margin-right: -30px; }
   #mobile-menu {
+    display: none; }
+  #landing-mobile-menu {
     display: none; } }
 
 @media (max-width: 767px) {
   #desktop {
     display: none; }
-  #mobile-menu.navbar-collapse {
+  #mobile-menu.navbar-collapse, #landing-mobile-menu.navbar-collapse {
     border: none;
     box-shadow: none !important;
     display: none;
@@ -6578,7 +6586,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     -webkit-transition: ease all .3s;
     -o-transition: ease all .3s;
     -moz-transition: ease all .3s; }
-  #mobile-menu.navbar-collapse.open {
+  #mobile-menu.navbar-collapse.open, #landing-mobile-menu.navbar-collapse.open {
     background-color: #fff;
     margin-top: -65px;
     display: block;
@@ -6589,7 +6597,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     -webkit-transition: ease all .3s;
     -o-transition: ease all .3s;
     -moz-transition: ease all .3s; }
-    #mobile-menu.navbar-collapse.open .navbar-nav {
+    #mobile-menu.navbar-collapse.open .navbar-nav, #landing-mobile-menu.navbar-collapse.open .navbar-nav {
       position: absolute;
       float: none;
       width: 100%;
@@ -6597,14 +6605,19 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       transform: translateY(-50%);
       height: auto;
       text-align: center; }
-    #mobile-menu.navbar-collapse.open .navbar-nav li h5 {
+    #mobile-menu.navbar-collapse.open .navbar-nav li h5, #landing-mobile-menu.navbar-collapse.open .navbar-nav li h5 {
       font-size: 2em; }
+  #landing-mobile-menu.navbar-collapse.open {
+    margin: -45px 0 0;
+    width: 100vw;
+    position: fixed;
+    left: 0; }
   .navbar-brand h3 {
     font-size: 22px; }
-  #mobile-menu #mobileContact {
+  #mobile-menu #mobileContact, #landing-mobile-menu #mobileContact {
     width: 100vw;
     padding: 9px 10px; }
-    #mobile-menu #mobileContact h5 {
+    #mobile-menu #mobileContact h5, #landing-mobile-menu #mobileContact h5 {
       font-size: 30px; } }
 
 .navmenu-default .navmenu-nav > .active > a {
@@ -6615,25 +6628,29 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 10px 0 0;
   height: 65px; }
 
-#menuButton span {
+#menuButton span, #landingMobile span {
   display: block;
   background: #000; }
 
-#menuButton .icon-bar {
+#menuButton .icon-bar, #landingMobile .icon-bar {
   height: 2px;
   position: relative; }
-  #menuButton .icon-bar:nth-child(1) {
+  #menuButton .icon-bar:nth-child(1), #landingMobile .icon-bar:nth-child(1) {
     width: 14px;
     transition: .25s ease-in-out;
     transition-delay: 0s; }
-  #menuButton .icon-bar:nth-child(2) {
+  #menuButton .icon-bar:nth-child(2), #landingMobile .icon-bar:nth-child(2) {
     width: 22px;
     transition: .25s ease-in-out;
     transition-delay: .125s; }
-  #menuButton .icon-bar:nth-child(3) {
+  #menuButton .icon-bar:nth-child(3), #landingMobile .icon-bar:nth-child(3) {
     width: 18px;
     transition: .25s ease-in-out;
     transition-delay: .25s; }
+
+@media (max-width: 767px) {
+  #landingPage #landingMobile.active .icon-bar, #landingPage #landingMobile.active span {
+    background-color: #000; } }
 
 .contact.navbar-toggle {
   color: #000;
@@ -6735,6 +6752,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05); }
+
+#landingPage .navbar-default.scrolled {
+  background-color: transparent;
+  box-shadow: none; }
 
 .row.title-row {
   padding: 0 15px;
