@@ -18,6 +18,8 @@ var particleSpeed = 0.3;
 var velocity = 0.6;
 var reactangleWidth = 90;
 var reactangleHeight = 90;
+var reactangleWidthM = 40;
+var reactangleHeightM = 40;
 
 
 /* ---- INIT ---- */
@@ -107,9 +109,16 @@ function loop() {
 /* ---- START ---- */
 function init() {
   var i = undefined;
-  for (i = 0; i < numberParticlesStart; i++) {
-    var angle = Math.random() * 360;
-    particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidth, windowHeight * 0.5 + Math.sin(angle) * reactangleHeight));
+  if ($(window).width() >= 768) {
+    for (i = 0; i < numberParticlesStart; i++) {
+      var angle = Math.random() * 360;
+      particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidth, windowHeight * 0.5 + Math.sin(angle) * reactangleHeight));
+    }
+  } else {
+    for (i = 0; i < numberParticlesStart; i++) {
+      var angle = Math.random() * 360;
+      particles.push(new Particle(windowWidth * 0.5 + Math.cos(angle) * reactangleWidthM, windowHeight * 0.5 + Math.sin(angle) * reactangleHeightM));
+    }
   }
 }
 init();
