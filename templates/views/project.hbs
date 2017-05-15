@@ -7,14 +7,17 @@
 					<header class="container post-words">
 						<div class="col-xs-12 col-sm-4 title">
 							<h5 class="p-sub-head">{{data.project.title}}</h5>
+							<div class="categories">
+								<h5>{{{categoryList data.project.categories}}}</h5>
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-6 brief">
 							{{{data.project.content.brief}}}
 						</div>
 						<div class="col-xs-12 col-sm-2 post-categories">
-							<div class="categories">
+							<!--<div class="categories">
 								<h5>{{{categoryList data.project.categories}}}</h5>
-							</div>
+							</div>-->
 							<h5>Share this project</h5>
 							<ul class="social-list">	
 								<a href="http://www.facebook.com/sharer.php?u=https://sidechain.studio" target="_blank">			
