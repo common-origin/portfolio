@@ -51,6 +51,12 @@ $( document ).ready(function() {
       $('#contactFormSite').toggleClass('open');
     }, false);
   }
+  if(cntactHome) {
+    cntactHome.addEventListener('click', function() {
+      $('#coverLayer').addClass('open')
+      $('#contactForm').toggleClass('open');
+    }, false);
+  }
   /*cntactHome.addEventListener('click', function() {
     $('#contactForm').toggleClass('open');
   }, false);*/
