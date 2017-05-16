@@ -6945,8 +6945,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background-image: url("/images/disappear-here-header.jpg");
   background-size: cover;
   background-position: center;
-  height: 60vh;
-  max-height: 700px;
+  height: 70vh;
+  max-height: 800px;
   min-height: 40px;
   width: 100vw;
   overflow: hidden;

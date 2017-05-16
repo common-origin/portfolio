@@ -28,14 +28,14 @@ $( document ).ready(function() {
         $('#coverLayer').toggleClass('open')
     }, false);
   } else {
-    if(menuBtn) {
-      menuBtn.addEventListener('click', function() {
-        $('#coverLayer').toggleClass('open')
-        $('#mobile-menu').toggleClass('open');
-      }, false);
+      if(menuBtn) {
+        menuBtn.addEventListener('click', function() {
+          $('#coverLayer').toggleClass('open')
+          $('#mobile-menu').toggleClass('open');
+        }, false);
+      }
     }
-  }
-}
+  }  
 });
 
 
