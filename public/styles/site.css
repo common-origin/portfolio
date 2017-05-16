@@ -6210,7 +6210,7 @@ button.close {
   border: none;
   background: transparent;
   position: absolute;
-  right: 0;
+  right: 1em;
   top: -6em; }
   .closeBtn .glyphicon {
     font-size: 1.4em; }
