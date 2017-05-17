@@ -14,7 +14,7 @@
 
 /* ---- SETTINGS ---- */
 var numberParticlesStart = 500;
-var particleSpeed = 0.3;
+var particleSpeed = 0.8;
 var velocity = 0.6;
 var reactangleWidth = 90;
 var reactangleHeight = 90;

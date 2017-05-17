@@ -32,8 +32,8 @@ var slideshow = (function(window, undefined) {
     selector: '.prism-slider',
     element: null,
     sizes: {
-      w: 1200,
-      h: 500
+      w: 1800,
+      h: 1080
     }
   };
 
@@ -42,10 +42,8 @@ var slideshow = (function(window, undefined) {
    * @type {Array}
    */
   var slides = [
-    '/images/carousel-1.jpg',
-    '/images/carousel-2.jpg',
-    '/images/carousel-3.jpg',
-    '/images/carousel-4.jpg'
+    '/images/disappear-here-header.jpg',
+    '/images/disappear-here-header.jpg'
   ];
 
   /**
@@ -54,17 +52,10 @@ var slideshow = (function(window, undefined) {
    */
   var masks = [
     {
-      source: '/images/masks/sidechain-logo-1.svg',
+      source: '/images/masks/DH_Logo_Master.svg',
       effects: {
         flip: 'Y',
-        rotate: -60 // degrees
-      }
-    },
-    {
-      source: '/images/masks/sidechain-logo-2.svg',
-      effects: {
-        flip: 'X',
-        rotate: -40 // degrees
+        rotate: -45 // degrees
       }
     }
   ];
