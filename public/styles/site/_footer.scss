@@ -119,10 +119,13 @@ $black: #000;
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
   #footer {
     padding-left:3em; padding-right:3em;
     padding-bottom:40px;
+    h5 {
+      font-size:12px;
+    }
   }
 }
 

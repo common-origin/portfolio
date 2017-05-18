@@ -287,6 +287,34 @@ $black: #000;
   }
 }
 
+@media (max-width: 768px) {
+  #landingPage nav {
+    .contact-form {
+      padding-top:60px;
+    }
+    .contact-form .contact-row p {
+      font-size:12px;
+      padding-bottom:2em;
+    }
+    .contact-row h1 {
+      padding-bottom:50px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  #landingPage nav {
+    .contact-form {
+      position:absolute;
+      padding-top:60px;
+    }
+    .closeBtn {
+      position:fixed;
+      top: 1.5em;
+      right: 1.5em;
+    }
+  }
+}
+
 
 //--------------//
 

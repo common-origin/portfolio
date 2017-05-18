@@ -100,11 +100,8 @@ $black: #000;
 
 @media (max-width: 767px){
   .contact-form .contact-row {
-    h1 {
-      padding-bottom:100px;
-    }
     .closeBtn {
-      top: -14em;
+      top:0;
     }
   }
 }
