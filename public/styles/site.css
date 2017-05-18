@@ -5929,7 +5929,7 @@ button.close {
   height: 0;
   z-index: 9999;
   margin: 0;
-  padding: 3em;
+  padding: 0;
   min-height: 0;
   float: none;
   -webkit-transform: none;
@@ -6186,8 +6186,8 @@ button.close {
   border: none;
   background: transparent;
   position: absolute;
-  right: 1em;
-  top: -6em; }
+  right: 0;
+  top: -3em; }
   .closeBtn .glyphicon {
     font-size: 1.4em; }
 
