@@ -135,9 +135,15 @@ $( document ).ready(function() {
 
   if ($(window).width() < 768) { 
   	if(menuBtn) {
-	    menuBtn.addEventListener('click', function() {
-	      $('#landingMobile').toggleClass('active')
-	    }, false);
+  		if ($('#landing-mobile-menu').hasClass('open')) {
+		    menuBtn.addEventListener('click', function() {
+		      $('#landingMobile').removeClass('active')
+		    }, false);
+		  } else { 
+		  	menuBtn.addEventListener('click', function() {
+		      $('#landingMobile').addClass('active')
+		    }, false);
+		  }
 	  }
   } 
 });
