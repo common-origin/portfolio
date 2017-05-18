@@ -183,10 +183,12 @@ function topFunction() {
 }
 
 
-
-
+window.onresize = function () {
+  $('#coverLayer').removeClass('open');
+};
 
 ///---------////
+/*
 $( document ).ready(function() {
   var mContact = document.getElementById('mobileContact')
 
@@ -194,8 +196,8 @@ $( document ).ready(function() {
     if(mContact) {
       mContact.addEventListener('click', function() {
         console.log("Hello");
-        $('#contactForm').toggleClass('open');
+        $('#contactForm').addClass('open');
       }, false);
     }
   }
-});
+});*/

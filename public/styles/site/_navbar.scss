@@ -178,7 +178,7 @@ $black: #000;
 
 // NAV MOBILE
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #desktop {
     display:none;
   }
@@ -290,53 +290,7 @@ $black: #000;
 
 
 
-// CONTACT IN MAIN NAV 
 
-.contact.navbar-toggle {
-  color:$black;
-  display:block;
-  display: inline-block!important;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  margin: 0!important;
-  padding: 15px 15px;
-  font-size: 19px;
-  line-height: 26px;
-  font-weight: 600;
-}
-
-.work nav, .abou nav, .k nav, .ut nav {
-  .navbar-collapse.collapse.in {
-    display:block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-  }
-  .contact-form {
-    background-color:#fff;
-    position: fixed;
-    top:0; left:0;
-    z-index:10001;
-    padding: 120px 60px 60px;
-    .close-contact {
-      position: absolute;
-      right: 60px;
-      top: 60px;
-    }
-    .contact-row p {
-      font-size:16px;
-      padding-bottom:2em;
-    }
-    .contact-row h1 {
-      margin:0;
-      font-size:30px;
-    }
-    .contact-row .enter-site-btn {
-      float: right;
-    }
-  }
-}
 
 
 // SIDEBAR SOCIAL MENU
