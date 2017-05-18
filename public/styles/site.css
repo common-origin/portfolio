@@ -6086,7 +6086,7 @@ button.close {
   opacity: 0;
   text-align: center; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #landingPage .desktop {
     display: none; }
   #landingPage .mobile {
@@ -6103,10 +6103,13 @@ button.close {
     display: none; }
   #landingPage nav .navbar-toggle {
     height: 75px; }
-  #landingPage .navbar-header .navbar-toggle {
-    z-index: 1000; }
-  #landingPage .navbar-header .icon-bar {
-    background-color: #fff; }
+  #landingPage .navbar-header {
+    height: 0;
+    border: none; }
+    #landingPage .navbar-header .navbar-toggle {
+      z-index: 1000; }
+    #landingPage .navbar-header .icon-bar {
+      background-color: #fff; }
   #landingPage .landing-toggle {
     position: fixed;
     top: 0;
@@ -6308,6 +6311,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   transition: ease all .4s;
   -webkit-transition: ease all .4s;
   -moz-transition: ease all .4s; }
+
+.collapsing {
+  position: relative;
+  top: -1px; }
 
 .pagination {
   margin: 20px 0 60px 0; }
@@ -6655,7 +6662,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       position: absolute;
       float: none;
       width: 100%;
-      top: 42%;
+      top: 45%;
       transform: translateY(-50%);
       height: auto;
       text-align: center; }

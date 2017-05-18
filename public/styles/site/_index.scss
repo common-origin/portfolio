@@ -371,7 +371,7 @@ $black: #000;
 
 // LANDING PAGE MOBILE VIEW 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #landingPage {
     .desktop{
       display:none;
@@ -395,6 +395,8 @@ $black: #000;
       height:75px;
     }
     .navbar-header {
+      height:0;
+      border:none;
       .navbar-toggle {
         z-index:1000;
       }

@@ -120,6 +120,10 @@ h1, h2, h3, h4, h5, a, p, label, textarea {
 	-moz-transition:ease all .4s;
 }
 
+.collapsing {
+  position: relative;
+  top:-1px;
+}
 
 // PAGINATION
 

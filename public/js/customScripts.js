@@ -44,6 +44,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   var contactBtn = document.getElementById('contactButton');
   var cntactHome = document.getElementById('contactHome');
+  var mContact = document.getElementById('mobileContact');
 
   if(contactBtn) {
     contactBtn.addEventListener('click', function() {
@@ -56,6 +57,14 @@ $( document ).ready(function() {
       $('#coverLayer').addClass('open')
       $('#contactForm').toggleClass('open');
     }, false);
+  }
+  if ($(window).width() < 768) { 
+    if(mContact) {
+      mContact.addEventListener('click', function() {
+        console.log("Hello");
+        $('#contactForm').toggleClass('open');
+      }, false);
+    }
   }
   /*cntactHome.addEventListener('click', function() {
     $('#contactForm').toggleClass('open');
