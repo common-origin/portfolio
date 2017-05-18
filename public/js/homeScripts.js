@@ -128,6 +128,7 @@ $(window).scroll(function() {
 	});
 });
 
+
 // Mobile button color change on 'active'
 
 $( document ).ready(function() {
@@ -135,16 +136,23 @@ $( document ).ready(function() {
 
   if ($(window).width() < 768) { 
   	if(menuBtn) {
-  		if ($('#landing-mobile-menu').hasClass('open')) {
-		    menuBtn.addEventListener('click', function() {
-		      $('#landingMobile').removeClass('active')
-		    }, false);
-		  } else { 
-		  	menuBtn.addEventListener('click', function() {
-		      $('#landingMobile').addClass('active')
-		    }, false);
-		  }
+  		menuBtn.addEventListener('click', function() {
+  			if ($('#landing-mobile-menu').hasClass('open')) {
+  				$('#landingMobile').addClass('active')
+  			} else {
+  				$('#landingMobile').removeClass('active')
+  			}
+		  }, false);
 	  }
   } 
 });
+
+
+
+
+
+
+
+
+
 
