@@ -132,6 +132,7 @@ $(window).scroll(function() {
 
 $( document ).ready(function() {
   var menuBtn = document.getElementById('landingMobile');
+  var mContact = document.getElementById('mobileContact');
 
   if ($(window).width() < 768) { 
   	if(menuBtn) {
@@ -139,6 +140,10 @@ $( document ).ready(function() {
 	      $('#landingMobile').toggleClass('active')
 	    }, false);
 	  }
+	  if(mContact) {
+	  	mContact.addEventListener('click', function() {
+	      $('#contactForm').toggleClass('open in')
+	    }, false);
   } 
 });
 
