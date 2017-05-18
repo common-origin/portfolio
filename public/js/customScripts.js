@@ -77,6 +77,20 @@ $( document ).ready(function() {
   }
 });
 
+
+
+
+$( document ).ready(function() {
+  var mContact = document.getElementById('cToggle');
+
+  if(mContact) {
+    mContact.addEventListener('click', function() {
+      console.log("CLICK");
+      $('#contactForm').toggleClass('open');
+    }, false);
+  }
+});
+
 $( document ).ready(function() {
   var myEl = document.getElementById('closeButtonHome');
 

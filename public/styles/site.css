@@ -6058,7 +6058,7 @@ button.close {
     transform: translateX(-50%); }
   #landingPage .index-nav {
     display: none; }
-  #landingPage .navbar-toggle {
+  #landingPage nav .navbar-toggle {
     height: 75px; }
   #landingPage .navbar-header {
     height: 0;
@@ -7269,7 +7269,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   line-height: 26px;
   font-weight: 600; }
 
-.work nav .navbar-collapse.collapse.in, .abou nav .navbar-collapse.collapse.in, .k nav .navbar-collapse.collapse.in, .ut nav .navbar-collapse.collapse.in, #landingPage nav .navbar-collapse.collapse.in {
+.work nav .navbar-collapse.collapse.open, .abou nav .navbar-collapse.collapse.open, .k nav .navbar-collapse.collapse.open, .ut nav .navbar-collapse.collapse.open, #landingPage nav .navbar-collapse.collapse.open {
   display: block !important;
   position: absolute;
   top: 0;
@@ -7338,7 +7338,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 @media (min-width: 768px) {
   .navbar-collapse.collapse {
-    display: none !important; } }
+    display: none !important; }
+  .navbar-toggle {
+    height: auto; } }
 
 @media (max-width: 768px) {
   .work nav .contact-form .contact-row p, .abou nav .contact-form .contact-row p, .k nav .contact-form .contact-row p, .ut nav .contact-form .contact-row p, #landingPage nav .contact-form .contact-row p {

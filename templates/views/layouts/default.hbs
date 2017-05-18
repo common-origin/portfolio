@@ -120,9 +120,9 @@
 											<button type="button" id="contactButton" class="contact navbar-toggle collapsed" data-target="#contactFormSite" data-toggle="collapse" aria-expanded="false"><h5>Contact</h5></button>
 										</li>
 										{{#if user}}
-											<li id="menuItem" class="sign-out"><a href="/keystone/signout" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Sign Out</h5></a></li>
+											<li class="sign-out"><a href="/keystone/signout" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Sign Out</h5></a></li>
 										{{else}}
-											<li id="menuItem" class="sign-in"><a href="/keystone/signin" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Login</h5></a></li>
+											<li class="sign-in"><a href="/keystone/signin" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Login</h5></a></li>
 										{{/if}}
 										<!--<div class="btn-wrap">
 										  <button class="menu-close" type="button" id="closeMenu">close</button>
@@ -133,7 +133,7 @@
 						    <div class="navbar-collapse" id="mobile-menu">
 						      <ul class="nav navbar-nav">
 						        {{# each navLinks}}
-											<li id="menuItem" class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+											<li class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 												<a href="{{ href }}"><h5>{{ label }}</h5></a>
 											</li>
 										{{/each}}

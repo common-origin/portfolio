@@ -68,7 +68,7 @@ $black: #000;
 }
 
 .work nav, .abou nav, .k nav, .ut nav, #landingPage nav {
-  .navbar-collapse.collapse.in {
+  .navbar-collapse.collapse.open {
     display:block !important;
     position: absolute;
     top: 0;
@@ -148,6 +148,9 @@ $black: #000;
 @media (min-width: 768px) {
   .navbar-collapse.collapse {
     display: none!important;
+  }
+  .navbar-toggle {
+    height: auto;
   }
 }
 
