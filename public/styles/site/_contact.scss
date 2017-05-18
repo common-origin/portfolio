@@ -70,7 +70,7 @@ $black: #000;
 .work nav, .abou nav, .k nav, .ut nav, #landingPage nav {
   .navbar-collapse.collapse.open {
     display:block !important;
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     padding: 0;
@@ -170,8 +170,6 @@ $black: #000;
     padding: 60px 30px !important;
   }
   nav .closeBtn {
-    position:fixed;
-    top: 1.5em;
-    right: 1.5em;
+    display: none;
   }
 }

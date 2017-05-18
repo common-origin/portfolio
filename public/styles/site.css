@@ -6060,6 +6060,11 @@ button.close {
     display: none; }
   #landingPage nav .navbar-toggle {
     height: 75px; }
+  #landingPage button#cToggle {
+    width: 100%;
+    font-size: 2em;
+    height: 73px;
+    font-weight: 500; }
   #landingPage .navbar-header {
     height: 0;
     border: none; }
@@ -6622,7 +6627,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       top: 45%;
       transform: translateY(-50%);
       height: auto;
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
     #mobile-menu.navbar-collapse.open .navbar-nav li h5, #landing-mobile-menu.navbar-collapse.open .navbar-nav li h5 {
       font-size: 2em; }
   #landingPage #landing-mobile-menu .navbar-brand {
@@ -7271,7 +7277,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .work nav .navbar-collapse.collapse.open, .abou nav .navbar-collapse.collapse.open, .k nav .navbar-collapse.collapse.open, .ut nav .navbar-collapse.collapse.open, #landingPage nav .navbar-collapse.collapse.open {
   display: block !important;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 0;
@@ -7353,9 +7359,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   nav .contact-form {
     padding: 60px 30px !important; }
   nav .closeBtn {
-    position: fixed;
-    top: 1.5em;
-    right: 1.5em; } }
+    display: none; } }
 
 .footer-wrapper {
   position: fixed;

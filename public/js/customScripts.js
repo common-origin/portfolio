@@ -15,9 +15,13 @@ $( document ).ready(function() {
   if ($(window).width() < 768) { 
     if(menuBtnL) {
       menuBtnL.addEventListener('click', function() {
-        $('#coverLayer').toggleClass('open')
-        $('#landing-mobile-menu').toggleClass('open');
-      }, false);
+        if ($('#contactForm').hasClass('open')) {
+          $('#contactForm').removeClass('open')
+        } else {
+          $('#coverLayer').toggleClass('open')
+          $('#landing-mobile-menu').toggleClass('open');
+        }
+      });
     }
     if(menuBtn) {
       menuBtn.addEventListener('click', function() {

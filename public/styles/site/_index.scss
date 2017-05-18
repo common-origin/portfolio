@@ -334,6 +334,12 @@ $black: #000;
     nav .navbar-toggle {
       height:75px;
     }
+    button#cToggle {
+      width: 100%;
+      font-size: 2em;
+      height: 73px;
+      font-weight: 500;
+    }
     .navbar-header {
       height:0;
       border:none;
