@@ -164,6 +164,12 @@ $black: #000;
       padding-bottom:50px;
     }
   }
+  button#cToggleM {
+    width: 100%;
+    font-size: 2em;
+    height: 73px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 450px) {
   nav .contact-form {

@@ -25,9 +25,13 @@ $( document ).ready(function() {
     }
     if(menuBtn) {
       menuBtn.addEventListener('click', function() {
-        $('#mobile-menu').toggleClass('open');
-        $('#coverLayer').toggleClass('open')
-    }, false);
+        if ($('#contactFormSite').hasClass('open')) {
+          $('#contactFormSite').removeClass('open')
+        } else {
+          $('#mobile-menu').toggleClass('open');
+          $('#coverLayer').toggleClass('open');
+        }
+      });
   } else {
       if(menuBtn) {
         menuBtn.addEventListener('click', function() {

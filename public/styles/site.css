@@ -6599,6 +6599,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 @media (max-width: 768px) {
   #desktop {
     display: none; }
+  .navbar-header .navbar-toggle {
+    z-index: 1000; }
   #mobile-menu.navbar-collapse, #landing-mobile-menu.navbar-collapse {
     border: none;
     box-shadow: none !important;
@@ -6633,7 +6635,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       font-size: 2em; }
   #landingPage #landing-mobile-menu .navbar-brand {
     height: 75px; }
-  #landing-mobile-menu.navbar-collapse.open {
+  #landing-mobile-menu.navbar-collapse.open, #mobile-menu.navbar-collapse.open {
     margin: 0;
     width: 100vw;
     position: fixed;
@@ -7353,7 +7355,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     font-size: 12px;
     padding-bottom: 2em; }
   .work nav .contact-row h1, .abou nav .contact-row h1, .k nav .contact-row h1, .ut nav .contact-row h1, #landingPage nav .contact-row h1 {
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+  button#cToggleM {
+    width: 100%;
+    font-size: 2em;
+    height: 73px;
+    font-weight: 500; } }
 
 @media (max-width: 450px) {
   nav .contact-form {

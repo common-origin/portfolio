@@ -182,6 +182,9 @@ $black: #000;
   #desktop {
     display:none;
   }
+  .navbar-header .navbar-toggle {
+    z-index: 1000;
+  }
   #mobile-menu.navbar-collapse, #landing-mobile-menu.navbar-collapse{
     border:none;
     box-shadow:none !important;
@@ -215,7 +218,7 @@ $black: #000;
   #landingPage #landing-mobile-menu .navbar-brand {
     height:75px;
   }
-  #landing-mobile-menu.navbar-collapse.open {
+  #landing-mobile-menu.navbar-collapse.open, #mobile-menu.navbar-collapse.open {
     margin:0;
     width: 100vw;
     position: fixed;
