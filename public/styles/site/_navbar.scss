@@ -305,7 +305,7 @@ $black: #000;
   font-weight: 600;
 }
 
-.work nav, .abou nav {
+.work nav, .abou nav, .k nav, .ut nav {
   .navbar-collapse.collapse.in {
     display:block !important;
     position: absolute;
@@ -318,7 +318,7 @@ $black: #000;
     position: fixed;
     top:0; left:0;
     z-index:10001;
-    padding: 120px 60px 60px;
+    padding: 120px 30px;
     .close-contact {
       position: absolute;
       right: 60px;

@@ -6710,31 +6710,31 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   line-height: 26px;
   font-weight: 600; }
 
-.work nav .navbar-collapse.collapse.in, .abou nav .navbar-collapse.collapse.in {
+.work nav .navbar-collapse.collapse.in, .abou nav .navbar-collapse.collapse.in, .k nav .navbar-collapse.collapse.in, .ut nav .navbar-collapse.collapse.in {
   display: block !important;
   position: absolute;
   top: 0;
   left: 0;
   padding: 0; }
 
-.work nav .contact-form, .abou nav .contact-form {
+.work nav .contact-form, .abou nav .contact-form, .k nav .contact-form, .ut nav .contact-form {
   background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10001;
-  padding: 120px 60px 60px; }
-  .work nav .contact-form .close-contact, .abou nav .contact-form .close-contact {
+  padding: 120px 30px; }
+  .work nav .contact-form .close-contact, .abou nav .contact-form .close-contact, .k nav .contact-form .close-contact, .ut nav .contact-form .close-contact {
     position: absolute;
     right: 60px;
     top: 60px; }
-  .work nav .contact-form .contact-row p, .abou nav .contact-form .contact-row p {
+  .work nav .contact-form .contact-row p, .abou nav .contact-form .contact-row p, .k nav .contact-form .contact-row p, .ut nav .contact-form .contact-row p {
     font-size: 16px;
     padding-bottom: 2em; }
-  .work nav .contact-form .contact-row h1, .abou nav .contact-form .contact-row h1 {
+  .work nav .contact-form .contact-row h1, .abou nav .contact-form .contact-row h1, .k nav .contact-form .contact-row h1, .ut nav .contact-form .contact-row h1 {
     margin: 0;
     font-size: 30px; }
-  .work nav .contact-form .contact-row .enter-site-btn, .abou nav .contact-form .contact-row .enter-site-btn {
+  .work nav .contact-form .contact-row .enter-site-btn, .abou nav .contact-form .contact-row .enter-site-btn, .k nav .contact-form .contact-row .enter-site-btn, .ut nav .contact-form .contact-row .enter-site-btn {
     float: right; }
 
 .sidebar-wrap {
