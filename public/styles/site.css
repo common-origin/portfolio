@@ -6723,7 +6723,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 0;
   left: 0;
   z-index: 10001;
-  padding: 120px 30px; }
+  padding: 120px 60px 60px; }
   .work nav .contact-form .close-contact, .abou nav .contact-form .close-contact, .k nav .contact-form .close-contact, .ut nav .contact-form .close-contact {
     position: absolute;
     right: 60px;
