@@ -144,6 +144,7 @@ $( document ).ready(function() {
 	  	mContact.addEventListener('click', function() {
 	      $('#contactForm').toggleClass('open in')
 	    }, false);
+	  }
   } 
 });
 
