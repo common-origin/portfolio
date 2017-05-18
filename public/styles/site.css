@@ -5999,7 +5999,8 @@ button.close {
     display: none !important; } }
 
 #landingPage nav .navbar-collapse.collapse.in {
-  display: block !important; }
+  display: block !important;
+  border: none; }
 
 #landingPage nav .navbar-toggle {
   height: auto; }

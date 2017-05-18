@@ -128,7 +128,7 @@ $(window).scroll(function() {
 	});
 });
 
-
+// Mobile button color change on 'active'
 
 $( document ).ready(function() {
   var menuBtn = document.getElementById('landingMobile');
