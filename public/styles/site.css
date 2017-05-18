@@ -6674,6 +6674,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     transition-delay: .125s; }
   #menuButton .icon-bar:nth-child(3), #landingMobile .icon-bar:nth-child(3) {
     width: 18px;
+    margin-left: 4px;
     transition: .25s ease-in-out;
     transition-delay: .25s; }
 

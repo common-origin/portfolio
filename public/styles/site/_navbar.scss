@@ -277,6 +277,7 @@ $black: #000;
     }
     &:nth-child(3){
       width:18px;
+      margin-left: 4px;
       @include menu-transition
       transition-delay:.25s;
     }
