@@ -6012,10 +6012,6 @@ button.close {
   left: 0;
   z-index: 10001;
   padding: 120px 30px 60px; }
-  #landingPage nav .contact-form .close-contact {
-    position: absolute;
-    right: 60px;
-    top: 60px; }
   #landingPage nav .contact-form .contact-row p {
     font-size: 16px;
     padding-bottom: 2em; }
@@ -6026,8 +6022,6 @@ button.close {
     float: right; }
 
 @media (max-width: 768px) {
-  #landingPage nav .contact-form {
-    padding-top: 60px; }
   #landingPage nav .contact-form .contact-row p {
     font-size: 12px;
     padding-bottom: 2em; }
@@ -6109,12 +6103,10 @@ button.close {
     display: none; }
   #landingPage nav .navbar-toggle {
     height: 75px; }
-  #landingPage .navbar-header {
-    height: 45px; }
-    #landingPage .navbar-header .navbar-toggle {
-      z-index: 1000; }
-    #landingPage .navbar-header .icon-bar {
-      background-color: #fff; }
+  #landingPage .navbar-header .navbar-toggle {
+    z-index: 1000; }
+  #landingPage .navbar-header .icon-bar {
+    background-color: #fff; }
   #landingPage .landing-toggle {
     position: fixed;
     top: 0;
