@@ -86,11 +86,18 @@ $( document ).ready(function() {
 
 $( document ).ready(function() {
   var mContact = document.getElementById('cToggle');
+  var mContSite = document.getElementById('cToggleM');
 
   if(mContact) {
     mContact.addEventListener('click', function() {
       console.log("CLICK");
       $('#contactForm').toggleClass('open');
+    }, false);
+  }
+  if(mContSite) {
+    mContSite.addEventListener('click', function() {
+      console.log("CLICK");
+      $('#contactFormSite').toggleClass('open');
     }, false);
   }
 });
