@@ -215,9 +215,6 @@ $black: #000;
       font-size:2em;
     }
   }
-  #landingPage #landing-mobile-menu .navbar-brand {
-    height:75px;
-  }
   #landing-mobile-menu.navbar-collapse.open, #mobile-menu.navbar-collapse.open {
     margin:0;
     width: 100vw;
@@ -284,7 +281,7 @@ $black: #000;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #landingPage #landingMobile {
     &.active .icon-bar, &.active span {
       background-color:#000;

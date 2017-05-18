@@ -6058,8 +6058,6 @@ button.close {
     transform: translateX(-50%); }
   #landingPage .index-nav {
     display: none; }
-  #landingPage nav .navbar-toggle {
-    height: 75px; }
   #landingPage button#cToggle {
     width: 100%;
     font-size: 2em;
@@ -6075,7 +6073,7 @@ button.close {
   #landingPage .landing-toggle {
     position: fixed;
     top: 0;
-    right: 30px;
+    right: 10px;
     margin: 0; }
   #landingPage .sc-title.open {
     color: #000;
@@ -6633,8 +6631,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       margin: 0; }
     #mobile-menu.navbar-collapse.open .navbar-nav li h5, #landing-mobile-menu.navbar-collapse.open .navbar-nav li h5 {
       font-size: 2em; }
-  #landingPage #landing-mobile-menu .navbar-brand {
-    height: 75px; }
   #landing-mobile-menu.navbar-collapse.open, #mobile-menu.navbar-collapse.open {
     margin: 0;
     width: 100vw;
@@ -6678,7 +6674,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     transition: .25s ease-in-out;
     transition-delay: .25s; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #landingPage #landingMobile.active .icon-bar, #landingPage #landingMobile.active span {
     background-color: #000; } }
 

@@ -331,9 +331,6 @@ $black: #000;
     .index-nav {
       display:none;
     }
-    nav .navbar-toggle {
-      height:75px;
-    }
     button#cToggle {
       width: 100%;
       font-size: 2em;
@@ -353,7 +350,7 @@ $black: #000;
     .landing-toggle {
       position: fixed;
       top:0;
-      right:30px;
+      right:10px;
       margin:0;
     }
   }
