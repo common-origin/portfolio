@@ -7490,7 +7490,12 @@ position it in the middle of its parent wrapper*/
 
 @media (max-width: 450px) {
   nav .contact-form {
+    height: 100vh;
+    overflow: auto;
+    line-height: 20px;
     padding: 90px 30px 60px 30px !important; }
+  .contact-row h1 {
+    padding-bottom: 20px !important; }
   nav .closeBtn {
     display: none; } }
 
@@ -7565,6 +7570,10 @@ position it in the middle of its parent wrapper*/
     padding-bottom: 40px; }
     #footer h5 {
       font-size: 12px; } }
+
+@media (max-width: 450px) {
+  #footer {
+    padding-bottom: 10px; } }
 
 .video-container {
   display: flex;

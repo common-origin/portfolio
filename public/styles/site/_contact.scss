@@ -173,7 +173,15 @@ $black: #000;
 }
 @media (max-width: 450px) {
   nav .contact-form {
+    height: 100vh;
+    overflow: auto; 
+    line-height:20px;
     padding:90px 30px 60px 30px !important
+  }
+  .contact-row {
+    h1 {
+      padding-bottom:20px !important;
+    }
   }
   nav .closeBtn {
     display: none;
