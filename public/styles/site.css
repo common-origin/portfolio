@@ -6725,7 +6725,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   transform-origin: left center; }
 
 #menuButton.open span:nth-child(2), #landingMobile.open span:nth-child(2) {
-  width: 18px;
+  width: 17px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -6738,7 +6738,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   opacity: 0; }
 
 #menuButton.open span:nth-child(4), #landingMobile.open span:nth-child(4) {
-  width: 18px;
+  width: 17px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
