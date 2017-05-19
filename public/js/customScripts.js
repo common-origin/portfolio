@@ -230,3 +230,19 @@ $( document ).ready(function() {
     }
   }
 });*/
+
+
+/* Mobile Nav Animation */
+
+$(document).ready(function(){
+  $('#menuButton').click(function(){
+    $(this).toggleClass('open');
+  });
+});
+/* Mobile Nav Animation */
+
+$(document).ready(function(){
+  $('#landingMobile').click(function(){
+    $(this).toggleClass('open');
+  });
+});
