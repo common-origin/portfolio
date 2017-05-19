@@ -96,12 +96,14 @@ $( document ).ready(function() {
     mContact.addEventListener('click', function() {
       console.log("CLICK");
       $('#contactForm').toggleClass('open');
+      $('#landingMobile').addClass('hide-element');
     }, false);
   }
   if(mContSite) {
     mContSite.addEventListener('click', function() {
       console.log("CLICK");
       $('#contactFormSite').toggleClass('open');
+      $('#menuButton').addClass('hide-element');
     }, false);
   }
 });
@@ -217,19 +219,6 @@ window.onresize = function () {
 };
 
 ///---------////
-/*
-$( document ).ready(function() {
-  var mContact = document.getElementById('mobileContact')
-
-  if ($(window).width() < 768) { 
-    if(mContact) {
-      mContact.addEventListener('click', function() {
-        console.log("Hello");
-        $('#contactForm').addClass('open');
-      }, false);
-    }
-  }
-});*/
 
 
 /* Mobile Nav Animation */
@@ -246,3 +235,27 @@ $(document).ready(function(){
     $(this).toggleClass('open');
   });
 });
+
+/* Mobile Contact Back Button */
+
+$(document).ready(function(){
+  if ($(window).width() < 768) { 
+    $('#back-btn-mobile').click(function(){
+      $('#contactForm').removeClass('open');
+      $('#landingMobile').removeClass('hide-element');
+    });
+  }
+});
+
+$(document).ready(function(){
+  if ($(window).width() < 768) { 
+    $('#back-btn-mobile-site').click(function(){
+      $('#contactFormSite').removeClass('open');
+      $('#menuButton').removeClass('hide-element');
+    });
+  }
+});
+
+
+
+        

@@ -247,10 +247,30 @@ $black: #000;
   height: 65px;
 }
 
+// MOBILE BACK BUTTON 
+
+.mobile-back-btn {
+  position: fixed;
+  top: 1.5em;
+  left:1.5em;
+}
+
+#back-btn-mobile, #back-btn-mobile-site {
+  font-size: 1.5em;
+  color: #000;
+}
+
+// HIDE NAVBAR TOGGLE CROSS WHEN CONTACT IS OPEN - MOBILE
+
+#landingMobile.hide-element, #menuButton.hide-element {
+  opacity:0;
+  visibility: hidden;
+  @include transition-main;
+}
+
 
 // MOBILE NAV ANIMATION 
 
-/* Icon 4 */
 #menuButton, #landingMobile {
   height:65px;
   position: relative;
@@ -338,48 +358,6 @@ $black: #000;
     }
   }
 }
-
-
-/* NAVBAR HAMBURGER ANIMATION
-
-@mixin menu-transition{
-  transition:.25s ease-in-out;
-}
-
-#menuButton span, #landingMobile span {
-  display:block;
-  background:#000;
-}
-
-#menuButton, #landingMobile {
-  .icon-bar {
-    height:2px;
-    position:relative;
-    &:nth-child(1){
-      width:14px;
-      @include menu-transition
-      transition-delay:0s;
-    }
-    &:nth-child(2){
-      width:22px;
-      @include menu-transition
-      transition-delay:.125s;
-    }
-    &:nth-child(3){
-      width:18px;
-      margin-left: 4px;
-      @include menu-transition
-      transition-delay:.25s;
-    }
-  }
-}
-*/
-
-
-
-
-
-
 
 
 

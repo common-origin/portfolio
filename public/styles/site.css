@@ -6653,7 +6653,23 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 10px 0 0;
   height: 65px; }
 
-/* Icon 4 */
+.mobile-back-btn {
+  position: fixed;
+  top: 1.5em;
+  left: 1.5em; }
+
+#back-btn-mobile, #back-btn-mobile-site {
+  font-size: 1.5em;
+  color: #000; }
+
+#landingMobile.hide-element, #menuButton.hide-element {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s; }
+
 #menuButton, #landingMobile {
   height: 65px;
   position: relative;
@@ -6729,40 +6745,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   #landingPage #landingMobile.active .icon-bar, #landingPage #landingMobile.active span {
     background-color: #000; } }
 
-/* NAVBAR HAMBURGER ANIMATION
-
-@mixin menu-transition{
-  transition:.25s ease-in-out;
-}
-
-#menuButton span, #landingMobile span {
-  display:block;
-  background:#000;
-}
-
-#menuButton, #landingMobile {
-  .icon-bar {
-    height:2px;
-    position:relative;
-    &:nth-child(1){
-      width:14px;
-      @include menu-transition
-      transition-delay:0s;
-    }
-    &:nth-child(2){
-      width:22px;
-      @include menu-transition
-      transition-delay:.125s;
-    }
-    &:nth-child(3){
-      width:18px;
-      margin-left: 4px;
-      @include menu-transition
-      transition-delay:.25s;
-    }
-  }
-}
-*/
 .sidebar-wrap {
   max-width: 1280px;
   margin-left: auto !important;
@@ -7446,7 +7428,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 @media (max-width: 450px) {
   nav .contact-form {
-    padding: 60px 30px !important; }
+    padding: 90px 30px 60px 30px !important; }
   nav .closeBtn {
     display: none; } }
 
