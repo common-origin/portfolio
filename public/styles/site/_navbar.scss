@@ -399,7 +399,7 @@ $black: #000;
 .social-list .icon{
   @include transition-main
   color:#cccccc;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom:.5em;
   &:hover{
     @include transition-main
