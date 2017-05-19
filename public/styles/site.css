@@ -6304,7 +6304,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding-top: 100px; }
 
 .work-cont {
-  padding-top: 0; }
+  padding-top: 60px; }
 
 @media (max-width: 767px) {
   .outer-container {
@@ -6951,31 +6951,55 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
     opacity: 1; } }
 
 .article-wrap {
-  padding-bottom: 60px;
-  background: #fff; }
+  height: 60vh; }
 
+.feat-title {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff; }
+
+@media (max-width: 768px) {
+  .article-wrap {
+    height: 50vh; }
+  .feat-title {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff; } }
+
+/*
 .dh-article {
-  background-image: url("/images/disappear-here-header.jpg");
+  background-image:url('/images/disappear-here-header.jpg');
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  max-height: 800px;
-  min-height: 40px;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .dh-article .article-content {
-    padding: 20px 0 0; }
-    .dh-article .article-content .feat-title {
-      color: #000;
-      font-size: 30px;
+  height:70vh;
+  max-height:800px;
+  min-height:40px;
+  width:100vw;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  .article-content {
+    padding:20px 0 0;
+    .feat-title {
+      color:#000;
+      font-size:30px;
       width: 70vw;
       margin: 0 auto;
       max-width: 640px;
-      text-align: center; }
-
+      text-align:center;
+    }
+  }
+}*/
 .card {
   float: left;
   padding-bottom: 30px; }
@@ -7018,6 +7042,39 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   .project-thumb .lead {
     font-size: 12px;
     margin-bottom: 2.5rem; }
+
+/* Makes a fixed background wrapper
+which the user cannot interact with */
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden; }
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 70vh;
+  min-width: 124.44vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+@media (max-width: 768px) {
+  .iframe-wrapper {
+    height: 55vh; }
+  .iframe-wrapper iframe {
+    min-height: 60vh;
+    min-width: 106.67vh; } }
 
 .cat-menu {
   transition: ease all .3s;
@@ -7441,7 +7498,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
   will-change: opacity; }
 
 .footer {

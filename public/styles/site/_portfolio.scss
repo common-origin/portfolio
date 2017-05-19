@@ -42,9 +42,39 @@ $black: #000;
 
 // HEADER FEATURE
 .article-wrap {
-  padding-bottom:60px;
-  background: #fff;
+  height:60vh;
 }
+
+.feat-title {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin:0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@media (max-width:768px){
+  .article-wrap {
+    height:50vh;
+  }
+  .feat-title {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    font-size:1.2em;
+    margin:0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+}
+
+
+
+
+/*
 .dh-article {
   background-image:url('/images/disappear-here-header.jpg');
   background-size: cover;
@@ -68,7 +98,7 @@ $black: #000;
       text-align:center;
     }
   }
-}
+}*/
 
 // BASE STYLES
 
@@ -130,6 +160,46 @@ $black: #000;
   .lead{
     font-size:12px;
     margin-bottom:2.5rem;
+  }
+}
+
+//// VIDEO 
+
+/* Makes a fixed background wrapper
+which the user cannot interact with */
+
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 70vh;
+  min-width: 124.44vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:768px){
+  .iframe-wrapper {
+    height: 55vh;
+  }
+  .iframe-wrapper iframe {
+    min-height: 60vh;
+    min-width: 106.67vh;
   }
 }
 
