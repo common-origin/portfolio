@@ -117,18 +117,6 @@ $( document ).ready(function() {
     });
   }
 });
-// Remove Open Class from Contact #Mobile
-
-/*$( document ).ready(function() {
-  var closeButtonH = document.getElementById('closeButtonHome');
-
-  closeButtonH.addEventListener('click', function() {
-    if ( $('#coverLayer').hasClass('in') ) {
-      $('#coverLayer').removeClass('open')
-      $('#contactForm').removeClass('in open');
-    }
-  });
-});*/
 
 // Close Menu Button 
 
@@ -190,9 +178,6 @@ $( document ).ready(function() {
   });
 }); 
 
-
-
-//-----------------//
 
 // Back top top button 
 

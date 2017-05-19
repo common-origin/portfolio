@@ -150,41 +150,87 @@ $black: #000;
   }
 }
 
+
+// ABOUT PAGE CONTACT FORM 
 #question-form {
-  margin-top:4em;
   .full-width-section {
     background:#eee;
   }
-  .contact-form {
-    max-width:800px;
-    padding:4em 2em 7em 2em;
-    .enter-site-btn {
-      float:right;
-    }
-    .form-group .form-control {
-      border-bottom: 1px solid #37383c;
-    }
-    .form-control {
-      background-color:transparent;
-      &:focus {
-        border-color: #2EE59D;
-      }
-    }
-    label {
-      color:#000;
-    }
-    h1, h4 {
-      text-align:center; 
-      margin-top:0;
-    }
-    h4 {
-      padding-bottom:2em;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
+}
+
+#question-form .contact-form {
+  margin-left:auto;margin-right:auto;
+  float: none;
+  max-width:800px;
+  padding:4em 2em 7em 2em;
+  label {
+    color:#000;
+    font-family:$font-body; 
+    font-style: normal;
+    font-weight:300;
+    font-size: 16px;
+  }
+  h1, h4 {
+    text-align:center; 
+    margin-top:0;
+  }
+  h4 {
+    padding-bottom:2em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3{
+    text-align:center;
+  }
+  .form-actions{
+    padding-top:2em; 
+  }
+  .form-group .form-control{
+    @include transition-sec
+    border:none;
+    border-bottom: 1px solid #37383c;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+    border-radius:0;
+    &:focus{
+      @include transition-sec
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      -o-box-shadow:none;
+      box-shadow:none;
     }
   }
+  .form-control {
+    background-color:transparent;
+    &:focus {
+      border-color: #2EE59D;
+    }
+  }
+  .contact-row p {
+    font-size:16px;
+    padding-bottom:2em;
+  }
+  .contact-row h1 {
+    margin:0;
+    font-size:30px;
+  }
+  .contact-row .enter-site-btn {
+    float: right;
+  }
+  .back-site-btn {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top:100px;
+  }
+  .enter-site-btn {
+    float:right;
+  }
 }
+
 
 
 @media (max-width:1170px){

@@ -7591,31 +7591,73 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       background-image: url("/images/office.jpg");
       height: 900px; }
 
-#question-form {
-  margin-top: 4em; }
-  #question-form .full-width-section {
-    background: #eee; }
-  #question-form .contact-form {
-    max-width: 800px;
-    padding: 4em 2em 7em 2em; }
-    #question-form .contact-form .enter-site-btn {
-      float: right; }
-    #question-form .contact-form .form-group .form-control {
-      border-bottom: 1px solid #37383c; }
-    #question-form .contact-form .form-control {
-      background-color: transparent; }
-      #question-form .contact-form .form-control:focus {
-        border-color: #2EE59D; }
-    #question-form .contact-form label {
-      color: #000; }
-    #question-form .contact-form h1, #question-form .contact-form h4 {
-      text-align: center;
-      margin-top: 0; }
-    #question-form .contact-form h4 {
-      padding-bottom: 2em;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto; }
+#question-form .full-width-section {
+  background: #eee; }
+
+#question-form .contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  max-width: 800px;
+  padding: 4em 2em 7em 2em; }
+  #question-form .contact-form label {
+    color: #000;
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px; }
+  #question-form .contact-form h1, #question-form .contact-form h4 {
+    text-align: center;
+    margin-top: 0; }
+  #question-form .contact-form h4 {
+    padding-bottom: 2em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
+  #question-form .contact-form h3 {
+    text-align: center; }
+  #question-form .contact-form .form-actions {
+    padding-top: 2em; }
+  #question-form .contact-form .form-group .form-control {
+    transition: ease all .6s;
+    -webkit-transition: ease all .6s;
+    -o-transition: ease all .6s;
+    -moz-transition: ease all .6s;
+    border: none;
+    border-bottom: 1px solid #37383c;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0; }
+    #question-form .contact-form .form-group .form-control:focus {
+      transition: ease all .6s;
+      -webkit-transition: ease all .6s;
+      -o-transition: ease all .6s;
+      -moz-transition: ease all .6s;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none; }
+  #question-form .contact-form .form-control {
+    background-color: transparent; }
+    #question-form .contact-form .form-control:focus {
+      border-color: #2EE59D; }
+  #question-form .contact-form .contact-row p {
+    font-size: 16px;
+    padding-bottom: 2em; }
+  #question-form .contact-form .contact-row h1 {
+    margin: 0;
+    font-size: 30px; }
+  #question-form .contact-form .contact-row .enter-site-btn {
+    float: right; }
+  #question-form .contact-form .back-site-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px; }
+  #question-form .contact-form .enter-site-btn {
+    float: right; }
 
 @media (max-width: 1170px) {
   .about-cont .image-wrap .about-image {
