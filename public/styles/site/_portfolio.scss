@@ -57,12 +57,12 @@ $black: #000;
 
 @media (max-width:768px){
   .article-wrap {
-    height:44vh;
+    height:70vh;
   }
   .feat-title {
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 35%;
     font-size:1.2em;
     margin:0;
     text-align: center;
@@ -74,31 +74,32 @@ $black: #000;
 
 
 
-/*
-.dh-article {
-  background-image:url('/images/disappear-here-header.jpg');
-  background-size: cover;
-  background-position: center;
-  height:70vh;
-  max-height:800px;
-  min-height:40px;
-  width:100vw;
-  overflow:hidden;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  .article-content {
-    padding:20px 0 0;
-    .feat-title {
-      color:#000;
-      font-size:30px;
-      width: 70vw;
-      margin: 0 auto;
-      max-width: 640px;
-      text-align:center;
+@media (max-width:768px){
+  .dh-article {
+    background-image:url('/images/disappear-here-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height:70vh;
+    max-height:800px;
+    min-height:40px;
+    width:100vw;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    .article-content {
+      padding:20px 0 0;
+      .feat-title {
+        color:#000;
+        font-size:30px;
+        width: 70vw;
+        margin: 0 auto;
+        max-width: 640px;
+        text-align:center;
+      }
     }
   }
-}*/
+}
 
 // BASE STYLES
 
@@ -195,11 +196,10 @@ position it in the middle of its parent wrapper*/
 
 @media (max-width:768px){
   .iframe-wrapper {
-    height: 55vh;
+    display:none;
   }
   .iframe-wrapper iframe {
-    min-height: 60vh;
-    min-width: 106.67vh;
+    display:none;
   }
 }
 
