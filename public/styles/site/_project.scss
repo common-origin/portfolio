@@ -342,6 +342,9 @@ $black: #000;
 // SMALL SCREEN SIZING
 
 @media (max-width:768px){
+	.post-words {
+		line-height: 20px;
+	}
 	.post .post-words div, .img-container{
 		padding:0;
 	}

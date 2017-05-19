@@ -6223,8 +6223,7 @@ button.close {
   color: white;
   cursor: pointer;
   padding: 7px 10px;
-  border-radius: 50px;
-  transform: rotate(90deg); }
+  border-radius: 50px; }
 
 #topBtn:hover {
   transition: ease all .3s;
@@ -7381,6 +7380,8 @@ position it in the middle of its parent wrapper*/
     padding-left: .5rem; } }
 
 @media (max-width: 768px) {
+  .post-words {
+    line-height: 20px; }
   .post .post-words div, .img-container {
     padding: 0; }
   .post-cont .page-cont .pagination {
