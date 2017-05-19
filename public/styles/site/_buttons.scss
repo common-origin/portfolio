@@ -124,6 +124,8 @@ $black: #000;
   padding-top: 3px;
   position: fixed;
   left: 0;
+  top: 1.3em;
+  z-index: 10001;
   width: 60px !important;
   a {
     color:#000;
