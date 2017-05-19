@@ -13,7 +13,7 @@
 /* ---- CREATING ZONE ---- */
 
 /* ---- SETTINGS ---- */
-var numberParticlesStart = 50;
+var numberParticlesStart = 500;
 var particleSpeed = 0.2;
 var velocity = 0.6;
 var reactangleWidth = 90;
@@ -41,7 +41,7 @@ function Particle(x, y) {
     max: getRandomFloat(5, 100) / 10
   };
 
-  this.color = 'rgba(255, 255, 255, 0.05)';
+  this.color = 'rgba(255, 255, 255, 0.01)';
 }
 Particle.prototype.render = function () {
   context.beginPath();
