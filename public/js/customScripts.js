@@ -140,6 +140,7 @@ $( document ).ready(function() {
   var header = $(".navbar-default");
   var pageHead = $(".page-nav-cont");
   var sidebar = $(".sidebar-menu");
+  var footer = $(".footer");
   var pagination = $(".pagination");
 
   $(window).scroll(function() {
@@ -161,6 +162,11 @@ $( document ).ready(function() {
     }
     if ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 500 ){
       sidebar.removeClass("scrolled");
+    }
+    if ( ($(document).height() - $(window).height()) - $(window).scrollTop() < 800 ){
+      footer.removeClass("invisible");
+    } else {
+      footer.addClass("invisible");
     }
   });
 });
@@ -242,18 +248,6 @@ $(document).ready(function(){
 });
 
 
-/* Video Player */
-
-
-$(document).ready(function(){
-  var iframe = $('#vimeo_player')[0],
-    player = $f(iframe),
-    status = $('.status');
-
-    player.addEvent('ready', function() {
-        player.api('setVolume', 0);
-    });
-});
 
 
         

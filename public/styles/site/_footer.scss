@@ -53,6 +53,12 @@ $black: #000;
 
 
 // FOOTER STYLES
+
+
+.footer.invisible {
+  opacity:0;
+}
+
 .footer-wrapper {
   position: fixed;
   bottom: 0;
@@ -61,6 +67,7 @@ $black: #000;
   will-change: opacity;
 }
 .footer {
+  opacity:1;
 	background-color: #37383c;
   bottom:0;
   color:#ccc;
