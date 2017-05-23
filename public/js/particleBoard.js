@@ -6,9 +6,12 @@
 /**/var windowWidth = canvas.width = window.innerWidth;
 /**/var windowHeight = canvas.height = window.innerHeight;
 /**/canvas.id = 'particle-canvas';
+    var landing = document.getElementById('landingPage')
 /*var canvasArea = document.getElementById("myList");*/
 /*document.body.insertBefore(canvas, document.body.firstChild);*/
-/**/document.getElementById('canvasContainer').appendChild(canvas);
+if (landing) {
+  document.getElementById('canvasContainer').appendChild(canvas);
+}
 /**/ /* ---- CORE END ---- */
 /* ---- CREATING ZONE ---- */
 
@@ -41,7 +44,7 @@ function Particle(x, y) {
     max: getRandomFloat(5, 100) / 10
   };
 
-  this.color = 'rgba(255, 255, 255, 0.01)';
+  this.color = 'rgba(255, 255, 255, 0.02)';
 }
 Particle.prototype.render = function () {
   context.beginPath();

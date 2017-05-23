@@ -137,7 +137,7 @@ $black: #000;
 }
 
 .navbar-default .navbar-nav > .active > a {
-  color:#777;
+  color:$black;
   background-color: transparent !important;
 }
 
@@ -155,13 +155,17 @@ $black: #000;
   }
 }
 
-
-
 // NAVBAR DESKTOP 
 
 @media (min-width: 768px) {
   #desktop-menu {
     display:block !important;
+    .navbar-nav > li > a {
+      padding-bottom: 13px;
+    }
+    #contactButton.contact.navbar-toggle {
+      padding-bottom:13px;
+    }
   }
   .navbar-nav {
     float:right;
@@ -174,7 +178,6 @@ $black: #000;
     display:none;
   }
 }
-
 
 // NAV MOBILE
 

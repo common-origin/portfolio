@@ -1,8 +1,7 @@
 {{!< default}}
 <div id="landingPage">
 	<div class="container-wrap">
-		<div class="outer-container home-cont">
-			
+		<div class="outer-container home-cont">		
 				<nav class="navbar navbar-default">
 					<div class="container-fluid">
 						<ul class="index-nav">
@@ -11,7 +10,6 @@
 							<li><button type="button" id="contactHome" class="navbar-toggle collapsed" data-target="#contactForm" data-toggle="collapse" aria-expanded="false">contact</button></li>
 							<li class="nav-item" id="dh-target"><a href="/work/project/disappear-here">disappear here</a></li>
 						</ul>
-
 						<!-- Mobile Menu -->
 						<div class="navbar-header">
 							<button type="button" id="landingMobile" class="navbar-toggle collapsed landing-toggle" data-target="#landing-mobile-menu" aria-expanded="false">
@@ -33,7 +31,7 @@
 				      </a>
 				      <ul class="nav navbar-nav">
 				        {{# each navLinks}}
-									<li id="menuItem" class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+									<li class="menuItem nav-item" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}"><h5>{{ label }}</h5></a>
 									</li>
 								{{/each}}
@@ -42,12 +40,10 @@
 								</li>
 
 								<!--{{#if user}}
-									<li id="menuItem" class="sign-out menuItem"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
+									<li class="sign-out menuItem"><a href="/keystone/signout"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
 								{{else}}
-									<li id="menuItem" class="sign-in menuItem"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
-								{{/if}}
-								<div class="btn-wrap">
-								<button class="menu-close" type="button" id="closeMenu">close</button></div>-->
+									<li class="sign-in menuItem"><a href="/keystone/signin"><i class="fa fa-user-circle" aria-hidden="true"></i><h5></h5></a></li>
+								{{/if}}-->
 				      </ul>
 				    </div><!-- /.navbar-collapse -->  
 						<div class="collapse navbar-collapse" id="contactForm">	
@@ -91,8 +87,7 @@
 				    </div>
 
 			    </div>
-				</nav>
-			
+				</nav>			
 			<div class="fullscreen-header" id="page-header-wrap">
 				<div class="fullscreen-header" id="page-header-bg">
 					<div class="bg-color-overlay">
@@ -103,11 +98,9 @@
 			</div>
 			<div class="container-inner-wrap">
 				<div class="container main-content">
-
 					<div class="row desktop" id="heightRow">
 						<div id="welcome">
 							<div class="row-bg">
-								
 							</div>
 							<div class="title-cont col-xs-12">
 								<div class="element-wrapper">
@@ -120,7 +113,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="row mobile" id="heightRowMob">
 						<div id="welcome-mob">
 							<div class="row-bg">
@@ -142,7 +134,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
