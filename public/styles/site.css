@@ -6667,8 +6667,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .mobile-back-btn {
   position: fixed;
-  top: 1.5em;
-  left: 1.5em; }
+  top: 3em;
+  left: 3em; }
 
 #back-btn-mobile, #back-btn-mobile-site {
   font-size: 1.5em;
