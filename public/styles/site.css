@@ -6855,11 +6855,19 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -webkit-transition: ease all .5s;
   -moz-transition: ease all .5s; }
 
-/*.fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
+.fade-in-on-load {
+  animation-duration: 1.7s;
+  animation-name: fadeInOnLoad;
+  animation-timing-function: ease; }
+
 @keyframes fadeInOnLoad {
-0%,50% {opacity: 0;padding-top:20px;}
-100% {opacity: 1;padding-top:0px;}
-}*/
+  0%, 50% {
+    opacity: 0;
+    padding-top: 60px; }
+  100% {
+    opacity: 1;
+    padding-top: 0px; } }
+
 /* Custom, iPhone Retina 
 @media only screen and (min-width : 320px) {
   .masonry {
@@ -7696,7 +7704,7 @@ position it in the middle of its parent wrapper*/
 .about-cont .section.services-list {
   padding-bottom: 7%; }
   .about-cont .section.services-list .copy-wrap {
-    padding-bottom: 1em; }
+    padding-bottom: 1.5em; }
   .about-cont .section.services-list .sub-title {
     font-size: 1em;
     margin: 0;
