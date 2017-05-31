@@ -137,27 +137,43 @@ $black: #000;
   margin: 0;
   padding: 0;
 }
-.grid li {
+.grid .item {
   display: block;
   float: left;
   padding: 7px;
-  width: 25%;
+  width: 100%;
   opacity: 0;
 }
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
+.grid .item.shown,
+.no-js .grid .item,
+.no-cssanimations .grid .item {
   opacity: 1;
 }
 
-.grid li a,
-.grid li img {
+.grid .item a,
+.grid .item img {
   outline: none;
   border: none;
   display: block;
   max-width: 100%;
 }
 
+
+@media (min-width: 450px){
+  .grid .item  {
+      width: 50%;
+  } 
+}
+@media (min-width: 992px){
+  .grid .item  {
+      width: 33.33%;
+  } 
+}
+@media (min-width: 1200px){
+  .grid .item  {
+      width: 25%;
+  } 
+}
 
 
 /* Effect 2: Move Up */
