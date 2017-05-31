@@ -6,14 +6,13 @@
 		{{#if feeds}}
 			<div class="row gallery-images">
 					<div class="col-xs-12 feed-col">
-							<div class="masonry" id="masonry">
-							{{#each feeds}}
-								{{#each images}}	
-									<div class="item"><a href="#"><img src="{{cloudinaryUrl crop='fit'}}"></a></div>
-								{{/each}}	
-							{{/each}}
-							</div>
-					
+						<div class="grid masonry" id="grid">
+						{{#each feeds}}
+							{{#each images}}	
+								<li class="item"><a href="#"><img src="{{cloudinaryUrl crop='fit'}}"></a></li>
+							{{/each}}	
+						{{/each}}
+						</div>			
 					</div>
 			</div>	
 		{{else}}

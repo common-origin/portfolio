@@ -40,13 +40,13 @@ var routes = {
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/about', routes.views.about);
+	app.get('/services', routes.views.about);
 	app.get('/work/:category?', routes.views.portfolio); 
 	app.get('/work/project/:project', routes.views.project);
 	app.get('/journal', routes.views.feed);
 	app.get('/experiments', routes.views.experiments);
 	app.all('/', routes.views.contact);
-	app.all('/about', routes.views.contact);
+	app.all('/services', routes.views.contact);
 	app.all('/work/:category?', routes.views.contact); 
 	app.all('/work/project/:project', routes.views.contact);
 

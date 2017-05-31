@@ -51,17 +51,17 @@ $black: #000;
 
 // IMAGE FADE IN
 
-.fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
+/*.fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
 0%,50% {opacity: 0;padding-top:20px;}
 100% {opacity: 1;padding-top:0px;}
-}
+}*/
 
 
 
 // MASONRY IMAGE GRID
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina 
 @media only screen and (min-width : 320px) {
   .masonry {
     @include column-count(1);
@@ -77,7 +77,7 @@ $black: #000;
   } 
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones 
 @media only screen and (min-width : 480px) {
   .masonry {
     @include column-count(2);
@@ -94,7 +94,7 @@ $black: #000;
   }
 }
 
-/* Small Devices, Tablets */
+/* Small Devices, Tablets 
 @media only screen and (min-width : 768px) {
   .masonry {
     @include column-count(3);
@@ -111,7 +111,7 @@ $black: #000;
   }
 }
 
-/* Medium Devices, Desktops */
+/* Medium Devices, Desktops 
 @media only screen and (min-width : 992px) {
   .masonry {
     @include column-count(4);
@@ -128,9 +128,40 @@ $black: #000;
   }
 }
 
+*/
+
+
+.grid {
+  max-width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.grid li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 25%;
+  opacity: 0;
+}
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+
 
 /* Effect 2: Move Up */
-.masonry .item.animate {
+.grid .item.animate {
   -webkit-transform: translateY(200px);
   transform: translateY(200px);
   -webkit-animation: moveUp 0.65s ease forwards;

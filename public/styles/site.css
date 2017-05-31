@@ -6852,93 +6852,106 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   -webkit-transition: ease all .5s;
   -moz-transition: ease all .5s; }
 
-.fade-in-on-load {
-  animation-duration: 2.3s;
-  animation-name: fadeInOnLoad;
-  animation-timing-function: ease; }
-
+/*.fade-in-on-load {animation-duration: 2.3s; animation-name: fadeInOnLoad; animation-timing-function: ease;}
 @keyframes fadeInOnLoad {
-  0%, 50% {
-    opacity: 0;
-    padding-top: 20px; }
-  100% {
-    opacity: 1;
-    padding-top: 0px; } }
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
+0%,50% {opacity: 0;padding-top:20px;}
+100% {opacity: 1;padding-top:0px;}
+}*/
+/* Custom, iPhone Retina 
+@media only screen and (min-width : 320px) {
   .masonry {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    -ms-column-count: 1;
-    column-count: 1; }
-    .masonry .item {
+    @include column-count(1);
+    .item {
       background-color: #fff;
       display: inline-block;
       margin: 0 0 1rem;
-      width: 100%; }
-      .masonry .item img {
-        max-width: 100%; } }
+      width: 100%;
+      img{
+        max-width:100%;
+      }
+    }
+  } 
+}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
+/* Extra Small Devices, Phones 
+@media only screen and (min-width : 480px) {
   .masonry {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1rem;
-    -moz-column-gap: 1rem;
-    -ms-column-gap: 1rem;
-    column-gap: 1rem; }
-    .masonry .item {
+    @include column-count(2);
+    @include column-gap(1rem);
+    .item {
       background-color: #fff;
       display: inline-block;
       margin: 0 0 1rem;
-      width: 100%; }
-      .masonry .item img {
-        max-width: 100%; } }
+      width: 100%;
+      img{
+        max-width:100%;
+      }
+    }
+  }
+}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+/* Small Devices, Tablets 
+@media only screen and (min-width : 768px) {
   .masonry {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    -ms-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 1rem;
-    -moz-column-gap: 1rem;
-    -ms-column-gap: 1rem;
-    column-gap: 1rem; }
-    .masonry .item {
+    @include column-count(3);
+    @include column-gap(1rem);
+    .item {
       background-color: #fff;
       display: inline-block;
       margin: 0 0 1rem;
-      width: 100%; }
-      .masonry .item img {
-        max-width: 100%; } }
+      width: 100%;
+      img{
+        max-width:100%;
+      }
+    }
+  }
+}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
+/* Medium Devices, Desktops 
+@media only screen and (min-width : 992px) {
   .masonry {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    -ms-column-count: 4;
-    column-count: 4;
-    -webkit-column-gap: 1rem;
-    -moz-column-gap: 1rem;
-    -ms-column-gap: 1rem;
-    column-gap: 1rem; }
-    .masonry .item {
+    @include column-count(4);
+    @include column-gap(1rem);
+    .item {
       background-color: #fff;
       display: inline-block;
       margin: 0 0 1rem;
-      width: 100%; }
-      .masonry .item img {
-        max-width: 100%; } }
+      width: 100%;
+      img{
+        max-width:100%;
+      }
+    }
+  }
+}
+
+*/
+.grid {
+  max-width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.grid li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 25%;
+  opacity: 0; }
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1; }
+
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%; }
 
 /* Effect 2: Move Up */
-.masonry .item.animate {
+.grid .item.animate {
   -webkit-transform: translateY(200px);
   transform: translateY(200px);
   -webkit-animation: moveUp 0.65s ease forwards;
