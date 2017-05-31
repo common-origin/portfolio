@@ -6303,8 +6303,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .outer-container.about-cont {
   padding-bottom: 0; }
 
-.header-cont, .contact-cont, .gallery-cont, .video-cont, .about-cont, .proj-cont {
+.header-cont, .contact-cont, .gallery-cont, .video-cont, .proj-cont {
   padding-top: 100px; }
+
+.about-cont {
+  padding-top: 65px; }
 
 .work-cont {
   padding-top: 60px; }
@@ -7649,6 +7652,8 @@ position it in the middle of its parent wrapper*/
 
 .about-cont .section {
   padding: 4em 0 0 0; }
+  .about-cont .section.top {
+    padding-top: 0; }
   .about-cont .section .copy-wrap .title {
     font-size: 1.6em;
     margin: 0;
@@ -7679,8 +7684,17 @@ position it in the middle of its parent wrapper*/
 .about-cont .image-wrap .about-image#work-2 {
   background-image: url("/images/work-2.jpg"); }
 
+.about-cont .section.services {
+  padding-top: 6em; }
+  .about-cont .section.services p {
+    font-size: 1.6em;
+    line-height: 36px; }
+
+.about-cont .section.about-us, .about-cont .section.process {
+  padding-bottom: 7%; }
+
 .about-cont .section.services-list {
-  padding-bottom: 4em; }
+  padding-bottom: 7%; }
   .about-cont .section.services-list .copy-wrap {
     padding-bottom: 1em; }
   .about-cont .section.services-list .sub-title {
@@ -7702,10 +7716,10 @@ position it in the middle of its parent wrapper*/
     -webkit-background-size: cover; }
     .about-cont .section .full-width-section .full-width-content.full-1 {
       background-image: url("/images/office.jpg");
-      height: 900px; }
+      height: 750px; }
     .about-cont .section .full-width-section .full-width-content.full-2 {
       background-image: url("/images/planning.jpg");
-      height: 900px; }
+      height: 750px; }
 
 #question-form .full-width-section {
   background: #eee; }

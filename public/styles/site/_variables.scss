@@ -154,8 +154,12 @@ h1, h2, h3, h4, h5, a, p, label, textarea {
   padding-bottom:0;
 }
 
-.header-cont, .contact-cont, .gallery-cont, .video-cont, .about-cont, .proj-cont {
+.header-cont, .contact-cont, .gallery-cont, .video-cont, .proj-cont {
 	padding-top:100px;
+}
+
+.about-cont {
+  padding-top:65px;
 }
 
 .work-cont {

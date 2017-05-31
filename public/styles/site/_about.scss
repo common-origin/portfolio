@@ -73,6 +73,9 @@ $black: #000;
 .about-cont {
   .section {
     padding:4em 0 0 0;
+    &.top {
+      padding-top:0;
+    }
     .copy-wrap .title {
       font-size:1.6em;
       margin:0;
@@ -119,8 +122,18 @@ $black: #000;
 // SECTION STYLES
 
 .about-cont .section {
+  &.services {
+    padding-top:6em;
+    p {
+      font-size: 1.6em;
+      line-height:36px;
+    }
+  }
+  &.about-us, &.process {
+    padding-bottom:7%;
+  }
   &.services-list {
-    padding-bottom:4em;
+    padding-bottom:7%;
     .copy-wrap {
       padding-bottom:1em;
     }
@@ -144,11 +157,11 @@ $black: #000;
       -webkit-background-size:cover; 
       &.full-1 {
         background-image:url('/images/office.jpg'); 
-        height:900px;
+        height:750px;
       }
       &.full-2 {
         background-image:url('/images/planning.jpg'); 
-        height:900px;
+        height:750px;
       }
     }
   }
