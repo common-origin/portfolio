@@ -112,8 +112,9 @@ $(window).scroll(function() {
 	var scrollTop = $(this).scrollTop();
 	$('.bg-color-overlay').css({
 	  opacity: function() {
-	    var elementHeight = $(this).height(),
-	        opacity = ((1 - (elementHeight - scrollTop) / elementHeight));
+	    var elementHeight = $(this).height();
+	    var range = ($('#heightRow').height() - elementHeight );
+	        opacity = ( scrollTop / range );
 
 	    return opacity;
 	  }
