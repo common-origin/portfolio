@@ -7034,7 +7034,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-align: center;
   transform: translate(-50%, -50%);
   color: #000;
-  background: rgba(255, 255, 255, 0.95);
+  background: #fff;
   padding: 1em 2em; }
   .feat-title .sub-title {
     color: #8e8e8e;
