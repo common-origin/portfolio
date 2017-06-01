@@ -219,6 +219,7 @@ $(document).ready(function(){
     $(this).toggleClass('open');
   });
 });
+
 /* Mobile Nav Animation */
 
 $(document).ready(function(){
