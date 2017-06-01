@@ -200,6 +200,14 @@ $black: #000;
     left: 0;
     top:0;
     @include transition-main;
+    .navbar-brand {
+      float:none;
+      position: absolute;
+      left: 0;
+      opacity:0;
+      visibility:hidden;
+      @include transition-main;
+    }
     .navbar-nav {
       position: absolute;
       float:none;
@@ -215,6 +223,9 @@ $black: #000;
     .navbar-nav li h5{
       font-size:2em;
     }
+    .navbar-nav .nav-item.active h5 {
+      color:#ccc;
+    }
   }
   #mobile-menu.navbar-collapse.open, #landing-mobile-menu.navbar-collapse.open {
     background-color:#fff;
@@ -223,6 +234,11 @@ $black: #000;
     @include transition-main;
     .navbar-nav {
       top:45%;
+      @include transition-main;
+    }
+    .navbar-brand {
+      opacity:1;
+      visibility:visible;
       @include transition-main;
     }
   }

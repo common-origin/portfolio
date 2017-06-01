@@ -273,8 +273,10 @@ $black: #000;
       min-height:300px;
     }
   }
-  .about-cont .section .full-width-section .full-width-content.full-1 {
-    height: 500px;
+  .about-cont .section .full-width-section .full-width-content {
+    &.full-1, &.full-2 {
+      height: 500px;
+    }
   }
   .about-cont .copy-row .top-quote {
     font-size: 26px;
@@ -285,6 +287,11 @@ $black: #000;
   .about-cont .copy-row .top-quote {
     font-size: 22px;
     line-height: 30px;
+  }
+  .about-cont .section .full-width-section .full-width-content {
+    &.full-1, &.full-2 {
+      height:350px;
+    }
   }
 }
 
