@@ -6307,7 +6307,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding-top: 100px; }
 
 .about-cont {
-  padding-top: 65px; }
+  padding-top: 0; }
 
 .work-cont {
   padding-top: 60px; }
