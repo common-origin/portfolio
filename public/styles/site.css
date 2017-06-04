@@ -7757,10 +7757,10 @@ position it in the middle of its parent wrapper*/
     -webkit-background-size: cover; }
     .about-cont .section .full-width-section .full-width-content.full-1 {
       background-image: url("/images/office.jpg");
-      height: 750px; }
+      height: 65vh; }
     .about-cont .section .full-width-section .full-width-content.full-2 {
       background-image: url("/images/planning.jpg");
-      height: 750px; }
+      height: 65vh; }
 
 #question-form .full-width-section {
   background: #eee; }
