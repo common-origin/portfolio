@@ -6304,7 +6304,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding-bottom: 0; }
 
 .header-cont, .contact-cont, .gallery-cont, .video-cont, .proj-cont {
-  padding-top: 100px; }
+  padding-top: 140px; }
 
 .about-cont {
   padding-top: 0; }
@@ -7088,7 +7088,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       font-family: "futura-pt", sans-serif;
       text-transform: uppercase;
       letter-spacing: .05rem;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 1; }
       .card .content .author a {
         color: #bbb; }
@@ -7192,6 +7192,10 @@ position it in the middle of its parent wrapper*/
   margin-top: 0;
   display: inline-block; }
 
+.proj-cont .post-words p {
+  font-size: 1.4em;
+  line-height: 30px; }
+
 .proj-cont span {
   transition: ease all .3s;
   -webkit-transition: ease all .3s;
@@ -7235,8 +7239,7 @@ position it in the middle of its parent wrapper*/
     -webkit-transition: ease all .6s;
     -o-transition: ease all .6s;
     -moz-transition: ease all .6s;
-    color: #ccc;
-    line-height: 24px; }
+    color: #ccc; }
     .post .title .categories h5 a:hover {
       transition: ease all .6s;
       -webkit-transition: ease all .6s;
@@ -7246,13 +7249,12 @@ position it in the middle of its parent wrapper*/
 
 .post .post-words {
   font-family: "futura-pt", sans-serif;
-  padding: 0 0 2em 0; }
+  padding: 0 0 6em 0; }
   .post .post-words .post-categories {
-    font-family: "futura-pt", sans-serif;
-    padding-top: .2em; }
+    font-family: "futura-pt", sans-serif; }
   .post .post-words .categories {
     border-bottom: 1px solid #f5f5f5;
-    margin-bottom: 1em; }
+    margin-bottom: 0.5em; }
   .post .post-words .post-categories .categories h5 {
     color: #ccc;
     font-family: "futura-pt", sans-serif;
@@ -7361,7 +7363,6 @@ position it in the middle of its parent wrapper*/
   line-height: 20px; }
 
 .post header .post-categories .social-list {
-  padding-top: 1em;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -7723,10 +7724,10 @@ position it in the middle of its parent wrapper*/
   background-image: url("/images/work-2.jpg"); }
 
 .about-cont .section.services {
-  padding-top: 6em; }
+  padding: 6em 0 2em 0; }
   .about-cont .section.services p {
-    font-size: 1.6em;
-    line-height: 36px; }
+    font-size: 1.4em;
+    line-height: 30px; }
 
 .about-cont .section.about-us, .about-cont .section.process {
   padding-bottom: 7%; }

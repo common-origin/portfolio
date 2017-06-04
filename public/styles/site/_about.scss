@@ -123,10 +123,10 @@ $black: #000;
 
 .about-cont .section {
   &.services {
-    padding-top:6em;
+    padding:6em 0 2em 0;
     p {
-      font-size: 1.6em;
-      line-height:36px;
+      font-size: 1.4em;
+      line-height:30px;
     }
   }
   &.about-us, &.process {

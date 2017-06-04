@@ -76,7 +76,6 @@ $black: #000;
     h5 a {
     	@include transition-sec
 			color: #ccc;
-			line-height: 24px;
 			&:hover{
 				@include transition-sec
     		color:#2EE59D;
@@ -85,14 +84,13 @@ $black: #000;
 	}
 	.post-words{
 		font-family:$font-body;
-		padding: 0 0 2em 0;
+		padding: 0 0 6em 0;
 		.post-categories{
 			font-family:$font-body;
-			padding-top:.2em;
 		}
 		.categories{
 			border-bottom:1px solid #f5f5f5;
-			margin-bottom:1em;
+			margin-bottom:0.5em;
 		}
 		.post-categories .categories h5{
 			color: #ccc;
@@ -218,7 +216,6 @@ $black: #000;
 		line-height: 20px;
 	}
 	.social-list{
-		padding-top:1em;
 		list-style:none;
 		padding-left:0;
 		display: flex;
