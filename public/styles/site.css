@@ -7089,7 +7089,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
       text-transform: uppercase;
       letter-spacing: .05rem;
       font-size: 10px;
-      line-height: 1; }
+      line-height: 1;
+      min-height: 2em; }
       .card .content .author a {
         color: #bbb; }
     .card .content .title {
@@ -7276,7 +7277,8 @@ position it in the middle of its parent wrapper*/
   .post .post-words .p-sub-head {
     font-family: "futura-pt", sans-serif;
     margin-top: 0;
-    font-size: 1.4em; }
+    font-size: 1.6em;
+    font-weight: 600; }
   .post .post-words .brief p a {
     line-height: 24px;
     color: #486784;
@@ -7782,7 +7784,8 @@ position it in the middle of its parent wrapper*/
     padding-bottom: 2em;
     max-width: 500px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    line-height: 24px; }
   #question-form .contact-form h3 {
     text-align: center; }
   #question-form .contact-form .form-actions {
