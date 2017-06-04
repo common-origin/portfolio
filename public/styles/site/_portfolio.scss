@@ -118,7 +118,6 @@ $black: #000;
   .content{
     text-align:left;
     .author {
-      color:#ddd;
     	font-family:$font-subhead;
     	text-transform: uppercase;
     	letter-spacing:.05rem;
@@ -126,7 +125,7 @@ $black: #000;
       line-height: 1;
       min-height: 2em;
       a{
-        color:#bbb;
+        color:#37383c;
       }
     }
     .title {
