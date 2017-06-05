@@ -84,7 +84,41 @@
 		</div>
 		<div class="col-xs-12 next-btn-wrap">
 			<div class="container next-cont">
-				<a href="/work"><button class="next-btn" type="submit" id="" data-title="Button">back to work</button></a>
+				{{# with data.projects.[0]}}
+					<div class="col-xs-6 left">
+						<div class="content">
+							<a href="{{projectUrl slug}}" class="nav-item">
+								<h2 class="title">PREVIOUS
+									<svg 
+									 xmlns="http://www.w3.org/2000/svg"
+									 xmlns:xlink="http://www.w3.org/1999/xlink"
+									 width="133px" height="13px">
+									<path fill-rule="evenodd"  fill="rgb(204, 204, 204)"
+									 d="M133.000,8.000 L11.009,8.000 L11.009,13.003 L-0.005,6.504 L11.009,0.005 L11.009,5.000 L133.000,5.000 L133.000,8.000 Z"/>
+									</svg>
+								</h2>
+							</a>
+						</div>
+					</div>				
+				{{/with}}
+				<a href="{{data.project.Url}}" target="_blank"><button class="next-btn" type="submit">{{data.project.title}}</button></a>
+				{{# with data.projects.[1]}}
+					<div class="col-xs-6 right">
+						<div class="content">
+							<a href="{{projectUrl slug}}" class="nav-item">
+								<h2 class="title">NEXT
+									<svg 
+									 xmlns="http://www.w3.org/2000/svg"
+									 xmlns:xlink="http://www.w3.org/1999/xlink"
+									 width="133px" height="13px">
+									<path fill-rule="evenodd"  fill="rgb(204, 204, 204)"
+									 d="M133.005,6.504 L121.991,13.003 L121.991,8.000 L-0.000,8.000 L-0.000,5.000 L121.991,5.000 L121.991,0.005 L133.005,6.504 Z"/>
+									</svg>
+								</h2>
+							</a>
+						</div>
+					</div>				
+				{{/with}}
 			</div>
 		</div>
 		<!--<div class="container page-cont">

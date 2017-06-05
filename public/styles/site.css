@@ -7389,42 +7389,48 @@ position it in the middle of its parent wrapper*/
     -moz-transition: ease all .3s;
     color: #2EE59D; }
 
-.post-cont .page-cont {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%); }
-  .post-cont .page-cont .pagination {
-    opacity: 0;
-    display: block;
-    transition: ease all .3s;
-    -webkit-transition: ease all .3s;
-    -o-transition: ease all .3s;
-    -moz-transition: ease all .3s; }
-    .post-cont .page-cont .pagination .right-arrow {
-      float: right; }
-    .post-cont .page-cont .pagination .left-arrow a, .post-cont .page-cont .pagination .right-arrow a {
-      border-radius: 0;
-      border: none;
-      background-color: rgba(255, 255, 255, 0.4); }
-    .post-cont .page-cont .pagination li > a {
-      color: #000; }
-  .post-cont .page-cont .pagination.scrolled {
-    opacity: 1;
-    transition: ease all .3s;
-    -webkit-transition: ease all .3s;
-    -o-transition: ease all .3s;
-    -moz-transition: ease all .3s; }
-
 .next-cont {
   max-width: 1140px;
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
   border-top: 1px solid #f5f5f5; }
+  .next-cont .left, .next-cont .right {
+    padding: 0; }
+  .next-cont .left {
+    text-align: left; }
+  .next-cont .right {
+    text-align: right; }
   .next-cont .next-btn {
     margin-top: 4em; }
+  .next-cont .nav-item .title {
+    display: inline-grid;
+    font-size: 12px;
+    text-align: center;
+    color: #ccc;
+    transition: ease all .3s;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    -moz-transition: ease all .3s; }
+    .next-cont .nav-item .title:hover {
+      color: #000;
+      transition: ease all .3s;
+      -webkit-transition: ease all .3s;
+      -o-transition: ease all .3s;
+      -moz-transition: ease all .3s; }
+    .next-cont .nav-item .title svg path {
+      transition: ease all .3s;
+      -webkit-transition: ease all .3s;
+      -o-transition: ease all .3s;
+      -moz-transition: ease all .3s; }
+    .next-cont .nav-item .title:hover svg path {
+      fill: #000;
+      transition: ease all .3s;
+      -webkit-transition: ease all .3s;
+      -o-transition: ease all .3s;
+      -moz-transition: ease all .3s; }
 
 .embed-container {
   position: relative;
