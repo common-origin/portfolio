@@ -33,7 +33,7 @@
     <meta name="keywords" content="Sidechain, Melbourne, design, web-design, touchdesigner, {{# each data.projects.categories}}{{name}}, {{/each}}">    
 	{{else}}
     <title>sidechain | studio</title>
-    <meta name="description" content="Sidechain is a digitally-focussed design, content, and brand strategy studio based in Oceania."          
+    <meta name="description" content="Sidechain is a digitally-focussed design, content, and brand strategy studio based in Oceania.">          
     <meta property="og:image" content="{{baseUrl}}/images/logo.png">
     <meta name="twitter:image:src" content="{{baseUrl}}/images/logo.png">
     <meta name="keywords" content="sidechain, melbourne, design, web-design, digital, touchdesigner">
@@ -44,6 +44,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
 		<script src="https://use.typekit.net/jdz3tzw.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-100437779-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
@@ -107,11 +117,11 @@
 										<li class="menuItem">
 											<button type="button" id="contactButton" class="contact navbar-toggle collapsed" data-target="#contactFormSite" data-toggle="collapse" aria-expanded="false"><h5>Contact</h5></button>
 										</li>
-										<!--{{#if user}}
+										{{#if user}}
 											<li class="sign-out"><a href="/keystone/signout" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Sign Out</h5></a></li>
 										{{else}}
 											<li class="sign-in"><a href="/keystone/signin" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Login</h5></a></li>
-										{{/if}}-->
+										{{/if}}
 						      </ul>
 						    </div>
 						    <!-- Mobile Menu -->

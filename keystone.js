@@ -35,7 +35,8 @@ keystone.init({
     'wysiwyg additional options': {
     'paste_data_images': true
   },
-
+  
+  'session store': 'mongo',
 	'auto update': true,
 	'session': true,
 	'auth': true,
@@ -53,6 +54,10 @@ keystone.set('locals', {
 	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable,
+	ga: {
+        property: process.env.GA_SITE_PROPERTY,
+        domain: process.env.GA_SITE_DOMAIN
+    }
 });
 
 // Load your project's Routes
