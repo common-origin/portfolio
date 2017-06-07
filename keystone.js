@@ -30,12 +30,12 @@ keystone.init({
 
 	'cloudinary config': 'cloudinary://738933918968631:oC_89nSsALkzCJ40N9n2cmWTkx8@dl6hxxyrn',
 	'embedly api key':  '6652f309e9c741c9810c4054ad82cafa',
-
+	'wysiwyg images': true,
 	'wysiwyg additional plugins': 'paste, hr, media, code',
     'wysiwyg additional options': {
     'paste_data_images': true
   },
-  
+
   'session store': 'mongo',
 	'auto update': true,
 	'session': true,
