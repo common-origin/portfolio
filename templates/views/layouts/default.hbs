@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	{{#if data.projects}}
+	{{#if data.project}}
     {{#if data.projects.meta.title}}
-        <title>{{data.projects.meta.title}}</title>
-        <meta property="og:title" content="{{data.projects.meta.title}}">
-        <meta name="twitter:title" content="{{data.projects.meta.title}}">
+        <title>{{data.project.meta.title}}</title>
+        <meta property="og:title" content="{{data.project.meta.title}}">
+        <meta name="twitter:title" content="{{data.project.meta.title}}">
     {{else}}
-        <title>{{data.projects.title}}</title>
-        <meta property="og:title" content="{{data.projects.title}}">
-        <meta name="twitter:title" content="{{data.projects.title}}">
+        <title>{{data.project.title}}</title>
+        <meta property="og:title" content="{{data.project.title}}">
+        <meta name="twitter:title" content="{{data.project.title}}">
     {{/if}}
-    {{#if data.projects.meta.description}}
-        <meta name="description" content="{{data.projects.meta.description}}">
-        <meta property="og:description" content="{{data.projects.meta.description}}">
-        <meta name="twitter:description" content="{{data.projects.meta.description}}">
+    {{#if data.project.meta.description}}
+        <meta name="description" content="{{data.project.meta.description}}">
+        <meta property="og:description" content="{{data.project.meta.description}}">
+        <meta name="twitter:description" content="{{data.project.meta.description}}">
     {{else}}
-        <meta name="description" content="{{data.projects.content.brief}}">
-        <meta property="og:description" content="{{data.projects.content.brief}}">
-        <meta name="twitter:description" content="{{data.projects.content.brief}}">
+        <meta name="description" content="{{data.project.content.brief}}">
+        <meta property="og:description" content="{{data.project.content.brief}}">
+        <meta name="twitter:description" content="{{data.project.content.brief}}">
     {{/if}}
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{data.projects.image.url}}">
-    <meta name="twitter:image:src" content="{{data.projects.image.url}}">
-    <meta property="og:url" content="{{data.projects.fullPostUrl}}">
-    <meta name="twitter:url" content="{{data.projects.fullPostUrl}}">
-    <meta property="article:published_time" content="{{data.projects.publishedDate}}">
-    {{# each data.projects.categories}}
+    <meta property="og:image" content="{{data.project.image.url}}">
+    <meta name="twitter:image:src" content="{{data.project.image.url}}">
+    <meta property="og:url" content="{{data.project.fullPostUrl}}">
+    <meta name="twitter:url" content="{{data.project.fullPostUrl}}">
+    <meta property="article:published_time" content="{{data.project.publishedDate}}">
+    {{# each data.project.categories}}
       <meta property="article:tag" content="{{name}}">
     {{/each}}
-    <meta name="keywords" content="Sidechain, Melbourne, design, web-design, touchdesigner, {{# each data.projects.categories}}{{name}}, {{/each}}">    
+    <meta name="keywords" content="Sidechain, Melbourne, design, web-design, touchdesigner, {{# each data.project.categories}}{{name}}, {{/each}}">    
 	{{else}}
     <title>sidechain | studio</title>
     <meta name="description" content="Sidechain is a digitally-focussed design, content, and brand strategy studio based in Oceania.">          
