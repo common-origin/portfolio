@@ -52,24 +52,15 @@ $black: #000;
   margin:0;
   text-align: center;
   transform: translate(-50%, -50%);
-  color: #000;
-  background:#fff;
+  color: #fff;
   padding: 1em 2em;
-  .sub-title {
-    color:#8e8e8e;
-    font-size:0.8em;
-    margin:0;
-    padding-bottom:.5em;
-  }
   h1 {
+    font-size: 8rem;
     margin:0;
   }
 }
 
 @media (max-width:768px){
-  .article-wrap {
-    height:70vh;
-  }
   .feat-title {
     position: absolute;
     left: 50%;
@@ -77,6 +68,9 @@ $black: #000;
     margin:0;
     text-align: center;
     transform: translate(-50%, -50%);
+    h1 {
+      font-size:5rem;
+    }
   }
 }
 
@@ -88,7 +82,7 @@ $black: #000;
     background-image:url('/images/disappear-here-header.jpg');
     background-size: cover;
     background-position: center;
-    height:70vh;
+    height:65vh;
     max-height:800px;
     min-height:40px;
     width:100vw;
@@ -192,7 +186,7 @@ which the user cannot interact with */
 /* Make the iframe keep an aspect ratio, and
 position it in the middle of its parent wrapper*/
 
-.iframe-wrapper iframe {
+.iframe-wrapper video {
   width: 100vw;
   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
   min-height: 70vh;
@@ -207,7 +201,7 @@ position it in the middle of its parent wrapper*/
   .iframe-wrapper {
     display:none;
   }
-  .iframe-wrapper iframe {
+  .iframe-wrapper video {
     display:none;
   }
 }
