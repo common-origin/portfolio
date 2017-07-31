@@ -153,18 +153,17 @@
 
 						  <div class="collapse navbar-collapse" id="contactFormSite">	
 								<div class="col-sm-12 contact-form">
-									<div class="mobile-back-btn"><a id="back-btn-mobile-site">&larr;</a></div>
 									<div class="container">
 										{{#if enquirySubmitted}}
 										<h3>Thanks for getting in touch. We'll get back to you as soon as we can.</h3>
 										<a href="/work" class="nav-item"><button class="enter-site-btn" type="submit" id="" data-title="Button">back</button></a>
 										{{else}}
 										<div class="row contact-row">
+											<div class="mobile-back-btn"><a id="closeButton">&larr;</a></div>
 											<div class="col-xs-12 col-sm-6">
 												<h1>Say Hello</h1>
 											</div>
 											<div class="col-xs-12 col-sm-6">
-												<button id="closeButton" class="closeBtn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
 												<p>Collaboration begins with a conversation. Whether you’re interested in discussing a new project or simply wish to find out more about our services and what we can do for you, we are here to help. Send us a message below or call us at 0410 932 327. </p>
 												<form method="post">
 													<input type="hidden" name="action" value="contact">
