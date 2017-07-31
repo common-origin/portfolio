@@ -275,9 +275,10 @@ $black: #000;
   left:3em;
 }
 
-#back-btn-mobile, #back-btn-mobile-site {
+#back-btn-mobile, #back-btn-mobile-site, #closeButtonHome {
   font-size: 1.5em;
   color: #000;
+  cursor:pointer;
 }
 
 // HIDE NAVBAR TOGGLE CROSS WHEN CONTACT IS OPEN - MOBILE
