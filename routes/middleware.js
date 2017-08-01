@@ -22,7 +22,7 @@ exports.initLocals = function (req, res, next) {
 		/*{ label: 'Home', key: 'home', href: '/' },*/
 		{ label: 'Work', key: 'portfolio', href: '/work' },
 		{ label: 'Services', key: 'about', href: '/services' },
-		/*{ label: 'Journal', key: 'feed', href: '/journal' },*/
+		{ label: 'Journal', key: 'feed', href: '/journal' },
 		/*{ label: 'Experiments', key: 'experiments', href: '/experiments' },*/
 		/*{ label: 'Contact', key: 'contact', href: '/contact' },*/
 	];
