@@ -150,6 +150,11 @@ $black: #000;
 .project-img {
   width:100%;
   height:auto;
+  @include transition-main;
+  &:hover {
+    @include transition-main;
+    opacity:0.8;
+  }
 }
 
 .project-thumbs{
