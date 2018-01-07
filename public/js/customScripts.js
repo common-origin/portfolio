@@ -174,7 +174,7 @@ $( document ).ready(function() {
 
 // Page Loader 
 
-$(window).load(function() {
+$(window).on("load", function() {
   $("#se-pre-con").removeClass("loading-screen");
 });
 
