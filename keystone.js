@@ -14,6 +14,8 @@ keystone.init({
 	'name': 'sidechain-portfolio',
 	'brand': 'sidechain-portfolio',
 
+	'port': process.env.PORT || 4000,
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
