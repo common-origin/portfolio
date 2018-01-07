@@ -55,8 +55,8 @@ keystone.set('locals', {
 	utils: keystone.utils,
 	editable: keystone.content.editable,
 	ga: {
-        property: process.env.GA_SITE_PROPERTY,
-        domain: process.env.GA_SITE_DOMAIN
+    property: process.env.GA_SITE_PROPERTY,
+    domain: process.env.GA_SITE_DOMAIN
     }
 });
 
