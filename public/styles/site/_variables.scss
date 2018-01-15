@@ -52,6 +52,12 @@ $white: #fff;
 $black: #000;
 $green: #2EE59C;
 
+$diameter: 40px;
+$spinner: 2px;
+$spinner-color: #2fc394;
+$icon-width: 10.6px;
+$icon-height: 25px;
+
 // Bootstrap Container Override
 
 @media (min-width: 768px){
@@ -253,6 +259,10 @@ h1, h2, h3, h4, h5, a, p, label, textarea {
   background-color:$white;
   height:100%;
   width:100%;
+  transition:ease all .5s .5s;
+  -moz-transition:ease all .5s .5s;
+  -o-transition:ease all .5s .5s;
+  -webkit-transition:ease all .5s .5s;
 }
 
 .loader {
@@ -303,40 +313,100 @@ h1, h2, h3, h4, h5, a, p, label, textarea {
     }
     .loader-bg {
       opacity:1;
-      transition:ease all .3s .3s;
-      -moz-transition:ease all .3s .3s;
-      -o-transition:ease all .3s .3s;
-      -webkit-transition:ease all .3s .3s;
+      transition:ease all .5s .5s;
+      -moz-transition:ease all .5s .5s;
+      -o-transition:ease all .5s .5s;
+      -webkit-transition:ease all .5s .5s;
     }
   }
 }
 
 
-.loader-svg {
-  margin: 0 auto;
-  position: relative;
-  display: block;
+#preloader {
+  height: $diameter;
+  width: $diameter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($diameter/2);
+  margin-left: -($diameter/2);
+    &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -($spinner/2);
+    top: -($spinner/2);
+    height: 100%;
+    width: 100%;
+    animation: rotation 1s linear infinite;
+    border: ($spinner/2) solid $spinner-color;
+    border-top: ($spinner/2) solid transparent;
+    border-radius: 100%;
+    }
+    &>.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: $icon-height;
+    width: $icon-width;
+    margin-top: -($icon-height/2);
+    margin-left: -($icon-width/2);
+    animation: wink 1s ease-in-out infinite alternate;
+  }
 }
 
-.loader-svg-3 path{
-  stroke:#000;
-  fill:#000;
-  fill-opacity:0;
-  stroke-width:2;
-  stroke-dasharray:400;
-  stroke-dashoffset:1200;
-  -moz-animation:DASH3 3s ease-in-out alternate infinite;
-  -webkit-animation:DASH3 3s ease-in-out alternate infinite;
-  animation:DASH3 3s ease-in-out  alternate infinite;
+@media only screen and (min-width:768px) {
+  #preloader {
+    height: ($diameter*1.5);
+    width: ($diameter*1.5);
+    margin-top: -(($diameter/2)*1.5);
+    margin-left: -(($diameter/2)*1.5);
+      &:before {
+        left: -$spinner;
+        top: -$spinner;
+        border-top-width: $spinner;
+        border-left-width: $spinner;
+        border-bottom-width: $spinner;
+        border-right-width: $spinner;
+      }
+      &>.icon {
+        height: ($icon-height*1.5);
+        width: ($icon-width*1.5);
+        margin-top: -(($icon-height/2)*1.5);
+        margin-left: -(($icon-width/2)*1.5);
+    }
+  }
 }
 
-@-webkit-keyframes DASH3{
-    0%  {stroke-dashoffset:1200;}
-   50%  {stroke-dashoffset:600;}
-    100%{stroke-dashoffset:0;}
+@media only screen and (min-width:1200px) {
+  #preloader {
+    height: ($diameter*2);
+    width: ($diameter*2);
+    margin-top: -(($diameter/2)*2);
+    margin-left: -(($diameter/2)*2);
+      &>.icon { 
+        height: ($icon-height*2);
+        width: ($icon-width*2);
+        margin-top: -(($icon-height/2)*2);
+        margin-left: -(($icon-width/2)*2);
+    }
+  }
 }
-@-moz-keyframes DASH3{
-    0%  {stroke-dashoffset:1200;}
-   50%  {stroke-dashoffset:600;}
-    100%{stroke-dashoffset:0;}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes wink {
+    from  { 
+      opacity:0; 
+    }
+    to  { 
+      opacity:1; 
+    }
 }
