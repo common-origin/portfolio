@@ -79,33 +79,33 @@
 		</div>
 		<div id="header">
 			<div class="nav-header">
-					<div class="nav-container">
-						<nav class="navbar navbar-default">
-						  <div class="container-fluid">
+				<div class="nav-container">
+					<nav class="navbar navbar-default">
+					  	<div class="container-fluid">
 						    <div class="navbar-header">
-						      <button type="button" id="menuButton" class="navbar-toggle collapsed" data-target="#mobile-menu" aria-expanded="false">
-						        <span class="sr-only">Toggle navigation</span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						      </button>
-						      <a class="navbar-brand navmenu-brand nav-item" href="/">
-										<svg class="sidechain-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 350" width="30px" height="20px">
-											<path fill="#000" d="M435.5,41L480,8.8C472.5,6.6,464.6,6,456.5,6H91.8C45.8,6,8.5,43.3,8.5,89.3V229c0,36.5,24,67.3,56.7,78.7
-											l-44.4,32.4c0.4,0.1,1,0.1,1.4,0.2c7.5,2.2,15.4,3.6,23.5,3.6h363.6c46,0,83.4-37.3,83.4-83.4V120.8C492.7,83.8,468.8,52.1,435.5,41
-											z M410.9,245.4c0,9.3-7.5,16.8-16.8,16.8H131.5l43.1-31.4h-66.7c-9.7,0-17.7-8-17.7-17.7V104.4c0-10,8.2-18.2,18.2-18.2h260.7
-											l-43.3,31.4h1.7h66.7c9.2,0,16.7,7.5,16.7,16.7V245.4z"/>
-										</svg>
-							      <h3>sidechain</h3>
-						      </a>
+						      	<button type="button" id="menuButton" class="navbar-toggle collapsed" data-target="#mobile-menu" aria-expanded="false">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+						      	</button>
+						      	<a class="navbar-brand navmenu-brand nav-item" href="/">
+									<svg class="sidechain-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 350" width="30px" height="20px">
+										<path fill="#000" d="M435.5,41L480,8.8C472.5,6.6,464.6,6,456.5,6H91.8C45.8,6,8.5,43.3,8.5,89.3V229c0,36.5,24,67.3,56.7,78.7
+										l-44.4,32.4c0.4,0.1,1,0.1,1.4,0.2c7.5,2.2,15.4,3.6,23.5,3.6h363.6c46,0,83.4-37.3,83.4-83.4V120.8C492.7,83.8,468.8,52.1,435.5,41
+										z M410.9,245.4c0,9.3-7.5,16.8-16.8,16.8H131.5l43.1-31.4h-66.7c-9.7,0-17.7-8-17.7-17.7V104.4c0-10,8.2-18.2,18.2-18.2h260.7
+										l-43.3,31.4h1.7h66.7c9.2,0,16.7,7.5,16.7,16.7V245.4z"/>
+									</svg>
+							      	<h3>sidechain</h3>
+						      	</a>
 						    </div>
 						    <div class="collapse navbar-collapse" id="desktop-menu">
-						      <ul class="nav navbar-nav nav-effect">
-						        {{# each navLinks}}
-											<li class="nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}" >
-												<a href="{{ href }}"><h5>{{ label }}</h5></a>
-											</li>
-										{{/each}}
+						      	<ul class="nav navbar-nav nav-effect">
+						        	{{# each navLinks}}
+										<li class="nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}" >
+											<a href="{{ href }}"><h5>{{ label }}</h5></a>
+										</li>
+									{{/each}}
 										<li class="menuItem">
 											<button type="button" id="contactButton" class="contact navbar-toggle collapsed" data-target="#contactFormSite" data-toggle="collapse" aria-expanded="false"><h5>Contact</h5></button>
 										</li>
@@ -114,25 +114,25 @@
 										{{else}}
 											<li class="sign-in"><a href="/keystone/signin" class="menuItem"><i class="fa fa-user-circle" aria-hidden="true"></i><h5>Login</h5></a></li>
 										{{/if}}-->
-						      </ul>
+						      	</ul>
 						    </div>
 						    <!-- Mobile Menu -->
 						    <div class="collapse navbar-collapse" id="mobile-menu">
-								  <a class="navbar-brand navmenu-brand nav-item" href="/">
-										<svg class="sidechain-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 350" width="30px" height="20px">
-											<path fill="#000" d="M435.5,41L480,8.8C472.5,6.6,464.6,6,456.5,6H91.8C45.8,6,8.5,43.3,8.5,89.3V229c0,36.5,24,67.3,56.7,78.7
-											l-44.4,32.4c0.4,0.1,1,0.1,1.4,0.2c7.5,2.2,15.4,3.6,23.5,3.6h363.6c46,0,83.4-37.3,83.4-83.4V120.8C492.7,83.8,468.8,52.1,435.5,41
-											z M410.9,245.4c0,9.3-7.5,16.8-16.8,16.8H131.5l43.1-31.4h-66.7c-9.7,0-17.7-8-17.7-17.7V104.4c0-10,8.2-18.2,18.2-18.2h260.7
-											l-43.3,31.4h1.7h66.7c9.2,0,16.7,7.5,16.7,16.7V245.4z"/>
-										</svg>
-							      <h3>sidechain</h3>
-						      </a>
-						      <ul class="nav navbar-nav">
-						        {{# each navLinks}}
-											<li class="menuItem nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}"">
-												<a href="{{ href }}"><h5>{{ label }}</h5></a>
-											</li>
-										{{/each}}
+							  	<a class="navbar-brand navmenu-brand nav-item" href="/">
+									<svg class="sidechain-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 350" width="30px" height="20px">
+										<path fill="#000" d="M435.5,41L480,8.8C472.5,6.6,464.6,6,456.5,6H91.8C45.8,6,8.5,43.3,8.5,89.3V229c0,36.5,24,67.3,56.7,78.7
+										l-44.4,32.4c0.4,0.1,1,0.1,1.4,0.2c7.5,2.2,15.4,3.6,23.5,3.6h363.6c46,0,83.4-37.3,83.4-83.4V120.8C492.7,83.8,468.8,52.1,435.5,41
+										z M410.9,245.4c0,9.3-7.5,16.8-16.8,16.8H131.5l43.1-31.4h-66.7c-9.7,0-17.7-8-17.7-17.7V104.4c0-10,8.2-18.2,18.2-18.2h260.7
+										l-43.3,31.4h1.7h66.7c9.2,0,16.7,7.5,16.7,16.7V245.4z"/>
+									</svg>
+							      	<h3>sidechain</h3>
+						      	</a>
+						      	<ul class="nav navbar-nav">
+						        	{{# each navLinks}}
+										<li class="menuItem nav-item {{#ifeq ../section key}}active{{else}}{{/ifeq}}"">
+											<a href="{{ href }}"><h5>{{ label }}</h5></a>
+										</li>
+									{{/each}}
 										<li class="menuItem">
 											<button type="button" id="cToggleM" class="contact navbar-toggle collapsed" data-target="#contactFormSite" aria-expanded="false">Contact</button>
 										</li>
@@ -144,17 +144,17 @@
 										{{/if}}
 										<div class="btn-wrap">
 										<button class="menu-close" type="button" id="closeMenu">close</button></div>-->
-						      </ul>
+						      	</ul>
 						    </div><!-- /.navbar-collapse -->
-						  </div><!-- /.container-fluid -->
+					  	</div><!-- /.container-fluid -->
 
-						  <div class="collapse navbar-collapse" id="contactFormSite">	
-								<div class="col-sm-12 contact-form">
-									<div class="container">
-										{{#if enquirySubmitted}}
+					  	<div class="collapse navbar-collapse" id="contactFormSite">	
+							<div class="col-sm-12 contact-form">
+								<div class="container">
+									{{#if enquirySubmitted}}
 										<h3>Thanks for getting in touch. We'll get back to you as soon as we can.</h3>
 										<a href="/work" class="nav-item"><button class="enter-site-btn" type="submit" id="" data-title="Button">back</button></a>
-										{{else}}
+									{{else}}
 										<div class="row contact-row">
 											<div class="mobile-back-btn"><a id="closeButton">&larr;</a></div>
 											<div class="col-xs-12 col-sm-6">
@@ -188,44 +188,44 @@
 												</form>
 											</div>
 										</div>
-										{{/if}}
-									</div>
+									{{/if}}
 								</div>
-					    </div><!-- /.navbar-collapse -->
-						</nav>
-						<div id="coverLayer"></div>
-						<div class="sidebar-wrap">
-							<div class="sidebar-menu follow">
-								<h5 class="sidemenu-title">share</h5>
-								<ul class="social-list">								
-								    <a href="http://www.facebook.com/sharer.php?u=https://sidechain.studio" target="_blank">
-								    	<li class="icon">
-								    		<i class="fa fa-facebook" aria-hidden="true"></i>
-								      </li>
-								    </a>									
-									<a href="https://twitter.com/share?url=https://sidechain.studio&amp;text=Sidechain%20are%20my%20friends&amp;hashtags=sidechain" target="_blank">
-										<li class="icon">
-											<i class="fa fa-twitter" aria-hidden="true"></i>
-										</li>
-									</a>
-									<a href="https://plus.google.com/share?url=https://sidechain.studio" target="_blank">
-										<li class="icon">
-											<i class="fa fa-google-plus" aria-hidden="true"></i>
-										</li>
-									</a>
-									<a href="mailto:?Subject=Sidechain&amp;Body=I%20saw%20this%20and%20thought%20you%20might%20like%20a%20sidechain %20 https://sidechain.studio">
-										<li class="icon">
-											<i class="fa fa-envelope-o" aria-hidden="true"></i>
-										</li>
-									</a>	
-								</ul>
 							</div>
+				    	</div><!-- /.navbar-collapse -->
+					</nav>
+					<div id="coverLayer"></div>
+					<div class="sidebar-wrap">
+						<div class="sidebar-menu follow">
+							<h5 class="sidemenu-title">share</h5>
+							<ul class="social-list">								
+							    <a href="http://www.facebook.com/sharer.php?u=https://sidechain.studio" target="_blank">
+							    	<li class="icon">
+							    		<i class="fa fa-facebook" aria-hidden="true"></i>
+							      </li>
+							    </a>									
+								<a href="https://twitter.com/share?url=https://sidechain.studio&amp;text=Sidechain%20are%20my%20friends&amp;hashtags=sidechain" target="_blank">
+									<li class="icon">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</li>
+								</a>
+								<a href="https://plus.google.com/share?url=https://sidechain.studio" target="_blank">
+									<li class="icon">
+										<i class="fa fa-google-plus" aria-hidden="true"></i>
+									</li>
+								</a>
+								<a href="mailto:?Subject=Sidechain&amp;Body=I%20saw%20this%20and%20thought%20you%20might%20like%20a%20sidechain %20 https://sidechain.studio">
+									<li class="icon">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</li>
+								</a>	
+							</ul>
 						</div>
 					</div>
+				</div>
 			</div>
 		</div>
 		<div id="body">
-		<button onclick="topFunction()" id="topBtn" title="Go to top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button>
+			<button onclick="topFunction()" id="topBtn" title="Go to top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button>
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
 				validation errors, success messages, etc
