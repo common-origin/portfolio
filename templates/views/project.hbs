@@ -84,7 +84,7 @@
 		</div>
 		<div class="col-xs-12 next-btn-wrap">
 			<div class="container next-cont">
-				{{# with data.projects.[0]}}
+				{{# with selected.previous}}
 					<div class="col-xs-6 left">
 						<div class="content">
 							<a href="{{projectUrl slug}}" class="nav-item">
@@ -102,7 +102,7 @@
 					</div>				
 				{{/with}}
 				<a href="{{data.project.Url}}" target="_blank"><button class="next-btn" type="submit">{{data.project.title}}</button></a>
-				{{# with data.projects.[1]}}
+				{{# with selected.next}}
 					<div class="col-xs-6 right">
 						<div class="content">
 							<a href="{{projectUrl slug}}" class="nav-item">
