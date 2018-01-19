@@ -47,13 +47,13 @@ exports = module.exports = function (req, res) {
 				if(locals.data.projects[i]._id.toString() == locals.data.project._id.toString()){
 					
 					if(i == 0){
-						locals.selected.previous = locals.data.projects[0];
+						locals.selected.previous = locals.data.projects[locals.data.projects.length - 1];
 					}else {
 						locals.selected.previous = locals.data.projects[i-1];
 					}
 
 					if(i == locals.data.projects.length - 1){
-						locals.selected.next = locals.data.projects[locals.data.projects.length - 1];
+						locals.selected.next = locals.data.projects[0];
 					}else {
 						locals.selected.next = locals.data.projects[i + 1];
 					}
