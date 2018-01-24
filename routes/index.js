@@ -28,7 +28,7 @@ keystone.pre('render', middleware.flashMessages);
 
 // Handle 404 errors
 keystone.set('404', function(req, res, next) {
-    // res.notfound();
+    res.notfound();
 });
 
 // Import Route Controllers
