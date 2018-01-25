@@ -168,6 +168,14 @@ $( document ).ready(function() {
     } else {
       footer.addClass("invisible");
     }
+
+    var vid = document.getElementById("myVideo"); 
+
+    if( $(window).scrollTop() < $(window).height()) {
+      vid.play();
+    }else {
+      vid.pause();
+    }
   });
 });
 
