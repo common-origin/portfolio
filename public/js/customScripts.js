@@ -171,7 +171,7 @@ $( document ).ready(function() {
 
     var vid = document.getElementById("myVideo"); 
 
-    if( $(window).scrollTop() < $(window).height()) {
+    if( $(window).scrollTop() < 500) {
       vid.play();
     }else {
       vid.pause();
