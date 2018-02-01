@@ -60,6 +60,8 @@ exports = module.exports = function (req, res) {
 					
 				} else {
 				}
+
+				// console.log("@@: ", locals.data.projects[i]);
 			}
 
 			next(err);

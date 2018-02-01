@@ -33,8 +33,14 @@ Portfolio.add({
 	categories: { type: Types.Relationship, ref: 'ProjectCategory', many: true },
 });
 
-Portfolio.schema.virtual('content.full').get(function () {
-	return this.content.extended || this.content.brief;
+// Portfolio.schema.virtual('content.full').get(function () {
+// 	return this.content.extended || this.content.brief;
+// });
+
+Portfolio.schema.virtual('fullProjectUrl').get(function() {
+	// console.log("@@: ", keystone.get('baseUrl') + 'work/project/' + this.slug);
+	// https://sidechain.studio/work/project/northern-bass-festival-website
+    return keystone.get('baseUrl') + 'work/project/' + this.slug;
 });
 
 Portfolio.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';

@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	{{#if data.project}}
-    {{#if data.project.meta.title}}
-        <title>{{data.project.meta.title}}</title>
-        <meta property="og:title" content="{{data.project.meta.title}}">
-        <meta name="twitter:title" content="{{data.project.meta.title}}">
-    {{else}}
-        <title>{{data.project.title}}</title>
-        <meta property="og:title" content="{{data.project.title}}">
-        <meta name="twitter:title" content="{{data.project.title}}">
-    {{/if}}
-    {{#if data.project.meta.description}}
-        <meta name="description" content="{{data.project.meta.description}}">
-        <meta property="og:description" content="{{data.project.meta.description}}">
-        <meta name="twitter:description" content="{{data.project.meta.description}}">
-    {{else}}
-        <meta name="description" content="{{data.project.content.brief}}">
-        <meta property="og:description" content="{{data.project.content.brief}}">
-        <meta name="twitter:description" content="{{data.project.content.brief}}">
-    {{/if}}
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{data.project.image.url}}">
-    <meta name="twitter:image:src" content="{{data.project.image.url}}">
-    <meta property="og:url" content="{{data.project.fullPostUrl}}">
-    <meta name="twitter:url" content="{{data.project.fullPostUrl}}">
-    <meta property="article:published_time" content="{{data.project.publishedDate}}">
-    {{# each data.project.categories}}
-      <meta property="article:tag" content="{{name}}">
-    {{/each}}
-    <meta name="keywords" content="sidechain, studio, Melbourne, design, web-design, digital, {{# each data.project.categories}}{{name}}, {{/each}}">    
-	{{else}}
-    <title>sidechain | studio</title>
-    <meta name="description" content="Sidechain is a digitally-focussed design, content and brand strategy studio based in Oceania.">          
-    <meta property="og:image" content="{{baseUrl}}/images/logo.png">
-    <meta name="twitter:image:src" content="{{baseUrl}}/images/logo.png">
-    <meta name="keywords" content="sidechain, melbourne, design, web-design, digital, touchdesigner">
-	{{/if}}    
+		{{#if data.project}}
+		    {{#if data.project.meta.title}}
+		        <title>{{data.project.meta.title}}</title>
+		        <meta property="og:title" content="{{data.project.meta.title}}">
+		        <meta name="twitter:title" content="{{data.project.meta.title}}">
+		    {{else}}
+		        <title>{{data.project.title}}</title>
+		        <meta property="og:title" content="{{data.project.title}}">
+		        <meta name="twitter:title" content="{{data.project.title}}">
+		    {{/if}}
+		    {{#if data.project.meta.description}}
+		        <meta name="description" content="{{data.project.meta.description}}">
+		        <meta property="og:description" content="{{data.project.meta.description}}">
+		        <meta name="twitter:description" content="{{data.project.meta.description}}">
+		    {{else}}
+		        <meta name="description" content="{{data.project.content.brief}}">
+		        <meta property="og:description" content="{{data.project.content.brief}}">
+		        <meta name="twitter:description" content="{{data.project.content.brief}}">
+		    {{/if}}
+		    <meta property="og:type" content="website">
+		    <meta name="twitter:card" content="summary_large_image">
+		    <meta property="og:image" content="{{data.project.image.url}}">
+		    <meta name="twitter:image:src" content="{{data.project.image.url}}">
+		    <meta property="og:url" content="{{data.project.fullProjectUrl}}">
+		    <meta name="twitter:url" content="{{data.project.fullProjectUrl}}">
+		    <meta property="article:published_time" content="{{data.project.publishedDate}}">
+		    {{# each data.project.categories}}
+		      <meta property="article:tag" content="{{name}}">
+		    {{/each}}
+		    <meta name="keywords" content="sidechain, studio, Melbourne, design, web-design, digital, {{# each data.project.categories}}{{name}}, {{/each}}">    
+		{{else}}
+		    <title>sidechain | studio</title>
+		    <meta name="description" content="Sidechain is a digitally-focussed design, content and brand strategy studio based in Oceania.">          
+		    <meta property="og:image" content="{{baseUrl}}/images/og_image.jpg">
+		    <meta name="twitter:image:src" content="{{baseUrl}}/images/og_image.jpg">
+		    <meta name="keywords" content="sidechain, melbourne, design, web-design, digital, touchdesigner">
+		{{/if}}    
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -198,7 +198,7 @@
 						<div class="sidebar-menu follow">
 							<h5 class="sidemenu-title">share</h5>
 							<ul class="social-list">								
-							    <a href="https://www.facebook.com/sharer/sharer.php?u=http://sidechain.studio/" target="_blank">
+							    <a href="https://www.facebook.com/sharer/sharer.php?u=https://sidechain.studio/" target="_blank">
 							    	<li class="icon">
 							    		<i class="fa fa-facebook" aria-hidden="true"></i>
 							      </li>

@@ -8,7 +8,7 @@
  * modules in your project's /lib directory.
  */
 var _ = require('lodash');
-
+var keystone = require('keystone');
 
 /**
 	Initialises the standard view locals
@@ -18,6 +18,8 @@ var _ = require('lodash');
 	or replace it with your own templates / logic.
 */
 exports.initLocals = function (req, res, next) {
+	res.locals.baseUrl = keystone.get('baseUrl');
+
 	res.locals.navLinks = [
 		/*{ label: 'Home', key: 'home', href: '/' },*/
 		{ label: 'Work', key: 'portfolio', href: '/work' },

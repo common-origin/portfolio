@@ -86,6 +86,9 @@ keystone.set('nav', {
 	]
 });
 
+//in keystone.js
+keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://sidechain.studio/' : 'http://localhost:3000/');
+
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();
