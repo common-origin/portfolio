@@ -9,7 +9,11 @@
 					<div class="grid masonry" id="grid">
 					{{#each feeds}}
 						{{#each images}}	
-							<div class="item"><a href="#"><img src="{{cloudinaryUrl crop='fit'}}"></a></div>
+							<div class="item">
+								<a href="{{cloudinaryUrl crop='fit'}}" data-lightbox="roadtrip">
+									<img src="{{cloudinaryUrl crop='fit'}}">
+								</a>
+							</div>
 						{{/each}}	
 					{{/each}}
 					</div>			
