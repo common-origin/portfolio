@@ -16,7 +16,7 @@ exports = module.exports = function (req, res) {
 
 	// Load the galleries by sortOrder
 	view.query('feeds', keystone.list('Feed').model.find().sort('sortOrder'));
-
+	
 	// Render the view
 	view.render('feed');
 

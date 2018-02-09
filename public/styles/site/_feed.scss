@@ -8,6 +8,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+/*  left: 0;
+  transform: translate(0, -50%);*/
 }
 
 // clear-fix mixin
@@ -216,12 +218,16 @@ ul {
   z-index: 9999;
   background-color: black;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: 1;
   display: none;
 }
 
 .lightbox {
-  position: absolute;
+  position: fixed;
+  top: 0 !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
   left: 0;
   width: 100%;
   z-index: 10000;
@@ -230,15 +236,23 @@ ul {
   font-weight: normal;
 }
 
+.lightbox-container {
+  display: flex;
+  width: 100%;
+  .flex-space {
+    width: 30px;
+  }
+}
+
 .lightbox .lb-image {
   display: block;
   height: auto;
-  max-width: inherit;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  max-width: 70vw;
 }
 
 .lightbox a img {
@@ -251,7 +265,7 @@ ul {
   *zoom: 1;
   width: 250px;
   height: 250px;
-  margin: 0 auto;
+  margin-left: 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -349,15 +363,17 @@ ul {
 
 .lb-dataContainer {
   margin: 0 auto;
-  padding-top: 5px;
   *zoom: 1;
-  width: 100%;
+  flex: auto;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lb-dataContainer:after {
@@ -369,17 +385,26 @@ ul {
 .lb-data {
   padding: 0 4px;
   color: #ccc;
+  width: 100%;
 }
 
 .lb-data .lb-details {
   width: 85%;
-  float: left;
-  text-align: left;
-  line-height: 1.1em;
+  margin: 0 auto;
+  text-aligh: center;
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-size: 190%;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-attribute {
+  display: block;
+  font-size: 140%;
+  margin: 2vw;
+
   font-weight: bold;
   line-height: 1em;
 }
@@ -388,8 +413,14 @@ ul {
   display: block;
   clear: left;
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 100%;
   color: #999999;
+}
+
+.lb-closeContainer {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .lb-data .lb-close {
