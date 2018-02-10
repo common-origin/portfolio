@@ -38,8 +38,6 @@ Portfolio.add({
 // });
 
 Portfolio.schema.virtual('fullProjectUrl').get(function() {
-	// console.log("@@: ", keystone.get('baseUrl') + 'work/project/' + this.slug);
-	// https://sidechain.studio/work/project/northern-bass-festival-website
     return keystone.get('baseUrl') + 'work/project/' + this.slug;
 });
 
