@@ -10,7 +10,7 @@
 					{{#each feeds}}
 						{{#each images}}	
 							<div class="item">
-								<a href="{{cloudinaryUrl crop='fit'}}" data-lightbox="roadtrip" data-title="{{cloudinaryName}}" data-alt="This is just image of Feeds.">
+								<a href="{{cloudinaryUrl crop='fit'}}" data-lightbox="roadtrip" data-title="{{../url}}" data-alt="{{../content.brief}}">
 									<img src="{{cloudinaryUrl crop='fit'}}">
 								</a>
 							</div>
