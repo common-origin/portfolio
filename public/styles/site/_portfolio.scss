@@ -47,7 +47,7 @@ $black: #000;
 .feat-title {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 35vh;
   margin:0;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -255,7 +255,7 @@ position it in the middle of its parent wrapper*/
     display: inline-block;
   }
   .post-words p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 30px;
   }
   span{
