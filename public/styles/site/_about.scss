@@ -52,6 +52,31 @@ $white: #fff;
 $black: #000;
 
 
+// TOP SECTION
+.about-top {
+  background-image:url('/images/planning.jpg');
+  background-size: cover;
+  background-position: center;
+  height:65vh;
+  max-height:800px;
+  min-height:40px;
+  width:100vw;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  .article-content {
+    padding:20px 0 0;
+    .feat-title {
+      color:#000;
+      font-size:30px;
+      width: 70vw;
+      margin: 0 auto;
+      max-width: 640px;
+      text-align:center;
+    }
+  }
+}
 
 // ABOUT STYLES
 .about-cont {
@@ -102,7 +127,7 @@ $black: #000;
   }
 }
 
-.about-cont .image-wrap .about-image {
+/*.about-cont .image-wrap .about-image {
   &#city-1 {
     background-image:url('/images/melbourne.jpg'); 
   }
@@ -115,7 +140,7 @@ $black: #000;
   &#work-2 {
     background-image:url('/images/work-2.jpg'); 
   }
-}
+}*/
 
 
 
@@ -312,30 +337,6 @@ position it in the middle of its parent wrapper*/
   .about-cont .image-wrap {
     .about-image {
       min-height:300px;
-    }
-  }
-  .about-top {
-    background-image:url('/images/services-header.jpg');
-    background-size: cover;
-    background-position: center;
-    height:65vh;
-    max-height:800px;
-    min-height:40px;
-    width:100vw;
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    .article-content {
-      padding:20px 0 0;
-      .feat-title {
-        color:#000;
-        font-size:30px;
-        width: 70vw;
-        margin: 0 auto;
-        max-width: 640px;
-        text-align:center;
-      }
     }
   }
   .about-cont .copy-row .top-quote {
