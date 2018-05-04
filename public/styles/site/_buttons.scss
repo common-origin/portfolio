@@ -144,15 +144,19 @@ $black: #000;
   @include transition-main;
   position: fixed;
   bottom: -4em;
-  right: 1em;
+  right: 2em;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+  background-color: #2EE59C;
+  color: #37383c;
   cursor: pointer;
   padding:7px 10px;
   border-radius: 50px;
+  .glyphicon {
+    top: 0;
+    vertical-align: middle;
+  }
 }
 
 #topBtn:hover {
