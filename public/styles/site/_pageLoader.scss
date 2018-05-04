@@ -63,26 +63,78 @@
   }
 }
 
-// VARIABLES
-
-$font-head:"futura-pt",sans-serif;
-$font-subhead:"futura-pt",sans-serif;
-$font-body:"futura-pt",sans-serif;
-$primary-color:;
-$secondary-color:;
-$white: #fff;
-$black: #000;
-$green: #2EE59C;
-
-$diameter: 40px;
-$spinner: 2px;
-$spinner-color: #eeeeee;
-$icon-width: 21px;
-$icon-height: 14.7px;
-
 // GLOBAL PAGELOADER
 
-.loader-bg {
+/* SETUP STYLES */
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: auto;
+  margin: -25px 0 0 -25px;
+  z-index: 10001;
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 10000;
+}
+ 
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded */
+
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out; 
+          transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+  opacity: 0;
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+          transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+
+  -webkit-transition: all 0.3s 1s ease-out; 
+          transition: all 0.3s 1s ease-out;
+}
+
+.no-js #loader-wrapper {
+  display: none;
+}
+
+/*.loader-bg {
   background-color:$white;
   height:100%;
   width:100%;
@@ -110,9 +162,9 @@ $icon-height: 14.7px;
   height: 100%;
   z-index: 1000000000;
   @include transition-main;
-}
+}*/
 
-#sc_loader {
+/*#sc_loader {
   position: fixed;
   opacity:0;
   visibility:hidden; 
@@ -135,7 +187,24 @@ $icon-height: 14.7px;
       @include transition-loadingbk-in;
     }
   }
-}
+}*/
+
+// VARIABLES
+
+$font-head:"futura-pt",sans-serif;
+$font-subhead:"futura-pt",sans-serif;
+$font-body:"futura-pt",sans-serif;
+$primary-color:;
+$secondary-color:;
+$white: #fff;
+$black: #000;
+$green: #2EE59C;
+
+$diameter: 40px;
+$spinner: 2px;
+$spinner-color: #eeeeee;
+$icon-width: 21px;
+$icon-height: 14.7px;
 
 #preloader {
   height: $diameter;
@@ -154,7 +223,7 @@ $icon-height: 14.7px;
     height: 100%;
     width: 100%;
     animation: rotation 1s linear infinite;
-    border: ($spinner/2) solid $spinner-color;
+    border: ($spinner/2) solid $green;
     border-top: ($spinner/2) solid transparent;
     border-radius: 100%;
     }

@@ -185,8 +185,6 @@ $( document ).ready(function() {
 });
 
 
-
-
 // GLOBAL PAGE LOADERE
 
 // window.onload = function () {
@@ -195,16 +193,12 @@ $( document ).ready(function() {
 //   console.log("loaded now thanks");
 // }
 
-$(window).on("load", function() {
-  $("#sc_loader").removeClass("loading-screen");
-  console.log("loaded now thanks");
-});
+// $(window).on("load", function() {
+//   $("#sc_loader").removeClass("loading-screen");
+//   console.log("loaded now thanks");
+// });
 
-$( document ).ready(function() {
-  $('.nav-item').click( function() {
-      $("#sc_loader").addClass("loading-screen");
-  });
-}); 
+ 
 
 
 // Back top top button 
@@ -270,6 +264,23 @@ $(document).ready(function(){
 });
 
 
+
+
+// ------------------------------ //
+// New Page Loader
+
+window.onload = function () {
+  var element = document.body;
+  element.classList.add("loaded");
+  console.log("loaded now thanks");
+}
+
+$( document ).ready(function() {
+  $('.nav-item').click( function() {
+    $('body').removeClass("loaded");
+    console.log("removed now");
+  });
+});
 
 
 

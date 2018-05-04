@@ -69,15 +69,39 @@
 		  })(document);
 		</script>
 	</head>
-	<body>
-		<div id="sc_loader" class="loading-screen">
+	<body class="">
+		<!-- <div id="sc_loader" class="loading-screen">
 			<div class="loader">
 				<div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
 					<img class="icon" src="/images/sc-logo.svg">
 				</div>
 			</div>
 			<div class="loader-bg"></div>
+		</div> -->
+
+		<div id="loader-wrapper">
+
+			<div id="loader" class="loading-container">
+				<div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+					<div class="icon">
+					  <!-- <svg viewBox="0 0 150 105">
+							<style type="text/css">
+								.st0{fill:#CCCCCC;}
+							</style>
+							<path class="st0" d="M131.7,11.4l13.6-9.8c-2.4-0.6-4.8-0.9-7.2-0.8H26.4C12.3,0.8,0.9,12.2,0.9,26.3v42.8C1,80,7.9,89.6,18.1,93.2
+								l-13.5,9.9c0.1,0,0.3,0,0.4,0.1c2.4,0.7,4.8,1.1,7.2,1.1h111.4c14.1,0,25.5-11.5,25.5-25.5V35.9C149.2,24.8,142.2,15,131.7,11.4z
+								 M124.1,74.1c0,2.9-2.3,5.2-5.2,5.2c0,0,0,0-0.1,0H38.7l13.1-9.6H31.3v-0.1c-3,0-5.4-2.4-5.4-5.4V30.9c0-3.1,2.5-5.6,5.6-5.6h79.8
+								L98,34.9h21c2.8,0,5.1,2.3,5.1,5.1V74.1z"/>
+						</svg> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="loader-section section-left"></div>
+		  <div class="loader-section section-right"></div>
+
 		</div>
+
 		<div id="header">
 			<div class="nav-header">
 				<div class="nav-container">
