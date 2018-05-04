@@ -13,7 +13,7 @@
 
   var LightboxOptions = (function() {
     function LightboxOptions() {
-      this.fadeDuration                = 500;
+      this.fadeDuration                = 300;
       this.fitImagesInViewport         = true;
       this.resizeDuration              = 700;
       this.positionFromTop             = 50;
@@ -97,10 +97,10 @@
       this.$container      = this.$lightbox.find('.lb-container');
 
       // Store css values for future lookup
-      this.containerTopPadding = parseInt(this.$container.css('padding-top'), 10);
-      this.containerRightPadding = parseInt(this.$container.css('padding-right'), 10);
-      this.containerBottomPadding = parseInt(this.$container.css('padding-bottom'), 10);
-      this.containerLeftPadding = parseInt(this.$container.css('padding-left'), 10);
+      this.containerTopPadding = parseInt(this.$container.css('padding-top'), 0);
+      this.containerRightPadding = parseInt(this.$container.css('padding-right'), 0);
+      this.containerBottomPadding = parseInt(this.$container.css('padding-bottom'), 0);
+      this.containerLeftPadding = parseInt(this.$container.css('padding-left'), 0);
       
       // Attach event handlers to the newly minted DOM elements
       this.$overlay.hide().on('click', function() {
