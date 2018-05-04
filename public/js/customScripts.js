@@ -187,9 +187,14 @@ $( document ).ready(function() {
 
 // Page Loader 
 
-$(window).on("load", function() {
-  $("#sc_loader").removeClass("loading-screen");
-});
+window.onload = function () {
+  var element = document.getElementById("sc_loader");
+  element.classList.remove("loading-screen");
+}
+
+// $(window).on("load", function() {
+//   $("#sc_loader").removeClass("loading-screen");
+// });
 
 $( document ).ready(function() {
   $('.nav-item').click( function() {
@@ -199,7 +204,6 @@ $( document ).ready(function() {
 
 
 // Back top top button 
-
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
