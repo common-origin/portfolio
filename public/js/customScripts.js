@@ -137,6 +137,8 @@ $( document ).ready(function() {
 
 
 // Navbar Scroll 
+// Scroll function which adds/removes classes from objects when the user scrolls. 
+// Includes the Navbar + Sidebar Socials + Footer + Pagination
 
 $( document ).ready(function() {
   //caches a jQuery object containing the header element
@@ -172,7 +174,7 @@ $( document ).ready(function() {
       footer.addClass("invisible");
     }
 
-    var vid = document.getElementById("myVideo"); 
+    // var vid = document.getElementById("myVideo"); 
 
     // if( $(window).scrollTop() < 500) {
     //   vid.play();
@@ -186,12 +188,12 @@ $( document ).ready(function() {
 // Page Loader 
 
 $(window).on("load", function() {
-  $("#se-pre-con").removeClass("loading-screen");
+  $("#sc_loader").removeClass("loading-screen");
 });
 
 $( document ).ready(function() {
   $('.nav-item').click( function() {
-      $("#se-pre-con").addClass("loading-screen");
+      $("#sc_loader").addClass("loading-screen");
   });
 }); 
 
@@ -203,7 +205,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-      document.getElementById("topBtn").style.bottom = "1em";
+      document.getElementById("topBtn").style.bottom = "2em";
     } else {
       document.getElementById("topBtn").style.bottom = "-4em";
     }
