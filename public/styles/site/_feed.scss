@@ -153,7 +153,7 @@ ul {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: .95;
   display: none;
@@ -174,7 +174,7 @@ ul {
 }
 
 .lightbox-container {
-  display: flex;
+  /*display: flex;*/
   width: 100%;
   .flex-space {
     width: 30px;
@@ -183,7 +183,7 @@ ul {
 
 .lightbox .lb-image {
   display: block;
-  height: auto;
+  height: auto !important;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -197,12 +197,13 @@ ul {
 }
 
 .lb-outerContainer {
+  margin: 0 auto 2em auto;
   position: relative;
   background-color: white;
   *zoom: 1;
   width: 250px;
   height: 250px;
-  margin-left: 20px;
+/*  margin-left: 20px;*/
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -217,7 +218,10 @@ ul {
 }
 
 .lb-container {
-  padding: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lb-loader {
@@ -328,12 +332,13 @@ ul {
 .lb-data .lb-details {
   width: 85%;
   margin: 0 auto;
-  text-align: left;
+/*  text-align: left;*/
 }
 
 .lb-data .lb-caption {
   font-size: 26px;
   font-weight: bold;
+  color: #333;
   line-height: 1em;
 }
 
@@ -341,7 +346,7 @@ ul {
   display: block;
   font-size: 14px;
   margin: 2vw 0;
-  color: #fff;
+  color: #333;
   font-weight: 400;
   line-height: 1.4em;
 }
@@ -386,3 +391,10 @@ ul {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+@media (max-width: 768px){
+  .lightbox .lb-image {
+    max-width: 100vw;
+  }
+}
+
