@@ -185,11 +185,14 @@ $( document ).ready(function() {
 });
 
 
+
+
 // Page Loader 
 
 window.onload = function () {
   var element = document.getElementById("sc_loader");
   element.classList.remove("loading-screen");
+  console.log("loaded now thanks");
 }
 
 // $(window).on("load", function() {
