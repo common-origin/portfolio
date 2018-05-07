@@ -168,7 +168,7 @@ ul {
   left: 0;
   width: 100%;
   z-index: 10000;
-  text-align: center;
+  text-align: left;
   line-height: 0;
   font-weight: normal;
 }
@@ -395,6 +395,12 @@ ul {
 @media (max-width: 768px){
   .lightbox .lb-image {
     max-width: 100vw;
+  }
+}
+
+@media (min-width: 1170px){
+  .lightbox .lb-image {
+    max-width: 750px;
   }
 }
 
