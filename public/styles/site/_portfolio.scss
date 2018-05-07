@@ -74,9 +74,6 @@ $black: #000;
   }
 }
 
-
-
-
 @media (max-width:768px){
   .dh-article {
     background-image:url('/images/disappear-here-header.jpg');
@@ -151,8 +148,10 @@ $black: #000;
   height:auto;
   @include transition-main;
   &:hover {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
     @include transition-main;
-    opacity:0.8;
   }
 }
 
