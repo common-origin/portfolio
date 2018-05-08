@@ -31,7 +31,7 @@
 				<div class="col-xs-12 col-sm-6 project-card card" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
 					{{#if image}}
 						<a href="{{projectUrl slug}}" class="nav-item">
-							<img class="lazy img project-img" src="images/blank.png" alt="Photo" data-src="{{{cloudinaryUrl image crop='fit' }}}">
+							<img class="lazy img project-img fade-in-on-load" src="images/blank.png" alt="Photo" data-src="{{{cloudinaryUrl image crop='fit' }}}">
 						</a>
 					{{/if}}
 					<div class="data-container">
