@@ -1,10 +1,27 @@
+// GLOBAL Sidechain CUSTOM SCRIPTS
 // Add class to <body> for each page
-
 $( document ).ready(function() {
-  var newClass = window.location.href;
-  newClass = newClass.substring(newClass.lastIndexOf('http://localhost:3000')+25, 28);
-  $('body').addClass(newClass);
+
+  var services = document.getElementById("services");
+  var journal = document.getElementById("journal");
+  var work = document.getElementById("portfolio");
+  var project = document.getElementById("project");
+
+  if(services) {
+    $('body').addClass('services');
+  }
+  if(journal) {
+    $('body').addClass('journal');
+  }
+  if(work) {
+    $('body').addClass('work');
+  }
+  if(project) {
+    $('body').addClass('project');
+  }
 });
+
+
 
 // Mobile Toggle Button add classes
 
@@ -256,15 +273,17 @@ $(document).ready(function(){
 window.onload = function () {
   var element = document.body;
   element.classList.add("loaded");
-  console.log("loaded now thanks");
+  console.log("I am loaded af");
 }
 
 $( document ).ready(function() {
   $('.nav-item').click( function() {
     $('body').removeClass("loaded");
-    console.log("removed now");
+    console.log("Noooooooo");
   });
 });
+
+
 
 
 
