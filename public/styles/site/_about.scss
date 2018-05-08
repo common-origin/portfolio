@@ -16,17 +16,17 @@
 
 // Transition Mixin
 @mixin transition-main{
-    transition: ease all .3s;
-    -webkit-transition: ease all .3s;
-    -o-transition: ease all .3s;
-    -moz-transition: ease all .3s;
+  transition: ease all .3s;
+  -webkit-transition: ease all .3s;
+  -o-transition: ease all .3s;
+  -moz-transition: ease all .3s;
 }
 
 @mixin transition-full{
-    transition: ease all 1s;
-    -webkit-transition: ease all 1s;
-    -o-transition: ease all 1s;
-    -moz-transition: ease all 1s;
+  transition: ease all 1s;
+  -webkit-transition: ease all 1s;
+  -o-transition: ease all 1s;
+  -moz-transition: ease all 1s;
 }
 
 // clear-fix mixin
@@ -51,6 +51,13 @@ $secondary-color:;
 $white: #fff;
 $black: #000;
 
+
+// NAVIGATION STYLES
+
+.services .navbar-default {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
 
 // TOP SECTION
 .about-top {
@@ -127,23 +134,6 @@ $black: #000;
   }
 }
 
-/*.about-cont .image-wrap .about-image {
-  &#city-1 {
-    background-image:url('/images/melbourne.jpg'); 
-  }
-  &#city-2 {
-    background-image:url('/images/auckland.jpg'); 
-  }
-  &#work-1 {
-    background-image:url('/images/work-1.jpg'); 
-  }
-  &#work-2 {
-    background-image:url('/images/work-2.jpg'); 
-  }
-}*/
-
-
-
 // SECTION STYLES
 
 .about-cont .section {
@@ -187,7 +177,6 @@ $black: #000;
   }
 }
 
-
 //// VIDEO 
 
 /* Makes a fixed background wrapper
@@ -218,8 +207,6 @@ which the user cannot interact with */
 
 /* Make the iframe keep an aspect ratio, and
 position it in the middle of its parent wrapper*/
-
-
 @media (max-width:768px){
   .about-cont {
     .iframe-wrapper {

@@ -1,4 +1,4 @@
-<div class="outer-container post-cont">
+<div id="project" class="outer-container post-cont">
 	<div class="row">
 		<div class="col-xs-12 proj-cont">
 			<div class="container back-container">
@@ -42,12 +42,19 @@
 							</div>
 						</div> -->
 					</header>
-					<!-- {{{data.project.videoUrl}}} -->
-					<!-- {{#if data.project.images}}
-						<div class="container">
-							<img class="lazy img project-img" src="{{{cloudinaryUrl image crop='fit' }}}" alt="Photo" data-src="{{{cloudinaryUrl image crop='fit' }}}">
+					
+					{{#if data.project.content }}
+						<div class="container img-container">
+							
+							{{# each data.project.images}}
+							
+								<img class="img" src="{{{cloudinaryUrl secure='true'}}}" alt="Photo" data-src="{{{cloudinaryUrl secure='true'}}}">
+							
+							{{/each}}
+
 						</div>
-					{{/if}} -->
+					{{/if}}
+
 					{{{data.project.content.extended}}}
 					<div class="container project-footer">
 						<div class="col-xs-12 col-sm-3 post-categories">
