@@ -19,8 +19,8 @@ Portfolio.add({
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 	name: { type: Types.Text },
 	Url:{ type: Types.Url },
-	images: { type: Types.CloudinaryImages, publicID: 'slug' },
-	image: { type: Types.CloudinaryImage },
+	images: { type: Types.CloudinaryImages, publicID: 'slug', secure: 'true' },
+	image: { type: Types.CloudinaryImage, secure: 'true' },
 	videoUrl: { type: Types.Url },
 	videoData: { type: Types.Embedly, from: 'videoUrl' },
 	content: {
